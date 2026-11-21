@@ -27,6 +27,7 @@ Do **not** use for: pure document translation with no study angle, subtitle file
 5. **Vocabulary annotation is level-aware.** Tag every entry A2 / B1 / B2 / C1 plus a 熟词僻义 flag. Never annotate everything at one level; the learner needs to know what to skip.
 6. **Every generated page must pass the gates** in `references/verify.md` before you report success: tag balance, audio refs exist, JS parses, 390px render, 1:1 pairing, zip integrity.
 7. **Never claim audio "sounds right" if you could not listen.** Say what was generated and that pronunciation of invented proper nouns is machine-approximate.
+8. **Layer the copyright before you publish.** A machine-synthesised narration of an in-copyright chapter is still a reproduction of that chapter — the audio can be transcribed back, and the translation is a derivative work. Keep in-copyright kits in a private repo; publish the toolkit and a public-domain demo. See `references/ship.md`.
 
 ## Pipeline
 
@@ -105,6 +106,14 @@ Follow `references/layout.md`. The short version:
 - Run the gates in `references/verify.md`.
 - Report: what was produced, how to open it on a phone, what is machine-generated, and the one or two honest caveats.
 
+### 10. Ship
+`references/ship.md`. Three shapes from one folder: local directory, zip, git repo. Then:
+- export the structured data (`scripts/export_data.py` → `chapter.json`, `paragraphs.csv`, `vocabulary.csv`) so the content is reusable outside the HTML;
+- add `.gitignore`, `.gitattributes` (binary mp3, CSV as `eol=crlf`), `.nojekyll`;
+- scan for secrets, check the largest file is under 100 MB (35 MB total needs no LFS);
+- push, enable Pages, then **probe every URL** — pages should return `200`, audio should return `206` for a `Range` request;
+- if the text is in copyright: private repo only, and say so once, plainly.
+
 ## Layout lessons (why the rules exist)
 
 The first iteration put a 30px play-button gutter on every paragraph, a bordered translation block under each, and a card around each section. It looked tidy in a screenshot and was unpleasant to read: 107 paragraphs became 107 little boxes, and the prose never flowed. The fix was not decoration — it was removing structure:
@@ -128,9 +137,11 @@ When in doubt: fewer containers, less chrome, more text.
 | `references/exam.md` | CEFR tagging, paraphrase tables, grammar mining, writing frames, listening item types |
 | `references/practice.md` | spelling-test algorithm, wrong-answer notebook data model, export/import |
 | `references/verify.md` | acceptance gates: tag balance, audio refs, JS syntax, 390px render, packaging |
+| `references/ship.md` | zip / git / GitHub Pages, copyright layering, limits, post-publish probes |
 | `scripts/make_audio.py` | batch TTS from a JSON item list → mp3 |
 | `scripts/check_pages.py` | static checks for generated HTML pages |
+| `scripts/export_data.py` | reverse-engineer `chapter.json` + CSV from the study page |
 
 ## Reporting
 
-End with: file list and sizes, what the learner should do first, how to open it on a phone (local server is the reliable path), and any machine-generated limitation. Do not claim the audio was auditioned.
+End with: file list and sizes, what the learner should do first, how to open it on a phone (local server is the reliable path), any machine-generated limitation, and — if published — the live URLs plus what is downloadable from the repo. Do not claim the audio was auditioned.
