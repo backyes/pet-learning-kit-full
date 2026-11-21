@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#4b2a6b">
+<meta name="format-detection" content="telephone=no">
+<title>The Boy Who Lived · 中英对照朗读版</title>
+<style>
+:root{--paper:#faf7f0;--ink:#221d17;--en:#1c1813;--zh:#7d7264;--rule:#e6dcc8;--purple:#5b3a8e;--gold:#b8860b}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+*{-webkit-tap-highlight-color:transparent}
+body{margin:0;background:var(--paper);color:var(--ink);line-height:1.95;
+ font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;
+ overflow-wrap:break-word}
+.wrap{max-width:690px;margin:0 auto;padding:0 22px 90px}
+
+.hero{background:linear-gradient(135deg,#241638,#4b2a6b 55%,#1f6b53);color:#fff;
+ padding:38px 22px 30px;border-bottom:3px solid var(--gold)}
+.hero .inner{max-width:690px;margin:0 auto}
+.kicker{letter-spacing:.26em;font-size:.66rem;text-transform:uppercase;opacity:.7}
+.hero h1{font-family:Georgia,"Songti SC",serif;font-size:clamp(1.5rem,4.2vw,2.1rem);margin:.28em 0 .1em;line-height:1.25}
+.hero h1 em{color:#f2cf6b;font-style:normal}
+.hero .sub{opacity:.88;font-size:.88rem;margin:.2em 0 0}
+.hero .meta{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;font-size:.72rem}
+.hero .meta span{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);
+ padding:3px 10px;border-radius:999px}
+.hero .meta a{color:#f2cf6b;text-decoration:none}
+
+/* 工具条 */
+.toolbar{position:sticky;top:0;z-index:60;display:flex;align-items:center;gap:6px;
+ background:rgba(250,247,240,.95);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+ border-bottom:1px solid var(--rule);padding:8px 22px;margin:0 -22px 8px;flex-wrap:wrap}
+.tg{border:1px solid #ddd2bb;background:#fff;color:#6b5a3f;border-radius:8px;padding:5px 10px;
+ font-size:.76rem;cursor:pointer;transition:.15s}
+.tg.on{background:var(--purple);border-color:var(--purple);color:#fff}
+.sp{flex:1}
+
+/* 顶部整章播放：细条 */
+.fullbox{margin:12px 0 2px;border-bottom:1px solid var(--rule);padding-bottom:6px}
+.fullbox>summary{cursor:pointer;font-size:.78rem;color:#8a7f6d;list-style:none;padding:6px 0;
+ letter-spacing:.02em}
+.fullbox>summary::-webkit-details-marker{display:none}
+.fullbox>summary::before{content:"▸ ";color:#b8ab94}
+.fullbox[open]>summary::before{content:"▾ "}
+.fullbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:8px 0 10px}
+.fullbar audio{flex:1 1 260px;min-width:200px;height:34px}
+.fullbar .lab{font-size:.72rem;color:#9a8f7e;letter-spacing:.06em}
+.rt2{border:1px solid #d9cfee;background:#fff;color:var(--purple);border-radius:7px;padding:3px 9px;
+ font-size:.72rem;cursor:pointer}
+.rt2.on{background:var(--purple);color:#fff}
+.jmp{display:inline-block;margin:2px 3px 0 0;padding:1px 8px;background:#f3eefc;border:1px solid #ddd2ee;
+ border-radius:6px;font-size:.72rem;text-decoration:none;color:var(--purple)}
+
+/* 章节标题 */
+.sec{margin:0;padding:34px 0 6px}
+.sechead{position:relative;margin-bottom:18px}
+.sechead .num{font-family:Georgia,serif;font-size:.72rem;letter-spacing:.3em;color:#b09a72;
+ text-transform:uppercase;margin-bottom:6px}
+.sechead h2{font-family:Georgia,"Songti SC",serif;font-size:1.28rem;line-height:1.4;margin:0 0 4px;
+ color:#31243f;font-weight:600}
+.sechead .zhtitle{font-size:.82rem;color:#a2947e;letter-spacing:.04em}
+.secbar{display:flex;align-items:center;gap:12px;margin-top:12px}
+.playall{border:0;background:none;color:var(--purple);padding:0;font-size:.8rem;cursor:pointer;
+ border-bottom:1px dashed #cbb9e8}
+.playall.playing{color:#1f6b53;border-bottom-color:#9ec7b8}
+.secbar .meta{font-size:.72rem;color:#b0a493}
+
+/* 正文：连续书页感 */
+.prose{margin-top:4px}
+.prose .para{position:relative;font-family:Georgia,"Iowan Old Style","Times New Roman",serif;
+ font-size:1.05rem;line-height:1.95;color:var(--en);margin:0 0 .5em;
+ padding:2px 6px 2px 0;border-radius:4px;transition:background .25s}
+.prose .para b{color:#6f2a86;font-weight:600;background:linear-gradient(transparent 72%,#f0e2f7 72%)}
+.prose .para.playing{background:#fdf4dd}
+body.tapmode .prose .para{cursor:pointer}
+body.tapmode .prose .para:hover{background:#fbf6ea}
+
+/* 译文：浅色注脚，不做成块 */
+.prose .zh{font-size:.85rem;line-height:1.85;color:var(--zh);margin:0 0 1.45em;padding:0}
+body.hide-zh .prose .zh{display:none}
+body.hide-zh .prose .para{margin-bottom:1.15em}
+
+/* 段落播放按钮：桌面悬停出现在页边，不占版面 */
+.para .pbtn{position:absolute;left:-30px;top:.55em;width:22px;height:22px;border-radius:50%;
+ border:1px solid #ded3be;background:#fff;color:#9c8f79;font-size:10px;line-height:1;
+ cursor:pointer;opacity:0;transition:.2s;padding:0}
+.para:hover .pbtn{opacity:.85}
+.para.playing .pbtn{opacity:1;background:#1f6b53;color:#fff;border-color:#1f6b53}
+
+/* 生词折叠 */
+.vocabbox{margin:14px 0 6px;border-top:1px solid var(--rule);padding-top:10px}
+.vocabbox summary{cursor:pointer;font-size:.76rem;color:#a2947e;letter-spacing:.04em;list-style:none}
+.vocabbox summary::-webkit-details-marker{display:none}
+.vocabbox summary::before{content:"＋ ";color:#c0b39c}
+.vocabbox[open] summary::before{content:"− "}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.chip{display:inline-flex;align-items:center;gap:5px;background:#f3f7f4;border:1px solid #dfe9e3;
+ border-radius:999px;padding:3px 9px 3px 10px;cursor:pointer;font-size:.76rem;transition:.15s;
+ font-family:inherit;color:inherit}
+.chip:hover{background:#e8f3ec}
+.chip b{color:#1f6b53;font-weight:600}
+.chip i{font-style:normal;color:#8b8577;font-size:.74rem}
+.chip .mini{font-size:.66rem;opacity:.5}
+.chip.playing{background:#1f6b53;border-color:#1f6b53}
+.chip.playing b,.chip.playing i{color:#fff}
+
+/* 分隔 */
+.orn{text-align:center;color:#cfc0a4;font-size:.9rem;margin:26px 0 0;letter-spacing:1em;padding-left:1em}
+
+/* 默写区沿用卡片 */
+.spell{margin:36px 0 10px;background:#fff;border:1px solid var(--rule);border-radius:15px;
+ padding:22px 20px 24px;box-shadow:0 10px 28px rgba(60,40,20,.06)}
+.spell h2{font-family:Georgia,"Songti SC",serif;font-size:1.14rem;margin:0 0 4px;color:#31243f}
+.spell .sub{font-size:.84rem;color:#8a7f6d;margin:0 0 14px}
+.spellbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:14px;
+ padding-bottom:12px;border-bottom:1px solid #efe7d8}
+.fbtn{border:1px solid #ddd2bb;background:#fff;color:#6b5a3f;border-radius:8px;padding:6px 12px;
+ font-size:.78rem;cursor:pointer}
+.fbtn.on{background:var(--purple);border-color:var(--purple);color:#fff}
+.prog{font-size:.78rem;color:#8a7f6d;margin-left:auto;font-variant-numeric:tabular-nums}
+#wbLink{text-decoration:none;display:inline-flex;align-items:center;gap:5px;color:#8a3b5e;
+ border-color:#ecd3df;background:#fdf4f8}
+#wbLink b{background:#8a3b5e;color:#fff;border-radius:999px;min-width:18px;text-align:center;
+ font-size:.7rem;padding:1px 5px;line-height:1.45}
+.sitem{padding:11px 0;border-bottom:1px dashed #efe6d4}
+.sitem:last-child{border-bottom:0}
+.srow{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.pat{font-family:ui-monospace,Menlo,Consolas,"Courier New",monospace;font-size:1rem;
+ letter-spacing:.16em;color:#241f3a}
+.pat b{color:#7b2d8e;font-weight:700}
+.pat i{color:#cfc4b1;font-style:normal}
+.mean{font-size:.74rem;color:#a2947f}
+.sinput{flex:1 1 210px;min-width:150px;border:1px solid #ddd3bf;border-radius:9px;padding:8px 12px;
+ font-size:.95rem;font-family:Georgia,serif;background:#fffdf9;color:#241f1a}
+.sinput:focus{outline:2px solid #ded2f2;border-color:#b9a7e0}
+.sinput.ok{border-color:#4c9a6a;background:#f2fbf5;color:#2f6f4c}
+.sinput.bad{border-color:#c2554f;background:#fdf3f2}
+.sbtn{border:1px solid #ddd3bf;background:#fff;color:#5f5240;border-radius:8px;padding:6px 11px;
+ font-size:.78rem;cursor:pointer;white-space:nowrap}
+.sbtn.primary{background:var(--purple);color:#fff;border-color:var(--purple)}
+.sbtn.mic{color:#1f6b53;border-color:#cfe3da;background:#f2f9f4}
+.fb{font-size:.78rem;margin-top:7px;line-height:1.75;display:none}
+.fb.show{display:block}
+.fb.bad{color:#b23b35}
+.fb.ok{color:#2f7a52;font-weight:600}
+.fb code{background:#f4efe4;padding:1px 5px;border-radius:4px;font-family:ui-monospace,Menlo,monospace;color:#5b3a8e}
+.sitem.done .pat b{color:#2f7a52}
+
+footer{margin:40px auto 0;padding:22px;border-top:1px solid var(--rule);max-width:690px;
+ font-size:.75rem;color:#9a9182;text-align:center;line-height:1.9}
+footer a{color:#7a6a4f}
+#toTop{position:fixed;right:14px;bottom:18px;width:42px;height:42px;border-radius:50%;border:0;color:#fff;
+ font-size:18px;display:none;z-index:99;box-shadow:0 6px 18px rgba(0,0,0,.24);cursor:pointer;
+ background:rgba(91,58,142,.9)}
+#toTop.show{display:flex;align-items:center;justify-content:center}
+
+@media(max-width:700px){
+  .wrap{padding:0 16px 80px}
+  .toolbar{padding:7px 16px;margin:0 -16px 6px}
+  .hero{padding:30px 16px 24px}
+  .prose .para{font-size:1rem;line-height:1.9;padding-right:0}
+  .prose .zh{font-size:.82rem;margin-bottom:1.35em}
+  .para .pbtn{display:none}
+  .sec{padding:26px 0 4px}
+  .sechead h2{font-size:1.14rem}
+  .chips{gap:5px}
+  .chip{font-size:.73rem;padding:4px 8px 4px 9px}
+  .spell{padding:16px 13px 18px}
+  .sinput{flex:1 1 128px;min-width:96px;padding:8px 10px}
+  .sbtn{padding:8px 10px;font-size:.76rem}
+  .pat{font-size:.94rem;letter-spacing:.12em}
+  .srow{gap:6px}
+}
+@media print{
+  .hero{background:#fff!important;color:#000!important;border-bottom:1px solid #000}
+  .hero h1 em{color:#000}
+  .toolbar,.secbar,.pbtn,.fullbar,#toTop,.vocabbox,.spell{display:none!important}
+  .sec{page-break-inside:auto;padding-top:20px}
+  .prose .para{font-size:11.5pt;line-height:1.7}
+  .prose .zh{color:#444;font-size:9pt}
+}
+</style>
+</head>
+<body>
+
+<div class="hero"><div class="inner">
+  <div class="kicker">Harry Potter and the Philosopher's Stone · Chapter One</div>
+  <h1>The Boy Who <em>Lived</em><br><span style="font-size:.5em;opacity:.9">中英对照 · 朗读版</span></h1>
+  <p class="sub">像读一本书那样读：正文连续排版，译文是浅色注脚，声音在页边。</p>
+  <div class="meta">
+    <span>🎧 全文 23:29</span>
+    <span>🔊 235 个单词</span>
+    <span><a href="harry-potter-ch1-wrongbook.html">📕 错题本</a></span>
+    <span><a href="harry-potter-ch1-study.html">讲义</a></span>
+  </div>
+</div></div>
+
+<div class="wrap">
+  <div class="toolbar">
+    <button id="tZh" class="tg on">中文</button>
+    <button id="tTap" class="tg">点读</button>
+    <span class="sp"></span>
+    <button id="fsDown" class="tg">A−</button>
+    <button id="fsUp" class="tg">A+</button>
+  </div>
+
+  <details class="fullbox">
+    <summary>🎧 全文连播 · 23:29 · 可调 0.75× 慢速 · 按章节跳转</summary>
+<div class="fullbar">
+    <audio id="fulla" controls preload="metadata" src="audio/full.mp3"></audio>
+    <button class="rt2 on" data-a="fulla" data-r="1">1×</button>
+    <button class="rt2" data-a="fulla" data-r="0.75">0.75×</button>
+    <button class="rt2" data-a="fulla" data-r="1.25">1.25×</button>
+    <span class="lab">跳到</span><a class="jmp" href="#r1">01</a><a class="jmp" href="#r2">02</a><a class="jmp" href="#r3">03</a><a class="jmp" href="#r4">04</a><a class="jmp" href="#r5">05</a><a class="jmp" href="#r6">06</a><a class="jmp" href="#r7">07</a><a class="jmp" href="#r8">08</a><a class="jmp" href="#r9">09</a><a class="jmp" href="#r10">10</a><a class="jmp" href="#r11">11</a><a class="jmp" href="#r12">12</a><a class="jmp" href="#r13">13</a>
+  </div>
+  </details>
+
+  
+<section class="sec" id="r1">
+  <header class="sechead">
+    <div class="num">01</div>
+    <h2>The Dursleys of Privet Drive</h2>
+    <div class="zhtitle">女贞路的德思礼一家</div>
+    <div class="secbar">
+      <button class="playall" data-sec="1">▶ 朗读本节</button>
+      <span class="meta">3 段 · 1:23</span>
+    </div>
+  </header>
+  <div class="prose">
+    <p class="para" data-i="1">Mr. and Mrs. Dursley, of number four, Privet Drive, were proud to say that they were <b>perfectly</b> normal, thank you very much. They were the <b>last people you'd expect</b> to be involved in anything strange or <b>mysterious</b>, because they just didn't <b>hold with</b> such <b>nonsense</b>.</p>
+    <p class="zh">女贞路四号的德思礼夫妇，总是自豪地说自己再正常不过了，谢天谢地。他们是旁人最不可能牵扯进任何古怪或神秘事件的人，因为他们压根不信这类无稽之谈。</p>
+    <p class="para" data-i="2">Mr. Dursley was the <b>director</b> of a <b>firm</b> called Grunnings, which made <b>drills</b>. He was a big, <b>beefy</b> man with hardly any neck, although he did have a very large <b>mustache</b>. Mrs. Dursley was thin and blonde and had nearly twice the usual amount of neck, which came in very useful as she spent so much of her time <b>craning</b> over garden fences, <b>spying on</b> the neighbors. The Dursleys had a small son called Dudley and in their opinion there was no finer boy anywhere.</p>
+    <p class="zh">德思礼先生是一家名叫"格兰宁斯"的钻头公司的经理。他高大魁梧，几乎没有脖子，倒是留着一把大胡子。德思礼太太又瘦又是金发，脖子长度几乎是常人的两倍——这倒很实用，因为她大部分时间都伸着脖子越过花园篱笆，偷看邻居。德思礼家有个小儿子叫达力，在他们眼里，天底下再没有比他更好的孩子了。</p>
+    <p class="para" data-i="3">The Dursleys had everything they wanted, but they also had a secret, and their greatest fear was that somebody would discover it. They didn't think they could bear it if anyone found out about the Potters. Mrs. Potter was Mrs. Dursley's sister, but they hadn't met for several years; in fact, Mrs. Dursley pretended she didn't have a sister, because her sister and her <b>good-for-nothing</b> husband were as <b>unDursleyish</b> as it was possible to be. The Dursleys <b>shuddered</b> to think what the neighbors would say if the Potters arrived in the street. The Dursleys knew that the Potters had a small son, too, but they had never even seen him. This boy was another good reason for keeping the Potters away; they didn't want Dudley mixing with a child like that.</p>
+    <p class="zh">德思礼家什么都不缺，可他们有个秘密，最怕的就是被人发现。一想到有人会查到波特家的事，他们就觉得受不了。波特太太是德思礼太太的妹妹，可两人好几年没见过面；事实上，德思礼太太假装自己没有妹妹，因为妹妹和她那个一无是处的丈夫，跟"德思礼"这三个字简直半点不沾边。一想到波特一家要是出现在这条街上、邻居们会怎么说，德思礼夫妇就打寒噤。他们也知道波特家有个小儿子，可从没见过那孩子。这个小男孩，正是让波特家"离远点"的又一个好理由——他们可不想让达力跟那种孩子玩在一起。</p></div>
+  <details class="vocabbox">
+    <summary>本节生词 · 16</summary>
+    <div class="chips"><button class="chip" data-a="audio/words/001.mp3"><b>perfectly</b><i>完全地；十足地 （不是"完美地"！）</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/002.mp3"><b>mysterious</b><i>神秘的；难以解释的</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/003.mp3"><b>nonsense</b><i>胡说；荒唐的事</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/004.mp3"><b>the last person to…</b><i>最不可能……的人</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/005.mp3"><b>hold with sth</b><i>赞同；相信（多用于否定句）</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/006.mp3"><b>firm</b><i>公司；商行 （你熟知的是 adj. 坚固的）</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/007.mp3"><b>director</b><i>董事；经理；负责人 （也指"导演"）</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/008.mp3"><b>drill</b><i>钻头；钻孔机；反复操练</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/009.mp3"><b>beefy</b><i>魁梧的；肌肉发达的</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/010.mp3"><b>mustache</b><i>上唇的胡子；八字胡 （英式拼作 moustache）</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/011.mp3"><b>crane</b><i>伸长（脖子）；探头张望</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/012.mp3"><b>spy on sb</b><i>暗中监视；窥探</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/013.mp3"><b>good-for-nothing</b><i>一无是处的（人）；废物</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/014.mp3"><b>unDursleyish</b><i>"不像德思礼家的"（作者自造词）</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/015.mp3"><b>shudder</b><i>（因恐惧、厌恶而）发抖、打寒噤</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/016.mp3"><b>nephew</b><i>侄子；外甥</i><span class="mini">🔊</span></button></div>
+  </details>
+</section>
+<section class="sec" id="r2">
+  <header class="sechead">
+    <div class="num">02</div>
+    <h2>The Dull, Gray Tuesday</h2>
+    <div class="zhtitle">那个阴沉的星期二</div>
+    <div class="secbar">
+      <button class="playall" data-sec="2">▶ 朗读本节</button>
+      <span class="meta">3 段 · 0:44</span>
+    </div>
+  </header>
+  <div class="prose">
+    <p class="para" data-i="4">When Mr. and Mrs. Dursley woke up on the <b>dull</b>, gray Tuesday our story starts, there was nothing about the cloudy sky outside to <b>suggest</b> that strange and mysterious things would soon be happening all over the country. Mr. Dursley <b>hummed</b> as he picked out his most boring tie for work, and Mrs. Dursley <b>gossiped</b> away happily as she <b>wrestled</b> a screaming Dudley into his high chair.</p>
+    <p class="zh">故事开始的那个星期二，天色阴沉灰暗。德思礼夫妇醒来时，窗外乌云密布，谁也看不出这片天空预示着——很快，全国各地都将发生古怪而神秘的事。德思礼先生一边哼着小曲，一边挑出他上班用的最无聊的一条领带；德思礼太太一边兴致勃勃地说着家长里短的闲话，一边把尖叫不止的达力硬塞进他的高脚餐椅。</p>
+    <p class="para" data-i="5">None of them noticed a large, <b>tawny</b> owl <b>flutter</b> past the window.</p>
+    <p class="zh">他们谁也没留意到：一只黄褐色的大猫头鹰扑扇着翅膀，从窗外掠过。</p>
+    <p class="para" data-i="6">At half past eight, Mr. Dursley picked up his <b>briefcase</b>, <b>pecked</b> Mrs. Dursley on the cheek, and tried to kiss Dudley good-bye but missed, because Dudley was now having a <b>tantrum</b> and throwing his <b>cereal</b> at the walls. "Little <b>tyke</b>," <b>chortled</b> Mr. Dursley as he left the house. He got into his car and <b>backed out</b> of number four's <b>drive</b>.</p>
+    <p class="zh">八点半，德思礼先生拎起公文包，在德思礼太太脸颊上匆匆一啄，又想去亲达力道别，却没亲着——因为达力正发着脾气，把麦片往墙上乱摔。"小兔崽子，"德思礼先生咯咯笑着出了门。他上了车，从四号的车道上倒了出去。</p></div>
+  <details class="vocabbox">
+    <summary>本节生词 · 15</summary>
+    <div class="chips"><button class="chip" data-a="audio/words/017.mp3"><b>dull</b><i>阴沉的；昏暗的；乏味的</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/018.mp3"><b>suggest</b><i>暗示；表明 （熟义是"建议"）</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/019.mp3"><b>hum</b><i>哼（歌）；发出嗡嗡声</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/020.mp3"><b>gossip</b><i>说闲话；搬弄是非；八卦</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/021.mp3"><b>wrestle</b><i>（用力）扭打、搏斗；费力对付</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/022.mp3"><b>tawny</b><i>黄褐色的；茶色的</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/023.mp3"><b>flutter</b><i>（鸟）扑扇翅膀；飘动</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/024.mp3"><b>briefcase</b><i>公文包</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/025.mp3"><b>peck</b><i>（鸟）啄；匆匆轻吻</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/026.mp3"><b>tantrum</b><i>（小孩的）发脾气、撒泼</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/027.mp3"><b>cereal</b><i>麦片；谷物</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/028.mp3"><b>tyke</b><i>小淘气；小屁孩（口语，带亲昵或无奈）</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/029.mp3"><b>chortle</b><i>咯咯笑；得意地笑</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/030.mp3"><b>back out (of)</b><i>倒车驶出；（引申）退出、食言</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/031.mp3"><b>drive</b><i>私人车道 （不是"开车"）</i><span class="mini">🔊</span></button></div>
+  </details>
+</section>
+<section class="sec" id="r3">
+  <header class="sechead">
+    <div class="num">03</div>
+    <h2>A Cat Reading a Map</h2>
+    <div class="zhtitle">看地图的猫</div>
+    <div class="secbar">
+      <button class="playall" data-sec="3">▶ 朗读本节</button>
+      <span class="meta">3 段 · 1:17</span>
+    </div>
+  </header>
+  <div class="prose">
+    <p class="para" data-i="7">It was on the corner of the street that he noticed the first sign of something <b>peculiar</b> — a cat reading a map. For a second, Mr. Dursley didn't realize what he had seen — then he <b>jerked</b> his head around to look again. There was a <b>tabby</b> cat standing on the corner of Privet Drive, but there wasn't a map in sight. What could he have been thinking of? It must have been a <b>trick of the light</b>. Mr. Dursley blinked and stared at the cat. It stared back.</p>
+    <p class="zh">就在街角，他瞧见了第一处不对劲的迹象——一只猫在看地图。有那么一瞬间，德思礼先生没反应过来自己看见了什么——接着他猛地扭头再看。女贞路的街角上确实站着一只虎斑猫，可哪儿有什么地图。他刚才是怎么想的？一定是光线造成的错觉。德思礼先生眨眨眼，盯着那只猫。猫也回瞪着他。</p>
+    <p class="para" data-i="8">As he drove toward town he thought of nothing except a large order of drills he was hoping to get that day. But on the edge of town, drills were driven out of his mind by something else. As he sat in the usual morning <b>traffic jam</b>, he couldn't help noticing that there seemed to be a lot of strangely dressed people about. People in <b>cloaks</b>. Mr. Dursley couldn't bear people who dressed in funny clothes — the <b>getups</b> you saw on young people! He supposed this was some stupid new fashion.</p>
+    <p class="zh">开车进城的一路上，他脑子里只装着当天想拿到的那一大笔钻头订单。可到了城边，别的事情把钻头从他脑子里挤了出去。他堵在每天早上的车流里，忍不住注意到：周围好像有许多穿着古怪的人。穿斗篷的人。德思礼先生最受不了穿奇装异服的人——看看现在年轻人那身打扮！他猜想这大概是某种愚蠢的新潮流。</p>
+    <p class="para" data-i="9">He <b>drummed</b> his fingers on the <b>steering wheel</b> and his eyes fell on a <b>huddle</b> of these <b>weirdos</b> standing quite close by. They were whispering excitedly together. Mr. Dursley was <b>enraged</b> to see that a couple of them weren't young at all; why, that man had to be older than he was, and wearing an <b>emerald</b>-green cloak! The <b>nerve</b> of him! But then it struck Mr. Dursley that this was probably some silly <b>stunt</b> — these people were obviously <b>collecting</b> for something…</p>
+    <p class="zh">他用手指敲着方向盘，目光落到不远处挤作一团的一伙怪人身上。他们正兴奋地交头接耳。德思礼先生恼火地发现，其中几位压根不年轻了；天哪，那个男人肯定比他还老，居然穿着一条翡翠绿的斗篷！真是好大的胆子！紧接着他又一想：这八成是搞什么无聊的噱头——这帮人显然是在为什么事募捐……</p></div>
+  <details class="vocabbox">
+    <summary>本节生词 · 16</summary>
+    <div class="chips"><button class="chip" data-a="audio/words/032.mp3"><b>peculiar</b><i>古怪的；不寻常的；（也指）独有的</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/033.mp3"><b>jerk</b><i>猛地一拉（一扭、一动）</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/034.mp3"><b>tabby</b><i>虎斑猫；带条纹的</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/035.mp3"><b>a trick of the light</b><i>光线的错觉；看走眼了</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/036.mp3"><b>traffic jam</b><i>交通堵塞</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/037.mp3"><b>cloak</b><i>斗篷；披风</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/038.mp3"><b>getup</b><i>（古怪的）装束、行头</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/039.mp3"><b>drum</b><i>（用手指）有节奏地敲打</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/040.mp3"><b>steering wheel</b><i>方向盘</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/041.mp3"><b>huddle</b><i>（挤在一起的）一小群人；蜷缩</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/042.mp3"><b>weirdo</b><i>怪人；行为古怪的人</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/043.mp3"><b>enrage</b><i>使暴怒；激怒</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/044.mp3"><b>emerald</b><i>翡翠；翡翠绿（的）</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/045.mp3"><b>nerve</b><i>胆量； 厚脸皮、放肆 （不是"神经"）</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/046.mp3"><b>stunt</b><i>噱头；花招；特技</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/047.mp3"><b>collect</b><i>募捐；募集 （熟义"收集"）</i><span class="mini">🔊</span></button></div>
+  </details>
+</section>
+<section class="sec" id="r4">
+  <header class="sechead">
+    <div class="num">04</div>
+    <h2>Owls in Broad Daylight</h2>
+    <div class="zhtitle">大白天飞过的猫头鹰</div>
+    <div class="secbar">
+      <button class="playall" data-sec="4">▶ 朗读本节</button>
+      <span class="meta">4 段 · 1:07</span>
+    </div>
+  </header>
+  <div class="prose">
+    <p class="para" data-i="10">Mr. Dursley always sat with his back to the window in his office on the ninth floor. If he hadn't, he might have found it harder to concentrate on drills that morning. He didn't see the owls <b>swooping</b> past in <b>broad daylight</b>, though people down in the street did; they pointed and gazed <b>open-mouthed</b> as owl after owl <b>sped</b> overhead. Most of them had never seen an owl even at nighttime.</p>
+    <p class="zh">德思礼先生的办公室在九楼，他总是背对窗户坐着。要不是这样，那天上午他恐怕更难把心思放在钻头上。他没有看见大白天俯冲飞过的猫头鹰，可楼下街上的人看见了：他们指着天空，张着嘴发愣，看一只又一只猫头鹰从头顶疾飞而过。这些人里头，大多数连夜里都没见过猫头鹰。</p>
+    <p class="para" data-i="11">Mr. Dursley, however, had a perfectly normal, owl-free morning. He <b>yelled</b> at five different people. He made several important telephone calls and shouted a bit more. He was in a very good mood until lunchtime, when he thought he'd <b>stretch his legs</b> and walk across the road to buy himself a <b>bun</b> from the <b>bakery</b>.</p>
+    <p class="zh">而德思礼先生的这个上午再正常不过，一只猫头鹰都没有。他冲五个人吼了一通，打了几个重要电话，又嚷嚷了几句。他心情一直很好，直到午饭时间——他想活动活动腿脚，过马路去面包店给自己买个圆面包。</p>
+    <p class="para" data-i="12">He'd forgotten all about the people in cloaks until he passed a group of them next to the baker's. He eyed them angrily as he passed. He didn't know why, but they made him <b>uneasy</b>. This <b>bunch</b> were whispering excitedly, too, and he couldn't see a single <b>collecting tin</b>. It was on his way back past them, <b>clutching</b> a large <b>doughnut</b> in a bag, that he caught a few words of what they were saying.</p>
+    <p class="zh">他早把那些穿斗篷的人忘得一干二净，直到在面包店旁经过一群人。他走过时气呼呼地瞪着他们。他说不清为什么，可这些人让他心里发毛。这一伙也在兴奋地交头接耳，而且他一个募捐罐都没看见。就在他拎着一袋大甜甜圈往回走、再次经过他们身边时，他听清了他们说的几个字。</p>
+    <p class="para" data-i="13">"The Potters, that's right, that's what I heard —"<br>"— yes, their son, Harry —"</p>
+    <p class="zh">"波特家，没错，我听到的就是这么说的——"<br>"——对，他们家儿子，哈利——"</p></div>
+  <details class="vocabbox">
+    <summary>本节生词 · 13</summary>
+    <div class="chips"><button class="chip" data-a="audio/words/048.mp3"><b>swoop</b><i>（鸟、飞机）俯冲；猛扑下来</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/049.mp3"><b>in broad daylight</b><i>光天化日之下；大白天</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/050.mp3"><b>open-mouthed</b><i>目瞪口呆的；张着嘴的</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/051.mp3"><b>speed</b><i>疾驰；快速移动 （过去式 sped）</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/052.mp3"><b>yell</b><i>大声喊；吼叫</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/053.mp3"><b>stretch one's legs</b><i>（久坐后）活动活动腿脚；散散步</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/054.mp3"><b>bun</b><i>小圆面包；（也指）圆发髻</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/055.mp3"><b>bakery</b><i>面包店</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/056.mp3"><b>uneasy</b><i>心神不安的；不自在的</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/057.mp3"><b>bunch</b><i>一群（人）；一束、一串</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/058.mp3"><b>collecting tin</b><i>（街头募捐用的）募捐罐</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/059.mp3"><b>clutch</b><i>紧紧抓住；攥着</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/060.mp3"><b>doughnut</b><i>甜甜圈 （美式常拼 donut）</i><span class="mini">🔊</span></button></div>
+  </details>
+</section>
+<section class="sec" id="r5">
+  <header class="sechead">
+    <div class="num">05</div>
+    <h2>The Old Man in the Violet Cloak</h2>
+    <div class="zhtitle">紫斗篷老人与"麻瓜"</div>
+    <div class="secbar">
+      <button class="playall" data-sec="5">▶ 朗读本节</button>
+      <span class="meta">6 段 · 1:41</span>
+    </div>
+  </header>
+  <div class="prose">
+    <p class="para" data-i="14">Mr. Dursley stopped <b>dead</b>. Fear <b>flooded</b> him. He looked back at the whisperers as if he wanted to say something to them, but <b>thought better of it</b>.</p>
+    <p class="zh">德思礼先生猛地停住了脚。恐惧像潮水一样涌上来。他回头看了看那些交头接耳的人，好像想跟他们说点什么，可转念又觉得不妥，算了。</p>
+    <p class="para" data-i="15">He <b>dashed</b> back across the road, hurried up to his office, <b>snapped at</b> his secretary not to disturb him, <b>seized</b> his telephone, and had almost finished dialing his home number when he changed his mind. He put the <b>receiver</b> back down and <b>stroked</b> his mustache, thinking… no, he was being stupid. Potter wasn't such an unusual name. <b>Come to think of it</b>, he wasn't even sure his nephew was called Harry. He'd never even seen the boy. It might have been Harvey. Or Harold.</p>
+    <p class="zh">他冲过马路，匆匆回到办公室，厉声吩咐秘书别来打扰，一把抓起电话，家里的号码快拨完时又改了主意。他搁下听筒，捋着胡子琢磨……不，他这是犯傻。波特又不是什么稀罕的姓。这么一想，他甚至不敢确定外甥是不是叫哈利——他压根没见过那孩子。也许叫哈维，或者哈罗德。</p>
+    <p class="para" data-i="16">He found it a lot harder to concentrate on drills that afternoon and when he left the building at five o'clock, he was still so worried that he walked straight into someone just outside the door.</p>
+    <p class="zh">那天下午，他发现钻头的事格外难集中精神。五点走出大楼时，他心里还是七上八下，结果刚出门就一头撞在一个人身上。</p>
+    <p class="para" data-i="17">"Sorry," he <b>grunted</b>, as the tiny old man <b>stumbled</b> and almost fell. It was a few seconds before Mr. Dursley realized that the man was wearing a <b>violet</b> cloak. He didn't seem at all upset at being almost knocked to the ground. <b>On the contrary</b>, his face <b>split into a wide smile</b> and he said in a <b>squeaky</b> voice that made <b>passersby</b> stare, "Don't be sorry, my dear sir, for nothing could upset me today! <b>Rejoice</b>, for You-Know-Who has gone at last! Even <b>Muggles</b> like yourself should be celebrating, this happy, happy day!"</p>
+    <p class="zh">"抱歉，"他咕哝了一声，那个矮小的老人踉跄了一下，差点摔倒。过了好几秒，德思礼先生才看清这人穿着一条紫色斗篷。老人被撞得险些倒地，却半点不恼。正相反，他脸上绽开一个大大的笑容，用尖细得让路人都回头的声音说："别道歉，亲爱的先生，今天什么事都惹不着我！欢呼吧，因为神秘人终于走了！连您这样的麻瓜都该庆祝，这可是个大喜的日子！"</p>
+    <p class="para" data-i="18">And the old man hugged Mr. Dursley around the middle and walked off.</p>
+    <p class="zh">老人搂着德思礼先生的腰抱了一下，就走了。</p>
+    <p class="para" data-i="19">Mr. Dursley stood <b>rooted to the spot</b>. He had been hugged by a complete stranger. He also thought he had been called a Muggle, whatever that was. He was <b>rattled</b>. He hurried to his car and <b>set off</b> for home, hoping he was imagining things, which he had never hoped before, because he didn't <b>approve of</b> imagination.</p>
+    <p class="zh">德思礼先生钉在原地。他被一个素不相识的人抱了。他还觉得自己被人叫作"麻瓜"——管那是什么东西。他整个人都慌了。他匆匆钻进车里往家开，一路盼着自己只是胡思乱想——他以前从没这样盼过，因为他向来不赞成"想象力"这回事。</p></div>
+  <details class="vocabbox">
+    <summary>本节生词 · 22</summary>
+    <div class="chips"><button class="chip" data-a="audio/words/061.mp3"><b>stop dead</b><i>猛地停住；戛然而止</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/062.mp3"><b>flood</b><i>（情感）涌上；淹没</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/063.mp3"><b>think better of it</b><i>（原想做某事）转念一想又作罢</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/064.mp3"><b>dash</b><i>飞奔；猛冲</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/065.mp3"><b>snap at sb</b><i>厉声对某人说话；没好气地顶回去</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/066.mp3"><b>seize</b><i>一把抓住；夺取</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/067.mp3"><b>receiver</b><i>（电话）听筒 （也指"接收器"）</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/068.mp3"><b>stroke</b><i>抚摸；捋</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/069.mp3"><b>come to think of it</b><i>这么一想；话说回来</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/070.mp3"><b>grunt</b><i>咕哝；哼哼（表示不耐烦或不用力说话）</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/071.mp3"><b>stumble</b><i>踉跄；绊了一下；说话结巴</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/072.mp3"><b>violet</b><i>紫罗兰色（的）；紫罗兰</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/073.mp3"><b>on the contrary</b><i>恰恰相反</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/074.mp3"><b>(one's face) split into a wide smile</b><i>（脸上）绽开大大的笑容</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/075.mp3"><b>squeaky</b><i>尖细刺耳的；吱吱作响的</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/076.mp3"><b>passerby</b><i>路人（复数 passersby）</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/077.mp3"><b>rejoice</b><i>欢欣鼓舞；欣喜</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/078.mp3"><b>Muggle</b><i>麻瓜（非魔法人士）</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/079.mp3"><b>be rooted to the spot</b><i>（惊得）钉在原地，动弹不得</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/080.mp3"><b>rattled</b><i>慌乱的；心神不宁的</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/081.mp3"><b>set off (for)</b><i>出发前往</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/082.mp3"><b>approve of</b><i>赞成；认可</i><span class="mini">🔊</span></button></div>
+  </details>
+</section>
+<section class="sec" id="r6">
+  <header class="sechead">
+    <div class="num">06</div>
+    <h2>The Evening News: A Downpour of Shooting Stars</h2>
+    <div class="zhtitle">晚间新闻：一场流星雨</div>
+    <div class="secbar">
+      <button class="playall" data-sec="6">▶ 朗读本节</button>
+      <span class="meta">6 段 · 1:54</span>
+    </div>
+  </header>
+  <div class="prose">
+    <p class="para" data-i="20">As he pulled into the <b>driveway</b> of number four, the first thing he saw — and it didn't <b>improve</b> his mood — was the tabby cat he'd spotted that morning. It was now sitting on his garden wall. He was sure it was the same one; it had the same <b>markings</b> around its eyes.</p>
+    <p class="zh">他把车开进四号的车道，第一眼看到的（这也让他心情更糟）就是早上见过的那只虎斑猫。它此刻正蹲在他家花园的矮墙上。他敢肯定就是同一只——眼睛周围的斑纹一模一样。</p>
+    <p class="para" data-i="21">"Shoo!" said Mr. Dursley loudly. The cat didn't move. It just gave him a <b>stern</b> look. Was this normal cat behavior? Mr. Dursley wondered. Trying to <b>pull himself together</b>, he let himself into the house. He was still <b>determined</b> not to mention anything to his wife.</p>
+    <p class="zh">"嘘！"德思礼先生大声轰它。猫纹丝不动，只冷冷地瞪了他一眼。这算正常的猫的行为吗？德思礼先生纳闷。他努力让自己镇定下来，进了屋。他还是打定主意：一个字都不跟妻子提。</p>
+    <p class="para" data-i="22">Mrs. Dursley had had a nice, normal day. She told him <b>over dinner</b> all about Mrs. Next Door's problems with her daughter and how Dudley had learned a new word ("Won't!"). When Dudley had been put to bed, he went into the living room in time to catch the last report on the evening news:</p>
+    <p class="zh">德思礼太太这一天过得挺好、挺正常。晚饭时她跟他絮叨：隔壁太太跟女儿闹的那些烦心事，还有达力学会了一个新词（"就不！"）。达力被哄上床之后，他走进客厅，正好赶上晚间新闻的最后一条：</p>
+    <p class="para" data-i="23">"And finally, <b>bird-watchers</b> everywhere have reported that the nation's owls have been behaving very unusually today. Although owls normally hunt at night and are hardly ever seen in daylight, there have been hundreds of <b>sightings</b> of these birds flying in every direction since sunrise. Experts are unable to explain why the owls have suddenly changed their sleeping pattern." The <b>newscaster</b> allowed himself a <b>grin</b>. "Most mysterious. And now, over to Jim McGuffin with the weather. Going to be any more <b>showers</b> of owls tonight, Jim?"</p>
+    <p class="zh">"最后一条消息：各地观鸟者报告说，今天全国的猫头鹰行为极为反常。猫头鹰通常夜间捕食，白天几乎见不到；可自日出以来，已有数百人次目击这种鸟朝四面八方飞去。专家无法解释猫头鹰为何突然改变了作息。"新闻主播忍不住咧嘴一笑。"真是神秘至极。下面把时间交给吉姆·麦格芬，看天气。吉姆，今晚还会不会有'猫头鹰阵雨'？"</p>
+    <p class="para" data-i="24">"Well, Ted," said the weatherman, "I don't know about that, but it's not only the owls that have been acting oddly today. Viewers as far apart as Kent, Yorkshire, and Dundee have been phoning in to tell me that instead of the rain I promised yesterday, they've had a <b>downpour</b> of <b>shooting stars</b>! Perhaps people have been celebrating <b>Bonfire Night</b> early — it's not until next week, folks! But I can promise a wet night tonight."</p>
+    <p class="zh">"呃，特德，"气象员说，"这我可说不准。不过今天行为古怪的可不止猫头鹰。远在肯特、约克郡和邓迪的观众都打来电话说，昨天我预报的那场雨没来，他们那儿反倒下了一场流星雨！也许大家是提前过篝火之夜了——那还得等到下周呢，各位！不过今晚我可以保证：有雨。"</p>
+    <p class="para" data-i="25">Mr. Dursley sat frozen in his <b>armchair</b>. Shooting stars all over Britain? Owls flying by daylight? Mysterious people in cloaks all over the place? And a whisper, a whisper about the Potters…</p>
+    <p class="zh">德思礼先生僵在扶手椅里。全英国都在下流星？猫头鹰大白天乱飞？到处都是穿斗篷的神秘人？还有那句低语，那句关于波特家的低语……</p></div>
+  <details class="vocabbox">
+    <summary>本节生词 · 17</summary>
+    <div class="chips"><button class="chip" data-a="audio/words/083.mp3"><b>driveway</b><i>（住宅前的）私人车道</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/084.mp3"><b>improve</b><i>改善；使变好</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/085.mp3"><b>marking</b><i>（动物皮毛上的）斑纹、花纹；（考试的）评分</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/086.mp3"><b>shoo</b><i>嘘！（赶走动物时的吆喝）</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/087.mp3"><b>stern</b><i>严厉的；严肃的</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/088.mp3"><b>pull oneself together</b><i>镇定下来；振作起来</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/089.mp3"><b>determined</b><i>下定决心的；坚决的</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/090.mp3"><b>over dinner</b><i>吃晚饭时（边吃边……）</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/091.mp3"><b>bird-watcher</b><i>观鸟者；鸟类观察爱好者</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/092.mp3"><b>sighting</b><i>目击（事件）；被看到的次数</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/093.mp3"><b>newscaster</b><i>新闻主播</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/094.mp3"><b>grin</b><i>咧嘴笑；露齿一笑</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/095.mp3"><b>shower</b><i>一阵（雨/雪/流星）；淋浴 （这里是比喻）</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/096.mp3"><b>downpour</b><i>倾盆大雨</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/097.mp3"><b>shooting star</b><i>流星</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/098.mp3"><b>Bonfire Night</b><i>篝火之夜（英国 11 月 5 日，放烟花纪念火药阴谋）</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/099.mp3"><b>armchair</b><i>扶手椅</i><span class="mini">🔊</span></button></div>
+  </details>
+</section>
+<section class="sec" id="r7">
+  <header class="sechead">
+    <div class="num">07</div>
+    <h2>Testing Petunia</h2>
+    <div class="zhtitle">试探佩妮</div>
+    <div class="secbar">
+      <button class="playall" data-sec="7">▶ 朗读本节</button>
+      <span class="meta">12 段 · 1:24</span>
+    </div>
+  </header>
+  <div class="prose">
+    <p class="para" data-i="26">Mrs. Dursley came into the living room carrying two cups of tea. It was no good. He'd have to say something to her. He <b>cleared his throat</b> nervously. "Er — Petunia, dear — you haven't heard from your sister lately, have you?"</p>
+    <p class="zh">德思礼太太端着两杯茶走进客厅。这下没辙了，他总得跟她说点什么。他紧张地清了清嗓子。"呃——佩妮，亲爱的——你最近……没收到你妹妹的信吧？"</p>
+    <p class="para" data-i="27">As he had expected, Mrs. Dursley looked shocked and angry. After all, they normally pretended she didn't have a sister.</p>
+    <p class="zh">不出他所料，德思礼太太一脸震惊和恼怒。毕竟，他们平时都装作她没有妹妹。</p>
+    <p class="para" data-i="28">"No," she said <b>sharply</b>. "Why?"</p>
+    <p class="zh">"没有，"她尖声说。"怎么了？"</p>
+    <p class="para" data-i="29">"Funny stuff on the news," Mr. Dursley <b>mumbled</b>. "Owls… shooting stars… and there were a lot of funny-looking people in town today…"</p>
+    <p class="zh">"新闻里有点怪事，"德思礼先生含含糊糊地说，"猫头鹰……流星……今天城里还有好多长相古怪的人……"</p>
+    <p class="para" data-i="30">"So?" <b>snapped</b> Mrs. Dursley.</p>
+    <p class="zh">"所以呢？"德思礼太太没好气地顶了一句。</p>
+    <p class="para" data-i="31">"Well, I just thought… maybe… it was something to do with… you know… her crowd."</p>
+    <p class="zh">"呃，我就是想……也许……这事跟……你知道的……她那帮人有关。"</p>
+    <p class="para" data-i="32">Mrs. Dursley <b>sipped</b> her tea through <b>pursed lips</b>. Mr. Dursley wondered whether he dared tell her he'd heard the name "Potter." He decided he didn't dare. Instead he said, as <b>casually</b> as he could, "Their son — he'd be about Dudley's age now, wouldn't he?"</p>
+    <p class="zh">德思礼太太噘着嘴抿了口茶。德思礼先生琢磨自己敢不敢告诉她，他听到了"波特"这个姓。他决定：不敢。于是他尽量装作若无其事地说："他们家的儿子——现在该跟达力差不多大了吧？"</p>
+    <p class="para" data-i="33">"I suppose so," said Mrs. Dursley <b>stiffly</b>.</p>
+    <p class="zh">"大概是吧，"德思礼太太生硬地说。</p>
+    <p class="para" data-i="34">"What's his name again? Howard, isn't it?"</p>
+    <p class="zh">"他叫什么来着？霍华德，是吧？"</p>
+    <p class="para" data-i="35">"Harry. Nasty, <b>common</b> name, if you ask me."</p>
+    <p class="zh">"哈利。要我说，这名字又难听又俗气。"</p>
+    <p class="para" data-i="36">"Oh, yes," said Mr. Dursley, his heart <b>sinking</b> horribly. "Yes, I quite agree."</p>
+    <p class="zh">"哦，对，"德思礼先生说，心猛地往下沉。"对，我完全同意。"</p>
+    <p class="para" data-i="37">He didn't say another word on the subject as they went upstairs to bed. While Mrs. Dursley was in the bathroom, Mr. Dursley <b>crept</b> to the bedroom window and <b>peered</b> down into the front garden. The cat was still there. It was staring down Privet Drive <b>as though</b> it were waiting for something.</p>
+    <p class="zh">两人上楼睡觉时，他再没提这个话题。趁德思礼太太在浴室，德思礼先生蹑手蹑脚走到卧室窗边，探头往下看前花园。那只猫还在那儿。它盯着女贞路那头，仿佛在等什么。</p></div>
+  <details class="vocabbox">
+    <summary>本节生词 · 13</summary>
+    <div class="chips"><button class="chip" data-a="audio/words/100.mp3"><b>clear one's throat</b><i>清嗓子（多表示紧张或要开口）</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/101.mp3"><b>sharply</b><i>尖刻地；严厉地 （也指"急剧地"）</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/102.mp3"><b>mumble</b><i>含糊不清地说；嘟囔</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/103.mp3"><b>snap</b><i>（没好气地）顶嘴、厉声说</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/104.mp3"><b>sip</b><i>小口喝；抿</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/105.mp3"><b>pursed lips</b><i>噘起的嘴唇（表示不悦、隐忍）</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/106.mp3"><b>casually</b><i>若无其事地；随意地</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/107.mp3"><b>stiffly</b><i>生硬地；僵硬地</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/108.mp3"><b>common</b><i>粗俗的；低档次的 （熟义"普通的、共同的"）</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/109.mp3"><b>one's heart sinks</b><i>心猛地一沉；顿时失望</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/110.mp3"><b>creep</b><i>蹑手蹑脚地走；悄悄移动 （crept 是过去式）</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/111.mp3"><b>peer</b><i>（费力地）凝视、盯着看</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/112.mp3"><b>as though</b><i>好像；仿佛</i><span class="mini">🔊</span></button></div>
+  </details>
+</section>
+<section class="sec" id="r8">
+  <header class="sechead">
+    <div class="num">08</div>
+    <h2>The Cat on the Wall at Midnight</h2>
+    <div class="zhtitle">午夜街角的守望</div>
+    <div class="secbar">
+      <button class="playall" data-sec="8">▶ 朗读本节</button>
+      <span class="meta">5 段 · 1:31</span>
+    </div>
+  </header>
+  <div class="prose">
+    <p class="para" data-i="38">The Dursleys got into bed. Mrs. Dursley fell asleep quickly but Mr. Dursley lay awake, <b>turning it all over in his mind</b>. His last, <b>comforting</b> thought before he fell asleep was that even if the Potters were involved, there was no reason for them to come near him and Mrs. Dursley. The Potters knew very well what he and Petunia thought about them and their kind… He couldn't see how he and Petunia could get <b>mixed up</b> in anything that might be going on — he yawned and turned over — it couldn't <b>affect</b> them…</p>
+    <p class="zh">德思礼夫妇上了床。德思礼太太很快睡着了，德思礼先生却睁眼躺着，把这一切在脑子里翻来覆去地过。入睡前最后一个让他安心的念头是：就算波特家真牵扯进去了，他们也没有理由跑到他和妻子跟前来。波特夫妇很清楚他和佩妮怎么看他们、怎么看他们那类人……他想不出自己和佩妮怎么可能被卷进正在发生的什么事里——他打了个哈欠，翻了个身——这事不可能影响到他们……</p>
+    <p class="para" data-i="39">How very wrong he was.</p>
+    <p class="zh">他可真是错得离谱。</p>
+    <p class="para" data-i="40">Mr. Dursley might have been <b>drifting into</b> an uneasy sleep, but the cat on the wall outside was showing no sign of sleepiness. It was sitting as still as a <b>statue</b>, its eyes <b>fixed unblinkingly</b> on the far corner of Privet Drive. It didn't so much as <b>quiver</b> when a car door <b>slammed</b> on the next street, nor when two owls swooped overhead. In fact, it was nearly midnight before the cat moved at all.</p>
+    <p class="zh">德思礼先生或许正渐渐滑进一场不安稳的梦里，可墙外那只猫却毫无睡意。它像一尊雕像般纹丝不动，两眼一眨不眨地锁着女贞路另一头的街角。隔壁街上有车门"砰"地关上，它没颤一下；两只猫头鹰从头顶俯冲而过，它也没颤一下。事实上，快到午夜时，那只猫才头一次动。</p>
+    <p class="para" data-i="41">A man appeared on the corner the cat had been watching, appeared so suddenly and silently you'd have thought he'd just <b>popped out of the ground</b>. The cat's tail <b>twitched</b> and its eyes <b>narrowed</b>.</p>
+    <p class="zh">一个男人出现在猫一直盯着的那处街角。他出现得那么突然、那么悄无声息，简直像是从地里冒出来的。猫的尾巴抽动了一下，眼睛眯了起来。</p>
+    <p class="para" data-i="42">Nothing like this man had ever been seen on Privet Drive. He was tall, thin, and very old, judging by the silver of his hair and beard, which were both long enough to <b>tuck into</b> his belt. He was wearing long <b>robes</b>, a purple cloak that swept the ground, and high-heeled, <b>buckled</b> boots. His blue eyes were light, bright, and sparkling behind half-moon <b>spectacles</b> and his nose was very long and <b>crooked</b>, as though it had been broken at least twice. This man's name was Albus Dumbledore.</p>
+    <p class="zh">女贞路上从没见过这样的人。他又高又瘦，年纪很大——看那头银白的头发和胡子就知道，二者都长到可以塞进腰带里。他穿着长袍，披一件拖地的紫色斗篷，脚上是带扣的高跟靴。他的蓝眼睛在半月形眼镜后面颜色很浅、明亮而闪着光；鼻子又长又弯，仿佛至少断过两次。这人名叫阿不思·邓布利多。</p></div>
+  <details class="vocabbox">
+    <summary>本节生词 · 18</summary>
+    <div class="chips"><button class="chip" data-a="audio/words/113.mp3"><b>turn sth over in one's mind</b><i>在脑子里反复琢磨</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/114.mp3"><b>comforting</b><i>令人安慰的；使人宽心的</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/115.mp3"><b>get mixed up in</b><i>被卷入（麻烦事）</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/116.mp3"><b>affect</b><i>影响；对……起作用</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/117.mp3"><b>drift into</b><i>不知不觉地进入（某种状态）；漂入</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/118.mp3"><b>statue</b><i>雕像；塑像</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/119.mp3"><b>fix one's eyes on</b><i>把目光锁定在……；凝视</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/120.mp3"><b>unblinkingly</b><i>一眨不眨地；目不转睛地</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/121.mp3"><b>quiver</b><i>微微颤动；抖一下</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/122.mp3"><b>slam</b><i>砰地关上；猛摔</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/123.mp3"><b>twitch</b><i>（肌肉、尾巴）抽动；抽搐</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/124.mp3"><b>narrow</b><i>（眼睛）眯起 （adj. 狭窄的）</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/125.mp3"><b>pop out of</b><i>（突然）从……冒出来</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/126.mp3"><b>robe</b><i>长袍；（常复数）礼服</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/127.mp3"><b>buckled</b><i>带扣的；扣上的</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/128.mp3"><b>spectacles</b><i>眼镜（英式，较正式）</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/129.mp3"><b>crooked</b><i>弯曲的；歪的</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/130.mp3"><b>tuck into</b><i>把……塞进；（口语）大口吃</i><span class="mini">🔊</span></button></div>
+  </details>
+</section>
+<section class="sec" id="r9">
+  <header class="sechead">
+    <div class="num">09</div>
+    <h2>The Put-Outer</h2>
+    <div class="zhtitle">邓布利多登场 · 熄灯器</div>
+    <div class="secbar">
+      <button class="playall" data-sec="9">▶ 朗读本节</button>
+      <span class="meta">5 段 · 1:32</span>
+    </div>
+  </header>
+  <div class="prose">
+    <p class="para" data-i="43">Albus Dumbledore didn't seem to realize that he had just arrived in a street where everything from his name to his boots was unwelcome. He was busy <b>rummaging</b> in his cloak, looking for something. But he did seem to realize he was being watched, because he looked up suddenly at the cat, which was still staring at him from the other end of the street. For some reason, the sight of the cat seemed to <b>amuse</b> him. He <b>chuckled</b> and <b>muttered</b>, "I should have known."</p>
+    <p class="zh">阿不思·邓布利多似乎没意识到，自己刚踏上的这条街，从名字到靴子都容不下他。他正忙着在斗篷里翻找什么。但他显然察觉到有人在看他——他突然抬头望向那只猫，猫还在街另一头盯着他。不知为什么，看见这只猫似乎让他觉得好笑。他轻声笑着嘟囔："我早该想到的。"</p>
+    <p class="para" data-i="44">He found what he was looking for in his inside pocket. It seemed to be a silver <b>cigarette lighter</b>. He <b>flicked</b> it open, held it up in the air, and <b>clicked</b> it. The nearest street lamp went out with a little <b>pop</b>. He clicked it again — the next lamp <b>flickered</b> into darkness. Twelve times he clicked the <b>Put-Outer</b>, until the only lights left on the whole street were two tiny <b>pinpricks</b> in the distance, which were the eyes of the cat watching him. If anyone looked out of their window now, even <b>beady-eyed</b> Mrs. Dursley, they wouldn't be able to see anything that was happening down on the <b>pavement</b>.</p>
+    <p class="zh">他在内袋里找到了要找的东西，看起来像个银色的打火机。他"啪"地掀开盖子，举向空中，按了一下。最近的那盏街灯"噗"的一声灭了。他又按——下一盏灯闪了闪，陷入黑暗。他按了十二下"熄灯器"，直到整条街上只剩远处两个针尖大的亮点，那是猫的眼睛在看着他。此刻就算有人往窗外看——哪怕是眼睛尖得跟珠子似的德思礼太太——也看不见人行道上发生的任何事。</p>
+    <p class="para" data-i="45">Dumbledore <b>slipped</b> the Put-Outer back inside his cloak and set off down the street toward number four, where he sat down on the wall next to the cat. He didn't look at it, but after a moment he spoke to it.</p>
+    <p class="zh">邓布利多把熄灯器塞回斗篷里，沿街朝四号走去，在猫旁边的矮墙上坐下。他没看它，可过了一会儿，他开口跟它说起话来。</p>
+    <p class="para" data-i="46">"Fancy seeing you here, Professor McGonagall."</p>
+    <p class="zh">"真巧啊，在这儿见到你，麦格教授。"</p>
+    <p class="para" data-i="47">He turned to smile at the tabby, but it had gone. Instead he was smiling at a rather <b>severe-looking</b> woman who was wearing square glasses exactly the shape of the markings the cat had had around its eyes. She, too, was wearing a cloak, an emerald one. Her black hair was drawn into a tight <b>bun</b>. She looked distinctly <b>ruffled</b>.</p>
+    <p class="zh">他转头想对虎斑猫微笑，猫却不见了。他笑的对象变成了一位神情相当严厉的女士，戴着一副方形眼镜——那形状，正好是猫眼周斑纹的形状。她也披着斗篷，翡翠绿的。黑发紧紧挽成一个发髻。她整个人明显有些慌乱。</p></div>
+  <details class="vocabbox">
+    <summary>本节生词 · 16</summary>
+    <div class="chips"><button class="chip" data-a="audio/words/131.mp3"><b>rummage</b><i>翻找；乱翻</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/132.mp3"><b>amuse</b><i>使觉得好笑；逗乐</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/133.mp3"><b>chuckle</b><i>低声轻笑；暗自笑</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/134.mp3"><b>cigarette lighter</b><i>打火机</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/135.mp3"><b>flick</b><i>轻弹；轻甩（手腕一抖）</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/136.mp3"><b>click</b><i>发出"咔哒"声；点击</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/137.mp3"><b>pop</b><i>"噗/啪"的一声；爆开</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/138.mp3"><b>flicker</b><i>（光）闪烁、忽明忽暗</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/139.mp3"><b>Put-Outer</b><i>熄灯器（作者自造的道具名）</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/140.mp3"><b>pinprick</b><i>针尖大的点；针刺般的小孔</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/141.mp3"><b>beady-eyed</b><i>眼睛小而亮的；目光锐利的</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/142.mp3"><b>pavement</b><i>人行道（英式）</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/143.mp3"><b>slip</b><i>悄悄塞进；滑落；溜走</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/144.mp3"><b>severe-looking</b><i>神情严厉的；面相严肃的</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/145.mp3"><b>bun</b><i>圆发髻 （第 02 节里是"小圆面包"）</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/146.mp3"><b>ruffled</b><i>心神不宁的；被惹恼的 （本义"起皱的"）</i><span class="mini">🔊</span></button></div>
+  </details>
+</section>
+<section class="sec" id="r10">
+  <header class="sechead">
+    <div class="num">10</div>
+    <h2>Lemon Drops and a Name</h2>
+    <div class="zhtitle">柠檬糖，以及那个名字</div>
+    <div class="secbar">
+      <button class="playall" data-sec="10">▶ 朗读本节</button>
+      <span class="meta">15 段 · 2:12</span>
+    </div>
+  </header>
+  <div class="prose">
+    <p class="para" data-i="48">"How did you know it was me?" she asked.</p>
+    <p class="zh">"你怎么知道是我？"她问。</p>
+    <p class="para" data-i="49">"My dear Professor, I've never seen a cat sit so stiffly."</p>
+    <p class="zh">"亲爱的教授，我从没见哪只猫坐得这么僵硬。"</p>
+    <p class="para" data-i="50">"You'd be stiff if you'd been sitting on a brick wall all day," said Professor McGonagall.</p>
+    <p class="zh">"让你在砖墙上坐一整天，你也会僵的，"麦格教授说。</p>
+    <p class="para" data-i="51">"All day? When you could have been celebrating? I must have passed a dozen <b>feasts</b> and parties on my way here."</p>
+    <p class="zh">"一整天？你本可以去庆祝的呀？我来的一路上，起码经过了十几个宴会和派对。"</p>
+    <p class="para" data-i="52">Professor McGonagall <b>sniffed</b> angrily.</p>
+    <p class="zh">麦格教授气呼呼地哼了一声。</p>
+    <p class="para" data-i="53">"Oh yes, everyone's celebrating, all right," she said <b>impatiently</b>. "You'd think they'd be a bit more careful, but no — even the Muggles have noticed something's going on. It was on their news." She <b>jerked</b> her head back at the Dursleys' dark living-room window. "I heard it. <b>Flocks</b> of owls… shooting stars… Well, they're not completely stupid. They were <b>bound to</b> notice something. Shooting stars down in Kent — I'll <b>bet</b> that was Dedalus Diggle. He never had much sense."</p>
+    <p class="zh">"是啊，大家都在庆祝，一点没错，"她不耐烦地说，"你大概以为他们会小心一点，可偏偏没有——连麻瓜都察觉到出事了，都上了他们的新闻。"她朝德思礼家黑着灯的客厅窗户一扬头。"我听到了。成群的猫头鹰……流星……唉，他们又不是完全蠢。总会注意到点什么。肯特郡那边下流星——我敢打赌是德达洛·迪歌干的。他从来没什么脑子。"</p>
+    <p class="para" data-i="54">"You can't blame them," said Dumbledore gently. "We've had <b>precious little</b> to celebrate for eleven years."</p>
+    <p class="zh">"这不能怪他们，"邓布利多温和地说，"十一年了，我们几乎没有值得庆祝的事。"</p>
+    <p class="para" data-i="55">"I know that," said Professor McGonagall <b>irritably</b>. "But that's no reason to <b>lose our heads</b>. People are being <b>downright</b> careless, out on the streets in broad daylight, not even dressed in Muggle clothes, <b>swapping rumors</b>."</p>
+    <p class="zh">"这我知道，"麦格教授烦躁地说，"但这不是我们昏了头的理由。人们简直粗心到了极点，大白天上街，连麻瓜的衣服都不穿，到处交换谣言。"</p>
+    <p class="para" data-i="56">"It certainly seems so," said Dumbledore. "We have much to be thankful for. Would you care for a <b>lemon drop</b>?"</p>
+    <p class="zh">"看来确实如此，"邓布利多说，"我们有太多值得感激的。你要来颗柠檬糖吗？"</p>
+    <p class="para" data-i="57">"No, thank you," said Professor McGonagall coldly, as though she didn't think this was the moment for lemon drops. "As I say, even if You-Know-Who has gone —"</p>
+    <p class="zh">"不了，谢谢，"麦格教授冷冷地说，仿佛觉得现在不是吃柠檬糖的时候。"就像我说的，就算神秘人已经不在了——"</p>
+    <p class="para" data-i="58">"My dear Professor, surely a <b>sensible</b> person like yourself can call him by his name? All this 'You-Know-Who' nonsense — for eleven years I have been trying to persuade people to call him by his proper name: Voldemort." Professor McGonagall <b>flinched</b>, but Dumbledore, who was unsticking two lemon drops, seemed not to notice.</p>
+    <p class="zh">"亲爱的教授，像你这样明事理的人，总该能叫出他的名字吧？一口一个'神秘人'——十一年了，我一直在劝大家用他本来的名字称呼他：伏地魔。"麦格教授畏缩了一下，可正在剥两颗粘在一起的柠檬糖的邓布利多似乎没看见。</p>
+    <p class="para" data-i="59">"I know you haven't," said Professor McGonagall, sounding half <b>exasperated</b>, half <b>admiring</b>. "But you're different. Everyone knows you're the only one You-Know- oh, all right, Voldemort, was frightened of."</p>
+    <p class="zh">"我知道你不怕，"麦格教授说，语气一半是恼火，一半是钦佩。"可你不一样。大家都知道，你是唯一一个……神秘——好吧，伏地魔——都怕的人。"</p>
+    <p class="para" data-i="60">"You <b>flatter</b> me," said Dumbledore calmly. "Voldemort had powers I will never have."</p>
+    <p class="zh">"你太抬举我了，"邓布利多平静地说，"伏地魔有的是我没有的本事。"</p>
+    <p class="para" data-i="61">"Only because you're too — well — <b>noble</b> to use them."</p>
+    <p class="zh">"那只是因为你太高——嗯——高尚，不屑于用那些本事罢了。"</p>
+    <p class="para" data-i="62">"It's lucky it's dark. I haven't <b>blushed</b> so much since Madam Pomfrey told me she liked my new <b>earmuffs</b>."</p>
+    <p class="zh">"幸好天黑。自从庞弗雷女士说她喜欢我新买的耳罩以来，我还没这么脸红过。"</p></div>
+  <details class="vocabbox">
+    <summary>本节生词 · 20</summary>
+    <div class="chips"><button class="chip" data-a="audio/words/147.mp3"><b>feast</b><i>盛宴；宴会</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/148.mp3"><b>sniff</b><i>吸鼻子； 哼一声（表示不满）</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/149.mp3"><b>impatiently</b><i>不耐烦地</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/150.mp3"><b>flock</b><i>（鸟、羊的）一群；成群结队</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/151.mp3"><b>be bound to do</b><i>必然会；一定会</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/152.mp3"><b>bet</b><i>打赌；敢说</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/153.mp3"><b>precious little</b><i>少得可怜的一点；几乎没有</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/154.mp3"><b>irritably</b><i>烦躁地；恼火地</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/155.mp3"><b>lose one's head</b><i>失去理智；惊慌失措</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/156.mp3"><b>downright</b><i>完全地；彻头彻尾地</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/157.mp3"><b>swap rumors</b><i>交换谣言；互相传闲话</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/158.mp3"><b>lemon drop</b><i>柠檬糖（硬糖）</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/159.mp3"><b>sensible</b><i>明智的；通情达理的</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/160.mp3"><b>flinch</b><i>（因害怕或疼痛）畏缩、缩一下</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/161.mp3"><b>exasperated</b><i>恼火的；被气得没脾气的</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/162.mp3"><b>admiring</b><i>钦佩的；赞赏的</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/163.mp3"><b>flatter</b><i>恭维；使显得更美</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/164.mp3"><b>noble</b><i>高尚的；崇高的；（也指）贵族的</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/165.mp3"><b>blush</b><i>脸红（因害羞、尴尬）</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/166.mp3"><b>earmuffs</b><i>耳罩；护耳</i><span class="mini">🔊</span></button></div>
+  </details>
+</section>
+<section class="sec" id="r11">
+  <header class="sechead">
+    <div class="num">11</div>
+    <h2>The Rumor of That Night</h2>
+    <div class="zhtitle">那晚的传言</div>
+    <div class="secbar">
+      <button class="playall" data-sec="11">▶ 朗读本节</button>
+      <span class="meta">11 段 · 2:09</span>
+    </div>
+  </header>
+  <div class="prose">
+    <p class="para" data-i="63">Professor McGonagall shot a sharp look at Dumbledore and said, "The owls are nothing next to the rumors that are flying around. You know what everyone's saying? About why he's disappeared? About what finally stopped him?"</p>
+    <p class="zh">麦格教授锐利地瞥了邓布利多一眼，说："跟满天飞的谣言比起来，猫头鹰根本算不了什么。你知道大家都在传什么吗？传他为什么消失？传到底是什么终于拦住了他？"</p>
+    <p class="para" data-i="64">It seemed that Professor McGonagall had reached the point she was most <b>anxious</b> to discuss, the real reason she had been waiting on a cold, hard wall all day, for neither as a cat nor as a woman had she fixed Dumbledore with such a <b>piercing</b> stare as she did now. It was plain that whatever "everyone" was saying, she was not going to believe it until Dumbledore told her it was true. Dumbledore, however, was choosing another lemon drop and did not answer.</p>
+    <p class="zh">看来麦格教授终于说到了她最急于讨论的那一点，也正是她在又冷又硬的砖墙上守了一整天的真正原因——无论作为猫还是作为女人，她都没有像此刻这样，用如此锐利的目光钉住邓布利多。很明显，不管"大家"在说什么，只要邓布利多不亲口证实，她就绝不轻信。可邓布利多偏偏在挑另一颗柠檬糖，没有回答。</p>
+    <p class="para" data-i="65">"What they're saying," she <b>pressed on</b>, "is that last night Voldemort turned up in Godric's Hollow. He went to find the Potters. The rumor is that Lily and James Potter are — are — that they're — dead."</p>
+    <p class="zh">"大家都在说，"她紧追不舍，"昨晚伏地魔出现在了戈德里克山谷。他是去找波特一家的。传言说莉莉和詹姆斯·波特已经——已经——死了。"</p>
+    <p class="para" data-i="66">Dumbledore <b>bowed</b> his head. Professor McGonagall <b>gasped</b>.</p>
+    <p class="zh">邓布利多低下了头。麦格教授倒吸一口冷气。</p>
+    <p class="para" data-i="67">"Lily and James… I can't believe it… I didn't want to believe it… Oh, Albus…"</p>
+    <p class="zh">"莉莉和詹姆斯……我不信……我不想信……哦，阿不思……"</p>
+    <p class="para" data-i="68">Dumbledore reached out and <b>patted</b> her on the shoulder. "I know… I know…" he said heavily.</p>
+    <p class="zh">邓布利多伸出手，拍了拍她的肩。"我知道……我知道……"他沉重地说。</p>
+    <p class="para" data-i="69">Professor McGonagall's voice <b>trembled</b> as she went on. "That's not all. They're saying he tried to kill the Potters' son, Harry. But — he couldn't. He couldn't kill that little boy. No one knows why, or how, but they're saying that when he couldn't kill Harry Potter, Voldemort's power somehow broke — and that's why he's gone."</p>
+    <p class="zh">麦格教授声音发着抖，继续说："还不止这些。他们说，他试图杀掉波特家的儿子，哈利。可是——他没做到。他杀不了那个小男孩。没人知道为什么，也没人知道是怎么回事，但大家都说，当他杀不了哈利·波特时，伏地魔的力量不知怎地就断了——这就是他消失的原因。"</p>
+    <p class="para" data-i="70">Dumbledore nodded <b>glumly</b>.</p>
+    <p class="zh">邓布利多闷闷地点了点头。</p>
+    <p class="para" data-i="71">"It's — it's true?" <b>faltered</b> Professor McGonagall. "After all he's done… all the people he's killed… he couldn't kill a little boy? It's just <b>astounding</b>… of all the things to stop him… but how in the name of heaven did Harry survive?"</p>
+    <p class="zh">"这——这是真的？"麦格教授支吾着问。"他做过那么多事……杀了那么多人……却杀不了一个小男孩？简直骇人听闻……那么多东西里头，偏偏是这个拦住了他……可哈利到底是怎么活下来的？"</p>
+    <p class="para" data-i="72">"We can only guess," said Dumbledore. "We may never know."</p>
+    <p class="zh">"我们只能猜，"邓布利多说，"也许永远都不会知道。"</p>
+    <p class="para" data-i="73">Professor McGonagall pulled out a <b>lace</b> handkerchief and <b>dabbed</b> at her eyes beneath her spectacles. Dumbledore gave a great sniff as he took a golden watch from his pocket and examined it. It was a very <b>odd</b> watch. It had twelve hands but no numbers; instead, little planets were moving around the edge. It must have made sense to Dumbledore, though, because he put it back in his pocket and said, "Hagrid's late. I suppose it was he who told you I'd be here, by the way?"</p>
+    <p class="zh">麦格教授掏出一块蕾丝手帕，在眼镜底下轻轻按了按眼睛。邓布利多大声吸了吸鼻子，从口袋里取出一块金表仔细端详。那是块很古怪的表：十二根指针，却没有数字；边缘上有些小行星在转。不过这表对邓布利多显然有意义，因为他把它放回口袋，说："海格来晚了。顺便问一句，我猜是他告诉你我会来这儿的吧？"</p></div>
+  <details class="vocabbox">
+    <summary>本节生词 · 13</summary>
+    <div class="chips"><button class="chip" data-a="audio/words/167.mp3"><b>anxious</b><i>焦急的；渴望的</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/168.mp3"><b>piercing</b><i>（目光、声音）锐利的、刺耳的</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/169.mp3"><b>press on</b><i>（不顾困难）继续推进；追问下去</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/170.mp3"><b>bow</b><i>低下头；鞠躬</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/171.mp3"><b>gasp</b><i>（因惊讶、恐惧）倒吸一口气</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/172.mp3"><b>pat</b><i>轻拍（表示安慰、赞许）</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/173.mp3"><b>tremble</b><i>（声音、身体）颤抖</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/174.mp3"><b>glumly</b><i>闷闷不乐地；阴沉地</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/175.mp3"><b>falter</b><i>支支吾吾；说话打磕巴；（力量）衰退</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/176.mp3"><b>astounding</b><i>令人震惊的；骇人的</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/177.mp3"><b>lace</b><i>蕾丝；花边 （也指鞋带）</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/178.mp3"><b>dab</b><i>轻按、轻擦（不掉色地擦）</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/179.mp3"><b>odd</b><i>古怪的；奇怪的；（也指）奇数的</i><span class="mini">🔊</span></button></div>
+  </details>
+</section>
+<section class="sec" id="r12">
+  <header class="sechead">
+    <div class="num">12</div>
+    <h2>Hagrid, the Motorcycle and the Scar</h2>
+    <div class="zhtitle">海格、摩托车与那道伤疤</div>
+    <div class="secbar">
+      <button class="playall" data-sec="12">▶ 朗读本节</button>
+      <span class="meta">22 段 · 3:40</span>
+    </div>
+  </header>
+  <div class="prose">
+    <p class="para" data-i="74">"Yes," said Professor McGonagall. "And I don't suppose you're going to tell me why you're here, of all places?"</p>
+    <p class="zh">"是的，"麦格教授说，"我猜你也不打算告诉我，为什么偏偏要来这个地方吧？"</p>
+    <p class="para" data-i="75">"I've come to bring Harry to his aunt and uncle. They're the only family he has left now."</p>
+    <p class="zh">"我来把哈利送到他姨妈和姨父家。他们是他如今仅剩的亲人了。"</p>
+    <p class="para" data-i="76">"You don't mean — you can't mean the people who live here?" cried Professor McGonagall, jumping to her feet and pointing at number four. "Dumbledore — you can't. I've been watching them all day. You couldn't find two people who are less like us. And they've got this son — I saw him kicking his mother all the way up the street, screaming for sweets. Harry Potter come and live here!"</p>
+    <p class="zh">"你不是说——你不可能是说住在这儿的这家人吧？"麦格教授叫起来，一跃而起，指着四号。"邓布利多——你不能。我一整天都在观察他们。你找不出比他们更不像我们的人了。他们还有个儿子——我看见他一路踢着他妈妈，尖叫着要糖吃。哈利·波特要住到这儿来！"</p>
+    <p class="para" data-i="77">"It's the best place for him," said Dumbledore <b>firmly</b>. "His aunt and uncle will be able to explain everything to him when he's older. I've written them a letter."</p>
+    <p class="zh">"这是对他最好的安排，"邓布利多坚定地说，"等他大一些，姨妈姨父能向他解释一切。我已经给他们写了信。"</p>
+    <p class="para" data-i="78">"A letter?" repeated Professor McGonagall <b>faintly</b>, sitting back down on the wall. "Really, Dumbledore, you think you can explain all this in a letter? These people will never understand him! He'll be famous — a <b>legend</b> — I wouldn't be surprised if today was known as Harry Potter Day in the future — there will be books written about Harry — every child in our world will know his name!"</p>
+    <p class="zh">"一封信？"麦格教授有气无力地重复了一遍，又坐回墙上。"说真的，邓布利多，你觉得这些事能在一封信里解释清楚？这些人永远不会理解他！他会出名——成为传奇——要是将来今天被定为'哈利·波特日'，我都不意外——会有专门写哈利的书——我们世界里每个孩子都会知道他的名字！"</p>
+    <p class="para" data-i="79">"Exactly," said Dumbledore, looking very seriously over the top of his half-moon glasses. "It would be enough to <b>turn any boy's head</b>. Famous before he can walk and talk! Famous for something he won't even remember! Can't you see how much better off he'll be, growing up away from all that until he's ready to take it?"</p>
+    <p class="zh">"正是如此，"邓布利多说着，从半月形眼镜上方严肃地看着她，"这足以让任何一个男孩冲昏头脑。还没会走路说话就出名了！为一件他自己都不会记得的事出名！你难道看不出来吗——在这一切之外长大，直到他有能力承受，对他要好得多。"</p>
+    <p class="para" data-i="80">Professor McGonagall opened her mouth, changed her mind, <b>swallowed</b>, and then said, "Yes — yes, you're right, of course. But how is the boy getting here, Dumbledore?" She eyed his cloak suddenly as though she thought he might be hiding Harry underneath it.</p>
+    <p class="zh">麦格教授张了张嘴，改了主意，咽了口口水，然后说："是——是的，你说得当然对。可这孩子怎么过来呢，邓布利多？"她忽然盯住他的斗篷，像是怀疑他把哈利藏在里头。</p>
+    <p class="para" data-i="81">"Hagrid's bringing him."</p>
+    <p class="zh">"海格带他来。"</p>
+    <p class="para" data-i="82">"You think it — wise — to trust Hagrid with something as important as this?"</p>
+    <p class="zh">"你觉得——把这么重要的事托付给海格——明智吗？"</p>
+    <p class="para" data-i="83">"I would trust Hagrid with my life," said Dumbledore.</p>
+    <p class="zh">"我愿意把命交给海格，"邓布利多说。</p>
+    <p class="para" data-i="84">"I'm not saying his heart isn't in the right place," said Professor McGonagall <b>grudgingly</b>, "but you can't pretend he's not <b>careless</b>. He does <b>tend to</b> — what was that?"</p>
+    <p class="zh">"我不是说他心术不正，"麦格教授不情愿地说，"可你不能假装他不粗心。他确实容易——那是什么声音？"</p>
+    <p class="para" data-i="85">A low <b>rumbling</b> sound had broken the silence around them. It grew steadily louder as they looked up and down the street for some sign of a <b>headlight</b>; it <b>swelled</b> to a <b>roar</b> as they both looked up at the sky — and a huge motorcycle fell out of the air and landed on the road in front of them.</p>
+    <p class="zh">一阵低沉的隆隆声打破了两人周围的寂静。声音稳定地越来越响，他们朝街道两头张望，想找到车灯的迹象；等两人都抬头望天时，声音已涨成轰鸣——一辆巨大的摩托车从空中掉下来，落在他们面前的路面上。</p>
+    <p class="para" data-i="86">If the motorcycle was huge, it was nothing to the man sitting <b>astride</b> it. He was almost twice as tall as a normal man and at least five times as wide. He looked simply too big to be allowed, and so wild — long <b>tangles</b> of <b>bushy</b> black hair and beard hid most of his face, he had hands the size of <b>trash can lids</b>, and his feet in their leather boots were like baby <b>dolphins</b>. In his vast, <b>muscular</b> arms he was holding a <b>bundle</b> of blankets.</p>
+    <p class="zh">要说这摩托车算巨大，那骑在它上面的男人就根本不算什么了。他几乎有常人的两倍高，至少五倍宽。他看上去大得简直不该被允许存在，而且野得吓人——长而蓬乱的黑色头发和胡子遮住了大半个脸，他的手有垃圾桶盖那么大，皮靴里的脚像小海豚。他用粗壮多肉的手臂抱着一捆毯子。</p>
+    <p class="para" data-i="87">"Hagrid," said Dumbledore, sounding <b>relieved</b>. "At last. And where did you get that motorcycle?"</p>
+    <p class="zh">"海格，"邓布利多说，听上去松了口气，"总算来了。你这摩托车哪儿弄来的？"</p>
+    <p class="para" data-i="88">"Borrowed it, Professor Dumbledore, sir," said the giant, climbing carefully off the motorcycle as he spoke. "Young Sirius Black lent it to me. I've got him, sir."</p>
+    <p class="zh">"借的，邓布利多教授，先生，"巨人一边说一边小心地从车上下来，"年轻的西里斯·布莱克借给我的。我接到他了，先生。"</p>
+    <p class="para" data-i="89">"No problems, were there?"</p>
+    <p class="zh">"没出什么岔子吧？"</p>
+    <p class="para" data-i="90">"No, sir — house was almost destroyed, but I got him out all right before the Muggles started <b>swarmin'</b> around. He fell asleep as we was <b>flyin'</b> over Bristol."</p>
+    <p class="zh">"没有，先生——房子几乎全毁了，不过我在麻瓜们围过来之前就把他救出来了。我们飞过布里斯托尔的时候他睡着了。"</p>
+    <p class="para" data-i="91">Dumbledore and Professor McGonagall <b>bent</b> forward over the bundle of blankets. Inside, just visible, was a baby boy, fast asleep. Under a <b>tuft</b> of <b>jet-black</b> hair over his forehead they could see a <b>curiously</b> shaped cut, like a <b>bolt of lightning</b>.</p>
+    <p class="zh">邓布利多和麦格教授俯身去看那捆毯子。里面隐约可见一个男婴，睡得正香。他额前一撮乌黑的头发下面，有一道形状古怪的伤口，像一道闪电。</p>
+    <p class="para" data-i="92">"Is that where — ?" whispered Professor McGonagall.</p>
+    <p class="zh">"就是那儿——？"麦格教授低声问。</p>
+    <p class="para" data-i="93">"Yes," said Dumbledore. "He'll have that <b>scar</b> forever."</p>
+    <p class="zh">"是的，"邓布利多说，"这道疤他会带一辈子。"</p>
+    <p class="para" data-i="94">"Couldn't you do something about it, Dumbledore?"</p>
+    <p class="zh">"你不能处理一下吗，邓布利多？"</p>
+    <p class="para" data-i="95">"Even if I could, I wouldn't. Scars can <b>come in handy</b>. I have one myself above my left knee that is a perfect map of the London Underground. Well — give him here, Hagrid — we'd better <b>get this over with</b>."</p>
+    <p class="zh">"就算能，我也不会。伤疤有时候能派上用场。我自己左膝上方就有一道，是一幅完美的伦敦地铁图。好了——把他给我，海格——我们还是把这事了结了吧。"</p></div>
+  <details class="vocabbox">
+    <summary>本节生词 · 29</summary>
+    <div class="chips"><button class="chip" data-a="audio/words/180.mp3"><b>firmly</b><i>坚定地；坚决地</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/181.mp3"><b>faintly</b><i>微弱地；无力地</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/182.mp3"><b>legend</b><i>传奇；传说；传奇人物</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/183.mp3"><b>turn sb's head</b><i>使某人飘飘然、冲昏头脑</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/184.mp3"><b>swallow</b><i>咽下；吞；（紧张时）咽口水</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/185.mp3"><b>grudgingly</b><i>不情愿地；勉强地</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/186.mp3"><b>careless</b><i>粗心的；不小心的</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/187.mp3"><b>tend to do</b><i>往往会；倾向于</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/188.mp3"><b>rumble</b><i>发出低沉的隆隆声</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/189.mp3"><b>headlight</b><i>（车、飞机的）前灯、头灯</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/190.mp3"><b>swell</b><i>（声音、数量）增强、膨胀</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/191.mp3"><b>roar</b><i>轰鸣；咆哮</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/192.mp3"><b>astride</b><i>跨坐在……上</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/193.mp3"><b>tangle</b><i>缠结的一团；纠结</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/194.mp3"><b>bushy</b><i>浓密的（毛发、灌木）</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/195.mp3"><b>trash can lid</b><i>垃圾桶盖</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/196.mp3"><b>dolphin</b><i>海豚</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/197.mp3"><b>muscular</b><i>肌肉发达的；强壮的</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/198.mp3"><b>bundle</b><i>一捆；一包</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/199.mp3"><b>relieved</b><i>宽慰的；松了口气的</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/200.mp3"><b>swarm</b><i>蜂拥；成群移动</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/201.mp3"><b>bend</b><i>弯腰；俯身 （bent 是过去式）</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/202.mp3"><b>tuft</b><i>（一）撮（头发、草）</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/203.mp3"><b>jet-black</b><i>乌黑的；黑玉般的</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/204.mp3"><b>curiously</b><i>奇怪地；好奇地</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/205.mp3"><b>a bolt of lightning</b><i>一道闪电</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/206.mp3"><b>scar</b><i>伤疤；疤痕</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/207.mp3"><b>come in handy</b><i>派得上用场</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/208.mp3"><b>get sth over with</b><i>把（不愉快的）事赶紧了结</i><span class="mini">🔊</span></button></div>
+  </details>
+</section>
+<section class="sec" id="r13">
+  <header class="sechead">
+    <div class="num">13</div>
+    <h2>Left on the Doorstep</h2>
+    <div class="zhtitle">放在门阶上的婴儿</div>
+    <div class="secbar">
+      <button class="playall" data-sec="13">▶ 朗读本节</button>
+      <span class="meta">12 段 · 2:51</span>
+    </div>
+  </header>
+  <div class="prose">
+    <p class="para" data-i="96">Dumbledore took Harry in his arms and turned toward the Dursleys' house.</p>
+    <p class="zh">邓布利多把哈利抱进怀里，转身朝德思礼家走去。</p>
+    <p class="para" data-i="97">"Could I — could I say good-bye to him, sir?" asked Hagrid. He bent his great, <b>shaggy</b> head over Harry and gave him what must have been a very <b>scratchy</b>, <b>whiskery</b> kiss. Then, suddenly, Hagrid let out a <b>howl</b> like a wounded dog.</p>
+    <p class="zh">"我能——我能跟他道个别吗，先生？"海格问。他低下那颗蓬乱的大脑袋凑近哈利，给了他一个想必又扎人、又满是胡茬的吻。紧接着，海格突然像条受伤的狗一样，发出一声长嚎。</p>
+    <p class="para" data-i="98">"Shhh!" <b>hissed</b> Professor McGonagall, "you'll wake the Muggles!"</p>
+    <p class="zh">"嘘！"麦格教授嘶声道，"你会把麻瓜吵醒的！"</p>
+    <p class="para" data-i="99">"S-s-sorry," <b>sobbed</b> Hagrid, taking out a large, <b>spotted</b> handkerchief and <b>burying his face</b> in it. "But I c-c-can't stand it — Lily an' James dead — an' poor little Harry off <b>ter</b> live with Muggles —"</p>
+    <p class="zh">"对、对、对不起，"海格抽泣着，掏出一块带圆点的大手帕，把脸埋了进去。"可我受、受不了——莉莉和詹姆斯死了——可怜的小哈利还要去跟麻瓜住——"</p>
+    <p class="para" data-i="100">"Yes, yes, it's all very sad, but <b>get a grip on yourself</b>, Hagrid, or we'll be found," Professor McGonagall whispered, patting Hagrid <b>gingerly</b> on the arm as Dumbledore stepped over the low garden wall and walked to the front door. He laid Harry gently on the <b>doorstep</b>, took a letter out of his cloak, <b>tucked</b> it inside Harry's blankets, and then came back to the other two. For a full minute the three of them stood and looked at the little bundle; Hagrid's shoulders shook, Professor McGonagall blinked furiously, and the <b>twinkling</b> light that usually shone from Dumbledore's eyes seemed to have gone out.</p>
+    <p class="zh">"好了好了，这确实很伤心，可你得控制住自己，海格，不然我们会被发现的，"麦格教授低声说，一边小心翼翼地拍拍他的手臂。邓布利多跨过矮矮的花园围墙，走向前门。他把哈利轻轻放在门阶上，从斗篷里取出一封信，塞进哈利的毯子里，然后回到另外两人身边。整整一分钟，三个人站在那里，看着那小小的襁褓；海格的肩膀在发抖，麦格教授拼命眨着眼，而邓布利多眼里惯有的那种闪烁的光，似乎熄灭了。</p>
+    <p class="para" data-i="101">"Well," said Dumbledore finally, "that's that. We've no business staying here. We may as well go and join the celebrations."</p>
+    <p class="zh">"好了，"邓布利多终于说，"就这样吧。我们没理由再待在这儿了。不如去参加庆祝吧。"</p>
+    <p class="para" data-i="102">"Yeah," said Hagrid in a very <b>muffled</b> voice, "I'd best get this bike away. G'night, Professor McGonagall — Professor Dumbledore, sir."</p>
+    <p class="zh">"嗯，"海格用闷闷的声音说，"我最好把这车弄走。晚安，麦格教授——邓布利多教授，先生。"</p>
+    <p class="para" data-i="103">Wiping his <b>streaming</b> eyes on his jacket sleeve, Hagrid <b>swung</b> himself onto the motorcycle and kicked the engine into life; with a roar it rose into the air and off into the night.</p>
+    <p class="zh">海格用夹克袖子擦着止不住的眼泪，翻身跨上摩托车，一脚把引擎踹着了；随着一声轰鸣，车子升上空中，飞进了夜色。</p>
+    <p class="para" data-i="104">"I shall see you soon, I expect, Professor McGonagall," said Dumbledore, nodding to her. Professor McGonagall <b>blew her nose</b> in reply.</p>
+    <p class="zh">"我想我们很快会再见的，麦格教授，"邓布利多说，朝她点了点头。麦格教授擤了擤鼻子，算是回答。</p>
+    <p class="para" data-i="105">Dumbledore turned and walked back down the street. On the corner he stopped and took out the silver Put-Outer. He clicked it once, and twelve balls of light sped back to their street lamps so that Privet Drive glowed suddenly orange and he could make out a tabby cat <b>slinking</b> around the corner at the other end of the street. He could just see the bundle of blankets on the step of number four.</p>
+    <p class="zh">邓布利多转身沿街往回走。到了街角，他停下，掏出那只银色的熄灯器。他按了一下，十二个光球飞回各自的街灯，女贞路顿时亮起一片橘色的光，他能辨认出街那头一只虎斑猫正悄悄绕过街角。他也勉强看得见四号门阶上那捆毯子。</p>
+    <p class="para" data-i="106">"Good luck, Harry," he <b>murmured</b>. He turned <b>on his heel</b> and with a <b>swish</b> of his cloak, he was gone.</p>
+    <p class="zh">"祝你好运，哈利，"他低声说。他脚跟一转，斗篷"唰"地一响，人就不见了。</p>
+    <p class="para" data-i="107">A <b>breeze</b> <b>ruffled</b> the neat <b>hedges</b> of Privet Drive, which lay silent and tidy under the <b>inky</b> sky, the very last place you would expect <b>astonishing</b> things to happen. Harry Potter rolled over inside his blankets without waking up. One small hand closed on the letter beside him and he slept on, not knowing he was special, not knowing he was famous, not knowing he would be woken in a few hours' time by Mrs. Dursley's scream as she opened the front door to put out the milk bottles, nor that he would spend the next few weeks being <b>prodded</b> and <b>pinched</b> by his cousin Dudley… He couldn't know that at this very moment, people meeting in secret all over the country were holding up their glasses and saying in <b>hushed</b> voices: "To Harry Potter — the boy who lived!"</p>
+    <p class="zh">一阵微风吹皱了女贞路两旁修剪整齐的树篱。这条街在墨黑的天空下沉静而整洁，是全天下你最想不到会发生惊人之事的地方。哈利·波特在毯子里翻了个身，没有醒。一只小手握住了身旁的信，他继续睡着：不知道自己有多么特别，不知道自己已经出名，也不知道再过几个小时，德思礼太太打开前门放牛奶瓶时会尖叫着把他吵醒；更不知道接下来的几个星期里，他会被表哥达力又戳又掐……他不可能知道，就在此刻，全国各地秘密聚会的人们正举起酒杯，压低声音说："为哈利·波特——那个大难不死的男孩——干杯！"</p></div>
+  <details class="vocabbox">
+    <summary>本节生词 · 27</summary>
+    <div class="chips"><button class="chip" data-a="audio/words/209.mp3"><b>shaggy</b><i>（毛发）蓬乱浓密的</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/210.mp3"><b>scratchy</b><i>扎人的；粗糙刺痒的</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/211.mp3"><b>whiskery</b><i>长满胡须的；胡茬扎人的</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/212.mp3"><b>howl</b><i>（狗）长嚎；号哭</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/213.mp3"><b>hiss</b><i>嘶嘶地说；发嘘声</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/214.mp3"><b>sob</b><i>抽泣；呜咽</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/215.mp3"><b>spotted</b><i>有圆点花纹的；有斑点的</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/216.mp3"><b>bury one's face in sth</b><i>把脸埋进……</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/217.mp3"><b>get a grip on oneself</b><i>控制住自己的情绪；镇定下来</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/218.mp3"><b>gingerly</b><i>小心翼翼地；轻手轻脚地</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/219.mp3"><b>doorstep</b><i>门前台阶</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/220.mp3"><b>muffled</b><i>（声音）闷住的、压低的</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/221.mp3"><b>streaming</b><i>（泪、水）流淌不止的</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/222.mp3"><b>swing</b><i>（猛地）转身跨上；摆动 （swung 是过去式）</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/223.mp3"><b>blow one's nose</b><i>擤鼻子</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/224.mp3"><b>slink</b><i>（悄悄地、鬼祟地）溜走</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/225.mp3"><b>murmur</b><i>低声说；喃喃</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/226.mp3"><b>turn on one's heel</b><i>脚跟一转（利落地转身）</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/227.mp3"><b>swish</b><i>"唰"的一声（挥动、掠过）</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/228.mp3"><b>breeze</b><i>微风</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/229.mp3"><b>ruffle</b><i>弄皱；吹乱</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/230.mp3"><b>hedge</b><i>树篱；篱笆</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/231.mp3"><b>inky</b><i>墨黑的；漆黑的</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/232.mp3"><b>astonishing</b><i>惊人的；令人震惊的</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/233.mp3"><b>prod</b><i>（用手指、棍子）戳、捅</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/234.mp3"><b>pinch</b><i>捏；掐</i><span class="mini">🔊</span></button><button class="chip" data-a="audio/words/235.mp3"><b>hushed</b><i>（声音）压低的、寂静的</i><span class="mini">🔊</span></button></div>
+  </details>
+</section>
+
+  <div class="orn">❖</div>
+
+  <section class="spell" id="spell">
+  <h2>✍️ PET 生词默写 · 60% 空缺</h2>
+  <p class="sub">每个词只露出约 40% 的字母，其余用 <b>_</b> 遮住。先点 🔊 听一遍，再凭记忆把完整单词打出来——写错的字母会逐位告诉你；<b>答错的词会自动进错题本</b>（右上角 📕）。</p>
+
+  <div class="spellbar">
+    <button class="fbtn on" data-f="pet">PET 核心（B1）· 73</button>
+    <button class="fbtn" data-f="b2">进阶（B2）· 72</button>
+    <button class="fbtn" data-f="c1">文学（C1）· 90</button>
+    <button class="fbtn" data-f="all">全部 · 235</button>
+    <a class="sbtn" id="wbLink" href="harry-potter-ch1-wrongbook.html">📕 错题本 <b id="wbCount">0</b></a>
+    <span class="prog" id="spellProg">0 / 73</span>
+  </div>
+
+  <div id="spellList"></div>
+
+  <div style="margin-top:16px;display:flex;gap:8px;flex-wrap:wrap">
+    <button class="sbtn" id="spellReset">↺ 全部重来</button>
+    <button class="sbtn" id="spellHint">💡 显示一个未答题的答案</button>
+  </div>
+</section>
+<script>
+(function(){
+  var DATA = [["perfectly", "完全地；十足地", "b1"], ["mysterious", "神秘的；难以解释的", "b2"], ["nonsense", "胡说；荒唐的事", "b1"], ["the last person to…", "最不可能……的人", "b1"], ["hold with sth", "赞同；相信", "b2"], ["firm", "公司；商行", "sy"], ["director", "董事；经理；负责人", "b1"], ["drill", "钻头；钻孔机；反复操练", "b1"], ["beefy", "魁梧的；肌肉发达的", "c1"], ["mustache", "上唇的胡子；八字胡", "b1"], ["crane", "伸长（脖子）；探头张望", "c1"], ["spy on sb", "暗中监视；窥探", "b1"], ["good-for-nothing", "一无是处的（人）；废物", "b2"], ["unDursleyish", "\"不像德思礼家的\"", "c1"], ["shudder", "（因恐惧、厌恶而）发抖、打寒噤", "c1"], ["nephew", "侄子；外甥", "b1"], ["dull", "阴沉的；昏暗的；乏味的", "b1"], ["suggest", "暗示；表明", "b1"], ["hum", "哼（歌）；发出嗡嗡声", "b1"], ["gossip", "说闲话；搬弄是非；八卦", "b2"], ["wrestle", "（用力）扭打、搏斗；费力对付", "b2"], ["tawny", "黄褐色的；茶色的", "c1"], ["flutter", "（鸟）扑扇翅膀；飘动", "c1"], ["briefcase", "公文包", "b1"], ["peck", "（鸟）啄；匆匆轻吻", "c1"], ["tantrum", "（小孩的）发脾气、撒泼", "c1"], ["cereal", "麦片；谷物", "b1"], ["tyke", "小淘气；小屁孩", "c1"], ["chortle", "咯咯笑；得意地笑", "c1"], ["back out (of)", "倒车驶出；（引申）退出、食言", "b2"], ["drive", "私人车道", "sy"], ["peculiar", "古怪的；不寻常的；（也指）独有的", "b2"], ["jerk", "猛地一拉", "c1"], ["tabby", "虎斑猫；带条纹的", "c1"], ["a trick of the light", "光线的错觉；看走眼了", "b2"], ["traffic jam", "交通堵塞", "b1"], ["cloak", "斗篷；披风", "b2"], ["getup", "（古怪的）装束、行头", "c1"], ["drum", "（用手指）有节奏地敲打", "b1"], ["steering wheel", "方向盘", "b1"], ["huddle", "（挤在一起的）一小群人；蜷缩", "c1"], ["weirdo", "怪人；行为古怪的人", "c1"], ["enrage", "使暴怒；激怒", "c1"], ["emerald", "翡翠；翡翠绿", "c1"], ["nerve", "胆量； 厚脸皮、放肆", "sy"], ["stunt", "噱头；花招；特技", "c1"], ["collect", "募捐；募集", "b1"], ["swoop", "（鸟、飞机）俯冲；猛扑下来", "c1"], ["in broad daylight", "光天化日之下；大白天", "b1"], ["open-mouthed", "目瞪口呆的；张着嘴的", "c1"], ["speed", "疾驰；快速移动", "b1"], ["yell", "大声喊；吼叫", "b1"], ["stretch one's legs", "（久坐后）活动活动腿脚；散散步", "b1"], ["bun", "小圆面包；（也指）圆发髻", "b1"], ["bakery", "面包店", "b1"], ["uneasy", "心神不安的；不自在的", "b2"], ["bunch", "一群（人）；一束、一串", "b1"], ["collecting tin", "（街头募捐用的）募捐罐", "b2"], ["clutch", "紧紧抓住；攥着", "b2"], ["doughnut", "甜甜圈", "b1"], ["stop dead", "猛地停住；戛然而止", "b2"], ["flood", "（情感）涌上；淹没", "b1"], ["think better of it", "（原想做某事）转念一想又作罢", "b2"], ["dash", "飞奔；猛冲", "b2"], ["snap at sb", "厉声对某人说话；没好气地顶回去", "b2"], ["seize", "一把抓住；夺取", "b2"], ["receiver", "", "b2"], ["stroke", "抚摸；捋", "b2"], ["come to think of it", "这么一想；话说回来", "b2"], ["grunt", "咕哝；哼哼", "c1"], ["stumble", "踉跄；绊了一下；说话结巴", "b2"], ["violet", "紫罗兰色（的）；紫罗兰", "b1"], ["on the contrary", "恰恰相反", "b2"], ["(one's face) split into a wide smile", "（脸上）绽开大大的笑容", "c1"], ["squeaky", "尖细刺耳的；吱吱作响的", "c1"], ["passerby", "路人", "b2"], ["rejoice", "欢欣鼓舞；欣喜", "c1"], ["Muggle", "麻瓜", "c1"], ["be rooted to the spot", "（惊得）钉在原地，动弹不得", "c1"], ["rattled", "慌乱的；心神不宁的", "c1"], ["set off (for)", "出发前往", "b1"], ["approve of", "赞成；认可", "b2"], ["driveway", "（住宅前的）私人车道", "b2"], ["improve", "改善；使变好", "b1"], ["marking", "（动物皮毛上的）斑纹、花纹；（考试的）评分", "b2"], ["shoo", "嘘！", "c1"], ["stern", "严厉的；严肃的", "b2"], ["pull oneself together", "镇定下来；振作起来", "b2"], ["determined", "下定决心的；坚决的", "b1"], ["over dinner", "吃晚饭时", "b1"], ["bird-watcher", "观鸟者；鸟类观察爱好者", "b2"], ["sighting", "目击（事件）；被看到的次数", "b2"], ["newscaster", "新闻主播", "c1"], ["grin", "咧嘴笑；露齿一笑", "b2"], ["shower", "一阵", "b1"], ["downpour", "倾盆大雨", "b2"], ["shooting star", "流星", "b2"], ["Bonfire Night", "篝火之夜", "c1"], ["armchair", "扶手椅", "b1"], ["clear one's throat", "清嗓子", "b2"], ["sharply", "尖刻地；严厉地", "b2"], ["mumble", "含糊不清地说；嘟囔", "b2"], ["snap", "（没好气地）顶嘴、厉声说", "b2"], ["sip", "小口喝；抿", "b2"], ["pursed lips", "噘起的嘴唇", "c1"], ["casually", "若无其事地；随意地", "b2"], ["stiffly", "生硬地；僵硬地", "c1"], ["common", "粗俗的；低档次的", "sy"], ["one's heart sinks", "心猛地一沉；顿时失望", "b2"], ["creep", "蹑手蹑脚地走；悄悄移动", "b1"], ["peer", "（费力地）凝视、盯着看", "b2"], ["as though", "好像；仿佛", "b1"], ["turn sth over in one's mind", "在脑子里反复琢磨", "c1"], ["comforting", "令人安慰的；使人宽心的", "b2"], ["get mixed up in", "被卷入", "b2"], ["affect", "影响；对……起作用", "b2"], ["drift into", "不知不觉地进入（某种状态）；漂入", "c1"], ["statue", "雕像；塑像", "b1"], ["fix one's eyes on", "把目光锁定在……；凝视", "b2"], ["unblinkingly", "一眨不眨地；目不转睛地", "c1"], ["quiver", "微微颤动；抖一下", "c1"], ["slam", "砰地关上；猛摔", "b1"], ["twitch", "（肌肉、尾巴）抽动；抽搐", "c1"], ["narrow", "", "b2"], ["pop out of", "（突然）从……冒出来", "b2"], ["robe", "长袍；（常复数）礼服", "b2"], ["buckled", "带扣的；扣上的", "c1"], ["spectacles", "眼镜", "b1"], ["crooked", "弯曲的；歪的", "c1"], ["tuck into", "把……塞进；（口语）大口吃", "c1"], ["rummage", "翻找；乱翻", "c1"], ["amuse", "使觉得好笑；逗乐", "b2"], ["chuckle", "低声轻笑；暗自笑", "b2"], ["cigarette lighter", "打火机", "b1"], ["flick", "轻弹；轻甩", "c1"], ["click", "发出\"咔哒\"声；点击", "b1"], ["pop", "\"噗/啪\"的一声；爆开", "b1"], ["flicker", "（光）闪烁、忽明忽暗", "b2"], ["Put-Outer", "熄灯器", "c1"], ["pinprick", "针尖大的点；针刺般的小孔", "c1"], ["beady-eyed", "眼睛小而亮的；目光锐利的", "c1"], ["pavement", "人行道", "b1"], ["slip", "悄悄塞进；滑落；溜走", "b1"], ["severe-looking", "神情严厉的；面相严肃的", "c1"], ["bun", "圆发髻", "sy"], ["ruffled", "心神不宁的；被惹恼的", "c1"], ["feast", "盛宴；宴会", "b1"], ["sniff", "吸鼻子； 哼一声", "b2"], ["impatiently", "不耐烦地", "b2"], ["flock", "（鸟、羊的）一群；成群结队", "b2"], ["be bound to do", "必然会；一定会", "b2"], ["bet", "打赌；敢说", "b1"], ["precious little", "少得可怜的一点；几乎没有", "c1"], ["irritably", "烦躁地；恼火地", "c1"], ["lose one's head", "失去理智；惊慌失措", "c1"], ["downright", "完全地；彻头彻尾地", "c1"], ["swap rumors", "交换谣言；互相传闲话", "c1"], ["lemon drop", "柠檬糖", "c1"], ["sensible", "明智的；通情达理的", "b2"], ["flinch", "（因害怕或疼痛）畏缩、缩一下", "c1"], ["exasperated", "恼火的；被气得没脾气的", "c1"], ["admiring", "钦佩的；赞赏的", "b2"], ["flatter", "恭维；使显得更美", "c1"], ["noble", "高尚的；崇高的；（也指）贵族的", "b2"], ["blush", "脸红", "b1"], ["earmuffs", "耳罩；护耳", "c1"], ["anxious", "焦急的；渴望的", "b2"], ["piercing", "（目光、声音）锐利的、刺耳的", "c1"], ["press on", "（不顾困难）继续推进；追问下去", "c1"], ["bow", "低下头；鞠躬", "b1"], ["gasp", "（因惊讶、恐惧）倒吸一口气", "b2"], ["pat", "轻拍", "b1"], ["tremble", "（声音、身体）颤抖", "b2"], ["glumly", "闷闷不乐地；阴沉地", "c1"], ["falter", "支支吾吾；说话打磕巴；（力量）衰退", "c1"], ["astounding", "令人震惊的；骇人的", "c1"], ["lace", "蕾丝；花边", "c1"], ["dab", "轻按、轻擦", "c1"], ["odd", "古怪的；奇怪的；（也指）奇数的", "b1"], ["firmly", "坚定地；坚决地", "b1"], ["faintly", "微弱地；无力地", "c1"], ["legend", "传奇；传说；传奇人物", "b1"], ["turn sb's head", "使某人飘飘然、冲昏头脑", "c1"], ["swallow", "咽下；吞；（紧张时）咽口水", "b1"], ["grudgingly", "不情愿地；勉强地", "c1"], ["careless", "粗心的；不小心的", "b1"], ["tend to do", "往往会；倾向于", "b1"], ["rumble", "发出低沉的隆隆声", "c1"], ["headlight", "（车、飞机的）前灯、头灯", "b1"], ["swell", "（声音、数量）增强、膨胀", "c1"], ["roar", "轰鸣；咆哮", "b1"], ["astride", "跨坐在……上", "c1"], ["tangle", "缠结的一团；纠结", "c1"], ["bushy", "浓密的", "b2"], ["trash can lid", "垃圾桶盖", "b1"], ["dolphin", "海豚", "b1"], ["muscular", "肌肉发达的；强壮的", "b2"], ["bundle", "一捆；一包", "b2"], ["relieved", "宽慰的；松了口气的", "b2"], ["swarm", "蜂拥；成群移动", "c1"], ["bend", "弯腰；俯身", "b1"], ["tuft", "", "c1"], ["jet-black", "乌黑的；黑玉般的", "c1"], ["curiously", "奇怪地；好奇地", "b2"], ["a bolt of lightning", "一道闪电", "b1"], ["scar", "伤疤；疤痕", "b1"], ["come in handy", "派得上用场", "b2"], ["get sth over with", "把（不愉快的）事赶紧了结", "b2"], ["shaggy", "（毛发）蓬乱浓密的", "c1"], ["scratchy", "扎人的；粗糙刺痒的", "c1"], ["whiskery", "长满胡须的；胡茬扎人的", "c1"], ["howl", "（狗）长嚎；号哭", "c1"], ["hiss", "嘶嘶地说；发嘘声", "c1"], ["sob", "抽泣；呜咽", "b1"], ["spotted", "有圆点花纹的；有斑点的", "b1"], ["bury one's face in sth", "把脸埋进……", "b2"], ["get a grip on oneself", "控制住自己的情绪；镇定下来", "c1"], ["gingerly", "小心翼翼地；轻手轻脚地", "c1"], ["doorstep", "门前台阶", "b1"], ["muffled", "（声音）闷住的、压低的", "c1"], ["streaming", "（泪、水）流淌不止的", "c1"], ["swing", "", "b1"], ["blow one's nose", "擤鼻子", "b2"], ["slink", "（悄悄地、鬼祟地）溜走", "c1"], ["murmur", "低声说；喃喃", "b2"], ["turn on one's heel", "脚跟一转", "c1"], ["swish", "\"唰\"的一声", "c1"], ["breeze", "微风", "b1"], ["ruffle", "弄皱；吹乱", "c1"], ["hedge", "树篱；篱笆", "b1"], ["inky", "墨黑的；漆黑的", "c1"], ["astonishing", "惊人的；令人震惊的", "b2"], ["prod", "（用手指、棍子）戳、捅", "c1"], ["pinch", "捏；掐", "b1"], ["hushed", "（声音）压低的、寂静的", "c1"]];
+  var LV = {b1:'PET 核心', sy:'熟词僻义', b2:'进阶 B2', c1:'文学 C1'};
+  var list=document.getElementById('spellList');
+  var prog=document.getElementById('spellProg');
+  var state={};          // idx -> 'ok'
+  var filter='pet';
+  var audio=null;
+
+  /* ---------- 错题本存储（localStorage，跨页面共享） ---------- */
+  var WB=(function(){
+    var KEY='hp1.wrong.v1', ok=true;
+    try{ localStorage.setItem('__t','1'); localStorage.removeItem('__t'); }catch(e){ ok=false; }
+    function all(){ if(!ok) return {}; try{ return JSON.parse(localStorage.getItem(KEY)||'{}'); }catch(e){ return {}; } }
+    function save(o){ if(!ok) return; try{ localStorage.setItem(KEY,JSON.stringify(o)); }catch(e){} }
+    function badge(){
+      var n=Object.keys(all()).length;
+      var a=document.getElementById('wbCount'); if(a) a.textContent=n;
+      var l=document.getElementById('wbLink'); if(l) l.classList.toggle('has', n>0);
+    }
+    return {
+      add:function(w,m,lv,i){
+        var o=all(), r=o[w]||{w:w,m:m,lv:lv,a:'audio/words/'+String(i+1).padStart(3,'0')+'.mp3',n:0,t:0,seen:0};
+        r.n=Math.min(5,(r.n||0)+1); r.t=Date.now(); o[w]=r; save(o); badge();
+      },
+      ok:function(w){
+        var o=all(), r=o[w]; if(!r) return;
+        r.n=(r.n||1)-1;
+        if(r.n<=0) delete o[w]; else o[w]=r;
+        save(o); badge();
+      },
+      badge:badge
+    };
+  })();
+  WB.badge();
+
+  function pool(){
+    return DATA.map(function(d,i){return {i:i,d:d};}).filter(function(o){
+      var lv=o.d[2];
+      if(filter==='all') return true;
+      if(filter==='pet') return lv==='b1'||lv==='sy';
+      return lv===filter;
+    });
+  }
+
+  // 60% 空缺：露出的字母均匀分布，首尾必露
+  function pattern(w){
+    var pos=[];
+    for(var i=0;i<w.length;i++) if(/[A-Za-z]/.test(w[i])) pos.push(i);
+    var n=pos.length;
+    var vis=Math.max(2, Math.round(n*0.4));
+    if(vis>n-1) vis=Math.max(1,n-1);
+    var show={}; show[pos[0]]=1;
+    if(n>1) show[pos[n-1]]=1;
+    var rem=vis-Object.keys(show).length;
+    for(var k=1;k<=rem;k++){
+      var p=pos[Math.min(n-1,Math.round(k*n/(rem+1)))];
+      show[p]=1;
+    }
+    var out='';
+    for(var j=0;j<w.length;j++){
+      var c=w[j];
+      if(/[A-Za-z]/.test(c)) out += show[j] ? '<b>'+c+'</b>' : '<i>_</i>';
+      else if(c===' ') out += '&nbsp;&nbsp;';
+      else out += '<b>'+c+'</b>';
+    }
+    return out;
+  }
+
+  function letters(s){ return s.replace(/[^A-Za-z]/g,'').toLowerCase(); }
+
+  function render(){
+    var arr=pool(), html='';
+    arr.forEach(function(o){
+      var w=o.d[0], m=o.d[1], lv=o.d[2], i=o.i;
+      var done=state[i]==='ok';
+      html += '<div class="sitem'+(done?' done':'')+'" id="it'+i+'">'
+        + '<div class="srow">'
+        + '<button class="sbtn mic" data-a="audio/words/'+String(i+1).padStart(3,'0')+'.mp3">🔊</button>'
+        + '<span class="pat">'+pattern(w)+'</span>'
+        + '<span class="mean">'+m+' · '+LV[lv]+'</span>'
+        + '</div>'
+        + '<div class="srow" style="margin-top:8px">'
+        + '<input class="sinput" id="in'+i+'" placeholder="输入完整单词" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"'+(done?' disabled value="'+w+'"':'')+'>'
+        + '<button class="sbtn primary" data-k="'+i+'">检查</button>'
+        + '<button class="sbtn" data-r="'+i+'">看答案</button>'
+        + '</div>'
+        + '<div class="fb" id="fb'+i+'"></div>'
+        + '</div>';
+    });
+    list.innerHTML=html;
+    updateProg();
+  }
+
+  function updateProg(){
+    var arr=pool(), ok=arr.filter(function(o){return state[o.i]==='ok';}).length;
+    prog.textContent=ok+' / '+arr.length;
+  }
+
+  function fb(i,cls,txt){
+    var el=document.getElementById('fb'+i);
+    el.className='fb show '+cls; el.innerHTML=txt;
+  }
+
+  function mark(i){
+    state[i]='ok';
+    var item=document.getElementById('it'+i); if(item) item.classList.add('done');
+    var inp=document.getElementById('in'+i); if(inp){inp.classList.remove('bad');inp.classList.add('ok');inp.disabled=true;}
+    updateProg();
+  }
+
+  function check(i){
+    var w=DATA[i][0], inp=document.getElementById('in'+i);
+    var v=inp.value.trim(), t=w.toLowerCase();
+    if(!v){ fb(i,'bad','先输入再检查（或点 🔊 先听一遍）'); return; }
+    if(v.toLowerCase().replace(/\s+/g,' ').trim()===t.replace(/\s+/g,' ')){
+      inp.classList.remove('bad'); inp.classList.add('ok');
+      WB.ok(w);
+      fb(i,'ok','✓ 正确！'+ (DATA[i][1]? '　'+DATA[i][1]:''));
+      mark(i);
+      return;
+    }
+    inp.classList.add('bad');
+    WB.add(w, DATA[i][1], DATA[i][2], i);
+    var a=letters(v), b=letters(t), msg=[];
+    if(a===b){
+      msg.push('字母都对了，但<b>顺序或连字符</b>不对。正确写法：<code>'+w+'</code>');
+    }else{
+      if(a.length!==b.length) msg.push('长度不对：正确答案 <b>'+b.length+'</b> 个字母，你写了 <b>'+a.length+'</b> 个');
+      var lim=Math.min(a.length,b.length), cnt=0;
+      for(var k=0;k<lim && cnt<3;k++){
+        if(a[k]!==b[k]){ msg.push('第 '+(k+1)+' 个字母应为 <code>'+b[k]+'</code>，你写的是 <code>'+a[k]+'</code>'); cnt++; }
+      }
+      if(!msg.length) msg.push('再试一次');
+    }
+    fb(i,'bad',msg.join('<br>'));
+  }
+
+  list.addEventListener('click',function(e){
+    var b=e.target.closest('button'); if(!b) return;
+    if(b.dataset.a){ if(audio) audio.pause(); audio=new Audio(b.dataset.a); audio.play(); return; }
+    if(b.dataset.k!==undefined){ check(parseInt(b.dataset.k,10)); return; }
+    if(b.dataset.r!==undefined){
+      var i=parseInt(b.dataset.r,10);
+      var inp=document.getElementById('in'+i);
+      inp.value=DATA[i][0]; inp.classList.remove('bad'); inp.classList.remove('ok');
+      WB.add(DATA[i][0], DATA[i][1], DATA[i][2], i);
+      fb(i,'bad','答案：<code>'+DATA[i][0]+'</code>　（已记入错题本，不计入正确数）');
+      return;
+    }
+  });
+
+  list.addEventListener('keydown',function(e){
+    if(e.key==='Enter' && e.target.classList.contains('sinput')){
+      var id=e.target.id.replace('in',''); check(parseInt(id,10));
+    }
+  });
+
+  document.querySelectorAll('.fbtn').forEach(function(b){
+    b.addEventListener('click',function(){
+      document.querySelectorAll('.fbtn').forEach(function(x){x.classList.remove('on')});
+      b.classList.add('on'); filter=b.dataset.f; render();
+    });
+  });
+  document.getElementById('spellReset').addEventListener('click',function(){ state={}; render(); });
+  document.getElementById('spellHint').addEventListener('click',function(){
+    var arr=pool(), first=null;
+    for(var k=0;k<arr.length;k++){ if(state[arr[k].i]!=='ok'){ first=arr[k]; break; } }
+    if(!first){ first=arr.length?arr[0]:null; }
+    if(!first) return;
+    var inp=document.getElementById('in'+first.i);
+    if(!inp) return;
+    inp.value=first.d[0];
+    fb(first.i,'bad','答案：<code>'+first.d[0]+'</code>　（"看答案"不计数，重点是记住拼写）');
+  });
+
+  render();
+})();
+</script>
+
+</div>
+
+<footer>
+  朗读由 macOS 语音合成（Daniel, en-GB）生成，仅用于英语学习；原文版权归 J.K. Rowling 及出版方所有。<br>
+  <a href="harry-potter-ch1-study.html">精读讲义</a> ｜ <a href="harry-potter-ch1-listening.html">听力练习册</a> ｜ <a href="harry-potter-ch1-wrongbook.html">错题本</a>
+</footer>
+<script>
+(function(){
+  var cur=null, curEl=null, curBtn=null, seq=null;
+
+  function clear(){
+    if(cur){try{cur.pause()}catch(e){}}
+    cur=null;
+    document.querySelectorAll('.para.playing').forEach(function(x){x.classList.remove('playing')});
+    document.querySelectorAll('.chip.playing').forEach(function(x){x.classList.remove('playing')});
+    document.querySelectorAll('.playall.playing').forEach(function(x){
+      x.classList.remove('playing'); x.textContent='\u25B6 朗读本节';
+    });
+  }
+  function playEl(el,src,btn,cb){
+    clear(); cur=new Audio(src); curEl=el; curBtn=btn||null;
+    el.classList.add('playing');
+    cur.onended=function(){ el.classList.remove('playing'); if(cb) cb(); };
+    cur.onerror=function(){ el.classList.remove('playing'); if(cb) cb(); };
+    var pr=cur.play(); if(pr&&pr.catch) pr.catch(function(){});
+  }
+  function paraBtn(p){
+    var b=p.querySelector('.pbtn'); return b;
+  }
+
+  // 段落播放（按钮 / 点读模式 / 边距按钮）
+  document.addEventListener('click',function(e){
+    var btn=e.target.closest('.pbtn');
+    if(btn){
+      var para=btn.closest('.para');
+      if(cur && curBtn===btn && !cur.paused){ cur.pause(); clear(); return; }
+      seq=null;
+      playEl(para,'audio/para/'+String(para.dataset.i).padStart(3,'0')+'.mp3',btn);
+      e.stopPropagation();
+      return;
+    }
+    if(document.body.classList.contains('tapmode')){
+      var p=e.target.closest('.para');
+      if(p && !e.target.closest('a,button,details,summary')){
+        seq=null;
+        playEl(p,'audio/para/'+String(p.dataset.i).padStart(3,'0')+'.mp3',null);
+      }
+    }
+  });
+
+  // 连续朗读本节
+  document.querySelectorAll('.playall').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var sec=btn.closest('.sec');
+      var list=Array.prototype.slice.call(sec.querySelectorAll('.para'));
+      if(seq){ seq=null; clear(); return; }
+      var i=0; seq=true; btn.classList.add('playing'); btn.textContent='\u23F8 停止';
+      (function next(){
+        if(!seq || i>=list.length){ seq=null; clear(); return; }
+        var p=list[i++];
+        clearHighlightOnly();
+        cur=new Audio('audio/para/'+String(p.dataset.i).padStart(3,'0')+'.mp3');
+        curEl=p; p.classList.add('playing');
+        p.scrollIntoView({block:'center',behavior:'smooth'});
+        cur.onended=function(){ p.classList.remove('playing'); setTimeout(next,260); };
+        cur.onerror=function(){ p.classList.remove('playing'); setTimeout(next,60); };
+        var pr=cur.play(); if(pr&&pr.catch) pr.catch(function(){ setTimeout(next,60); });
+      })();
+    });
+  });
+  function clearHighlightOnly(){
+    document.querySelectorAll('.para.playing').forEach(function(x){x.classList.remove('playing')});
+  }
+
+  // 生词发音
+  document.querySelectorAll('.chip').forEach(function(c){
+    c.addEventListener('click',function(){
+      playEl(c,c.dataset.a,c);
+    });
+  });
+
+  // 工具条
+  var zh=document.getElementById('tZh'), tap=document.getElementById('tTap');
+  zh.addEventListener('click',function(){ document.body.classList.toggle('hide-zh'); zh.classList.toggle('on'); });
+  tap.addEventListener('click',function(){ document.body.classList.toggle('tapmode'); tap.classList.toggle('on'); });
+  var size=1;
+  document.getElementById('fsUp').addEventListener('click',function(){
+    size=Math.min(1.22,size+0.07); document.documentElement.style.fontSize=(size*100)+'%';
+  });
+  document.getElementById('fsDown').addEventListener('click',function(){
+    size=Math.max(0.86,size-0.07); document.documentElement.style.fontSize=(size*100)+'%';
+  });
+  document.querySelectorAll('.rt2').forEach(function(b){
+    b.addEventListener('click',function(){
+      var a=document.getElementById(b.dataset.a); a.playbackRate=parseFloat(b.dataset.r);
+      b.parentNode.querySelectorAll('.rt2').forEach(function(x){x.classList.remove('on')});
+      b.classList.add('on');
+    });
+  });
+  var top=document.createElement('button'); top.id='toTop'; top.innerHTML='&uarr;'; top.setAttribute('aria-label','回到顶部');
+  document.body.appendChild(top);
+  top.addEventListener('click',function(){ window.scrollTo({top:0,behavior:'smooth'}); });
+  window.addEventListener('scroll',function(){ top.classList.toggle('show',window.scrollY>800); },{passive:true});
+})();
+</script>
+</body>
+</html>

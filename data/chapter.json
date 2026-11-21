@@ -1,0 +1,3573 @@
+[
+ {
+  "n": 1,
+  "title": "The Dursleys of Privet Drive",
+  "title_zh": "女贞路的德思礼一家",
+  "audio": "audio/01.mp3",
+  "paragraphs": [
+   {
+    "id": "001",
+    "section": 1,
+    "en_html": "Mr. and Mrs. Dursley, of number four, Privet Drive, were proud to say that they were <b>perfectly</b> normal, thank you very much. They were the <b>last people you'd expect</b> to be involved in anything strange or <b>mysterious</b>, because they just didn't <b>hold with</b> such <b>nonsense</b>.",
+    "en": "Mr. and Mrs. Dursley, of number four, Privet Drive, were proud to say that they were perfectly normal, thank you very much. They were the last people you'd expect to be involved in anything strange or mysterious, because they just didn't hold with such nonsense.",
+    "zh": "女贞路四号的德思礼夫妇，总是自豪地说自己再正常不过了，谢天谢地。他们是旁人最不可能牵扯进任何古怪或神秘事件的人，因为他们压根不信这类无稽之谈。",
+    "audio": "audio/para/001.mp3"
+   },
+   {
+    "id": "002",
+    "section": 1,
+    "en_html": "Mr. Dursley was the <b>director</b> of a <b>firm</b> called Grunnings, which made <b>drills</b>. He was a big, <b>beefy</b> man with hardly any neck, although he did have a very large <b>mustache</b>. Mrs. Dursley was thin and blonde and had nearly twice the usual amount of neck, which came in very useful as she spent so much of her time <b>craning</b> over garden fences, <b>spying on</b> the neighbors. The Dursleys had a small son called Dudley and in their opinion there was no finer boy anywhere.",
+    "en": "Mr. Dursley was the director of a firm called Grunnings, which made drills. He was a big, beefy man with hardly any neck, although he did have a very large mustache. Mrs. Dursley was thin and blonde and had nearly twice the usual amount of neck, which came in very useful as she spent so much of her time craning over garden fences, spying on the neighbors. The Dursleys had a small son called Dudley and in their opinion there was no finer boy anywhere.",
+    "zh": "德思礼先生是一家名叫\"格兰宁斯\"的钻头公司的经理。他高大魁梧，几乎没有脖子，倒是留着一把大胡子。德思礼太太又瘦又是金发，脖子长度几乎是常人的两倍——这倒很实用，因为她大部分时间都伸着脖子越过花园篱笆，偷看邻居。德思礼家有个小儿子叫达力，在他们眼里，天底下再没有比他更好的孩子了。",
+    "audio": "audio/para/002.mp3"
+   },
+   {
+    "id": "003",
+    "section": 1,
+    "en_html": "The Dursleys had everything they wanted, but they also had a secret, and their greatest fear was that somebody would discover it. They didn't think they could bear it if anyone found out about the Potters. Mrs. Potter was Mrs. Dursley's sister, but they hadn't met for several years; in fact, Mrs. Dursley pretended she didn't have a sister, because her sister and her <b>good-for-nothing</b> husband were as <b>unDursleyish</b> as it was possible to be. The Dursleys <b>shuddered</b> to think what the neighbors would say if the Potters arrived in the street. The Dursleys knew that the Potters had a small son, too, but they had never even seen him. This boy was another good reason for keeping the Potters away; they didn't want Dudley mixing with a child like that.",
+    "en": "The Dursleys had everything they wanted, but they also had a secret, and their greatest fear was that somebody would discover it. They didn't think they could bear it if anyone found out about the Potters. Mrs. Potter was Mrs. Dursley's sister, but they hadn't met for several years; in fact, Mrs. Dursley pretended she didn't have a sister, because her sister and her good-for-nothing husband were as unDursleyish as it was possible to be. The Dursleys shuddered to think what the neighbors would say if the Potters arrived in the street. The Dursleys knew that the Potters had a small son, too, but they had never even seen him. This boy was another good reason for keeping the Potters away; they didn't want Dudley mixing with a child like that.",
+    "zh": "德思礼家什么都不缺，可他们有个秘密，最怕的就是被人发现。一想到有人会查到波特家的事，他们就觉得受不了。波特太太是德思礼太太的妹妹，可两人好几年没见过面；事实上，德思礼太太假装自己没有妹妹，因为妹妹和她那个一无是处的丈夫，跟\"德思礼\"这三个字简直半点不沾边。一想到波特一家要是出现在这条街上、邻居们会怎么说，德思礼夫妇就打寒噤。他们也知道波特家有个小儿子，可从没见过那孩子。这个小男孩，正是让波特家\"离远点\"的又一个好理由——他们可不想让达力跟那种孩子玩在一起。",
+    "audio": "audio/para/003.mp3"
+   }
+  ],
+  "vocabulary": [
+   {
+    "id": "001",
+    "word": "perfectly",
+    "ipa": "/ˈpɜːfɪktli/",
+    "pos": "adv.",
+    "level": "b1",
+    "meaning": "完全地；十足地 （不是\"完美地\"！）",
+    "example": "perfectly normal 再正常不过的",
+    "memory": "本义\"完美地\"，口语里更常表示\"完全地、非常\"：perfectly fine / perfectly clear。记忆：perfect 换个词性 → 从\"完美\"滑向\"程度极深\"。",
+    "audio": "audio/words/001.mp3"
+   },
+   {
+    "id": "002",
+    "word": "mysterious",
+    "ipa": "/mɪˈstɪəriəs/",
+    "pos": "adj.",
+    "level": "b2",
+    "meaning": "神秘的；难以解释的",
+    "example": "a mysterious stranger 神秘的陌生人",
+    "memory": "mystery（谜）+ -ous（充满……的）→ 充满谜团的。串记：mystery → mysterious → mysteriously。同族后缀 -ous：famous、dangerous、nervous。",
+    "audio": "audio/words/002.mp3"
+   },
+   {
+    "id": "003",
+    "word": "nonsense",
+    "ipa": "/ˈnɒnsns/",
+    "pos": "n.",
+    "level": "b1",
+    "meaning": "胡说；荒唐的事",
+    "example": "Don't talk nonsense ! 别胡说八道！",
+    "memory": "拆开就懂：non-（不）+ sense（意义）→ 没有意义的话。同类：nonsmoker 不吸烟者、non-stop 不停的。",
+    "audio": "audio/words/003.mp3"
+   },
+   {
+    "id": "004",
+    "word": "the last person to…",
+    "ipa": "",
+    "pos": "句型",
+    "level": "b1",
+    "meaning": "最不可能……的人",
+    "example": "He is the last man to tell a lie. 他最不可能撒谎。",
+    "memory": "last 在这里不是\"最后\"，而是\"最不……的\"。这是考试高频陷阱：the last 后接名词/不定式，表示否定意味。反义记：the first to（最先……的人）。",
+    "audio": "audio/words/004.mp3"
+   },
+   {
+    "id": "005",
+    "word": "hold with sth",
+    "ipa": "",
+    "pos": "短语",
+    "level": "b2",
+    "meaning": "赞同；相信（多用于否定句）",
+    "example": "I don't hold with that idea. 我不赞成那个想法。",
+    "memory": "hold 是\"持有\"，with 是\"和……在一起\"→ 心里\"持着\"某个观点。记住搭配：don't hold with + 名词/动名词。",
+    "audio": "audio/words/005.mp3"
+   },
+   {
+    "id": "006",
+    "word": "firm",
+    "ipa": "/fɜːm/",
+    "pos": "n.",
+    "level": "sy",
+    "meaning": "公司；商行 （你熟知的是 adj. 坚固的）",
+    "example": "a law firm 一家律师事务所",
+    "memory": "商务语境里 firm = company。同义swap：a company / a business / an enterprise。这个词考\"熟词僻义\"的概率极高，看到 firm 先想\"公司\"再想\"坚实\"。",
+    "audio": "audio/words/006.mp3"
+   },
+   {
+    "id": "007",
+    "word": "director",
+    "ipa": "/dəˈrektə/",
+    "pos": "n.",
+    "level": "b1",
+    "meaning": "董事；经理；负责人 （也指\"导演\"）",
+    "example": "the director of the company 公司董事",
+    "memory": "direct（指导）+ -or（人）→ 指导的人。一个人身兼多义：公司里是\"董事\"，片场里是\"导演\"，乐队里是\"指挥\"。",
+    "audio": "audio/words/007.mp3"
+   },
+   {
+    "id": "008",
+    "word": "drill",
+    "ipa": "/drɪl/",
+    "pos": "n./v.",
+    "level": "b1",
+    "meaning": "钻头；钻孔机；反复操练",
+    "example": "an electric drill 电钻",
+    "memory": "两个义项都常见：牙医的\"钻\"是 drill，课堂上的\"反复练\"也是 drill。记法：钻头\"反复钻进去\"＝反复操练。",
+    "audio": "audio/words/008.mp3"
+   },
+   {
+    "id": "009",
+    "word": "beefy",
+    "ipa": "/ˈbiːfi/",
+    "pos": "adj.",
+    "level": "c1",
+    "meaning": "魁梧的；肌肉发达的",
+    "example": "a big, beefy man 一个高大魁梧的男人",
+    "memory": "beef（牛肉）+ -y → 像吃牛肉长出来的体型。同类构造：meaty（多肉的）、bony（骨瘦的）、fleshy（多肉的）。",
+    "audio": "audio/words/009.mp3"
+   },
+   {
+    "id": "010",
+    "word": "mustache",
+    "ipa": "/məˈstɑːʃ/",
+    "pos": "n.",
+    "level": "b1",
+    "meaning": "上唇的胡子；八字胡 （英式拼作 moustache）",
+    "example": "a very large mustache 一大把胡子",
+    "memory": "和 beard（络腮胡）区分：mustache 只长在嘴唇上方，beard 长在下巴和两颊。想象\"mustache 在 mouth（嘴）上面\"——m 开头对 m 开头。",
+    "audio": "audio/words/010.mp3"
+   },
+   {
+    "id": "011",
+    "word": "crane",
+    "ipa": "/kreɪn/",
+    "pos": "v.",
+    "level": "c1",
+    "meaning": "伸长（脖子）；探头张望",
+    "example": "crane over the fence 探着脖子越过篱笆",
+    "memory": "本义是\"鹤\"，也是\"起重机\"。鹤的脖子又细又长，一伸就伸出去——所以 crane 作动词＝伸长脖子。画面记忆最牢：一只鹤探着头看邻居。",
+    "audio": "audio/words/011.mp3"
+   },
+   {
+    "id": "012",
+    "word": "spy on sb",
+    "ipa": "",
+    "pos": "短语",
+    "level": "b1",
+    "meaning": "暗中监视；窥探",
+    "example": "spying on the neighbors 偷看邻居",
+    "memory": "spy 本身是\"间谍/侦察\"。搭配固定用 on：spy on sb / keep an eye on sb。语气比 watch 更鬼祟。",
+    "audio": "audio/words/012.mp3"
+   },
+   {
+    "id": "013",
+    "word": "good-for-nothing",
+    "ipa": "/ˌɡʊd fə ˈnʌθɪŋ/",
+    "pos": "adj./n.",
+    "level": "b2",
+    "meaning": "一无是处的（人）；废物",
+    "example": "her good-for-nothing husband 她那个没用的丈夫",
+    "memory": "三词合一，字面就是\"good for nothing（什么也干不了）\"。这类合成形容词很好记又好用：a never-ending story、a can't-do attitude。",
+    "audio": "audio/words/013.mp3"
+   },
+   {
+    "id": "014",
+    "word": "unDursleyish",
+    "ipa": "/ʌnˈdɜːzliɪʃ/",
+    "pos": "adj.",
+    "level": "c1",
+    "meaning": "\"不像德思礼家的\"（作者自造词）",
+    "example": "as unDursleyish as possible 怎么看都不像德思礼家的人",
+    "memory": "罗琳的招牌玩法：un-（不）+ 姓氏 Dursley + -ish（……似的）。看懂构造就懂意思——英语构词法本身就是最好的\"猜词工具\"。",
+    "audio": "audio/words/014.mp3"
+   },
+   {
+    "id": "015",
+    "word": "shudder",
+    "ipa": "/ˈʃʌdə/",
+    "pos": "v.",
+    "level": "c1",
+    "meaning": "（因恐惧、厌恶而）发抖、打寒噤",
+    "example": "She shuddered at the thought. 一想到那事她就打寒噤。",
+    "memory": "shiver 多指\"冷得发抖\"，shudder 多指\"怕/恶心到发抖\"。记搭配：shudder at the thought of…（一想到……就发怵）。",
+    "audio": "audio/words/015.mp3"
+   },
+   {
+    "id": "016",
+    "word": "nephew",
+    "ipa": "/ˈnefjuː/",
+    "pos": "n.",
+    "level": "b1",
+    "meaning": "侄子；外甥",
+    "example": "my nephew Harry 我的外甥哈利",
+    "memory": "成对记：nephew 侄子/外甥 ↔ niece 侄女/外甥女。谐音助记：\"niece 是 nice 的 n 版\"，女孩是 niece。",
+    "audio": "audio/words/016.mp3"
+   }
+  ]
+ },
+ {
+  "n": 2,
+  "title": "The Dull, Gray Tuesday",
+  "title_zh": "那个阴沉的星期二",
+  "audio": "audio/02.mp3",
+  "paragraphs": [
+   {
+    "id": "004",
+    "section": 2,
+    "en_html": "When Mr. and Mrs. Dursley woke up on the <b>dull</b>, gray Tuesday our story starts, there was nothing about the cloudy sky outside to <b>suggest</b> that strange and mysterious things would soon be happening all over the country. Mr. Dursley <b>hummed</b> as he picked out his most boring tie for work, and Mrs. Dursley <b>gossiped</b> away happily as she <b>wrestled</b> a screaming Dudley into his high chair.",
+    "en": "When Mr. and Mrs. Dursley woke up on the dull, gray Tuesday our story starts, there was nothing about the cloudy sky outside to suggest that strange and mysterious things would soon be happening all over the country. Mr. Dursley hummed as he picked out his most boring tie for work, and Mrs. Dursley gossiped away happily as she wrestled a screaming Dudley into his high chair.",
+    "zh": "故事开始的那个星期二，天色阴沉灰暗。德思礼夫妇醒来时，窗外乌云密布，谁也看不出这片天空预示着——很快，全国各地都将发生古怪而神秘的事。德思礼先生一边哼着小曲，一边挑出他上班用的最无聊的一条领带；德思礼太太一边兴致勃勃地说着家长里短的闲话，一边把尖叫不止的达力硬塞进他的高脚餐椅。",
+    "audio": "audio/para/004.mp3"
+   },
+   {
+    "id": "005",
+    "section": 2,
+    "en_html": "None of them noticed a large, <b>tawny</b> owl <b>flutter</b> past the window.",
+    "en": "None of them noticed a large, tawny owl flutter past the window.",
+    "zh": "他们谁也没留意到：一只黄褐色的大猫头鹰扑扇着翅膀，从窗外掠过。",
+    "audio": "audio/para/005.mp3"
+   },
+   {
+    "id": "006",
+    "section": 2,
+    "en_html": "At half past eight, Mr. Dursley picked up his <b>briefcase</b>, <b>pecked</b> Mrs. Dursley on the cheek, and tried to kiss Dudley good-bye but missed, because Dudley was now having a <b>tantrum</b> and throwing his <b>cereal</b> at the walls. \"Little <b>tyke</b>,\" <b>chortled</b> Mr. Dursley as he left the house. He got into his car and <b>backed out</b> of number four's <b>drive</b>.",
+    "en": "At half past eight, Mr. Dursley picked up his briefcase, pecked Mrs. Dursley on the cheek, and tried to kiss Dudley good-bye but missed, because Dudley was now having a tantrum and throwing his cereal at the walls. \"Little tyke,\" chortled Mr. Dursley as he left the house. He got into his car and backed out of number four's drive.",
+    "zh": "八点半，德思礼先生拎起公文包，在德思礼太太脸颊上匆匆一啄，又想去亲达力道别，却没亲着——因为达力正发着脾气，把麦片往墙上乱摔。\"小兔崽子，\"德思礼先生咯咯笑着出了门。他上了车，从四号的车道上倒了出去。",
+    "audio": "audio/para/006.mp3"
+   }
+  ],
+  "vocabulary": [
+   {
+    "id": "017",
+    "word": "dull",
+    "ipa": "/dʌl/",
+    "pos": "adj.",
+    "level": "b1",
+    "meaning": "阴沉的；昏暗的；乏味的",
+    "example": "a dull , gray Tuesday 一个阴沉灰暗的星期二",
+    "memory": "一个词三种\"没劲\"：天气\"阴沉\"、颜色\"发暗\"、人\"无趣\"、课\"乏味\"。反义是 bright / interesting。记：dull 的 d 像\"耷拉\"——什么都耷拉下来，就是没生气。",
+    "audio": "audio/words/017.mp3"
+   },
+   {
+    "id": "018",
+    "word": "suggest",
+    "ipa": "/səˈdʒest/",
+    "pos": "v.",
+    "level": "b1",
+    "meaning": "暗示；表明 （熟义是\"建议\"）",
+    "example": "The sky suggested rain. 天色看起来要下雨。",
+    "memory": "熟词僻义高发词。三个义项要分清：建议（suggest doing）、暗示/表明（主语是物）、使人想起（suggest sth to sb）。本句主语是 sky，只能是\"表明\"。",
+    "audio": "audio/words/018.mp3"
+   },
+   {
+    "id": "019",
+    "word": "hum",
+    "ipa": "/hʌm/",
+    "pos": "v.",
+    "level": "b1",
+    "meaning": "哼（歌）；发出嗡嗡声",
+    "example": "He hummed a tune. 他哼着一支曲子。",
+    "memory": "拟声词，读起来就是\"哼哼\"。同类拟声动词：buzz（蜜蜂嗡嗡）、murmur（低语）、whisper（耳语）。",
+    "audio": "audio/words/019.mp3"
+   },
+   {
+    "id": "020",
+    "word": "gossip",
+    "ipa": "/ˈɡɒsɪp/",
+    "pos": "v./n.",
+    "level": "b2",
+    "meaning": "说闲话；搬弄是非；八卦",
+    "example": "gossiped away happily 兴高采烈地聊八卦",
+    "memory": "谐音\"搞事婆\"——到处说人闲话的人。固定搭配：gossip about sb（议论某人）、the latest gossip（最新八卦）。",
+    "audio": "audio/words/020.mp3"
+   },
+   {
+    "id": "021",
+    "word": "wrestle",
+    "ipa": "/ˈresl/",
+    "pos": "v.",
+    "level": "b2",
+    "meaning": "（用力）扭打、搏斗；费力对付",
+    "example": "wrestled a screaming Dudley into his chair 把尖叫的达力硬塞进椅子",
+    "memory": "本义是摔跤（wrestling 就是\"摔跤运动\"）。用法公式：wrestle sb/sth into/out of…＝费劲地把某人弄进/弄出。画面感强，好记。",
+    "audio": "audio/words/021.mp3"
+   },
+   {
+    "id": "022",
+    "word": "tawny",
+    "ipa": "/ˈtɔːni/",
+    "pos": "adj.",
+    "level": "c1",
+    "meaning": "黄褐色的；茶色的",
+    "example": "a large, tawny owl 一只黄褐色的大猫头鹰",
+    "memory": "颜色词家族按\"色调\"记：tawny（黄褐）、beige（米色）、chestnut（栗色）、auburn（红褐）。哈利波特里\"tawny owl\"是欧洲常见的一种猫头鹰。",
+    "audio": "audio/words/022.mp3"
+   },
+   {
+    "id": "023",
+    "word": "flutter",
+    "ipa": "/ˈflʌtə/",
+    "pos": "v.",
+    "level": "c1",
+    "meaning": "（鸟）扑扇翅膀；飘动",
+    "example": "An owl fluttered past. 一只猫头鹰扑棱着飞过。",
+    "memory": "fl- 开头的词常含\"轻快扇动\"之意：flutter（扑扇）、flap（拍打）、flick（轻弹）、fly（飞）。看到 fl- 就想\"呼啦一下\"。",
+    "audio": "audio/words/023.mp3"
+   },
+   {
+    "id": "024",
+    "word": "briefcase",
+    "ipa": "/ˈbriːfkeɪs/",
+    "pos": "n.",
+    "level": "b1",
+    "meaning": "公文包",
+    "example": "pick up his briefcase 拎起公文包",
+    "memory": "复合词：brief（简要的/案情摘要）+ case（箱子）。律师装\"案情摘要\"的箱子 → 公文包。同类：suitcase（衣箱）、bookcase（书柜）。",
+    "audio": "audio/words/024.mp3"
+   },
+   {
+    "id": "025",
+    "word": "peck",
+    "ipa": "/pek/",
+    "pos": "v.",
+    "level": "c1",
+    "meaning": "（鸟）啄；匆匆轻吻",
+    "example": "pecked Mrs. Dursley on the cheek 在妻子脸上匆匆一啄",
+    "memory": "鸡啄米的动作 → 引申为\"飞快地轻亲一下\"。对比：kiss（正经地亲）、peck（敷衍地一啄）。别和 peak（山顶）、peek（偷看）混。",
+    "audio": "audio/words/025.mp3"
+   },
+   {
+    "id": "026",
+    "word": "tantrum",
+    "ipa": "/ˈtæntrəm/",
+    "pos": "n.",
+    "level": "c1",
+    "meaning": "（小孩的）发脾气、撒泼",
+    "example": "have / throw a tantrum 发脾气",
+    "memory": "固定搭配就是 throw a tantrum（摔东西式发火）。记：tantrum 里有两个 t，像小孩跺脚\"突突突\"。",
+    "audio": "audio/words/026.mp3"
+   },
+   {
+    "id": "027",
+    "word": "cereal",
+    "ipa": "/ˈsɪəriəl/",
+    "pos": "n.",
+    "level": "b1",
+    "meaning": "麦片；谷物",
+    "example": "throwing his cereal at the walls 把麦片往墙上扔",
+    "memory": "源自罗马谷物女神 Ceres（刻瑞斯）——她名字首字母大写时还是\"谷神星\"。同音词 serial（连续的）要注意区分。",
+    "audio": "audio/words/027.mp3"
+   },
+   {
+    "id": "028",
+    "word": "tyke",
+    "ipa": "/taɪk/",
+    "pos": "n.",
+    "level": "c1",
+    "meaning": "小淘气；小屁孩（口语，带亲昵或无奈）",
+    "example": "\"Little tyke ,\" he said. \"这小鬼。\"",
+    "memory": "口语色彩很浓，类似中文\"小崽子/小捣蛋\"。语气看上下文：可以是宠溺，也可以是嫌弃。这里德思礼先生是又气又笑。",
+    "audio": "audio/words/028.mp3"
+   },
+   {
+    "id": "029",
+    "word": "chortle",
+    "ipa": "/ˈtʃɔːtl/",
+    "pos": "v.",
+    "level": "c1",
+    "meaning": "咯咯笑；得意地笑",
+    "example": "\"Little tyke,\" chortled Mr. Dursley. \"这小鬼，\"德思礼先生咯咯笑了。",
+    "memory": "笑声家族按\"音色\"记：chuckle（低声轻笑）、chortle（咯咯开怀）、giggle（咯咯傻笑）、snigger（偷笑）、guffaw（哈哈大笑）。",
+    "audio": "audio/words/029.mp3"
+   },
+   {
+    "id": "030",
+    "word": "back out (of)",
+    "ipa": "",
+    "pos": "短语",
+    "level": "b2",
+    "meaning": "倒车驶出；（引申）退出、食言",
+    "example": "backed out of the drive 从车道上倒车出来",
+    "memory": "back 作动词＝\"倒退\"。同族：back up（备份/支持）、back down（让步）、back off（退让）。一个 back 撑起一片天。",
+    "audio": "audio/words/030.mp3"
+   },
+   {
+    "id": "031",
+    "word": "drive",
+    "ipa": "/draɪv/",
+    "pos": "n.",
+    "level": "sy",
+    "meaning": "私人车道 （不是\"开车\"）",
+    "example": "number four's drive 四号的车道",
+    "memory": "英式住宅前那条通向马路的私有小路。同义：driveway。英式英语里 drive 还常出现在路名中（如 Privet Drive 女贞路）。",
+    "audio": "audio/words/031.mp3"
+   }
+  ]
+ },
+ {
+  "n": 3,
+  "title": "A Cat Reading a Map",
+  "title_zh": "看地图的猫",
+  "audio": "audio/03.mp3",
+  "paragraphs": [
+   {
+    "id": "007",
+    "section": 3,
+    "en_html": "It was on the corner of the street that he noticed the first sign of something <b>peculiar</b> — a cat reading a map. For a second, Mr. Dursley didn't realize what he had seen — then he <b>jerked</b> his head around to look again. There was a <b>tabby</b> cat standing on the corner of Privet Drive, but there wasn't a map in sight. What could he have been thinking of? It must have been a <b>trick of the light</b>. Mr. Dursley blinked and stared at the cat. It stared back.",
+    "en": "It was on the corner of the street that he noticed the first sign of something peculiar — a cat reading a map. For a second, Mr. Dursley didn't realize what he had seen — then he jerked his head around to look again. There was a tabby cat standing on the corner of Privet Drive, but there wasn't a map in sight. What could he have been thinking of? It must have been a trick of the light. Mr. Dursley blinked and stared at the cat. It stared back.",
+    "zh": "就在街角，他瞧见了第一处不对劲的迹象——一只猫在看地图。有那么一瞬间，德思礼先生没反应过来自己看见了什么——接着他猛地扭头再看。女贞路的街角上确实站着一只虎斑猫，可哪儿有什么地图。他刚才是怎么想的？一定是光线造成的错觉。德思礼先生眨眨眼，盯着那只猫。猫也回瞪着他。",
+    "audio": "audio/para/007.mp3"
+   },
+   {
+    "id": "008",
+    "section": 3,
+    "en_html": "As he drove toward town he thought of nothing except a large order of drills he was hoping to get that day. But on the edge of town, drills were driven out of his mind by something else. As he sat in the usual morning <b>traffic jam</b>, he couldn't help noticing that there seemed to be a lot of strangely dressed people about. People in <b>cloaks</b>. Mr. Dursley couldn't bear people who dressed in funny clothes — the <b>getups</b> you saw on young people! He supposed this was some stupid new fashion.",
+    "en": "As he drove toward town he thought of nothing except a large order of drills he was hoping to get that day. But on the edge of town, drills were driven out of his mind by something else. As he sat in the usual morning traffic jam, he couldn't help noticing that there seemed to be a lot of strangely dressed people about. People in cloaks. Mr. Dursley couldn't bear people who dressed in funny clothes — the getups you saw on young people! He supposed this was some stupid new fashion.",
+    "zh": "开车进城的一路上，他脑子里只装着当天想拿到的那一大笔钻头订单。可到了城边，别的事情把钻头从他脑子里挤了出去。他堵在每天早上的车流里，忍不住注意到：周围好像有许多穿着古怪的人。穿斗篷的人。德思礼先生最受不了穿奇装异服的人——看看现在年轻人那身打扮！他猜想这大概是某种愚蠢的新潮流。",
+    "audio": "audio/para/008.mp3"
+   },
+   {
+    "id": "009",
+    "section": 3,
+    "en_html": "He <b>drummed</b> his fingers on the <b>steering wheel</b> and his eyes fell on a <b>huddle</b> of these <b>weirdos</b> standing quite close by. They were whispering excitedly together. Mr. Dursley was <b>enraged</b> to see that a couple of them weren't young at all; why, that man had to be older than he was, and wearing an <b>emerald</b>-green cloak! The <b>nerve</b> of him! But then it struck Mr. Dursley that this was probably some silly <b>stunt</b> — these people were obviously <b>collecting</b> for something…",
+    "en": "He drummed his fingers on the steering wheel and his eyes fell on a huddle of these weirdos standing quite close by. They were whispering excitedly together. Mr. Dursley was enraged to see that a couple of them weren't young at all; why, that man had to be older than he was, and wearing an emerald-green cloak! The nerve of him! But then it struck Mr. Dursley that this was probably some silly stunt — these people were obviously collecting for something…",
+    "zh": "他用手指敲着方向盘，目光落到不远处挤作一团的一伙怪人身上。他们正兴奋地交头接耳。德思礼先生恼火地发现，其中几位压根不年轻了；天哪，那个男人肯定比他还老，居然穿着一条翡翠绿的斗篷！真是好大的胆子！紧接着他又一想：这八成是搞什么无聊的噱头——这帮人显然是在为什么事募捐……",
+    "audio": "audio/para/009.mp3"
+   }
+  ],
+  "vocabulary": [
+   {
+    "id": "032",
+    "word": "peculiar",
+    "ipa": "/pɪˈkjuːliə/",
+    "pos": "adj.",
+    "level": "b2",
+    "meaning": "古怪的；不寻常的；（也指）独有的",
+    "example": "something peculiar 某种古怪的东西",
+    "memory": "和 particular（特定的）长得像，意思却偏\"怪\"。搭配：be peculiar to…（为……所独有）。近义：strange / odd / weird。",
+    "audio": "audio/words/032.mp3"
+   },
+   {
+    "id": "033",
+    "word": "jerk",
+    "ipa": "/dʒɜːk/",
+    "pos": "v./n.",
+    "level": "c1",
+    "meaning": "猛地一拉（一扭、一动）",
+    "example": "jerked his head around 猛地扭过头",
+    "memory": "拟态词，读起来就\"咯噔\"一下。常用：jerk awake（猛地惊醒）、jerk back（猛地后退）。名词 a jerk 还可骂人\"混蛋\"。",
+    "audio": "audio/words/033.mp3"
+   },
+   {
+    "id": "034",
+    "word": "tabby",
+    "ipa": "/ˈtæbi/",
+    "pos": "n./adj.",
+    "level": "c1",
+    "meaning": "虎斑猫；带条纹的",
+    "example": "a tabby cat 一只虎斑猫",
+    "memory": "猫的花色分类词：tabby（虎斑）、black（纯黑）、ginger（橘猫）、tortoiseshell（玳瑁）。麦格教授的猫形态就是 tabby。",
+    "audio": "audio/words/034.mp3"
+   },
+   {
+    "id": "035",
+    "word": "a trick of the light",
+    "ipa": "",
+    "pos": "短语",
+    "level": "b2",
+    "meaning": "光线的错觉；看走眼了",
+    "example": "It must have been a trick of the light . 一定是光线造成的错觉。",
+    "memory": "trick 在这里不是\"诡计\"，而是\"错觉、戏法\"。同族：a trick of the eye（视觉误差）、optical illusion（视错觉）。",
+    "audio": "audio/words/035.mp3"
+   },
+   {
+    "id": "036",
+    "word": "traffic jam",
+    "ipa": "/ˈtræfɪk dʒæm/",
+    "pos": "n.",
+    "level": "b1",
+    "meaning": "交通堵塞",
+    "example": "sit in a traffic jam 堵在路上",
+    "memory": "jam 本义是\"果酱\"，也有\"塞满、卡住\"之意——路被\"塞满\"了就是堵车。同类表达：get stuck in traffic、bumper-to-bumper。",
+    "audio": "audio/words/036.mp3"
+   },
+   {
+    "id": "037",
+    "word": "cloak",
+    "ipa": "/kləʊk/",
+    "pos": "n.",
+    "level": "b2",
+    "meaning": "斗篷；披风",
+    "example": "People in cloaks . 穿斗篷的人。",
+    "memory": "哈利波特核心道具：invisibility cloak（隐形衣）。区分：cloak（无袖外披）、cape（短披肩）、robe（长袍）。",
+    "audio": "audio/words/037.mp3"
+   },
+   {
+    "id": "038",
+    "word": "getup",
+    "ipa": "/ˈɡetʌp/",
+    "pos": "n.",
+    "level": "c1",
+    "meaning": "（古怪的）装束、行头",
+    "example": "the getups you saw on young people 现在年轻人那身打扮",
+    "memory": "由 get up（起床、穿戴好）变来的名词，带点嫌弃口气：a weird getup（一身怪行头）。同义调侃说法：outfit、gear。",
+    "audio": "audio/words/038.mp3"
+   },
+   {
+    "id": "039",
+    "word": "drum",
+    "ipa": "/drʌm/",
+    "pos": "v.",
+    "level": "b1",
+    "meaning": "（用手指）有节奏地敲打",
+    "example": "drummed his fingers on the wheel 用手指敲方向盘",
+    "memory": "鼓（drum）→ 像打鼓一样敲。搭配：drum one's fingers on sth（不耐烦地敲）。同族：drummer（鼓手）。",
+    "audio": "audio/words/039.mp3"
+   },
+   {
+    "id": "040",
+    "word": "steering wheel",
+    "ipa": "/ˈstɪərɪŋ wiːl/",
+    "pos": "n.",
+    "level": "b1",
+    "meaning": "方向盘",
+    "example": "behind the steering wheel 坐在方向盘后面/在开车",
+    "memory": "steer＝驾驶、掌舵（steer a ship/boat）。车轮-related 词汇一起记：wheel 轮子、tyre/tire 轮胎、brake 刹车、gear 挡位。",
+    "audio": "audio/words/040.mp3"
+   },
+   {
+    "id": "041",
+    "word": "huddle",
+    "ipa": "/ˈhʌdl/",
+    "pos": "n./v.",
+    "level": "c1",
+    "meaning": "（挤在一起的）一小群人；蜷缩",
+    "example": "a huddle of weirdos 挤成一堆的怪人",
+    "memory": "画面记忆：一群企鹅挤在一起取暖，就是 huddle。动词：huddle together（挤作一团）。",
+    "audio": "audio/words/041.mp3"
+   },
+   {
+    "id": "042",
+    "word": "weirdo",
+    "ipa": "/ˈwɪədəʊ/",
+    "pos": "n.",
+    "level": "c1",
+    "meaning": "怪人；行为古怪的人",
+    "example": "a huddle of these weirdos 挤成一堆的怪人",
+    "memory": "weird（古怪的）+ -o（人）→ 怪咖。同类口语构词：psycho（疯子）、sicko（变态）；复数加 -s 变 weirdos。",
+    "audio": "audio/words/042.mp3"
+   },
+   {
+    "id": "043",
+    "word": "enrage",
+    "ipa": "/ɪnˈreɪdʒ/",
+    "pos": "v.",
+    "level": "c1",
+    "meaning": "使暴怒；激怒",
+    "example": "Mr. Dursley was enraged . 德思礼先生怒火中烧。",
+    "memory": "en-（使……）+ rage（狂怒）→ 使人发狂。词族一起记：rage 暴怒 → enrage 激怒 → outraged 义愤填膺的。",
+    "audio": "audio/words/043.mp3"
+   },
+   {
+    "id": "044",
+    "word": "emerald",
+    "ipa": "/ˈemərəld/",
+    "pos": "n./adj.",
+    "level": "c1",
+    "meaning": "翡翠；翡翠绿（的）",
+    "example": "an emerald -green cloak 一条翡翠绿的斗篷",
+    "memory": "宝石/颜色双关词家族：emerald 翡翠绿、ruby 宝石红、sapphire 宝蓝、jade 玉绿。霍格沃茨四学院配色之一就是 emerald green（斯莱特林）。",
+    "audio": "audio/words/044.mp3"
+   },
+   {
+    "id": "045",
+    "word": "nerve",
+    "ipa": "/nɜːv/",
+    "pos": "n.",
+    "level": "sy",
+    "meaning": "胆量； 厚脸皮、放肆 （不是\"神经\"）",
+    "example": "The nerve of him! 他可真够大胆的！/真不要脸！",
+    "memory": "口语常用来指责别人\"太放肆\"。对比：have the nerve to do sth（竟有脸做某事）；lose one's nerve（失去勇气）。",
+    "audio": "audio/words/045.mp3"
+   },
+   {
+    "id": "046",
+    "word": "stunt",
+    "ipa": "/stʌnt/",
+    "pos": "n.",
+    "level": "c1",
+    "meaning": "噱头；花招；特技",
+    "example": "some silly stunt 什么无聊的噱头",
+    "memory": "指\"为吸引眼球而做的出格举动\"，也指电影特技（stuntman 特技演员）。记忆画面：街头有人为了\"刷存在感\"搞事情，路人一看就知道是 stunt。",
+    "audio": "audio/words/046.mp3"
+   },
+   {
+    "id": "047",
+    "word": "collect",
+    "ipa": "/kəˈlekt/",
+    "pos": "v.",
+    "level": "b1",
+    "meaning": "募捐；募集 （熟义\"收集\"）",
+    "example": "collecting for something 在为某事募捐",
+    "memory": "搭配 collect for + 目的 → 为……募捐。相关：collection（募捐/收藏）、collector（收藏者）、collection box（募捐箱）。",
+    "audio": "audio/words/047.mp3"
+   }
+  ]
+ },
+ {
+  "n": 4,
+  "title": "Owls in Broad Daylight",
+  "title_zh": "大白天飞过的猫头鹰",
+  "audio": "audio/04.mp3",
+  "paragraphs": [
+   {
+    "id": "010",
+    "section": 4,
+    "en_html": "Mr. Dursley always sat with his back to the window in his office on the ninth floor. If he hadn't, he might have found it harder to concentrate on drills that morning. He didn't see the owls <b>swooping</b> past in <b>broad daylight</b>, though people down in the street did; they pointed and gazed <b>open-mouthed</b> as owl after owl <b>sped</b> overhead. Most of them had never seen an owl even at nighttime.",
+    "en": "Mr. Dursley always sat with his back to the window in his office on the ninth floor. If he hadn't, he might have found it harder to concentrate on drills that morning. He didn't see the owls swooping past in broad daylight, though people down in the street did; they pointed and gazed open-mouthed as owl after owl sped overhead. Most of them had never seen an owl even at nighttime.",
+    "zh": "德思礼先生的办公室在九楼，他总是背对窗户坐着。要不是这样，那天上午他恐怕更难把心思放在钻头上。他没有看见大白天俯冲飞过的猫头鹰，可楼下街上的人看见了：他们指着天空，张着嘴发愣，看一只又一只猫头鹰从头顶疾飞而过。这些人里头，大多数连夜里都没见过猫头鹰。",
+    "audio": "audio/para/010.mp3"
+   },
+   {
+    "id": "011",
+    "section": 4,
+    "en_html": "Mr. Dursley, however, had a perfectly normal, owl-free morning. He <b>yelled</b> at five different people. He made several important telephone calls and shouted a bit more. He was in a very good mood until lunchtime, when he thought he'd <b>stretch his legs</b> and walk across the road to buy himself a <b>bun</b> from the <b>bakery</b>.",
+    "en": "Mr. Dursley, however, had a perfectly normal, owl-free morning. He yelled at five different people. He made several important telephone calls and shouted a bit more. He was in a very good mood until lunchtime, when he thought he'd stretch his legs and walk across the road to buy himself a bun from the bakery.",
+    "zh": "而德思礼先生的这个上午再正常不过，一只猫头鹰都没有。他冲五个人吼了一通，打了几个重要电话，又嚷嚷了几句。他心情一直很好，直到午饭时间——他想活动活动腿脚，过马路去面包店给自己买个圆面包。",
+    "audio": "audio/para/011.mp3"
+   },
+   {
+    "id": "012",
+    "section": 4,
+    "en_html": "He'd forgotten all about the people in cloaks until he passed a group of them next to the baker's. He eyed them angrily as he passed. He didn't know why, but they made him <b>uneasy</b>. This <b>bunch</b> were whispering excitedly, too, and he couldn't see a single <b>collecting tin</b>. It was on his way back past them, <b>clutching</b> a large <b>doughnut</b> in a bag, that he caught a few words of what they were saying.",
+    "en": "He'd forgotten all about the people in cloaks until he passed a group of them next to the baker's. He eyed them angrily as he passed. He didn't know why, but they made him uneasy. This bunch were whispering excitedly, too, and he couldn't see a single collecting tin. It was on his way back past them, clutching a large doughnut in a bag, that he caught a few words of what they were saying.",
+    "zh": "他早把那些穿斗篷的人忘得一干二净，直到在面包店旁经过一群人。他走过时气呼呼地瞪着他们。他说不清为什么，可这些人让他心里发毛。这一伙也在兴奋地交头接耳，而且他一个募捐罐都没看见。就在他拎着一袋大甜甜圈往回走、再次经过他们身边时，他听清了他们说的几个字。",
+    "audio": "audio/para/012.mp3"
+   },
+   {
+    "id": "013",
+    "section": 4,
+    "en_html": "\"The Potters, that's right, that's what I heard —\"<br>\"— yes, their son, Harry —\"",
+    "en": "\"The Potters, that's right, that's what I heard —\"\"— yes, their son, Harry —\"",
+    "zh": "\"波特家，没错，我听到的就是这么说的——\"\"——对，他们家儿子，哈利——\"",
+    "audio": "audio/para/013.mp3"
+   }
+  ],
+  "vocabulary": [
+   {
+    "id": "048",
+    "word": "swoop",
+    "ipa": "/swuːp/",
+    "pos": "v.",
+    "level": "c1",
+    "meaning": "（鸟、飞机）俯冲；猛扑下来",
+    "example": "owls swooping past 猫头鹰俯冲掠过",
+    "memory": "老鹰锁定猎物、从高空直扑而下就是 swoop。搭配：swoop down on sth。记忆：sw- 开头常有\"呼呼扫过\"感——swoop、sweep、swing、swish。",
+    "audio": "audio/words/048.mp3"
+   },
+   {
+    "id": "049",
+    "word": "in broad daylight",
+    "ipa": "",
+    "pos": "短语",
+    "level": "b1",
+    "meaning": "光天化日之下；大白天",
+    "example": "in broad daylight 大白天",
+    "memory": "broad 在这里不是\"宽\"，而是\"完全的、十足的\"（broad daylight 明亮的白昼）。同类：broad smile（咧嘴大笑）。这个短语常带\"竟然敢在白天干\"的惊讶语气。",
+    "audio": "audio/words/049.mp3"
+   },
+   {
+    "id": "050",
+    "word": "open-mouthed",
+    "ipa": "/ˌəʊpən ˈmaʊðd/",
+    "pos": "adj.",
+    "level": "c1",
+    "meaning": "目瞪口呆的；张着嘴的",
+    "example": "gazed open-mouthed 张着嘴呆呆地看",
+    "memory": "身体部位 + -ed 的合成形容词很好用：open-mouthed 张嘴、wide-eyed 睁大眼、bare-footed 光脚、level-headed 头脑冷静的。",
+    "audio": "audio/words/050.mp3"
+   },
+   {
+    "id": "051",
+    "word": "speed",
+    "ipa": "/spiːd/",
+    "pos": "v.",
+    "level": "b1",
+    "meaning": "疾驰；快速移动 （过去式 sped）",
+    "example": "owl after owl sped overhead 一只只猫头鹰从头顶飞驰而过",
+    "memory": "不规则动词：speed - sped - sped（也可作规则 speeded）。搭配：speed up（加速）、at high speed（高速）。",
+    "audio": "audio/words/051.mp3"
+   },
+   {
+    "id": "052",
+    "word": "yell",
+    "ipa": "/jel/",
+    "pos": "v.",
+    "level": "b1",
+    "meaning": "大声喊；吼叫",
+    "example": "He yelled at five people. 他冲五个人大吼。",
+    "memory": "喊叫强度排序：whisper 耳语 < say 说 < shout 喊 < yell 吼 < scream 尖叫。yell at sb＝冲某人吼（带火气）。",
+    "audio": "audio/words/052.mp3"
+   },
+   {
+    "id": "053",
+    "word": "stretch one's legs",
+    "ipa": "",
+    "pos": "短语",
+    "level": "b1",
+    "meaning": "（久坐后）活动活动腿脚；散散步",
+    "example": "thought he'd stretch his legs 想去活动活动腿脚",
+    "memory": "字面\"把腿拉长\"，实际指起身走动。同义：take a walk。同类身体短语：shake a leg（快点）、pull one's leg（开玩笑）。",
+    "audio": "audio/words/053.mp3"
+   },
+   {
+    "id": "054",
+    "word": "bun",
+    "ipa": "/bʌn/",
+    "pos": "n.",
+    "level": "b1",
+    "meaning": "小圆面包；（也指）圆发髻",
+    "example": "buy himself a bun 给自己买个小圆面包",
+    "memory": "一词两义很关键：面包 → 圆圆的形状 → 盘在脑后的发髻。后文麦格教授\"hair drawn into a tight bun\"就是发髻，这里埋了钩子。",
+    "audio": "audio/words/054.mp3"
+   },
+   {
+    "id": "055",
+    "word": "bakery",
+    "ipa": "/ˈbeɪkəri/",
+    "pos": "n.",
+    "level": "b1",
+    "meaning": "面包店",
+    "example": "from the bakery 从面包店",
+    "memory": "bak(e) + -ery（场所后缀）→ 烤东西的地方。同类场所后缀：brewery 酿酒厂、winery 酒庄、grocery 杂货店。",
+    "audio": "audio/words/055.mp3"
+   },
+   {
+    "id": "056",
+    "word": "uneasy",
+    "ipa": "/ʌnˈiːzi/",
+    "pos": "adj.",
+    "level": "b2",
+    "meaning": "心神不安的；不自在的",
+    "example": "they made him uneasy 他们让他心里发毛",
+    "memory": "un-（不）+ easy → \"不自在\"。程度比 worried 轻：是那种隐隐的、说不清的不安。搭配：feel uneasy about sth。",
+    "audio": "audio/words/056.mp3"
+   },
+   {
+    "id": "057",
+    "word": "bunch",
+    "ipa": "/bʌntʃ/",
+    "pos": "n.",
+    "level": "b1",
+    "meaning": "一群（人）；一束、一串",
+    "example": "This bunch were whispering. 这一伙人在窃窃私语。",
+    "memory": "量词家族：a bunch of 一串/一群（口语最常用）、a bunch of flowers 一束花、a bunch of keys 一串钥匙。语气常带\"这帮人\"的随意感。",
+    "audio": "audio/words/057.mp3"
+   },
+   {
+    "id": "058",
+    "word": "collecting tin",
+    "ipa": "/kəˈlektɪŋ tɪn/",
+    "pos": "n.",
+    "level": "b2",
+    "meaning": "（街头募捐用的）募捐罐",
+    "example": "not a single collecting tin 一个募捐罐都没有",
+    "memory": "英国街头常见：一个小铁罐（tin），摇着收零钱。tin 在英式英语里是\"罐头/铁罐\"，美式用 can。",
+    "audio": "audio/words/058.mp3"
+   },
+   {
+    "id": "059",
+    "word": "clutch",
+    "ipa": "/klʌtʃ/",
+    "pos": "v.",
+    "level": "b2",
+    "meaning": "紧紧抓住；攥着",
+    "example": "clutching a large doughnut 紧紧攥着一个大甜甜圈",
+    "memory": "抓握三兄弟的力度排序：hold（握着）< grip（抓紧）< clutch（死死攥住）。clutch 还常形容\"因为紧张/害怕而抓住不放\"。",
+    "audio": "audio/words/059.mp3"
+   },
+   {
+    "id": "060",
+    "word": "doughnut",
+    "ipa": "/ˈdəʊnʌt/",
+    "pos": "n.",
+    "level": "b1",
+    "meaning": "甜甜圈 （美式常拼 donut）",
+    "example": "a large doughnut 一个大甜甜圈",
+    "memory": "dough（面团）+ nut（坚果）→ 像坚果一样圆的面团。同族食物：bread、pastry（酥皮点心）、croissant（可颂）。",
+    "audio": "audio/words/060.mp3"
+   }
+  ]
+ },
+ {
+  "n": 5,
+  "title": "The Old Man in the Violet Cloak",
+  "title_zh": "紫斗篷老人与\"麻瓜\"",
+  "audio": "audio/05.mp3",
+  "paragraphs": [
+   {
+    "id": "014",
+    "section": 5,
+    "en_html": "Mr. Dursley stopped <b>dead</b>. Fear <b>flooded</b> him. He looked back at the whisperers as if he wanted to say something to them, but <b>thought better of it</b>.",
+    "en": "Mr. Dursley stopped dead. Fear flooded him. He looked back at the whisperers as if he wanted to say something to them, but thought better of it.",
+    "zh": "德思礼先生猛地停住了脚。恐惧像潮水一样涌上来。他回头看了看那些交头接耳的人，好像想跟他们说点什么，可转念又觉得不妥，算了。",
+    "audio": "audio/para/014.mp3"
+   },
+   {
+    "id": "015",
+    "section": 5,
+    "en_html": "He <b>dashed</b> back across the road, hurried up to his office, <b>snapped at</b> his secretary not to disturb him, <b>seized</b> his telephone, and had almost finished dialing his home number when he changed his mind. He put the <b>receiver</b> back down and <b>stroked</b> his mustache, thinking… no, he was being stupid. Potter wasn't such an unusual name. <b>Come to think of it</b>, he wasn't even sure his nephew was called Harry. He'd never even seen the boy. It might have been Harvey. Or Harold.",
+    "en": "He dashed back across the road, hurried up to his office, snapped at his secretary not to disturb him, seized his telephone, and had almost finished dialing his home number when he changed his mind. He put the receiver back down and stroked his mustache, thinking… no, he was being stupid. Potter wasn't such an unusual name. Come to think of it, he wasn't even sure his nephew was called Harry. He'd never even seen the boy. It might have been Harvey. Or Harold.",
+    "zh": "他冲过马路，匆匆回到办公室，厉声吩咐秘书别来打扰，一把抓起电话，家里的号码快拨完时又改了主意。他搁下听筒，捋着胡子琢磨……不，他这是犯傻。波特又不是什么稀罕的姓。这么一想，他甚至不敢确定外甥是不是叫哈利——他压根没见过那孩子。也许叫哈维，或者哈罗德。",
+    "audio": "audio/para/015.mp3"
+   },
+   {
+    "id": "016",
+    "section": 5,
+    "en_html": "He found it a lot harder to concentrate on drills that afternoon and when he left the building at five o'clock, he was still so worried that he walked straight into someone just outside the door.",
+    "en": "He found it a lot harder to concentrate on drills that afternoon and when he left the building at five o'clock, he was still so worried that he walked straight into someone just outside the door.",
+    "zh": "那天下午，他发现钻头的事格外难集中精神。五点走出大楼时，他心里还是七上八下，结果刚出门就一头撞在一个人身上。",
+    "audio": "audio/para/016.mp3"
+   },
+   {
+    "id": "017",
+    "section": 5,
+    "en_html": "\"Sorry,\" he <b>grunted</b>, as the tiny old man <b>stumbled</b> and almost fell. It was a few seconds before Mr. Dursley realized that the man was wearing a <b>violet</b> cloak. He didn't seem at all upset at being almost knocked to the ground. <b>On the contrary</b>, his face <b>split into a wide smile</b> and he said in a <b>squeaky</b> voice that made <b>passersby</b> stare, \"Don't be sorry, my dear sir, for nothing could upset me today! <b>Rejoice</b>, for You-Know-Who has gone at last! Even <b>Muggles</b> like yourself should be celebrating, this happy, happy day!\"",
+    "en": "\"Sorry,\" he grunted, as the tiny old man stumbled and almost fell. It was a few seconds before Mr. Dursley realized that the man was wearing a violet cloak. He didn't seem at all upset at being almost knocked to the ground. On the contrary, his face split into a wide smile and he said in a squeaky voice that made passersby stare, \"Don't be sorry, my dear sir, for nothing could upset me today! Rejoice, for You-Know-Who has gone at last! Even Muggles like yourself should be celebrating, this happy, happy day!\"",
+    "zh": "\"抱歉，\"他咕哝了一声，那个矮小的老人踉跄了一下，差点摔倒。过了好几秒，德思礼先生才看清这人穿着一条紫色斗篷。老人被撞得险些倒地，却半点不恼。正相反，他脸上绽开一个大大的笑容，用尖细得让路人都回头的声音说：\"别道歉，亲爱的先生，今天什么事都惹不着我！欢呼吧，因为神秘人终于走了！连您这样的麻瓜都该庆祝，这可是个大喜的日子！\"",
+    "audio": "audio/para/017.mp3"
+   },
+   {
+    "id": "018",
+    "section": 5,
+    "en_html": "And the old man hugged Mr. Dursley around the middle and walked off.",
+    "en": "And the old man hugged Mr. Dursley around the middle and walked off.",
+    "zh": "老人搂着德思礼先生的腰抱了一下，就走了。",
+    "audio": "audio/para/018.mp3"
+   },
+   {
+    "id": "019",
+    "section": 5,
+    "en_html": "Mr. Dursley stood <b>rooted to the spot</b>. He had been hugged by a complete stranger. He also thought he had been called a Muggle, whatever that was. He was <b>rattled</b>. He hurried to his car and <b>set off</b> for home, hoping he was imagining things, which he had never hoped before, because he didn't <b>approve of</b> imagination.",
+    "en": "Mr. Dursley stood rooted to the spot. He had been hugged by a complete stranger. He also thought he had been called a Muggle, whatever that was. He was rattled. He hurried to his car and set off for home, hoping he was imagining things, which he had never hoped before, because he didn't approve of imagination.",
+    "zh": "德思礼先生钉在原地。他被一个素不相识的人抱了。他还觉得自己被人叫作\"麻瓜\"——管那是什么东西。他整个人都慌了。他匆匆钻进车里往家开，一路盼着自己只是胡思乱想——他以前从没这样盼过，因为他向来不赞成\"想象力\"这回事。",
+    "audio": "audio/para/019.mp3"
+   }
+  ],
+  "vocabulary": [
+   {
+    "id": "061",
+    "word": "stop dead",
+    "ipa": "/stɒp ded/",
+    "pos": "短语",
+    "level": "b2",
+    "meaning": "猛地停住；戛然而止",
+    "example": "He stopped dead . 他猛地停住了。",
+    "memory": "dead 在这里是副词，等于\"完全地、突然地\"（dead tired 累死了、dead sure 十分确定）。同义：stop short。",
+    "audio": "audio/words/061.mp3"
+   },
+   {
+    "id": "062",
+    "word": "flood",
+    "ipa": "/flʌd/",
+    "pos": "v.",
+    "level": "b1",
+    "meaning": "（情感）涌上；淹没",
+    "example": "Fear flooded him. 恐惧涌上心头。",
+    "memory": "本义\"洪水\"，作动词＝像洪水一样涌来。同类比喻用法：Tears flooded her eyes.（泪水涌上眼眶）、Memories flooded back.",
+    "audio": "audio/words/062.mp3"
+   },
+   {
+    "id": "063",
+    "word": "think better of it",
+    "ipa": "",
+    "pos": "短语",
+    "level": "b2",
+    "meaning": "（原想做某事）转念一想又作罢",
+    "example": "but thought better of it 但转念一想又算了",
+    "memory": "better＝更明智。字面\"对这件事有了更好的想法\"→ 觉得别干了。写作高分短语，用来表达人物心理转折。",
+    "audio": "audio/words/063.mp3"
+   },
+   {
+    "id": "064",
+    "word": "dash",
+    "ipa": "/dæʃ/",
+    "pos": "v.",
+    "level": "b2",
+    "meaning": "飞奔；猛冲",
+    "example": "He dashed across the road. 他冲过马路。",
+    "memory": "速度排序：walk < hurry < rush < dash < sprint。dash 强调\"短距离猛冲\"。也有\"破折号\"之意（a dash）。",
+    "audio": "audio/words/064.mp3"
+   },
+   {
+    "id": "065",
+    "word": "snap at sb",
+    "ipa": "",
+    "pos": "短语",
+    "level": "b2",
+    "meaning": "厉声对某人说话；没好气地顶回去",
+    "example": "snapped at his secretary 厉声吩咐秘书",
+    "memory": "snap 本义\"啪地折断\"→ 声音短促、带刺地说话。同族：snappish（说话冲的）。对比：shout at（吼）、yell at（咆哮）。",
+    "audio": "audio/words/065.mp3"
+   },
+   {
+    "id": "066",
+    "word": "seize",
+    "ipa": "/siːz/",
+    "pos": "v.",
+    "level": "b2",
+    "meaning": "一把抓住；夺取",
+    "example": "seized his telephone 一把抓起电话",
+    "memory": "比 grab 更猛、更突然。搭配：seize the chance（抓住机会）、seize power（夺权）。注意发音 /siːz/，不是 /saɪz/。",
+    "audio": "audio/words/066.mp3"
+   },
+   {
+    "id": "067",
+    "word": "receiver",
+    "ipa": "/rɪˈsiːvə/",
+    "pos": "n.",
+    "level": "b2",
+    "meaning": "（电话）听筒 （也指\"接收器\"）",
+    "example": "put the receiver back down 放下听筒",
+    "memory": "receive（接收）+ -er（物）→ 接收的东西。老式电话：receiver 听筒、dial 拨号盘、cord 电话线。",
+    "audio": "audio/words/067.mp3"
+   },
+   {
+    "id": "068",
+    "word": "stroke",
+    "ipa": "/strəʊk/",
+    "pos": "v./n.",
+    "level": "b2",
+    "meaning": "抚摸；捋",
+    "example": "stroked his mustache 捋着胡子",
+    "memory": "同形异义要小心：stroke 作名词还可指\"中风\"\"（游泳）划水\"\"（钟的）敲击\"。语境定意思：这里配 mustache 就是\"抚摸\"。",
+    "audio": "audio/words/068.mp3"
+   },
+   {
+    "id": "069",
+    "word": "come to think of it",
+    "ipa": "",
+    "pos": "短语",
+    "level": "b2",
+    "meaning": "这么一想；话说回来",
+    "example": "Come to think of it , he wasn't sure. 这么一想，他也不确定了。",
+    "memory": "口语高频插入语，用来补充一个\"刚想到的\"理由，写作里放句首能让逻辑显得自然。近义：on second thought（再一想）。",
+    "audio": "audio/words/069.mp3"
+   },
+   {
+    "id": "070",
+    "word": "grunt",
+    "ipa": "/ɡrʌnt/",
+    "pos": "v.",
+    "level": "c1",
+    "meaning": "咕哝；哼哼（表示不耐烦或不用力说话）",
+    "example": "\"Sorry,\" he grunted . \"抱歉，\"他咕哝了一声。",
+    "memory": "拟声词，像猪的哼声 → 人懒得好好说话时从鼻子里挤出的声音。同类发声动词：mumble、mutter、murmur。",
+    "audio": "audio/words/070.mp3"
+   },
+   {
+    "id": "071",
+    "word": "stumble",
+    "ipa": "/ˈstʌmbl/",
+    "pos": "v.",
+    "level": "b2",
+    "meaning": "踉跄；绊了一下；说话结巴",
+    "example": "the old man stumbled and almost fell 老人踉跄了一下，险些摔倒",
+    "memory": "搭配记牢：stumble over sth（被某物绊到 / 说话卡在某词上）、stumble across/upon sth（偶然发现）。",
+    "audio": "audio/words/071.mp3"
+   },
+   {
+    "id": "072",
+    "word": "violet",
+    "ipa": "/ˈvaɪələt/",
+    "pos": "adj./n.",
+    "level": "b1",
+    "meaning": "紫罗兰色（的）；紫罗兰",
+    "example": "a violet cloak 一条紫色斗篷",
+    "memory": "紫色系词汇：purple（紫，最常用）、violet（偏蓝紫）、lavender（淡紫）、lilac（丁香紫）、plum（梅子紫）。",
+    "audio": "audio/words/072.mp3"
+   },
+   {
+    "id": "073",
+    "word": "on the contrary",
+    "ipa": "",
+    "pos": "短语",
+    "level": "b2",
+    "meaning": "恰恰相反",
+    "example": "On the contrary , he smiled. 恰恰相反，他笑了。",
+    "memory": "用于纠正对方的想法。区别：on the contrary（相反）vs. on the other hand（另一方面，补充对比）。",
+    "audio": "audio/words/073.mp3"
+   },
+   {
+    "id": "074",
+    "word": "(one's face) split into a wide smile",
+    "ipa": "",
+    "pos": "短语",
+    "level": "c1",
+    "meaning": "（脸上）绽开大大的笑容",
+    "example": "his face split into a wide smile 他脸上绽开一个大大的笑容",
+    "memory": "非常地道的\"写作句\"：split（裂开）比 smile 生动得多。同义高级表达：His face lit up.（他容光焕发）、a grin spread across his face.",
+    "audio": "audio/words/074.mp3"
+   },
+   {
+    "id": "075",
+    "word": "squeaky",
+    "ipa": "/ˈskwiːki/",
+    "pos": "adj.",
+    "level": "c1",
+    "meaning": "尖细刺耳的；吱吱作响的",
+    "example": "a squeaky voice 尖细的嗓音",
+    "memory": "拟声词 squeak（吱吱声）→ 形容词。同族：squeal（尖叫）、squeak（短促尖叫）、creak（木门吱呀声）。",
+    "audio": "audio/words/075.mp3"
+   },
+   {
+    "id": "076",
+    "word": "passerby",
+    "ipa": "/ˌpɑːsəˈbaɪ/",
+    "pos": "n.",
+    "level": "b2",
+    "meaning": "路人（复数 passersby）",
+    "example": "made passersby stare 让路人都盯着看",
+    "memory": "把 pass + by + er 拼在一起，复数把 -er 变 -ers：passersby。同类的\"人\"：bystander（旁观者）、onlooker（围观者）。",
+    "audio": "audio/words/076.mp3"
+   },
+   {
+    "id": "077",
+    "word": "rejoice",
+    "ipa": "/rɪˈdʒɔɪs/",
+    "pos": "v.",
+    "level": "c1",
+    "meaning": "欢欣鼓舞；欣喜",
+    "example": "Rejoice , for he has gone! 欢呼吧，他走了！",
+    "memory": "re-（再）+ joice（≈joy 喜悦）→ 重新充满喜悦。正式/文学色彩重，日常口语多说 be delighted。反义：grieve（悲伤）。",
+    "audio": "audio/words/077.mp3"
+   },
+   {
+    "id": "078",
+    "word": "Muggle",
+    "ipa": "/ˈmʌɡl/",
+    "pos": "n.",
+    "level": "c1",
+    "meaning": "麻瓜（非魔法人士）",
+    "example": "Even Muggles like yourself… 连您这样的麻瓜……",
+    "memory": "原著核心造词，首字母大写。同族：Muggle-born（麻瓜出身的巫师）。记忆：mug（傻瓜/大杯子）+ -le → 被巫师当成\"啥也不懂的普通人\"。",
+    "audio": "audio/words/078.mp3"
+   },
+   {
+    "id": "079",
+    "word": "be rooted to the spot",
+    "ipa": "",
+    "pos": "短语",
+    "level": "c1",
+    "meaning": "（惊得）钉在原地，动弹不得",
+    "example": "He stood rooted to the spot . 他钉在原地。",
+    "memory": "root（根）→ 像生了根一样扎在那一块地方。写作常用神态描写，同义：frozen to the spot、nailed to the ground。",
+    "audio": "audio/words/079.mp3"
+   },
+   {
+    "id": "080",
+    "word": "rattled",
+    "ipa": "/ˈrætld/",
+    "pos": "adj.",
+    "level": "c1",
+    "meaning": "慌乱的；心神不宁的",
+    "example": "He was rattled . 他慌了神。",
+    "memory": "原义\"被弄得咔咔响\"→ 心里被搅得七上八下。同义：shaken、flustered。动词 rattle 还有\"使恼火\"之意。",
+    "audio": "audio/words/080.mp3"
+   },
+   {
+    "id": "081",
+    "word": "set off (for)",
+    "ipa": "",
+    "pos": "短语",
+    "level": "b1",
+    "meaning": "出发前往",
+    "example": "set off for home 动身回家",
+    "memory": "set off 还有\"引爆、引发\"之意（set off a bomb / set off a panic），一词多义要靠宾语判断。",
+    "audio": "audio/words/081.mp3"
+   },
+   {
+    "id": "082",
+    "word": "approve of",
+    "ipa": "",
+    "pos": "短语",
+    "level": "b2",
+    "meaning": "赞成；认可",
+    "example": "didn't approve of imagination 不赞成\"想象力\"这回事",
+    "memory": "approve 单独用＝批准（approve the plan）；approve of＝主观上赞同，必须有 of。这是高频搭配考点。",
+    "audio": "audio/words/082.mp3"
+   }
+  ]
+ },
+ {
+  "n": 6,
+  "title": "The Evening News: A Downpour of Shooting Stars",
+  "title_zh": "晚间新闻：一场流星雨",
+  "audio": "audio/06.mp3",
+  "paragraphs": [
+   {
+    "id": "020",
+    "section": 6,
+    "en_html": "As he pulled into the <b>driveway</b> of number four, the first thing he saw — and it didn't <b>improve</b> his mood — was the tabby cat he'd spotted that morning. It was now sitting on his garden wall. He was sure it was the same one; it had the same <b>markings</b> around its eyes.",
+    "en": "As he pulled into the driveway of number four, the first thing he saw — and it didn't improve his mood — was the tabby cat he'd spotted that morning. It was now sitting on his garden wall. He was sure it was the same one; it had the same markings around its eyes.",
+    "zh": "他把车开进四号的车道，第一眼看到的（这也让他心情更糟）就是早上见过的那只虎斑猫。它此刻正蹲在他家花园的矮墙上。他敢肯定就是同一只——眼睛周围的斑纹一模一样。",
+    "audio": "audio/para/020.mp3"
+   },
+   {
+    "id": "021",
+    "section": 6,
+    "en_html": "\"Shoo!\" said Mr. Dursley loudly. The cat didn't move. It just gave him a <b>stern</b> look. Was this normal cat behavior? Mr. Dursley wondered. Trying to <b>pull himself together</b>, he let himself into the house. He was still <b>determined</b> not to mention anything to his wife.",
+    "en": "\"Shoo!\" said Mr. Dursley loudly. The cat didn't move. It just gave him a stern look. Was this normal cat behavior? Mr. Dursley wondered. Trying to pull himself together, he let himself into the house. He was still determined not to mention anything to his wife.",
+    "zh": "\"嘘！\"德思礼先生大声轰它。猫纹丝不动，只冷冷地瞪了他一眼。这算正常的猫的行为吗？德思礼先生纳闷。他努力让自己镇定下来，进了屋。他还是打定主意：一个字都不跟妻子提。",
+    "audio": "audio/para/021.mp3"
+   },
+   {
+    "id": "022",
+    "section": 6,
+    "en_html": "Mrs. Dursley had had a nice, normal day. She told him <b>over dinner</b> all about Mrs. Next Door's problems with her daughter and how Dudley had learned a new word (\"Won't!\"). When Dudley had been put to bed, he went into the living room in time to catch the last report on the evening news:",
+    "en": "Mrs. Dursley had had a nice, normal day. She told him over dinner all about Mrs. Next Door's problems with her daughter and how Dudley had learned a new word (\"Won't!\"). When Dudley had been put to bed, he went into the living room in time to catch the last report on the evening news:",
+    "zh": "德思礼太太这一天过得挺好、挺正常。晚饭时她跟他絮叨：隔壁太太跟女儿闹的那些烦心事，还有达力学会了一个新词（\"就不！\"）。达力被哄上床之后，他走进客厅，正好赶上晚间新闻的最后一条：",
+    "audio": "audio/para/022.mp3"
+   },
+   {
+    "id": "023",
+    "section": 6,
+    "en_html": "\"And finally, <b>bird-watchers</b> everywhere have reported that the nation's owls have been behaving very unusually today. Although owls normally hunt at night and are hardly ever seen in daylight, there have been hundreds of <b>sightings</b> of these birds flying in every direction since sunrise. Experts are unable to explain why the owls have suddenly changed their sleeping pattern.\" The <b>newscaster</b> allowed himself a <b>grin</b>. \"Most mysterious. And now, over to Jim McGuffin with the weather. Going to be any more <b>showers</b> of owls tonight, Jim?\"",
+    "en": "\"And finally, bird-watchers everywhere have reported that the nation's owls have been behaving very unusually today. Although owls normally hunt at night and are hardly ever seen in daylight, there have been hundreds of sightings of these birds flying in every direction since sunrise. Experts are unable to explain why the owls have suddenly changed their sleeping pattern.\" The newscaster allowed himself a grin. \"Most mysterious. And now, over to Jim McGuffin with the weather. Going to be any more showers of owls tonight, Jim?\"",
+    "zh": "\"最后一条消息：各地观鸟者报告说，今天全国的猫头鹰行为极为反常。猫头鹰通常夜间捕食，白天几乎见不到；可自日出以来，已有数百人次目击这种鸟朝四面八方飞去。专家无法解释猫头鹰为何突然改变了作息。\"新闻主播忍不住咧嘴一笑。\"真是神秘至极。下面把时间交给吉姆·麦格芬，看天气。吉姆，今晚还会不会有'猫头鹰阵雨'？\"",
+    "audio": "audio/para/023.mp3"
+   },
+   {
+    "id": "024",
+    "section": 6,
+    "en_html": "\"Well, Ted,\" said the weatherman, \"I don't know about that, but it's not only the owls that have been acting oddly today. Viewers as far apart as Kent, Yorkshire, and Dundee have been phoning in to tell me that instead of the rain I promised yesterday, they've had a <b>downpour</b> of <b>shooting stars</b>! Perhaps people have been celebrating <b>Bonfire Night</b> early — it's not until next week, folks! But I can promise a wet night tonight.\"",
+    "en": "\"Well, Ted,\" said the weatherman, \"I don't know about that, but it's not only the owls that have been acting oddly today. Viewers as far apart as Kent, Yorkshire, and Dundee have been phoning in to tell me that instead of the rain I promised yesterday, they've had a downpour of shooting stars! Perhaps people have been celebrating Bonfire Night early — it's not until next week, folks! But I can promise a wet night tonight.\"",
+    "zh": "\"呃，特德，\"气象员说，\"这我可说不准。不过今天行为古怪的可不止猫头鹰。远在肯特、约克郡和邓迪的观众都打来电话说，昨天我预报的那场雨没来，他们那儿反倒下了一场流星雨！也许大家是提前过篝火之夜了——那还得等到下周呢，各位！不过今晚我可以保证：有雨。\"",
+    "audio": "audio/para/024.mp3"
+   },
+   {
+    "id": "025",
+    "section": 6,
+    "en_html": "Mr. Dursley sat frozen in his <b>armchair</b>. Shooting stars all over Britain? Owls flying by daylight? Mysterious people in cloaks all over the place? And a whisper, a whisper about the Potters…",
+    "en": "Mr. Dursley sat frozen in his armchair. Shooting stars all over Britain? Owls flying by daylight? Mysterious people in cloaks all over the place? And a whisper, a whisper about the Potters…",
+    "zh": "德思礼先生僵在扶手椅里。全英国都在下流星？猫头鹰大白天乱飞？到处都是穿斗篷的神秘人？还有那句低语，那句关于波特家的低语……",
+    "audio": "audio/para/025.mp3"
+   }
+  ],
+  "vocabulary": [
+   {
+    "id": "083",
+    "word": "driveway",
+    "ipa": "/ˈdraɪvweɪ/",
+    "pos": "n.",
+    "level": "b2",
+    "meaning": "（住宅前的）私人车道",
+    "example": "pulled into the driveway 把车开进车道",
+    "memory": "drive（车道）+ way（路）→ 私人车道。英式也直接说 drive。美式住宅文化里 driveway 是很高频的词。",
+    "audio": "audio/words/083.mp3"
+   },
+   {
+    "id": "084",
+    "word": "improve",
+    "ipa": "/ɪmˈpruːv/",
+    "pos": "v.",
+    "level": "b1",
+    "meaning": "改善；使变好",
+    "example": "didn't improve his mood 并没有让他心情变好",
+    "memory": "写作常用反向表达：It didn't improve his mood.（这让他心情更糟。）词族：improvement、improved。反义：worsen。",
+    "audio": "audio/words/084.mp3"
+   },
+   {
+    "id": "085",
+    "word": "marking",
+    "ipa": "/ˈmɑːkɪŋ/",
+    "pos": "n.",
+    "level": "b2",
+    "meaning": "（动物皮毛上的）斑纹、花纹；（考试的）评分",
+    "example": "the same markings around its eyes 眼睛周围一模一样的斑纹",
+    "memory": "mark（标记）+ -ing → 身上的\"标记\"。动物毛色描述常用：markings、spots（斑点）、stripes（条纹）、patches（色块）。",
+    "audio": "audio/words/085.mp3"
+   },
+   {
+    "id": "086",
+    "word": "shoo",
+    "ipa": "",
+    "pos": "感叹词/动词",
+    "level": "c1",
+    "meaning": "嘘！（赶走动物时的吆喝）",
+    "example": "\" Shoo !\" said Mr. Dursley. \"嘘！\"德思礼先生说。",
+    "memory": "口语拟声词，专门用于轰猫狗鸡。作动词：shoo sb away（把人轰走）。类似吆喝：Shoo! / Scat! / Go on!",
+    "audio": "audio/words/086.mp3"
+   },
+   {
+    "id": "087",
+    "word": "stern",
+    "ipa": "/stɜːn/",
+    "pos": "adj.",
+    "level": "b2",
+    "meaning": "严厉的；严肃的",
+    "example": "a stern look 严厉的一瞥",
+    "memory": "形容表情、目光、规矩严。近义辨析：strict（要求严格的，多形容人/规则）、stern（神情严厉）、severe（严厉到有点冷酷）。",
+    "audio": "audio/words/087.mp3"
+   },
+   {
+    "id": "088",
+    "word": "pull oneself together",
+    "ipa": "",
+    "pos": "短语",
+    "level": "b2",
+    "meaning": "镇定下来；振作起来",
+    "example": "Trying to pull himself together 努力让自己镇定下来",
+    "memory": "把自己\"重新拼起来\"→ 收拾心情。同义口语：get a grip、calm down、collect oneself。反义：fall apart（崩溃）。",
+    "audio": "audio/words/088.mp3"
+   },
+   {
+    "id": "089",
+    "word": "determined",
+    "ipa": "/dɪˈtɜːmɪnd/",
+    "pos": "adj.",
+    "level": "b1",
+    "meaning": "下定决心的；坚决的",
+    "example": "still determined not to mention it 仍然打定主意不提这事",
+    "memory": "搭配必背：be determined to do sth（决心做某事）。词族：determine（决定）→ determination（决心）。",
+    "audio": "audio/words/089.mp3"
+   },
+   {
+    "id": "090",
+    "word": "over dinner",
+    "ipa": "",
+    "pos": "短语",
+    "level": "b1",
+    "meaning": "吃晚饭时（边吃边……）",
+    "example": "told him over dinner 晚饭时告诉了他",
+    "memory": "over + 餐饮＝在做这件事的过程中：over lunch、over coffee、over a drink。写作很好用，替代 when they were eating。",
+    "audio": "audio/words/090.mp3"
+   },
+   {
+    "id": "091",
+    "word": "bird-watcher",
+    "ipa": "/ˈbɜːd wɒtʃə/",
+    "pos": "n.",
+    "level": "b2",
+    "meaning": "观鸟者；鸟类观察爱好者",
+    "example": "bird-watchers everywhere 各地的观鸟者",
+    "memory": "名词 + -watcher 构词：bird-watcher、people-watcher（爱观察路人的人）、weight-watcher（减肥的人）。-er 表\"人\"。",
+    "audio": "audio/words/091.mp3"
+   },
+   {
+    "id": "092",
+    "word": "sighting",
+    "ipa": "/ˈsaɪtɪŋ/",
+    "pos": "n.",
+    "level": "b2",
+    "meaning": "目击（事件）；被看到的次数",
+    "example": "hundreds of sightings 数百起目击",
+    "memory": "sight（看见）+ -ing。新闻高频词：a UFO sighting（UFO 目击事件）、confirmed sightings（已确认的目击）。",
+    "audio": "audio/words/092.mp3"
+   },
+   {
+    "id": "093",
+    "word": "newscaster",
+    "ipa": "/ˈnjuːzkɑːstə/",
+    "pos": "n.",
+    "level": "c1",
+    "meaning": "新闻主播",
+    "example": "The newscaster grinned. 新闻主播咧嘴一笑。",
+    "memory": "news + cast（播送）+ -er。同族媒体词：broadcaster（播音员）、anchor（主播/台柱）、correspondent（特派记者）。",
+    "audio": "audio/words/093.mp3"
+   },
+   {
+    "id": "094",
+    "word": "grin",
+    "ipa": "/ɡrɪn/",
+    "pos": "v./n.",
+    "level": "b2",
+    "meaning": "咧嘴笑；露齿一笑",
+    "example": "allowed himself a grin 忍不住咧嘴笑了",
+    "memory": "嘴型记忆：grin 的嘴咧得比 smile 大，露出牙齿。搭配：grin at sb、grin from ear to ear（笑得合不拢嘴）。",
+    "audio": "audio/words/094.mp3"
+   },
+   {
+    "id": "095",
+    "word": "shower",
+    "ipa": "/ˈʃaʊə/",
+    "pos": "n.",
+    "level": "b1",
+    "meaning": "一阵（雨/雪/流星）；淋浴 （这里是比喻）",
+    "example": "showers of owls \"猫头鹰阵雨\"",
+    "memory": "a shower of sth＝一阵、一批。原句是主播的玩笑：把\"猫头鹰成群飞过\"说成下\"猫头鹰雨\"，照应前面的流星雨。",
+    "audio": "audio/words/095.mp3"
+   },
+   {
+    "id": "096",
+    "word": "downpour",
+    "ipa": "/ˈdaʊnpɔː/",
+    "pos": "n.",
+    "level": "b2",
+    "meaning": "倾盆大雨",
+    "example": "a downpour of shooting stars 一场\"流星暴雨\"",
+    "memory": "down（向下）+ pour（倒）→ 水往下倒。雨的大小阶梯：drizzle（毛毛雨）< shower（阵雨）< downpour（暴雨）< torrential rain（瓢泼大雨）。",
+    "audio": "audio/words/096.mp3"
+   },
+   {
+    "id": "097",
+    "word": "shooting star",
+    "ipa": "/ˈʃuːtɪŋ stɑː/",
+    "pos": "n.",
+    "level": "b2",
+    "meaning": "流星",
+    "example": "a downpour of shooting stars 一场流星雨",
+    "memory": "字面\"会飞的星星\"。天文学正式说法是 meteor（流星）。同类：meteor shower（流星雨）、comet（彗星）。",
+    "audio": "audio/words/097.mp3"
+   },
+   {
+    "id": "098",
+    "word": "Bonfire Night",
+    "ipa": "/ˈbɒnfaɪə naɪt/",
+    "pos": "专名",
+    "level": "c1",
+    "meaning": "篝火之夜（英国 11 月 5 日，放烟花纪念火药阴谋）",
+    "example": "celebrating Bonfire Night early 提前过篝火之夜",
+    "memory": "bonfire＝bon（骨头）+ fire，原指烧骨头的火。英国文化常识词，考点常与 fireworks（烟花）连在一起。",
+    "audio": "audio/words/098.mp3"
+   },
+   {
+    "id": "099",
+    "word": "armchair",
+    "ipa": "/ˈɑːmtʃeə/",
+    "pos": "n.",
+    "level": "b1",
+    "meaning": "扶手椅",
+    "example": "sat frozen in his armchair 僵坐在扶手椅里",
+    "memory": "arm（扶手）+ chair（椅子）。同类家具复合词：bookshelf、bedside table、coffee table、wardrobe。",
+    "audio": "audio/words/099.mp3"
+   }
+  ]
+ },
+ {
+  "n": 7,
+  "title": "Testing Petunia",
+  "title_zh": "试探佩妮",
+  "audio": "audio/07.mp3",
+  "paragraphs": [
+   {
+    "id": "026",
+    "section": 7,
+    "en_html": "Mrs. Dursley came into the living room carrying two cups of tea. It was no good. He'd have to say something to her. He <b>cleared his throat</b> nervously. \"Er — Petunia, dear — you haven't heard from your sister lately, have you?\"",
+    "en": "Mrs. Dursley came into the living room carrying two cups of tea. It was no good. He'd have to say something to her. He cleared his throat nervously. \"Er — Petunia, dear — you haven't heard from your sister lately, have you?\"",
+    "zh": "德思礼太太端着两杯茶走进客厅。这下没辙了，他总得跟她说点什么。他紧张地清了清嗓子。\"呃——佩妮，亲爱的——你最近……没收到你妹妹的信吧？\"",
+    "audio": "audio/para/026.mp3"
+   },
+   {
+    "id": "027",
+    "section": 7,
+    "en_html": "As he had expected, Mrs. Dursley looked shocked and angry. After all, they normally pretended she didn't have a sister.",
+    "en": "As he had expected, Mrs. Dursley looked shocked and angry. After all, they normally pretended she didn't have a sister.",
+    "zh": "不出他所料，德思礼太太一脸震惊和恼怒。毕竟，他们平时都装作她没有妹妹。",
+    "audio": "audio/para/027.mp3"
+   },
+   {
+    "id": "028",
+    "section": 7,
+    "en_html": "\"No,\" she said <b>sharply</b>. \"Why?\"",
+    "en": "\"No,\" she said sharply. \"Why?\"",
+    "zh": "\"没有，\"她尖声说。\"怎么了？\"",
+    "audio": "audio/para/028.mp3"
+   },
+   {
+    "id": "029",
+    "section": 7,
+    "en_html": "\"Funny stuff on the news,\" Mr. Dursley <b>mumbled</b>. \"Owls… shooting stars… and there were a lot of funny-looking people in town today…\"",
+    "en": "\"Funny stuff on the news,\" Mr. Dursley mumbled. \"Owls… shooting stars… and there were a lot of funny-looking people in town today…\"",
+    "zh": "\"新闻里有点怪事，\"德思礼先生含含糊糊地说，\"猫头鹰……流星……今天城里还有好多长相古怪的人……\"",
+    "audio": "audio/para/029.mp3"
+   },
+   {
+    "id": "030",
+    "section": 7,
+    "en_html": "\"So?\" <b>snapped</b> Mrs. Dursley.",
+    "en": "\"So?\" snapped Mrs. Dursley.",
+    "zh": "\"所以呢？\"德思礼太太没好气地顶了一句。",
+    "audio": "audio/para/030.mp3"
+   },
+   {
+    "id": "031",
+    "section": 7,
+    "en_html": "\"Well, I just thought… maybe… it was something to do with… you know… her crowd.\"",
+    "en": "\"Well, I just thought… maybe… it was something to do with… you know… her crowd.\"",
+    "zh": "\"呃，我就是想……也许……这事跟……你知道的……她那帮人有关。\"",
+    "audio": "audio/para/031.mp3"
+   },
+   {
+    "id": "032",
+    "section": 7,
+    "en_html": "Mrs. Dursley <b>sipped</b> her tea through <b>pursed lips</b>. Mr. Dursley wondered whether he dared tell her he'd heard the name \"Potter.\" He decided he didn't dare. Instead he said, as <b>casually</b> as he could, \"Their son — he'd be about Dudley's age now, wouldn't he?\"",
+    "en": "Mrs. Dursley sipped her tea through pursed lips. Mr. Dursley wondered whether he dared tell her he'd heard the name \"Potter.\" He decided he didn't dare. Instead he said, as casually as he could, \"Their son — he'd be about Dudley's age now, wouldn't he?\"",
+    "zh": "德思礼太太噘着嘴抿了口茶。德思礼先生琢磨自己敢不敢告诉她，他听到了\"波特\"这个姓。他决定：不敢。于是他尽量装作若无其事地说：\"他们家的儿子——现在该跟达力差不多大了吧？\"",
+    "audio": "audio/para/032.mp3"
+   },
+   {
+    "id": "033",
+    "section": 7,
+    "en_html": "\"I suppose so,\" said Mrs. Dursley <b>stiffly</b>.",
+    "en": "\"I suppose so,\" said Mrs. Dursley stiffly.",
+    "zh": "\"大概是吧，\"德思礼太太生硬地说。",
+    "audio": "audio/para/033.mp3"
+   },
+   {
+    "id": "034",
+    "section": 7,
+    "en_html": "\"What's his name again? Howard, isn't it?\"",
+    "en": "\"What's his name again? Howard, isn't it?\"",
+    "zh": "\"他叫什么来着？霍华德，是吧？\"",
+    "audio": "audio/para/034.mp3"
+   },
+   {
+    "id": "035",
+    "section": 7,
+    "en_html": "\"Harry. Nasty, <b>common</b> name, if you ask me.\"",
+    "en": "\"Harry. Nasty, common name, if you ask me.\"",
+    "zh": "\"哈利。要我说，这名字又难听又俗气。\"",
+    "audio": "audio/para/035.mp3"
+   },
+   {
+    "id": "036",
+    "section": 7,
+    "en_html": "\"Oh, yes,\" said Mr. Dursley, his heart <b>sinking</b> horribly. \"Yes, I quite agree.\"",
+    "en": "\"Oh, yes,\" said Mr. Dursley, his heart sinking horribly. \"Yes, I quite agree.\"",
+    "zh": "\"哦，对，\"德思礼先生说，心猛地往下沉。\"对，我完全同意。\"",
+    "audio": "audio/para/036.mp3"
+   },
+   {
+    "id": "037",
+    "section": 7,
+    "en_html": "He didn't say another word on the subject as they went upstairs to bed. While Mrs. Dursley was in the bathroom, Mr. Dursley <b>crept</b> to the bedroom window and <b>peered</b> down into the front garden. The cat was still there. It was staring down Privet Drive <b>as though</b> it were waiting for something.",
+    "en": "He didn't say another word on the subject as they went upstairs to bed. While Mrs. Dursley was in the bathroom, Mr. Dursley crept to the bedroom window and peered down into the front garden. The cat was still there. It was staring down Privet Drive as though it were waiting for something.",
+    "zh": "两人上楼睡觉时，他再没提这个话题。趁德思礼太太在浴室，德思礼先生蹑手蹑脚走到卧室窗边，探头往下看前花园。那只猫还在那儿。它盯着女贞路那头，仿佛在等什么。",
+    "audio": "audio/para/037.mp3"
+   }
+  ],
+  "vocabulary": [
+   {
+    "id": "100",
+    "word": "clear one's throat",
+    "ipa": "",
+    "pos": "短语",
+    "level": "b2",
+    "meaning": "清嗓子（多表示紧张或要开口）",
+    "example": "He cleared his throat nervously. 他紧张地清了清嗓子。",
+    "memory": "动作描写表达情绪，写作加分。同类\"紧张小动作\"：bite one's lip（咬嘴唇）、fidget（坐立不安）、avoid eye contact。",
+    "audio": "audio/words/100.mp3"
+   },
+   {
+    "id": "101",
+    "word": "sharply",
+    "ipa": "/ˈʃɑːpli/",
+    "pos": "adv.",
+    "level": "b2",
+    "meaning": "尖刻地；严厉地 （也指\"急剧地\"）",
+    "example": "\"No,\" she said sharply . \"没有，\"她尖声说。",
+    "memory": "说话方式副词族：sharply（尖刻）、coldly（冷淡）、stiffly（生硬）、flatly（断然）、curtly（简短无礼）。",
+    "audio": "audio/words/101.mp3"
+   },
+   {
+    "id": "102",
+    "word": "mumble",
+    "ipa": "/ˈmʌmbl/",
+    "pos": "v.",
+    "level": "b2",
+    "meaning": "含糊不清地说；嘟囔",
+    "example": "Mr. Dursley mumbled . 德思礼先生含糊地说。",
+    "memory": "m- 开头表\"闭嘴含混\"：mumble（嘟囔）、mutter（低声咕哝）、murmur（低语）。三兄弟意思接近，mutter 带抱怨，murmur 更柔和。",
+    "audio": "audio/words/102.mp3"
+   },
+   {
+    "id": "103",
+    "word": "snap",
+    "ipa": "/snæp/",
+    "pos": "v.",
+    "level": "b2",
+    "meaning": "（没好气地）顶嘴、厉声说",
+    "example": "\"So?\" snapped Mrs. Dursley. \"所以呢？\"她没好气地顶回去。",
+    "memory": "snap 本义\"啪一声断掉\"→ 话说得像鞭子一样短促。口语：Don't snap at me!（别冲我发火！）",
+    "audio": "audio/words/103.mp3"
+   },
+   {
+    "id": "104",
+    "word": "sip",
+    "ipa": "/sɪp/",
+    "pos": "v./n.",
+    "level": "b2",
+    "meaning": "小口喝；抿",
+    "example": "She sipped her tea. 她抿了口茶。",
+    "memory": "喝的四种方式：sip 小口抿、gulp 大口灌、swallow 咽下、chug 一口气干完（口语）。",
+    "audio": "audio/words/104.mp3"
+   },
+   {
+    "id": "105",
+    "word": "pursed lips",
+    "ipa": "/pɜːst lɪps/",
+    "pos": "短语",
+    "level": "c1",
+    "meaning": "噘起的嘴唇（表示不悦、隐忍）",
+    "example": "through pursed lips 噘着嘴",
+    "memory": "purse 本义\"钱包\"，动词指\"把嘴像钱包口一样收紧\"。同类表情描写：rolled eyes、raised eyebrows、pressed lips。",
+    "audio": "audio/words/105.mp3"
+   },
+   {
+    "id": "106",
+    "word": "casually",
+    "ipa": "/ˈkæʒuəli/",
+    "pos": "adv.",
+    "level": "b2",
+    "meaning": "若无其事地；随意地",
+    "example": "as casually as he could 尽可能装作不经意地",
+    "memory": "casual（随意的）→ casually。写作神器：as casually as he could 表示\"刻意装作不在乎\"，比 simply said 有味道。",
+    "audio": "audio/words/106.mp3"
+   },
+   {
+    "id": "107",
+    "word": "stiffly",
+    "ipa": "/ˈstɪfli/",
+    "pos": "adv.",
+    "level": "c1",
+    "meaning": "生硬地；僵硬地",
+    "example": "said Mrs. Dursley stiffly 德思礼太太生硬地说",
+    "memory": "stiff（僵硬的）→ 身体僵、态度也僵。这个词后面还会出现：麦格教授当猫时\"sitting so stiffly\"，一语双关。",
+    "audio": "audio/words/107.mp3"
+   },
+   {
+    "id": "108",
+    "word": "common",
+    "ipa": "/ˈkɒmən/",
+    "pos": "adj.",
+    "level": "sy",
+    "meaning": "粗俗的；低档次的 （熟义\"普通的、共同的\"）",
+    "example": "a nasty, common name 一个又难听又俗气的名字",
+    "memory": "英式口语里 common 常作贬义，指\"没教养、档次低\"。这是判断人物阶级偏见的词眼，看懂它才懂德思礼一家的势利。",
+    "audio": "audio/words/108.mp3"
+   },
+   {
+    "id": "109",
+    "word": "one's heart sinks",
+    "ipa": "",
+    "pos": "短语",
+    "level": "b2",
+    "meaning": "心猛地一沉；顿时失望",
+    "example": "his heart sinking horribly 心猛地一沉",
+    "memory": "心脏\"往下沉\"＝希望落空。反义：one's heart leaps / soars（心花怒放）。写作情感描写必备。",
+    "audio": "audio/words/109.mp3"
+   },
+   {
+    "id": "110",
+    "word": "creep",
+    "ipa": "/kriːp/",
+    "pos": "v.",
+    "level": "b1",
+    "meaning": "蹑手蹑脚地走；悄悄移动 （crept 是过去式）",
+    "example": "Mr. Dursley crept to the window 德思礼先生悄悄走到窗边",
+    "memory": "不规则动词：creep - crept - crept。同义：sneak、tiptoe。注意 creep 作名词还指\"讨厌的人\"（口语）。",
+    "audio": "audio/words/110.mp3"
+   },
+   {
+    "id": "111",
+    "word": "peer",
+    "ipa": "/pɪə/",
+    "pos": "v.",
+    "level": "b2",
+    "meaning": "（费力地）凝视、盯着看",
+    "example": "peered down into the garden 探头往下看花园",
+    "memory": "不是随便看：peer 指\"眯着眼、凑近了仔细看\"，常用于光线暗或看不清时。同义：squint、stare closely。",
+    "audio": "audio/words/111.mp3"
+   },
+   {
+    "id": "112",
+    "word": "as though",
+    "ipa": "",
+    "pos": "连词",
+    "level": "b1",
+    "meaning": "好像；仿佛",
+    "example": "as though it were waiting 仿佛在等着什么",
+    "memory": "= as if，后面常用虚拟语气（were 而非 was）。本句 it were 就是虚拟，因为猫其实不是\"在等\"，只是看起来像。",
+    "audio": "audio/words/112.mp3"
+   }
+  ]
+ },
+ {
+  "n": 8,
+  "title": "The Cat on the Wall at Midnight",
+  "title_zh": "午夜街角的守望",
+  "audio": "audio/08.mp3",
+  "paragraphs": [
+   {
+    "id": "038",
+    "section": 8,
+    "en_html": "The Dursleys got into bed. Mrs. Dursley fell asleep quickly but Mr. Dursley lay awake, <b>turning it all over in his mind</b>. His last, <b>comforting</b> thought before he fell asleep was that even if the Potters were involved, there was no reason for them to come near him and Mrs. Dursley. The Potters knew very well what he and Petunia thought about them and their kind… He couldn't see how he and Petunia could get <b>mixed up</b> in anything that might be going on — he yawned and turned over — it couldn't <b>affect</b> them…",
+    "en": "The Dursleys got into bed. Mrs. Dursley fell asleep quickly but Mr. Dursley lay awake, turning it all over in his mind. His last, comforting thought before he fell asleep was that even if the Potters were involved, there was no reason for them to come near him and Mrs. Dursley. The Potters knew very well what he and Petunia thought about them and their kind… He couldn't see how he and Petunia could get mixed up in anything that might be going on — he yawned and turned over — it couldn't affect them…",
+    "zh": "德思礼夫妇上了床。德思礼太太很快睡着了，德思礼先生却睁眼躺着，把这一切在脑子里翻来覆去地过。入睡前最后一个让他安心的念头是：就算波特家真牵扯进去了，他们也没有理由跑到他和妻子跟前来。波特夫妇很清楚他和佩妮怎么看他们、怎么看他们那类人……他想不出自己和佩妮怎么可能被卷进正在发生的什么事里——他打了个哈欠，翻了个身——这事不可能影响到他们……",
+    "audio": "audio/para/038.mp3"
+   },
+   {
+    "id": "039",
+    "section": 8,
+    "en_html": "How very wrong he was.",
+    "en": "How very wrong he was.",
+    "zh": "他可真是错得离谱。",
+    "audio": "audio/para/039.mp3"
+   },
+   {
+    "id": "040",
+    "section": 8,
+    "en_html": "Mr. Dursley might have been <b>drifting into</b> an uneasy sleep, but the cat on the wall outside was showing no sign of sleepiness. It was sitting as still as a <b>statue</b>, its eyes <b>fixed unblinkingly</b> on the far corner of Privet Drive. It didn't so much as <b>quiver</b> when a car door <b>slammed</b> on the next street, nor when two owls swooped overhead. In fact, it was nearly midnight before the cat moved at all.",
+    "en": "Mr. Dursley might have been drifting into an uneasy sleep, but the cat on the wall outside was showing no sign of sleepiness. It was sitting as still as a statue, its eyes fixed unblinkingly on the far corner of Privet Drive. It didn't so much as quiver when a car door slammed on the next street, nor when two owls swooped overhead. In fact, it was nearly midnight before the cat moved at all.",
+    "zh": "德思礼先生或许正渐渐滑进一场不安稳的梦里，可墙外那只猫却毫无睡意。它像一尊雕像般纹丝不动，两眼一眨不眨地锁着女贞路另一头的街角。隔壁街上有车门\"砰\"地关上，它没颤一下；两只猫头鹰从头顶俯冲而过，它也没颤一下。事实上，快到午夜时，那只猫才头一次动。",
+    "audio": "audio/para/040.mp3"
+   },
+   {
+    "id": "041",
+    "section": 8,
+    "en_html": "A man appeared on the corner the cat had been watching, appeared so suddenly and silently you'd have thought he'd just <b>popped out of the ground</b>. The cat's tail <b>twitched</b> and its eyes <b>narrowed</b>.",
+    "en": "A man appeared on the corner the cat had been watching, appeared so suddenly and silently you'd have thought he'd just popped out of the ground. The cat's tail twitched and its eyes narrowed.",
+    "zh": "一个男人出现在猫一直盯着的那处街角。他出现得那么突然、那么悄无声息，简直像是从地里冒出来的。猫的尾巴抽动了一下，眼睛眯了起来。",
+    "audio": "audio/para/041.mp3"
+   },
+   {
+    "id": "042",
+    "section": 8,
+    "en_html": "Nothing like this man had ever been seen on Privet Drive. He was tall, thin, and very old, judging by the silver of his hair and beard, which were both long enough to <b>tuck into</b> his belt. He was wearing long <b>robes</b>, a purple cloak that swept the ground, and high-heeled, <b>buckled</b> boots. His blue eyes were light, bright, and sparkling behind half-moon <b>spectacles</b> and his nose was very long and <b>crooked</b>, as though it had been broken at least twice. This man's name was Albus Dumbledore.",
+    "en": "Nothing like this man had ever been seen on Privet Drive. He was tall, thin, and very old, judging by the silver of his hair and beard, which were both long enough to tuck into his belt. He was wearing long robes, a purple cloak that swept the ground, and high-heeled, buckled boots. His blue eyes were light, bright, and sparkling behind half-moon spectacles and his nose was very long and crooked, as though it had been broken at least twice. This man's name was Albus Dumbledore.",
+    "zh": "女贞路上从没见过这样的人。他又高又瘦，年纪很大——看那头银白的头发和胡子就知道，二者都长到可以塞进腰带里。他穿着长袍，披一件拖地的紫色斗篷，脚上是带扣的高跟靴。他的蓝眼睛在半月形眼镜后面颜色很浅、明亮而闪着光；鼻子又长又弯，仿佛至少断过两次。这人名叫阿不思·邓布利多。",
+    "audio": "audio/para/042.mp3"
+   }
+  ],
+  "vocabulary": [
+   {
+    "id": "113",
+    "word": "turn sth over in one's mind",
+    "ipa": "",
+    "pos": "短语",
+    "level": "c1",
+    "meaning": "在脑子里反复琢磨",
+    "example": "turning it all over in his mind 把这一切翻来覆去地想",
+    "memory": "turn over 本义\"翻过来\"→ 把想法翻来覆去。同义高级表达：mull sth over、ponder、chew sth over。",
+    "audio": "audio/words/113.mp3"
+   },
+   {
+    "id": "114",
+    "word": "comforting",
+    "ipa": "/ˈkʌmfətɪŋ/",
+    "pos": "adj.",
+    "level": "b2",
+    "meaning": "令人安慰的；使人宽心的",
+    "example": "his last, comforting thought 他最后一个让自己安心的念头",
+    "memory": "comfort（安慰）→ comforting（安慰人的）vs. comfortable（舒适的）。中文都译\"舒服/安慰\"，英文分工明确，别混。",
+    "audio": "audio/words/114.mp3"
+   },
+   {
+    "id": "115",
+    "word": "get mixed up in",
+    "ipa": "",
+    "pos": "短语",
+    "level": "b2",
+    "meaning": "被卷入（麻烦事）",
+    "example": "get mixed up in anything 被卷进任何事里",
+    "memory": "mix up 有\"搞混\"和\"卷入\"两义：mix sb up（把某人搞糊涂）、be mixed up in sth（卷入某事，偏负面）。",
+    "audio": "audio/words/115.mp3"
+   },
+   {
+    "id": "116",
+    "word": "affect",
+    "ipa": "/əˈfekt/",
+    "pos": "v.",
+    "level": "b2",
+    "meaning": "影响；对……起作用",
+    "example": "it couldn't affect them 影响不到他们",
+    "memory": "affect（动词，影响）vs. effect（名词，效果）——拼写和词性最易混的一对。口诀：A for Action（affect 是动作），E for End result（effect 是结果）。",
+    "audio": "audio/words/116.mp3"
+   },
+   {
+    "id": "117",
+    "word": "drift into",
+    "ipa": "",
+    "pos": "短语",
+    "level": "c1",
+    "meaning": "不知不觉地进入（某种状态）；漂入",
+    "example": "drifting into an uneasy sleep 渐渐滑入不安稳的睡眠",
+    "memory": "drift 本义\"漂流\"→ 慢慢、无意识地滑进某种状态。搭配：drift into sleep / drift off（打瞌睡）。",
+    "audio": "audio/words/117.mp3"
+   },
+   {
+    "id": "118",
+    "word": "statue",
+    "ipa": "/ˈstætʃuː/",
+    "pos": "n.",
+    "level": "b1",
+    "meaning": "雕像；塑像",
+    "example": "as still as a statue 像雕像一样静止",
+    "memory": "as + adj. + as a statue 是现成的比喻。注意区分：statue（雕像）、status（地位）、stature（身高/声望）——拼写陷阱。",
+    "audio": "audio/words/118.mp3"
+   },
+   {
+    "id": "119",
+    "word": "fix one's eyes on",
+    "ipa": "",
+    "pos": "短语",
+    "level": "b2",
+    "meaning": "把目光锁定在……；凝视",
+    "example": "eyes fixed unblinkingly on the corner 目不转睛地盯着街角",
+    "memory": "fix 有\"固定\"义，所以是\"把视线钉在某处\"。同义：stare at、fasten one's eyes on、keep one's eyes glued to。",
+    "audio": "audio/words/119.mp3"
+   },
+   {
+    "id": "120",
+    "word": "unblinkingly",
+    "ipa": "/ʌnˈblɪŋkɪŋli/",
+    "pos": "adv.",
+    "level": "c1",
+    "meaning": "一眨不眨地；目不转睛地",
+    "example": "staring unblinkingly 一眨不眨地盯着",
+    "memory": "un-（不）+ blink（眨眼）+ -ing + -ly。构词链长得夸张，但每一层都认识，拆开就懂——这也是\"拆词猜义\"的示范。",
+    "audio": "audio/words/120.mp3"
+   },
+   {
+    "id": "121",
+    "word": "quiver",
+    "ipa": "/ˈkwɪvə/",
+    "pos": "v.",
+    "level": "c1",
+    "meaning": "微微颤动；抖一下",
+    "example": "didn't so much as quiver 连颤都没颤一下",
+    "memory": "颤抖程度排序：shiver（冷/怕，全身）> tremble（发力/情绪）> quiver（轻微、局部，如嘴唇、箭）。这里写猫\"连胡须都没颤\"。",
+    "audio": "audio/words/121.mp3"
+   },
+   {
+    "id": "122",
+    "word": "slam",
+    "ipa": "/slæm/",
+    "pos": "v.",
+    "level": "b1",
+    "meaning": "砰地关上；猛摔",
+    "example": "a car door slammed 车门砰地一响",
+    "memory": "用力关门 = slam the door；\"甩门\"泄愤也是它。搭配：slam on the brakes（急刹车）。",
+    "audio": "audio/words/122.mp3"
+   },
+   {
+    "id": "123",
+    "word": "twitch",
+    "ipa": "/twɪtʃ/",
+    "pos": "v./n.",
+    "level": "c1",
+    "meaning": "（肌肉、尾巴）抽动；抽搐",
+    "example": "The cat's tail twitched . 猫的尾巴抽动了一下。",
+    "memory": "短促、不自觉的动。同类：jerk（猛一动）、flinch（退缩）、wince（龇牙皱眉）。",
+    "audio": "audio/words/123.mp3"
+   },
+   {
+    "id": "124",
+    "word": "narrow",
+    "ipa": "/ˈnærəʊ/",
+    "pos": "v.",
+    "level": "b2",
+    "meaning": "（眼睛）眯起 （adj. 狭窄的）",
+    "example": "its eyes narrowed 它的眼睛眯了起来",
+    "memory": "\"眼睛变窄\"这个动作在英文里常表示怀疑、警觉或不悦。写作万能句：His eyes narrowed.（他眯起眼睛。）",
+    "audio": "audio/words/124.mp3"
+   },
+   {
+    "id": "125",
+    "word": "pop out of",
+    "ipa": "",
+    "pos": "短语",
+    "level": "b2",
+    "meaning": "（突然）从……冒出来",
+    "example": "he'd just popped out of the ground 像是从地里冒出来的",
+    "memory": "pop 有\"突然出现\"的轻快感：pop in（顺便来访）、pop up（突然冒出）、pop out（蹦出来）。",
+    "audio": "audio/words/125.mp3"
+   },
+   {
+    "id": "126",
+    "word": "robe",
+    "ipa": "/rəʊb/",
+    "pos": "n.",
+    "level": "b2",
+    "meaning": "长袍；（常复数）礼服",
+    "example": "wearing long robes 身穿长袍",
+    "memory": "巫师世界的标配词汇。区分：robe（宽大长袍）、gown（礼服/法袍）、cloak（外披斗篷）。",
+    "audio": "audio/words/126.mp3"
+   },
+   {
+    "id": "127",
+    "word": "buckled",
+    "ipa": "/ˈbʌkld/",
+    "pos": "adj.",
+    "level": "c1",
+    "meaning": "带扣的；扣上的",
+    "example": "high-heeled, buckled boots 带扣的高跟靴",
+    "memory": "buckle＝皮带扣，也作动词\"扣上\"（buckle up 系安全带）。记住短语：buckle up!（系好安全带！）",
+    "audio": "audio/words/127.mp3"
+   },
+   {
+    "id": "128",
+    "word": "spectacles",
+    "ipa": "/ˈspektəklz/",
+    "pos": "n.",
+    "level": "b1",
+    "meaning": "眼镜（英式，较正式）",
+    "example": "half-moon spectacles 半月形眼镜",
+    "memory": "glasses 是日常说法，spectacles 偏正式/复古，特别适合描写老派人物。make a spectacle of oneself＝出丑。",
+    "audio": "audio/words/128.mp3"
+   },
+   {
+    "id": "129",
+    "word": "crooked",
+    "ipa": "/ˈkrʊkɪd/",
+    "pos": "adj.",
+    "level": "c1",
+    "meaning": "弯曲的；歪的",
+    "example": "his nose was very long and crooked 他的鼻子又长又弯",
+    "memory": "crook＝弯钩，所以 crooked 是\"钩状的弯\"。引申义\"不诚实的\"（a crooked deal 一笔黑交易）——这也解释了为什么 crook 可指\"骗子\"。",
+    "audio": "audio/words/129.mp3"
+   },
+   {
+    "id": "130",
+    "word": "tuck into",
+    "ipa": "/tʌk/",
+    "pos": "短语",
+    "level": "c1",
+    "meaning": "把……塞进；（口语）大口吃",
+    "example": "long enough to tuck into his belt 长到可以塞进腰带",
+    "memory": "tuck 的核心画面是\"塞、掖\"：tuck in the shirt（把衬衫塞好）、tuck sb into bed（给某人掖被子）。",
+    "audio": "audio/words/130.mp3"
+   }
+  ]
+ },
+ {
+  "n": 9,
+  "title": "The Put-Outer",
+  "title_zh": "邓布利多登场 · 熄灯器",
+  "audio": "audio/09.mp3",
+  "paragraphs": [
+   {
+    "id": "043",
+    "section": 9,
+    "en_html": "Albus Dumbledore didn't seem to realize that he had just arrived in a street where everything from his name to his boots was unwelcome. He was busy <b>rummaging</b> in his cloak, looking for something. But he did seem to realize he was being watched, because he looked up suddenly at the cat, which was still staring at him from the other end of the street. For some reason, the sight of the cat seemed to <b>amuse</b> him. He <b>chuckled</b> and <b>muttered</b>, \"I should have known.\"",
+    "en": "Albus Dumbledore didn't seem to realize that he had just arrived in a street where everything from his name to his boots was unwelcome. He was busy rummaging in his cloak, looking for something. But he did seem to realize he was being watched, because he looked up suddenly at the cat, which was still staring at him from the other end of the street. For some reason, the sight of the cat seemed to amuse him. He chuckled and muttered, \"I should have known.\"",
+    "zh": "阿不思·邓布利多似乎没意识到，自己刚踏上的这条街，从名字到靴子都容不下他。他正忙着在斗篷里翻找什么。但他显然察觉到有人在看他——他突然抬头望向那只猫，猫还在街另一头盯着他。不知为什么，看见这只猫似乎让他觉得好笑。他轻声笑着嘟囔：\"我早该想到的。\"",
+    "audio": "audio/para/043.mp3"
+   },
+   {
+    "id": "044",
+    "section": 9,
+    "en_html": "He found what he was looking for in his inside pocket. It seemed to be a silver <b>cigarette lighter</b>. He <b>flicked</b> it open, held it up in the air, and <b>clicked</b> it. The nearest street lamp went out with a little <b>pop</b>. He clicked it again — the next lamp <b>flickered</b> into darkness. Twelve times he clicked the <b>Put-Outer</b>, until the only lights left on the whole street were two tiny <b>pinpricks</b> in the distance, which were the eyes of the cat watching him. If anyone looked out of their window now, even <b>beady-eyed</b> Mrs. Dursley, they wouldn't be able to see anything that was happening down on the <b>pavement</b>.",
+    "en": "He found what he was looking for in his inside pocket. It seemed to be a silver cigarette lighter. He flicked it open, held it up in the air, and clicked it. The nearest street lamp went out with a little pop. He clicked it again — the next lamp flickered into darkness. Twelve times he clicked the Put-Outer, until the only lights left on the whole street were two tiny pinpricks in the distance, which were the eyes of the cat watching him. If anyone looked out of their window now, even beady-eyed Mrs. Dursley, they wouldn't be able to see anything that was happening down on the pavement.",
+    "zh": "他在内袋里找到了要找的东西，看起来像个银色的打火机。他\"啪\"地掀开盖子，举向空中，按了一下。最近的那盏街灯\"噗\"的一声灭了。他又按——下一盏灯闪了闪，陷入黑暗。他按了十二下\"熄灯器\"，直到整条街上只剩远处两个针尖大的亮点，那是猫的眼睛在看着他。此刻就算有人往窗外看——哪怕是眼睛尖得跟珠子似的德思礼太太——也看不见人行道上发生的任何事。",
+    "audio": "audio/para/044.mp3"
+   },
+   {
+    "id": "045",
+    "section": 9,
+    "en_html": "Dumbledore <b>slipped</b> the Put-Outer back inside his cloak and set off down the street toward number four, where he sat down on the wall next to the cat. He didn't look at it, but after a moment he spoke to it.",
+    "en": "Dumbledore slipped the Put-Outer back inside his cloak and set off down the street toward number four, where he sat down on the wall next to the cat. He didn't look at it, but after a moment he spoke to it.",
+    "zh": "邓布利多把熄灯器塞回斗篷里，沿街朝四号走去，在猫旁边的矮墙上坐下。他没看它，可过了一会儿，他开口跟它说起话来。",
+    "audio": "audio/para/045.mp3"
+   },
+   {
+    "id": "046",
+    "section": 9,
+    "en_html": "\"Fancy seeing you here, Professor McGonagall.\"",
+    "en": "\"Fancy seeing you here, Professor McGonagall.\"",
+    "zh": "\"真巧啊，在这儿见到你，麦格教授。\"",
+    "audio": "audio/para/046.mp3"
+   },
+   {
+    "id": "047",
+    "section": 9,
+    "en_html": "He turned to smile at the tabby, but it had gone. Instead he was smiling at a rather <b>severe-looking</b> woman who was wearing square glasses exactly the shape of the markings the cat had had around its eyes. She, too, was wearing a cloak, an emerald one. Her black hair was drawn into a tight <b>bun</b>. She looked distinctly <b>ruffled</b>.",
+    "en": "He turned to smile at the tabby, but it had gone. Instead he was smiling at a rather severe-looking woman who was wearing square glasses exactly the shape of the markings the cat had had around its eyes. She, too, was wearing a cloak, an emerald one. Her black hair was drawn into a tight bun. She looked distinctly ruffled.",
+    "zh": "他转头想对虎斑猫微笑，猫却不见了。他笑的对象变成了一位神情相当严厉的女士，戴着一副方形眼镜——那形状，正好是猫眼周斑纹的形状。她也披着斗篷，翡翠绿的。黑发紧紧挽成一个发髻。她整个人明显有些慌乱。",
+    "audio": "audio/para/047.mp3"
+   }
+  ],
+  "vocabulary": [
+   {
+    "id": "131",
+    "word": "rummage",
+    "ipa": "/ˈrʌmɪdʒ/",
+    "pos": "v.",
+    "level": "c1",
+    "meaning": "翻找；乱翻",
+    "example": "rummaging in his cloak 在斗篷里翻找",
+    "memory": "搭配：rummage in/through sth for sth（在某处翻找某物）。画面：把东西翻得乱七八糟。近义：search、dig around。",
+    "audio": "audio/words/131.mp3"
+   },
+   {
+    "id": "132",
+    "word": "amuse",
+    "ipa": "/əˈmjuːz/",
+    "pos": "v.",
+    "level": "b2",
+    "meaning": "使觉得好笑；逗乐",
+    "example": "the sight seemed to amuse him 这景象似乎让他觉得好笑",
+    "memory": "amuse 是\"让某人有乐趣\"，不是\"娱乐（自己）\"那么随意。词族：amusing（好笑的）、amused（被逗乐的）、amusement（乐趣/游乐场）。",
+    "audio": "audio/words/132.mp3"
+   },
+   {
+    "id": "133",
+    "word": "chuckle",
+    "ipa": "/ˈtʃʌkl/",
+    "pos": "v.",
+    "level": "b2",
+    "meaning": "低声轻笑；暗自笑",
+    "example": "He chuckled and muttered… 他轻声笑着嘟囔……",
+    "memory": "笑声光谱：giggle（女孩式的咯咯）、chuckle（低沉轻笑）、chortle（开怀咯咯）、guffaw（放声大笑）。邓布利多的标配是 chuckle。",
+    "audio": "audio/words/133.mp3"
+   },
+   {
+    "id": "134",
+    "word": "cigarette lighter",
+    "ipa": "/ˌsɪɡəˈret ˈlaɪtə/",
+    "pos": "n.",
+    "level": "b1",
+    "meaning": "打火机",
+    "example": "a silver cigarette lighter 一个银色打火机",
+    "memory": "light（点火）+ -er（工具）→ 打火机。同类：opener（开瓶器）、sharpener（削笔刀）、mixer（搅拌机）。",
+    "audio": "audio/words/134.mp3"
+   },
+   {
+    "id": "135",
+    "word": "flick",
+    "ipa": "/flɪk/",
+    "pos": "v.",
+    "level": "c1",
+    "meaning": "轻弹；轻甩（手腕一抖）",
+    "example": "He flicked it open. 他手腕一抖，把它打开了。",
+    "memory": "fl- 家族又一个\"轻快动作\"：flick（轻弹）、flip（翻）、fling（甩掷）。flick through a book＝快速翻书。",
+    "audio": "audio/words/135.mp3"
+   },
+   {
+    "id": "136",
+    "word": "click",
+    "ipa": "/klɪk/",
+    "pos": "v./n.",
+    "level": "b1",
+    "meaning": "发出\"咔哒\"声；点击",
+    "example": "he clicked it 他按了一下",
+    "memory": "拟声词，鼠标\"点击\"也是它。短语：click with sb（和某人一见如故）、it clicked（恍然大悟）。",
+    "audio": "audio/words/136.mp3"
+   },
+   {
+    "id": "137",
+    "word": "pop",
+    "ipa": "/pɒp/",
+    "pos": "n./v.",
+    "level": "b1",
+    "meaning": "\"噗/啪\"的一声；爆开",
+    "example": "went out with a little pop \"噗\"的一声灭了",
+    "memory": "短促的爆裂声：气球爆、瓶塞弹、灯灭都可用。pop music（流行乐）来自\"popular\"，两个 pop 别搞混。",
+    "audio": "audio/words/137.mp3"
+   },
+   {
+    "id": "138",
+    "word": "flicker",
+    "ipa": "/ˈflɪkə/",
+    "pos": "v.",
+    "level": "b2",
+    "meaning": "（光）闪烁、忽明忽暗",
+    "example": "the next lamp flickered into darkness 下一盏灯闪了闪，归于黑暗",
+    "memory": "光的三态：shine（稳定地亮）、flicker（不稳定地闪）、flash（猛地一亮）。蜡烛将熄、屏幕闪烁都用 flicker。",
+    "audio": "audio/words/138.mp3"
+   },
+   {
+    "id": "139",
+    "word": "Put-Outer",
+    "ipa": "/ˈpʊt aʊtə/",
+    "pos": "n.",
+    "level": "c1",
+    "meaning": "熄灯器（作者自造的道具名）",
+    "example": "Twelve times he clicked the Put-Outer . 他按了十二下熄灯器。",
+    "memory": "put out＝熄灭（put out a fire），加 -er 变成\"熄灭的东西\"——把动词短语名词化。理解构造，自造词也不可怕。",
+    "audio": "audio/words/139.mp3"
+   },
+   {
+    "id": "140",
+    "word": "pinprick",
+    "ipa": "/ˈpɪnprɪk/",
+    "pos": "n.",
+    "level": "c1",
+    "meaning": "针尖大的点；针刺般的小孔",
+    "example": "two tiny pinpricks of light 两个针尖大的亮点",
+    "memory": "pin（针）+ prick（刺）→ 针扎出的一点。常用来写远处微小的光、声音或痛感。",
+    "audio": "audio/words/140.mp3"
+   },
+   {
+    "id": "141",
+    "word": "beady-eyed",
+    "ipa": "/ˈbiːdi aɪd/",
+    "pos": "adj.",
+    "level": "c1",
+    "meaning": "眼睛小而亮的；目光锐利的",
+    "example": "even beady-eyed Mrs. Dursley 连眼睛尖得像珠子似的德思礼太太",
+    "memory": "bead＝珠子，beady eyes 指小而圆、滴溜溜的眼睛，常暗示精明、爱窥探——正好配德思礼太太。",
+    "audio": "audio/words/141.mp3"
+   },
+   {
+    "id": "142",
+    "word": "pavement",
+    "ipa": "/ˈpeɪvmənt/",
+    "pos": "n.",
+    "level": "b1",
+    "meaning": "人行道（英式）",
+    "example": "down on the pavement 在人行道上",
+    "memory": "英式 pavement = 美式 sidewalk。同族：pave（铺路）→ paving stone（铺路石）。",
+    "audio": "audio/words/142.mp3"
+   },
+   {
+    "id": "143",
+    "word": "slip",
+    "ipa": "/slɪp/",
+    "pos": "v.",
+    "level": "b1",
+    "meaning": "悄悄塞进；滑落；溜走",
+    "example": "slipped it back inside his cloak 把它悄悄塞回斗篷里",
+    "memory": "\"滑\"的家族：slip（滑）、slide（滑行）、slippery（滑的）。短语：slip away（溜走）、slip into（悄悄进入/穿上）。",
+    "audio": "audio/words/143.mp3"
+   },
+   {
+    "id": "144",
+    "word": "severe-looking",
+    "ipa": "/sɪˈvɪə ˈlʊkɪŋ/",
+    "pos": "adj.",
+    "level": "c1",
+    "meaning": "神情严厉的；面相严肃的",
+    "example": "a rather severe-looking woman 一位神情相当严厉的女士",
+    "memory": "-looking 是能产的合成后缀：good-looking（好看的）、friendly-looking（面善的）、tired-looking（一脸倦容的）。",
+    "audio": "audio/words/144.mp3"
+   },
+   {
+    "id": "145",
+    "word": "bun",
+    "ipa": "/bʌn/",
+    "pos": "n.",
+    "level": "sy",
+    "meaning": "圆发髻 （第 02 节里是\"小圆面包\"）",
+    "example": "drawn into a tight bun 紧紧挽成一个发髻",
+    "memory": "同一个词第 02 节刚出现过\"面包\"，这里变\"发髻\"——罗琳故意让 bun 前后呼应，也提醒你：一个词的多义要靠语境锁定。",
+    "audio": "audio/words/145.mp3"
+   },
+   {
+    "id": "146",
+    "word": "ruffled",
+    "ipa": "/ˈrʌfld/",
+    "pos": "adj.",
+    "level": "c1",
+    "meaning": "心神不宁的；被惹恼的 （本义\"起皱的\"）",
+    "example": "She looked distinctly ruffled . 她明显有些慌乱。",
+    "memory": "原指羽毛被弄乱 → 比喻心情被搅乱。例句：Nothing ruffles her.（没什么能让她乱了阵脚。）",
+    "audio": "audio/words/146.mp3"
+   }
+  ]
+ },
+ {
+  "n": 10,
+  "title": "Lemon Drops and a Name",
+  "title_zh": "柠檬糖，以及那个名字",
+  "audio": "audio/10.mp3",
+  "paragraphs": [
+   {
+    "id": "048",
+    "section": 10,
+    "en_html": "\"How did you know it was me?\" she asked.",
+    "en": "\"How did you know it was me?\" she asked.",
+    "zh": "\"你怎么知道是我？\"她问。",
+    "audio": "audio/para/048.mp3"
+   },
+   {
+    "id": "049",
+    "section": 10,
+    "en_html": "\"My dear Professor, I've never seen a cat sit so stiffly.\"",
+    "en": "\"My dear Professor, I've never seen a cat sit so stiffly.\"",
+    "zh": "\"亲爱的教授，我从没见哪只猫坐得这么僵硬。\"",
+    "audio": "audio/para/049.mp3"
+   },
+   {
+    "id": "050",
+    "section": 10,
+    "en_html": "\"You'd be stiff if you'd been sitting on a brick wall all day,\" said Professor McGonagall.",
+    "en": "\"You'd be stiff if you'd been sitting on a brick wall all day,\" said Professor McGonagall.",
+    "zh": "\"让你在砖墙上坐一整天，你也会僵的，\"麦格教授说。",
+    "audio": "audio/para/050.mp3"
+   },
+   {
+    "id": "051",
+    "section": 10,
+    "en_html": "\"All day? When you could have been celebrating? I must have passed a dozen <b>feasts</b> and parties on my way here.\"",
+    "en": "\"All day? When you could have been celebrating? I must have passed a dozen feasts and parties on my way here.\"",
+    "zh": "\"一整天？你本可以去庆祝的呀？我来的一路上，起码经过了十几个宴会和派对。\"",
+    "audio": "audio/para/051.mp3"
+   },
+   {
+    "id": "052",
+    "section": 10,
+    "en_html": "Professor McGonagall <b>sniffed</b> angrily.",
+    "en": "Professor McGonagall sniffed angrily.",
+    "zh": "麦格教授气呼呼地哼了一声。",
+    "audio": "audio/para/052.mp3"
+   },
+   {
+    "id": "053",
+    "section": 10,
+    "en_html": "\"Oh yes, everyone's celebrating, all right,\" she said <b>impatiently</b>. \"You'd think they'd be a bit more careful, but no — even the Muggles have noticed something's going on. It was on their news.\" She <b>jerked</b> her head back at the Dursleys' dark living-room window. \"I heard it. <b>Flocks</b> of owls… shooting stars… Well, they're not completely stupid. They were <b>bound to</b> notice something. Shooting stars down in Kent — I'll <b>bet</b> that was Dedalus Diggle. He never had much sense.\"",
+    "en": "\"Oh yes, everyone's celebrating, all right,\" she said impatiently. \"You'd think they'd be a bit more careful, but no — even the Muggles have noticed something's going on. It was on their news.\" She jerked her head back at the Dursleys' dark living-room window. \"I heard it. Flocks of owls… shooting stars… Well, they're not completely stupid. They were bound to notice something. Shooting stars down in Kent — I'll bet that was Dedalus Diggle. He never had much sense.\"",
+    "zh": "\"是啊，大家都在庆祝，一点没错，\"她不耐烦地说，\"你大概以为他们会小心一点，可偏偏没有——连麻瓜都察觉到出事了，都上了他们的新闻。\"她朝德思礼家黑着灯的客厅窗户一扬头。\"我听到了。成群的猫头鹰……流星……唉，他们又不是完全蠢。总会注意到点什么。肯特郡那边下流星——我敢打赌是德达洛·迪歌干的。他从来没什么脑子。\"",
+    "audio": "audio/para/053.mp3"
+   },
+   {
+    "id": "054",
+    "section": 10,
+    "en_html": "\"You can't blame them,\" said Dumbledore gently. \"We've had <b>precious little</b> to celebrate for eleven years.\"",
+    "en": "\"You can't blame them,\" said Dumbledore gently. \"We've had precious little to celebrate for eleven years.\"",
+    "zh": "\"这不能怪他们，\"邓布利多温和地说，\"十一年了，我们几乎没有值得庆祝的事。\"",
+    "audio": "audio/para/054.mp3"
+   },
+   {
+    "id": "055",
+    "section": 10,
+    "en_html": "\"I know that,\" said Professor McGonagall <b>irritably</b>. \"But that's no reason to <b>lose our heads</b>. People are being <b>downright</b> careless, out on the streets in broad daylight, not even dressed in Muggle clothes, <b>swapping rumors</b>.\"",
+    "en": "\"I know that,\" said Professor McGonagall irritably. \"But that's no reason to lose our heads. People are being downright careless, out on the streets in broad daylight, not even dressed in Muggle clothes, swapping rumors.\"",
+    "zh": "\"这我知道，\"麦格教授烦躁地说，\"但这不是我们昏了头的理由。人们简直粗心到了极点，大白天上街，连麻瓜的衣服都不穿，到处交换谣言。\"",
+    "audio": "audio/para/055.mp3"
+   },
+   {
+    "id": "056",
+    "section": 10,
+    "en_html": "\"It certainly seems so,\" said Dumbledore. \"We have much to be thankful for. Would you care for a <b>lemon drop</b>?\"",
+    "en": "\"It certainly seems so,\" said Dumbledore. \"We have much to be thankful for. Would you care for a lemon drop?\"",
+    "zh": "\"看来确实如此，\"邓布利多说，\"我们有太多值得感激的。你要来颗柠檬糖吗？\"",
+    "audio": "audio/para/056.mp3"
+   },
+   {
+    "id": "057",
+    "section": 10,
+    "en_html": "\"No, thank you,\" said Professor McGonagall coldly, as though she didn't think this was the moment for lemon drops. \"As I say, even if You-Know-Who has gone —\"",
+    "en": "\"No, thank you,\" said Professor McGonagall coldly, as though she didn't think this was the moment for lemon drops. \"As I say, even if You-Know-Who has gone —\"",
+    "zh": "\"不了，谢谢，\"麦格教授冷冷地说，仿佛觉得现在不是吃柠檬糖的时候。\"就像我说的，就算神秘人已经不在了——\"",
+    "audio": "audio/para/057.mp3"
+   },
+   {
+    "id": "058",
+    "section": 10,
+    "en_html": "\"My dear Professor, surely a <b>sensible</b> person like yourself can call him by his name? All this 'You-Know-Who' nonsense — for eleven years I have been trying to persuade people to call him by his proper name: Voldemort.\" Professor McGonagall <b>flinched</b>, but Dumbledore, who was unsticking two lemon drops, seemed not to notice.",
+    "en": "\"My dear Professor, surely a sensible person like yourself can call him by his name? All this 'You-Know-Who' nonsense — for eleven years I have been trying to persuade people to call him by his proper name: Voldemort.\" Professor McGonagall flinched, but Dumbledore, who was unsticking two lemon drops, seemed not to notice.",
+    "zh": "\"亲爱的教授，像你这样明事理的人，总该能叫出他的名字吧？一口一个'神秘人'——十一年了，我一直在劝大家用他本来的名字称呼他：伏地魔。\"麦格教授畏缩了一下，可正在剥两颗粘在一起的柠檬糖的邓布利多似乎没看见。",
+    "audio": "audio/para/058.mp3"
+   },
+   {
+    "id": "059",
+    "section": 10,
+    "en_html": "\"I know you haven't,\" said Professor McGonagall, sounding half <b>exasperated</b>, half <b>admiring</b>. \"But you're different. Everyone knows you're the only one You-Know- oh, all right, Voldemort, was frightened of.\"",
+    "en": "\"I know you haven't,\" said Professor McGonagall, sounding half exasperated, half admiring. \"But you're different. Everyone knows you're the only one You-Know- oh, all right, Voldemort, was frightened of.\"",
+    "zh": "\"我知道你不怕，\"麦格教授说，语气一半是恼火，一半是钦佩。\"可你不一样。大家都知道，你是唯一一个……神秘——好吧，伏地魔——都怕的人。\"",
+    "audio": "audio/para/059.mp3"
+   },
+   {
+    "id": "060",
+    "section": 10,
+    "en_html": "\"You <b>flatter</b> me,\" said Dumbledore calmly. \"Voldemort had powers I will never have.\"",
+    "en": "\"You flatter me,\" said Dumbledore calmly. \"Voldemort had powers I will never have.\"",
+    "zh": "\"你太抬举我了，\"邓布利多平静地说，\"伏地魔有的是我没有的本事。\"",
+    "audio": "audio/para/060.mp3"
+   },
+   {
+    "id": "061",
+    "section": 10,
+    "en_html": "\"Only because you're too — well — <b>noble</b> to use them.\"",
+    "en": "\"Only because you're too — well — noble to use them.\"",
+    "zh": "\"那只是因为你太高——嗯——高尚，不屑于用那些本事罢了。\"",
+    "audio": "audio/para/061.mp3"
+   },
+   {
+    "id": "062",
+    "section": 10,
+    "en_html": "\"It's lucky it's dark. I haven't <b>blushed</b> so much since Madam Pomfrey told me she liked my new <b>earmuffs</b>.\"",
+    "en": "\"It's lucky it's dark. I haven't blushed so much since Madam Pomfrey told me she liked my new earmuffs.\"",
+    "zh": "\"幸好天黑。自从庞弗雷女士说她喜欢我新买的耳罩以来，我还没这么脸红过。\"",
+    "audio": "audio/para/062.mp3"
+   }
+  ],
+  "vocabulary": [
+   {
+    "id": "147",
+    "word": "feast",
+    "ipa": "/fiːst/",
+    "pos": "n.",
+    "level": "b1",
+    "meaning": "盛宴；宴会",
+    "example": "a dozen feasts and parties 十几个宴会和派对",
+    "memory": "比 party 更强调\"吃\"的正式大宴。霍格沃茨的开学晚宴就叫 the start-of-term feast。区分：feast（盛宴）、banquet（正式国宴）。",
+    "audio": "audio/words/147.mp3"
+   },
+   {
+    "id": "148",
+    "word": "sniff",
+    "ipa": "/snɪf/",
+    "pos": "v.",
+    "level": "b2",
+    "meaning": "吸鼻子； 哼一声（表示不满）",
+    "example": "Professor McGonagall sniffed angrily. 麦格教授气呼呼地哼了一声。",
+    "memory": "两个动作一个词：吸鼻子（感冒/闻味）和\"哼\"（轻蔑）。文学作品里 sniff 常是人物表示不屑的小动作。",
+    "audio": "audio/words/148.mp3"
+   },
+   {
+    "id": "149",
+    "word": "impatiently",
+    "ipa": "/ɪmˈpeɪʃntli/",
+    "pos": "adv.",
+    "level": "b2",
+    "meaning": "不耐烦地",
+    "example": "she said impatiently 她不耐烦地说",
+    "memory": "im-（不）+ patient（有耐心的）+ -ly。词族：patience 耐心 → patient 有耐心的/病人 → impatient 不耐烦的。",
+    "audio": "audio/words/149.mp3"
+   },
+   {
+    "id": "150",
+    "word": "flock",
+    "ipa": "/flɒk/",
+    "pos": "n./v.",
+    "level": "b2",
+    "meaning": "（鸟、羊的）一群；成群结队",
+    "example": "Flocks of owls 成群的猫头鹰",
+    "memory": "动物量词分类：flock 鸟/羊、herd 牛/马/象、pack 狼/狗、school 鱼、swarm 蜂/虫。动词：People flocked to see it.（人们蜂拥去看。）",
+    "audio": "audio/words/150.mp3"
+   },
+   {
+    "id": "151",
+    "word": "be bound to do",
+    "ipa": "",
+    "pos": "短语",
+    "level": "b2",
+    "meaning": "必然会；一定会",
+    "example": "They were bound to notice. 他们肯定会注意到。",
+    "memory": "be bound to = be certain to，语气比 will 更笃定。另一个常见义：be bound to（受约束/有义务）。",
+    "audio": "audio/words/151.mp3"
+   },
+   {
+    "id": "152",
+    "word": "bet",
+    "ipa": "/bet/",
+    "pos": "v./n.",
+    "level": "b1",
+    "meaning": "打赌；敢说",
+    "example": "I'll bet that was Dedalus Diggle. 我敢打赌那是德达洛·迪歌。",
+    "memory": "口语里 I bet / I'll bet 常表示\"我敢肯定\"。不规则动词 bet-bet-bet。习语：You bet!（当然！）",
+    "audio": "audio/words/152.mp3"
+   },
+   {
+    "id": "153",
+    "word": "precious little",
+    "ipa": "",
+    "pos": "短语",
+    "level": "c1",
+    "meaning": "少得可怜的一点；几乎没有",
+    "example": "We've had precious little to celebrate. 我们几乎没什么可庆祝的。",
+    "memory": "precious 在这里是反讽的\"宝贵的\"，实际强调\"极其少\"。同义：very little、hardly anything。写作高级短语。",
+    "audio": "audio/words/153.mp3"
+   },
+   {
+    "id": "154",
+    "word": "irritably",
+    "ipa": "/ˈɪrɪtəbli/",
+    "pos": "adv.",
+    "level": "c1",
+    "meaning": "烦躁地；恼火地",
+    "example": "said Professor McGonagall irritably 麦格教授烦躁地说",
+    "memory": "irritable（易怒的）→ irritably。近义词一束：annoyed、irritated、exasperated、cross（英式口语）。",
+    "audio": "audio/words/154.mp3"
+   },
+   {
+    "id": "155",
+    "word": "lose one's head",
+    "ipa": "",
+    "pos": "短语",
+    "level": "c1",
+    "meaning": "失去理智；惊慌失措",
+    "example": "no reason to lose our heads 不是我们昏了头的理由",
+    "memory": "\"丢了脑袋\"＝脑子不清醒。反义：keep one's head（保持冷静）——这句在《如果》那首诗里很有名。",
+    "audio": "audio/words/155.mp3"
+   },
+   {
+    "id": "156",
+    "word": "downright",
+    "ipa": "/ˈdaʊnraɪt/",
+    "pos": "adv./adj.",
+    "level": "c1",
+    "meaning": "完全地；彻头彻尾地",
+    "example": "People are being downright careless. 人们简直粗心到家了。",
+    "memory": "用来加强语气，常带\"简直过分\"的意味：downright rude（简直无礼）、downright lie（彻头彻尾的谎话）。",
+    "audio": "audio/words/156.mp3"
+   },
+   {
+    "id": "157",
+    "word": "swap rumors",
+    "ipa": "",
+    "pos": "短语",
+    "level": "c1",
+    "meaning": "交换谣言；互相传闲话",
+    "example": "swapping rumors in the street 在街上交换谣言",
+    "memory": "swap＝交换（比 exchange 口语）。搭配广：swap stories（互相讲故事）、swap seats（换座位）。rumor 美式拼写，英式 rumour。",
+    "audio": "audio/words/157.mp3"
+   },
+   {
+    "id": "158",
+    "word": "lemon drop",
+    "ipa": "/ˈlemən drɒp/",
+    "pos": "n.",
+    "level": "c1",
+    "meaning": "柠檬糖（硬糖）",
+    "example": "Would you care for a lemon drop ? 你要来颗柠檬糖吗？",
+    "memory": "英式硬糖常叫 drop（a fruit drop）。Would you care for…? 本身是比 Do you want…? 更客气的高级问法。",
+    "audio": "audio/words/158.mp3"
+   },
+   {
+    "id": "159",
+    "word": "sensible",
+    "ipa": "/ˈsensəbl/",
+    "pos": "adj.",
+    "level": "b2",
+    "meaning": "明智的；通情达理的",
+    "example": "a sensible person like yourself 像你这样明事理的人",
+    "memory": "区分：sensible（明智的）vs. sensitive（敏感的）——中国学生最常混的一对。sensible 来自 sense（判断力）。",
+    "audio": "audio/words/159.mp3"
+   },
+   {
+    "id": "160",
+    "word": "flinch",
+    "ipa": "/flɪntʃ/",
+    "pos": "v.",
+    "level": "c1",
+    "meaning": "（因害怕或疼痛）畏缩、缩一下",
+    "example": "Professor McGonagall flinched . 麦格教授畏缩了一下。",
+    "memory": "听到\"伏地魔\"这个名字，麦格教授\"缩了一下\"——一个动作写出全巫师的恐惧。同义：wince、recoil、shrink back。",
+    "audio": "audio/words/160.mp3"
+   },
+   {
+    "id": "161",
+    "word": "exasperated",
+    "ipa": "/ɪɡˈzæspəreɪtɪd/",
+    "pos": "adj.",
+    "level": "c1",
+    "meaning": "恼火的；被气得没脾气的",
+    "example": "half exasperated , half admiring 一半恼火，一半钦佩",
+    "memory": "程度比 annoyed 深：是\"被反复折腾到忍无可忍\"。词族：exasperate → exasperating（气人的）→ exasperation。",
+    "audio": "audio/words/161.mp3"
+   },
+   {
+    "id": "162",
+    "word": "admiring",
+    "ipa": "/ədˈmaɪərɪŋ/",
+    "pos": "adj.",
+    "level": "b2",
+    "meaning": "钦佩的；赞赏的",
+    "example": "half exasperated, half admiring 一半恼火，一半钦佩",
+    "memory": "admire（钦佩）→ admiring（钦佩的）vs. admirable（值得钦佩的）。前者写人\"投去钦佩的目光\"，后者写事\"令人敬佩\"。",
+    "audio": "audio/words/162.mp3"
+   },
+   {
+    "id": "163",
+    "word": "flatter",
+    "ipa": "/ˈflætə/",
+    "pos": "v.",
+    "level": "c1",
+    "meaning": "恭维；使显得更美",
+    "example": "You flatter me. 你太抬举我了。",
+    "memory": "谦虚回应夸奖的固定说法。另一个高频义：\"这衣服很衬你\"= That dress flatters you. 词族：flattery（奉承话）。",
+    "audio": "audio/words/163.mp3"
+   },
+   {
+    "id": "164",
+    "word": "noble",
+    "ipa": "/ˈnəʊbl/",
+    "pos": "adj.",
+    "level": "b2",
+    "meaning": "高尚的；崇高的；（也指）贵族的",
+    "example": "too noble to use them 太高尚，不屑于用",
+    "memory": "一词两义：品格高尚 / 出身贵族。霍格沃茨的\"Noble House\"就取后者。反义：mean、base。",
+    "audio": "audio/words/164.mp3"
+   },
+   {
+    "id": "165",
+    "word": "blush",
+    "ipa": "/blʌʃ/",
+    "pos": "v./n.",
+    "level": "b1",
+    "meaning": "脸红（因害羞、尴尬）",
+    "example": "I haven't blushed so much… 我还没这么脸红过……",
+    "memory": "blush（害羞脸红）vs. flush（发热/激动脸红）vs. go red（口语）。这里是邓布利多被夸得不好意思。",
+    "audio": "audio/words/165.mp3"
+   },
+   {
+    "id": "166",
+    "word": "earmuffs",
+    "ipa": "/ˈɪəmʌfs/",
+    "pos": "n.",
+    "level": "c1",
+    "meaning": "耳罩；护耳",
+    "example": "she liked my new earmuffs 她喜欢我的新耳罩",
+    "memory": "ear（耳朵）+ muff（暖手筒）→ 暖耳朵的东西。同类冬季装备：scarf、gloves、mittens、beanie。",
+    "audio": "audio/words/166.mp3"
+   }
+  ]
+ },
+ {
+  "n": 11,
+  "title": "The Rumor of That Night",
+  "title_zh": "那晚的传言",
+  "audio": "audio/11.mp3",
+  "paragraphs": [
+   {
+    "id": "063",
+    "section": 11,
+    "en_html": "Professor McGonagall shot a sharp look at Dumbledore and said, \"The owls are nothing next to the rumors that are flying around. You know what everyone's saying? About why he's disappeared? About what finally stopped him?\"",
+    "en": "Professor McGonagall shot a sharp look at Dumbledore and said, \"The owls are nothing next to the rumors that are flying around. You know what everyone's saying? About why he's disappeared? About what finally stopped him?\"",
+    "zh": "麦格教授锐利地瞥了邓布利多一眼，说：\"跟满天飞的谣言比起来，猫头鹰根本算不了什么。你知道大家都在传什么吗？传他为什么消失？传到底是什么终于拦住了他？\"",
+    "audio": "audio/para/063.mp3"
+   },
+   {
+    "id": "064",
+    "section": 11,
+    "en_html": "It seemed that Professor McGonagall had reached the point she was most <b>anxious</b> to discuss, the real reason she had been waiting on a cold, hard wall all day, for neither as a cat nor as a woman had she fixed Dumbledore with such a <b>piercing</b> stare as she did now. It was plain that whatever \"everyone\" was saying, she was not going to believe it until Dumbledore told her it was true. Dumbledore, however, was choosing another lemon drop and did not answer.",
+    "en": "It seemed that Professor McGonagall had reached the point she was most anxious to discuss, the real reason she had been waiting on a cold, hard wall all day, for neither as a cat nor as a woman had she fixed Dumbledore with such a piercing stare as she did now. It was plain that whatever \"everyone\" was saying, she was not going to believe it until Dumbledore told her it was true. Dumbledore, however, was choosing another lemon drop and did not answer.",
+    "zh": "看来麦格教授终于说到了她最急于讨论的那一点，也正是她在又冷又硬的砖墙上守了一整天的真正原因——无论作为猫还是作为女人，她都没有像此刻这样，用如此锐利的目光钉住邓布利多。很明显，不管\"大家\"在说什么，只要邓布利多不亲口证实，她就绝不轻信。可邓布利多偏偏在挑另一颗柠檬糖，没有回答。",
+    "audio": "audio/para/064.mp3"
+   },
+   {
+    "id": "065",
+    "section": 11,
+    "en_html": "\"What they're saying,\" she <b>pressed on</b>, \"is that last night Voldemort turned up in Godric's Hollow. He went to find the Potters. The rumor is that Lily and James Potter are — are — that they're — dead.\"",
+    "en": "\"What they're saying,\" she pressed on, \"is that last night Voldemort turned up in Godric's Hollow. He went to find the Potters. The rumor is that Lily and James Potter are — are — that they're — dead.\"",
+    "zh": "\"大家都在说，\"她紧追不舍，\"昨晚伏地魔出现在了戈德里克山谷。他是去找波特一家的。传言说莉莉和詹姆斯·波特已经——已经——死了。\"",
+    "audio": "audio/para/065.mp3"
+   },
+   {
+    "id": "066",
+    "section": 11,
+    "en_html": "Dumbledore <b>bowed</b> his head. Professor McGonagall <b>gasped</b>.",
+    "en": "Dumbledore bowed his head. Professor McGonagall gasped.",
+    "zh": "邓布利多低下了头。麦格教授倒吸一口冷气。",
+    "audio": "audio/para/066.mp3"
+   },
+   {
+    "id": "067",
+    "section": 11,
+    "en_html": "\"Lily and James… I can't believe it… I didn't want to believe it… Oh, Albus…\"",
+    "en": "\"Lily and James… I can't believe it… I didn't want to believe it… Oh, Albus…\"",
+    "zh": "\"莉莉和詹姆斯……我不信……我不想信……哦，阿不思……\"",
+    "audio": "audio/para/067.mp3"
+   },
+   {
+    "id": "068",
+    "section": 11,
+    "en_html": "Dumbledore reached out and <b>patted</b> her on the shoulder. \"I know… I know…\" he said heavily.",
+    "en": "Dumbledore reached out and patted her on the shoulder. \"I know… I know…\" he said heavily.",
+    "zh": "邓布利多伸出手，拍了拍她的肩。\"我知道……我知道……\"他沉重地说。",
+    "audio": "audio/para/068.mp3"
+   },
+   {
+    "id": "069",
+    "section": 11,
+    "en_html": "Professor McGonagall's voice <b>trembled</b> as she went on. \"That's not all. They're saying he tried to kill the Potters' son, Harry. But — he couldn't. He couldn't kill that little boy. No one knows why, or how, but they're saying that when he couldn't kill Harry Potter, Voldemort's power somehow broke — and that's why he's gone.\"",
+    "en": "Professor McGonagall's voice trembled as she went on. \"That's not all. They're saying he tried to kill the Potters' son, Harry. But — he couldn't. He couldn't kill that little boy. No one knows why, or how, but they're saying that when he couldn't kill Harry Potter, Voldemort's power somehow broke — and that's why he's gone.\"",
+    "zh": "麦格教授声音发着抖，继续说：\"还不止这些。他们说，他试图杀掉波特家的儿子，哈利。可是——他没做到。他杀不了那个小男孩。没人知道为什么，也没人知道是怎么回事，但大家都说，当他杀不了哈利·波特时，伏地魔的力量不知怎地就断了——这就是他消失的原因。\"",
+    "audio": "audio/para/069.mp3"
+   },
+   {
+    "id": "070",
+    "section": 11,
+    "en_html": "Dumbledore nodded <b>glumly</b>.",
+    "en": "Dumbledore nodded glumly.",
+    "zh": "邓布利多闷闷地点了点头。",
+    "audio": "audio/para/070.mp3"
+   },
+   {
+    "id": "071",
+    "section": 11,
+    "en_html": "\"It's — it's true?\" <b>faltered</b> Professor McGonagall. \"After all he's done… all the people he's killed… he couldn't kill a little boy? It's just <b>astounding</b>… of all the things to stop him… but how in the name of heaven did Harry survive?\"",
+    "en": "\"It's — it's true?\" faltered Professor McGonagall. \"After all he's done… all the people he's killed… he couldn't kill a little boy? It's just astounding… of all the things to stop him… but how in the name of heaven did Harry survive?\"",
+    "zh": "\"这——这是真的？\"麦格教授支吾着问。\"他做过那么多事……杀了那么多人……却杀不了一个小男孩？简直骇人听闻……那么多东西里头，偏偏是这个拦住了他……可哈利到底是怎么活下来的？\"",
+    "audio": "audio/para/071.mp3"
+   },
+   {
+    "id": "072",
+    "section": 11,
+    "en_html": "\"We can only guess,\" said Dumbledore. \"We may never know.\"",
+    "en": "\"We can only guess,\" said Dumbledore. \"We may never know.\"",
+    "zh": "\"我们只能猜，\"邓布利多说，\"也许永远都不会知道。\"",
+    "audio": "audio/para/072.mp3"
+   },
+   {
+    "id": "073",
+    "section": 11,
+    "en_html": "Professor McGonagall pulled out a <b>lace</b> handkerchief and <b>dabbed</b> at her eyes beneath her spectacles. Dumbledore gave a great sniff as he took a golden watch from his pocket and examined it. It was a very <b>odd</b> watch. It had twelve hands but no numbers; instead, little planets were moving around the edge. It must have made sense to Dumbledore, though, because he put it back in his pocket and said, \"Hagrid's late. I suppose it was he who told you I'd be here, by the way?\"",
+    "en": "Professor McGonagall pulled out a lace handkerchief and dabbed at her eyes beneath her spectacles. Dumbledore gave a great sniff as he took a golden watch from his pocket and examined it. It was a very odd watch. It had twelve hands but no numbers; instead, little planets were moving around the edge. It must have made sense to Dumbledore, though, because he put it back in his pocket and said, \"Hagrid's late. I suppose it was he who told you I'd be here, by the way?\"",
+    "zh": "麦格教授掏出一块蕾丝手帕，在眼镜底下轻轻按了按眼睛。邓布利多大声吸了吸鼻子，从口袋里取出一块金表仔细端详。那是块很古怪的表：十二根指针，却没有数字；边缘上有些小行星在转。不过这表对邓布利多显然有意义，因为他把它放回口袋，说：\"海格来晚了。顺便问一句，我猜是他告诉你我会来这儿的吧？\"",
+    "audio": "audio/para/073.mp3"
+   }
+  ],
+  "vocabulary": [
+   {
+    "id": "167",
+    "word": "anxious",
+    "ipa": "/ˈæŋkʃəs/",
+    "pos": "adj.",
+    "level": "b2",
+    "meaning": "焦急的；渴望的",
+    "example": "the point she was most anxious to discuss 她最急于讨论的那一点",
+    "memory": "两个义项都高频：be anxious about（担心）vs. be anxious to do（急切想做）。本句是后者，别误译成\"焦虑地讨论\"。",
+    "audio": "audio/words/167.mp3"
+   },
+   {
+    "id": "168",
+    "word": "piercing",
+    "ipa": "/ˈpɪəsɪŋ/",
+    "pos": "adj.",
+    "level": "c1",
+    "meaning": "（目光、声音）锐利的、刺耳的",
+    "example": "such a piercing stare 那样锐利的凝视",
+    "memory": "pierce（刺穿）→ piercing 有\"能扎透人\"的感觉。搭配：piercing eyes（锐利的眼睛）、a piercing scream（刺耳的尖叫）。",
+    "audio": "audio/words/168.mp3"
+   },
+   {
+    "id": "169",
+    "word": "press on",
+    "ipa": "",
+    "pos": "短语",
+    "level": "c1",
+    "meaning": "（不顾困难）继续推进；追问下去",
+    "example": "she pressed on 她紧追不舍",
+    "memory": "press 本义\"按、压\"→ 施加压力往前推。同族：press for an answer（追问答案）、press ahead（加紧推进）。",
+    "audio": "audio/words/169.mp3"
+   },
+   {
+    "id": "170",
+    "word": "bow",
+    "ipa": "/baʊ/",
+    "pos": "v.",
+    "level": "b1",
+    "meaning": "低下头；鞠躬",
+    "example": "Dumbledore bowed his head. 邓布利多低下了头。",
+    "memory": "bow 有两个读音：/baʊ/ 鞠躬；/bəʊ/ 弓。低头 = 哀悼/默许的无声动作，比 said nothing 更传神。",
+    "audio": "audio/words/170.mp3"
+   },
+   {
+    "id": "171",
+    "word": "gasp",
+    "ipa": "/ɡɑːsp/",
+    "pos": "v./n.",
+    "level": "b2",
+    "meaning": "（因惊讶、恐惧）倒吸一口气",
+    "example": "Professor McGonagall gasped . 麦格教授倒吸一口冷气。",
+    "memory": "区分：gasp（惊讶地抽气）vs. sigh（叹气）vs. pant（喘气）。写作里一个 gasp 就能写\"震惊\"。",
+    "audio": "audio/words/171.mp3"
+   },
+   {
+    "id": "172",
+    "word": "pat",
+    "ipa": "/pæt/",
+    "pos": "v.",
+    "level": "b1",
+    "meaning": "轻拍（表示安慰、赞许）",
+    "example": "patted her on the shoulder 拍了拍她的肩",
+    "memory": "注意结构：pat sb on the + 身体部位（pat him on the back）。同类：hit sb on the head、take sb by the arm。",
+    "audio": "audio/words/172.mp3"
+   },
+   {
+    "id": "173",
+    "word": "tremble",
+    "ipa": "/ˈtrembl/",
+    "pos": "v.",
+    "level": "b2",
+    "meaning": "（声音、身体）颤抖",
+    "example": "Her voice trembled . 她的声音发颤。",
+    "memory": "tremble 既可写身体也可写声音，常因情绪（怒、怕、激动）。同义：shake、quiver、quaver（声音发抖）。",
+    "audio": "audio/words/173.mp3"
+   },
+   {
+    "id": "174",
+    "word": "glumly",
+    "ipa": "/ˈɡlʌmli/",
+    "pos": "adv.",
+    "level": "c1",
+    "meaning": "闷闷不乐地；阴沉地",
+    "example": "Dumbledore nodded glumly . 邓布利多闷闷地点了点头。",
+    "memory": "glum＝阴郁的、苦着脸的。记忆：g-l-u-m 读起来就\"咕哝\"，一副不高兴的样子。",
+    "audio": "audio/words/174.mp3"
+   },
+   {
+    "id": "175",
+    "word": "falter",
+    "ipa": "/ˈfɔːltə/",
+    "pos": "v.",
+    "level": "c1",
+    "meaning": "支支吾吾；说话打磕巴；（力量）衰退",
+    "example": "\"It's — it's true?\" faltered Professor McGonagall. \"这——这是真的？\"麦格教授支吾着问。",
+    "memory": "说话\"卡壳\"专用词，破折号就是它的声音形象。同义：stammer、stutter、hesitate。",
+    "audio": "audio/words/175.mp3"
+   },
+   {
+    "id": "176",
+    "word": "astounding",
+    "ipa": "/əˈstaʊndɪŋ/",
+    "pos": "adj.",
+    "level": "c1",
+    "meaning": "令人震惊的；骇人的",
+    "example": "It's just astounding . 简直骇人听闻。",
+    "memory": "astonish → astounding（令人惊讶的）vs. astonished（感到惊讶的）。-ing 修饰\"引起感受的事物\"，-ed 修饰\"人\"。",
+    "audio": "audio/words/176.mp3"
+   },
+   {
+    "id": "177",
+    "word": "lace",
+    "ipa": "/leɪs/",
+    "pos": "n./adj.",
+    "level": "c1",
+    "meaning": "蕾丝；花边 （也指鞋带）",
+    "example": "a lace handkerchief 一块蕾丝手帕",
+    "memory": "lace 有两义：蕾丝（不可数）和鞋带（可数，shoe lace）。作动词是\"系紧\"：lace up your shoes。",
+    "audio": "audio/words/177.mp3"
+   },
+   {
+    "id": "178",
+    "word": "dab",
+    "ipa": "/dæb/",
+    "pos": "v.",
+    "level": "c1",
+    "meaning": "轻按、轻擦（不掉色地擦）",
+    "example": "dabbed at her eyes 在眼睛上轻轻按了按",
+    "memory": "擦的三种力度：wipe（来回擦）→ rub（用力搓）→ dab（轻轻点按）。眼妆、眼泪的描写多用 dab。",
+    "audio": "audio/words/178.mp3"
+   },
+   {
+    "id": "179",
+    "word": "odd",
+    "ipa": "/ɒd/",
+    "pos": "adj.",
+    "level": "b1",
+    "meaning": "古怪的；奇怪的；（也指）奇数的",
+    "example": "a very odd watch 一块很古怪的表",
+    "memory": "odd 双义：奇怪的 / 奇数的（odd numbers 1,3,5…）。英式口语 the odd one＝偶尔一次。",
+    "audio": "audio/words/179.mp3"
+   }
+  ]
+ },
+ {
+  "n": 12,
+  "title": "Hagrid, the Motorcycle and the Scar",
+  "title_zh": "海格、摩托车与那道伤疤",
+  "audio": "audio/12.mp3",
+  "paragraphs": [
+   {
+    "id": "074",
+    "section": 12,
+    "en_html": "\"Yes,\" said Professor McGonagall. \"And I don't suppose you're going to tell me why you're here, of all places?\"",
+    "en": "\"Yes,\" said Professor McGonagall. \"And I don't suppose you're going to tell me why you're here, of all places?\"",
+    "zh": "\"是的，\"麦格教授说，\"我猜你也不打算告诉我，为什么偏偏要来这个地方吧？\"",
+    "audio": "audio/para/074.mp3"
+   },
+   {
+    "id": "075",
+    "section": 12,
+    "en_html": "\"I've come to bring Harry to his aunt and uncle. They're the only family he has left now.\"",
+    "en": "\"I've come to bring Harry to his aunt and uncle. They're the only family he has left now.\"",
+    "zh": "\"我来把哈利送到他姨妈和姨父家。他们是他如今仅剩的亲人了。\"",
+    "audio": "audio/para/075.mp3"
+   },
+   {
+    "id": "076",
+    "section": 12,
+    "en_html": "\"You don't mean — you can't mean the people who live here?\" cried Professor McGonagall, jumping to her feet and pointing at number four. \"Dumbledore — you can't. I've been watching them all day. You couldn't find two people who are less like us. And they've got this son — I saw him kicking his mother all the way up the street, screaming for sweets. Harry Potter come and live here!\"",
+    "en": "\"You don't mean — you can't mean the people who live here?\" cried Professor McGonagall, jumping to her feet and pointing at number four. \"Dumbledore — you can't. I've been watching them all day. You couldn't find two people who are less like us. And they've got this son — I saw him kicking his mother all the way up the street, screaming for sweets. Harry Potter come and live here!\"",
+    "zh": "\"你不是说——你不可能是说住在这儿的这家人吧？\"麦格教授叫起来，一跃而起，指着四号。\"邓布利多——你不能。我一整天都在观察他们。你找不出比他们更不像我们的人了。他们还有个儿子——我看见他一路踢着他妈妈，尖叫着要糖吃。哈利·波特要住到这儿来！\"",
+    "audio": "audio/para/076.mp3"
+   },
+   {
+    "id": "077",
+    "section": 12,
+    "en_html": "\"It's the best place for him,\" said Dumbledore <b>firmly</b>. \"His aunt and uncle will be able to explain everything to him when he's older. I've written them a letter.\"",
+    "en": "\"It's the best place for him,\" said Dumbledore firmly. \"His aunt and uncle will be able to explain everything to him when he's older. I've written them a letter.\"",
+    "zh": "\"这是对他最好的安排，\"邓布利多坚定地说，\"等他大一些，姨妈姨父能向他解释一切。我已经给他们写了信。\"",
+    "audio": "audio/para/077.mp3"
+   },
+   {
+    "id": "078",
+    "section": 12,
+    "en_html": "\"A letter?\" repeated Professor McGonagall <b>faintly</b>, sitting back down on the wall. \"Really, Dumbledore, you think you can explain all this in a letter? These people will never understand him! He'll be famous — a <b>legend</b> — I wouldn't be surprised if today was known as Harry Potter Day in the future — there will be books written about Harry — every child in our world will know his name!\"",
+    "en": "\"A letter?\" repeated Professor McGonagall faintly, sitting back down on the wall. \"Really, Dumbledore, you think you can explain all this in a letter? These people will never understand him! He'll be famous — a legend — I wouldn't be surprised if today was known as Harry Potter Day in the future — there will be books written about Harry — every child in our world will know his name!\"",
+    "zh": "\"一封信？\"麦格教授有气无力地重复了一遍，又坐回墙上。\"说真的，邓布利多，你觉得这些事能在一封信里解释清楚？这些人永远不会理解他！他会出名——成为传奇——要是将来今天被定为'哈利·波特日'，我都不意外——会有专门写哈利的书——我们世界里每个孩子都会知道他的名字！\"",
+    "audio": "audio/para/078.mp3"
+   },
+   {
+    "id": "079",
+    "section": 12,
+    "en_html": "\"Exactly,\" said Dumbledore, looking very seriously over the top of his half-moon glasses. \"It would be enough to <b>turn any boy's head</b>. Famous before he can walk and talk! Famous for something he won't even remember! Can't you see how much better off he'll be, growing up away from all that until he's ready to take it?\"",
+    "en": "\"Exactly,\" said Dumbledore, looking very seriously over the top of his half-moon glasses. \"It would be enough to turn any boy's head. Famous before he can walk and talk! Famous for something he won't even remember! Can't you see how much better off he'll be, growing up away from all that until he's ready to take it?\"",
+    "zh": "\"正是如此，\"邓布利多说着，从半月形眼镜上方严肃地看着她，\"这足以让任何一个男孩冲昏头脑。还没会走路说话就出名了！为一件他自己都不会记得的事出名！你难道看不出来吗——在这一切之外长大，直到他有能力承受，对他要好得多。\"",
+    "audio": "audio/para/079.mp3"
+   },
+   {
+    "id": "080",
+    "section": 12,
+    "en_html": "Professor McGonagall opened her mouth, changed her mind, <b>swallowed</b>, and then said, \"Yes — yes, you're right, of course. But how is the boy getting here, Dumbledore?\" She eyed his cloak suddenly as though she thought he might be hiding Harry underneath it.",
+    "en": "Professor McGonagall opened her mouth, changed her mind, swallowed, and then said, \"Yes — yes, you're right, of course. But how is the boy getting here, Dumbledore?\" She eyed his cloak suddenly as though she thought he might be hiding Harry underneath it.",
+    "zh": "麦格教授张了张嘴，改了主意，咽了口口水，然后说：\"是——是的，你说得当然对。可这孩子怎么过来呢，邓布利多？\"她忽然盯住他的斗篷，像是怀疑他把哈利藏在里头。",
+    "audio": "audio/para/080.mp3"
+   },
+   {
+    "id": "081",
+    "section": 12,
+    "en_html": "\"Hagrid's bringing him.\"",
+    "en": "\"Hagrid's bringing him.\"",
+    "zh": "\"海格带他来。\"",
+    "audio": "audio/para/081.mp3"
+   },
+   {
+    "id": "082",
+    "section": 12,
+    "en_html": "\"You think it — wise — to trust Hagrid with something as important as this?\"",
+    "en": "\"You think it — wise — to trust Hagrid with something as important as this?\"",
+    "zh": "\"你觉得——把这么重要的事托付给海格——明智吗？\"",
+    "audio": "audio/para/082.mp3"
+   },
+   {
+    "id": "083",
+    "section": 12,
+    "en_html": "\"I would trust Hagrid with my life,\" said Dumbledore.",
+    "en": "\"I would trust Hagrid with my life,\" said Dumbledore.",
+    "zh": "\"我愿意把命交给海格，\"邓布利多说。",
+    "audio": "audio/para/083.mp3"
+   },
+   {
+    "id": "084",
+    "section": 12,
+    "en_html": "\"I'm not saying his heart isn't in the right place,\" said Professor McGonagall <b>grudgingly</b>, \"but you can't pretend he's not <b>careless</b>. He does <b>tend to</b> — what was that?\"",
+    "en": "\"I'm not saying his heart isn't in the right place,\" said Professor McGonagall grudgingly, \"but you can't pretend he's not careless. He does tend to — what was that?\"",
+    "zh": "\"我不是说他心术不正，\"麦格教授不情愿地说，\"可你不能假装他不粗心。他确实容易——那是什么声音？\"",
+    "audio": "audio/para/084.mp3"
+   },
+   {
+    "id": "085",
+    "section": 12,
+    "en_html": "A low <b>rumbling</b> sound had broken the silence around them. It grew steadily louder as they looked up and down the street for some sign of a <b>headlight</b>; it <b>swelled</b> to a <b>roar</b> as they both looked up at the sky — and a huge motorcycle fell out of the air and landed on the road in front of them.",
+    "en": "A low rumbling sound had broken the silence around them. It grew steadily louder as they looked up and down the street for some sign of a headlight; it swelled to a roar as they both looked up at the sky — and a huge motorcycle fell out of the air and landed on the road in front of them.",
+    "zh": "一阵低沉的隆隆声打破了两人周围的寂静。声音稳定地越来越响，他们朝街道两头张望，想找到车灯的迹象；等两人都抬头望天时，声音已涨成轰鸣——一辆巨大的摩托车从空中掉下来，落在他们面前的路面上。",
+    "audio": "audio/para/085.mp3"
+   },
+   {
+    "id": "086",
+    "section": 12,
+    "en_html": "If the motorcycle was huge, it was nothing to the man sitting <b>astride</b> it. He was almost twice as tall as a normal man and at least five times as wide. He looked simply too big to be allowed, and so wild — long <b>tangles</b> of <b>bushy</b> black hair and beard hid most of his face, he had hands the size of <b>trash can lids</b>, and his feet in their leather boots were like baby <b>dolphins</b>. In his vast, <b>muscular</b> arms he was holding a <b>bundle</b> of blankets.",
+    "en": "If the motorcycle was huge, it was nothing to the man sitting astride it. He was almost twice as tall as a normal man and at least five times as wide. He looked simply too big to be allowed, and so wild — long tangles of bushy black hair and beard hid most of his face, he had hands the size of trash can lids, and his feet in their leather boots were like baby dolphins. In his vast, muscular arms he was holding a bundle of blankets.",
+    "zh": "要说这摩托车算巨大，那骑在它上面的男人就根本不算什么了。他几乎有常人的两倍高，至少五倍宽。他看上去大得简直不该被允许存在，而且野得吓人——长而蓬乱的黑色头发和胡子遮住了大半个脸，他的手有垃圾桶盖那么大，皮靴里的脚像小海豚。他用粗壮多肉的手臂抱着一捆毯子。",
+    "audio": "audio/para/086.mp3"
+   },
+   {
+    "id": "087",
+    "section": 12,
+    "en_html": "\"Hagrid,\" said Dumbledore, sounding <b>relieved</b>. \"At last. And where did you get that motorcycle?\"",
+    "en": "\"Hagrid,\" said Dumbledore, sounding relieved. \"At last. And where did you get that motorcycle?\"",
+    "zh": "\"海格，\"邓布利多说，听上去松了口气，\"总算来了。你这摩托车哪儿弄来的？\"",
+    "audio": "audio/para/087.mp3"
+   },
+   {
+    "id": "088",
+    "section": 12,
+    "en_html": "\"Borrowed it, Professor Dumbledore, sir,\" said the giant, climbing carefully off the motorcycle as he spoke. \"Young Sirius Black lent it to me. I've got him, sir.\"",
+    "en": "\"Borrowed it, Professor Dumbledore, sir,\" said the giant, climbing carefully off the motorcycle as he spoke. \"Young Sirius Black lent it to me. I've got him, sir.\"",
+    "zh": "\"借的，邓布利多教授，先生，\"巨人一边说一边小心地从车上下来，\"年轻的西里斯·布莱克借给我的。我接到他了，先生。\"",
+    "audio": "audio/para/088.mp3"
+   },
+   {
+    "id": "089",
+    "section": 12,
+    "en_html": "\"No problems, were there?\"",
+    "en": "\"No problems, were there?\"",
+    "zh": "\"没出什么岔子吧？\"",
+    "audio": "audio/para/089.mp3"
+   },
+   {
+    "id": "090",
+    "section": 12,
+    "en_html": "\"No, sir — house was almost destroyed, but I got him out all right before the Muggles started <b>swarmin'</b> around. He fell asleep as we was <b>flyin'</b> over Bristol.\"",
+    "en": "\"No, sir — house was almost destroyed, but I got him out all right before the Muggles started swarmin' around. He fell asleep as we was flyin' over Bristol.\"",
+    "zh": "\"没有，先生——房子几乎全毁了，不过我在麻瓜们围过来之前就把他救出来了。我们飞过布里斯托尔的时候他睡着了。\"",
+    "audio": "audio/para/090.mp3"
+   },
+   {
+    "id": "091",
+    "section": 12,
+    "en_html": "Dumbledore and Professor McGonagall <b>bent</b> forward over the bundle of blankets. Inside, just visible, was a baby boy, fast asleep. Under a <b>tuft</b> of <b>jet-black</b> hair over his forehead they could see a <b>curiously</b> shaped cut, like a <b>bolt of lightning</b>.",
+    "en": "Dumbledore and Professor McGonagall bent forward over the bundle of blankets. Inside, just visible, was a baby boy, fast asleep. Under a tuft of jet-black hair over his forehead they could see a curiously shaped cut, like a bolt of lightning.",
+    "zh": "邓布利多和麦格教授俯身去看那捆毯子。里面隐约可见一个男婴，睡得正香。他额前一撮乌黑的头发下面，有一道形状古怪的伤口，像一道闪电。",
+    "audio": "audio/para/091.mp3"
+   },
+   {
+    "id": "092",
+    "section": 12,
+    "en_html": "\"Is that where — ?\" whispered Professor McGonagall.",
+    "en": "\"Is that where — ?\" whispered Professor McGonagall.",
+    "zh": "\"就是那儿——？\"麦格教授低声问。",
+    "audio": "audio/para/092.mp3"
+   },
+   {
+    "id": "093",
+    "section": 12,
+    "en_html": "\"Yes,\" said Dumbledore. \"He'll have that <b>scar</b> forever.\"",
+    "en": "\"Yes,\" said Dumbledore. \"He'll have that scar forever.\"",
+    "zh": "\"是的，\"邓布利多说，\"这道疤他会带一辈子。\"",
+    "audio": "audio/para/093.mp3"
+   },
+   {
+    "id": "094",
+    "section": 12,
+    "en_html": "\"Couldn't you do something about it, Dumbledore?\"",
+    "en": "\"Couldn't you do something about it, Dumbledore?\"",
+    "zh": "\"你不能处理一下吗，邓布利多？\"",
+    "audio": "audio/para/094.mp3"
+   },
+   {
+    "id": "095",
+    "section": 12,
+    "en_html": "\"Even if I could, I wouldn't. Scars can <b>come in handy</b>. I have one myself above my left knee that is a perfect map of the London Underground. Well — give him here, Hagrid — we'd better <b>get this over with</b>.\"",
+    "en": "\"Even if I could, I wouldn't. Scars can come in handy. I have one myself above my left knee that is a perfect map of the London Underground. Well — give him here, Hagrid — we'd better get this over with.\"",
+    "zh": "\"就算能，我也不会。伤疤有时候能派上用场。我自己左膝上方就有一道，是一幅完美的伦敦地铁图。好了——把他给我，海格——我们还是把这事了结了吧。\"",
+    "audio": "audio/para/095.mp3"
+   }
+  ],
+  "vocabulary": [
+   {
+    "id": "180",
+    "word": "firmly",
+    "ipa": "/ˈfɜːmli/",
+    "pos": "adv.",
+    "level": "b1",
+    "meaning": "坚定地；坚决地",
+    "example": "said Dumbledore firmly 邓布利多坚定地说",
+    "memory": "和 01 节的 firm（公司）同形不同义——这里回到形容词\"坚定的\"。同一个词在文中出现两次、意思差很远，这正是\"语境定词义\"的最好例证。",
+    "audio": "audio/words/180.mp3"
+   },
+   {
+    "id": "181",
+    "word": "faintly",
+    "ipa": "/ˈfeɪntli/",
+    "pos": "adv.",
+    "level": "c1",
+    "meaning": "微弱地；无力地",
+    "example": "repeated Professor McGonagall faintly 麦格教授有气无力地重复道",
+    "memory": "faint 三个常用义：微弱的（a faint sound）、模糊的（a faint memory）、昏倒（faint）。这里取\"无力\"。",
+    "audio": "audio/words/181.mp3"
+   },
+   {
+    "id": "182",
+    "word": "legend",
+    "ipa": "/ˈledʒənd/",
+    "pos": "n.",
+    "level": "b1",
+    "meaning": "传奇；传说；传奇人物",
+    "example": "He'll be famous — a legend . 他会出名——成为传奇。",
+    "memory": "词族：legend（传说）→ legendary（传奇的）。口语里 He's a legend!＝他真是个神人！",
+    "audio": "audio/words/182.mp3"
+   },
+   {
+    "id": "183",
+    "word": "turn sb's head",
+    "ipa": "",
+    "pos": "短语",
+    "level": "c1",
+    "meaning": "使某人飘飘然、冲昏头脑",
+    "example": "enough to turn any boy's head 足以让任何男孩冲昏头脑",
+    "memory": "字面\"把头转过去\"→ 注意力被名利勾走。常与 fame、praise、success 搭配。",
+    "audio": "audio/words/183.mp3"
+   },
+   {
+    "id": "184",
+    "word": "swallow",
+    "ipa": "/ˈswɒləʊ/",
+    "pos": "v.",
+    "level": "b1",
+    "meaning": "咽下；吞；（紧张时）咽口水",
+    "example": "changed her mind, swallowed , and then said… 改了主意，咽了口口水，然后说……",
+    "memory": "这里不是\"吞东西\"，而是\"咽口水\"——紧张/犹豫的身体语言。同义：gulp（大口吞）。",
+    "audio": "audio/words/184.mp3"
+   },
+   {
+    "id": "185",
+    "word": "grudgingly",
+    "ipa": "/ˈɡrʌdʒɪŋli/",
+    "pos": "adv.",
+    "level": "c1",
+    "meaning": "不情愿地；勉强地",
+    "example": "said Professor McGonagall grudgingly 麦格教授不情愿地说",
+    "memory": "grudge＝怨恨、不情愿。grudging praise＝勉勉强强的夸奖。同义：reluctantly。",
+    "audio": "audio/words/185.mp3"
+   },
+   {
+    "id": "186",
+    "word": "careless",
+    "ipa": "/ˈkeələs/",
+    "pos": "adj.",
+    "level": "b1",
+    "meaning": "粗心的；不小心的",
+    "example": "you can't pretend he's not careless 你不能假装他不粗心",
+    "memory": "care + -less（无）→ 不上心的。反义：careful。同类后缀：hopeless、fearless、speechless。",
+    "audio": "audio/words/186.mp3"
+   },
+   {
+    "id": "187",
+    "word": "tend to do",
+    "ipa": "",
+    "pos": "短语",
+    "level": "b1",
+    "meaning": "往往会；倾向于",
+    "example": "He does tend to — 他确实容易——",
+    "memory": "do/does 在这里是强调：\"他确实容易……\"。tend to 描述习惯性倾向，比 usually 更书面。",
+    "audio": "audio/words/187.mp3"
+   },
+   {
+    "id": "188",
+    "word": "rumble",
+    "ipa": "/ˈrʌmbl/",
+    "pos": "v./n.",
+    "level": "c1",
+    "meaning": "发出低沉的隆隆声",
+    "example": "A low rumbling sound 一阵低沉的隆隆声",
+    "memory": "拟声词，雷、卡车、肚子饿都能 rumble。同族：rumble of thunder（雷声隆隆）、My stomach rumbled.（我肚子咕咕叫。）",
+    "audio": "audio/words/188.mp3"
+   },
+   {
+    "id": "189",
+    "word": "headlight",
+    "ipa": "/ˈhedlaɪt/",
+    "pos": "n.",
+    "level": "b1",
+    "meaning": "（车、飞机的）前灯、头灯",
+    "example": "some sign of a headlight 车灯的迹象",
+    "memory": "head + light。车辆灯光全套：headlight 前灯、taillight 尾灯、indicator 转向灯、hazard lights 双闪。",
+    "audio": "audio/words/189.mp3"
+   },
+   {
+    "id": "190",
+    "word": "swell",
+    "ipa": "/swel/",
+    "pos": "v.",
+    "level": "c1",
+    "meaning": "（声音、数量）增强、膨胀",
+    "example": "it swelled to a roar 声音涨成了轰鸣",
+    "memory": "原义\"肿胀\"→ 声音由小变大。反义：fade、die down（渐弱）。名词 a swell 还可指\"涌浪\"。",
+    "audio": "audio/words/190.mp3"
+   },
+   {
+    "id": "191",
+    "word": "roar",
+    "ipa": "/rɔː/",
+    "pos": "n./v.",
+    "level": "b1",
+    "meaning": "轰鸣；咆哮",
+    "example": "swelled to a roar 涨成一片轰鸣",
+    "memory": "狮吼、引擎轰鸣、人群欢呼都用 roar。搭配：roar with laughter（哈哈大笑）。",
+    "audio": "audio/words/191.mp3"
+   },
+   {
+    "id": "192",
+    "word": "astride",
+    "ipa": "/əˈstraɪd/",
+    "pos": "prep.",
+    "level": "c1",
+    "meaning": "跨坐在……上",
+    "example": "the man sitting astride it 跨坐在车上的那个男人",
+    "memory": "a-（在……上）+ stride（跨步）→ 跨着。骑马、骑车、骑摩托的\"跨坐\"都用它。",
+    "audio": "audio/words/192.mp3"
+   },
+   {
+    "id": "193",
+    "word": "tangle",
+    "ipa": "/ˈtæŋɡl/",
+    "pos": "n./v.",
+    "level": "c1",
+    "meaning": "缠结的一团；纠结",
+    "example": "long tangles of hair 一团团乱缠的头发",
+    "memory": "耳机线打结就是 tangle。反义：untangle（解开）。比喻：be tangled in sth（被缠进某事）。",
+    "audio": "audio/words/193.mp3"
+   },
+   {
+    "id": "194",
+    "word": "bushy",
+    "ipa": "/ˈbʊʃi/",
+    "pos": "adj.",
+    "level": "b2",
+    "meaning": "浓密的（毛发、灌木）",
+    "example": "bushy black hair 浓密的黑发",
+    "memory": "bush（灌木丛）+ -y → 像灌木一样密。固定搭配：bushy eyebrows（浓眉）、a bushy beard（浓密的胡子）。",
+    "audio": "audio/words/194.mp3"
+   },
+   {
+    "id": "195",
+    "word": "trash can lid",
+    "ipa": "/træʃ kæn lɪd/",
+    "pos": "短语",
+    "level": "b1",
+    "meaning": "垃圾桶盖",
+    "example": "hands the size of trash can lids 手有垃圾桶盖那么大",
+    "memory": "美式 trash can = 英式 dustbin / rubbish bin。lid 是\"盖子\"（pot lid 锅盖、eyelid 眼皮）。",
+    "audio": "audio/words/195.mp3"
+   },
+   {
+    "id": "196",
+    "word": "dolphin",
+    "ipa": "/ˈdɒlfɪn/",
+    "pos": "n.",
+    "level": "b1",
+    "meaning": "海豚",
+    "example": "feet like baby dolphins 脚像小海豚",
+    "memory": "罗琳式的奇喻：巨人的大脚被比作\"小海豚\"，既写尺寸又写圆润。比喻句写作可借鉴这种\"反差喻\"。",
+    "audio": "audio/words/196.mp3"
+   },
+   {
+    "id": "197",
+    "word": "muscular",
+    "ipa": "/ˈmʌskjələ/",
+    "pos": "adj.",
+    "level": "b2",
+    "meaning": "肌肉发达的；强壮的",
+    "example": "his vast, muscular arms 他那粗壮多肉的手臂",
+    "memory": "muscle（肌肉）+ -ar。形容体型的词串：muscular 健壮、slim 苗条、stout 壮硕、lean 精瘦。",
+    "audio": "audio/words/197.mp3"
+   },
+   {
+    "id": "198",
+    "word": "bundle",
+    "ipa": "/ˈbʌndl/",
+    "pos": "n.",
+    "level": "b2",
+    "meaning": "一捆；一包",
+    "example": "a bundle of blankets 一捆毯子",
+    "memory": "短语：a bundle of nerves（极度紧张的人）、bundle up（穿得严严实实）。这里\"一捆毯子\"就是襁褓。",
+    "audio": "audio/words/198.mp3"
+   },
+   {
+    "id": "199",
+    "word": "relieved",
+    "ipa": "/rɪˈliːvd/",
+    "pos": "adj.",
+    "level": "b2",
+    "meaning": "宽慰的；松了口气的",
+    "example": "said Dumbledore, sounding relieved 邓布利多说，听上去松了口气",
+    "memory": "relieve（减轻）→ relieved（感到宽慰）。搭配：be relieved to hear that… / a sigh of relief（松了口气）。",
+    "audio": "audio/words/199.mp3"
+   },
+   {
+    "id": "200",
+    "word": "swarm",
+    "ipa": "/swɔːm/",
+    "pos": "v./n.",
+    "level": "c1",
+    "meaning": "蜂拥；成群移动",
+    "example": "the Muggles started swarmin' around 麻瓜们开始围过来",
+    "memory": "swarm 原指蜂群。海格说话带口音，swarming 写成 swarmin'，flying 写成 flyin'——原文用拼写表现方言，读时注意这是\"口音\"不是错字。",
+    "audio": "audio/words/200.mp3"
+   },
+   {
+    "id": "201",
+    "word": "bend",
+    "ipa": "/bend/",
+    "pos": "v.",
+    "level": "b1",
+    "meaning": "弯腰；俯身 （bent 是过去式）",
+    "example": "bent forward over the bundle 俯身看那捆毯子",
+    "memory": "不规则：bend - bent - bent。搭配：bend down（弯腰）、bend over（俯身）、bend the rules（变通规则）。",
+    "audio": "audio/words/201.mp3"
+   },
+   {
+    "id": "202",
+    "word": "tuft",
+    "ipa": "/tʌft/",
+    "pos": "n.",
+    "level": "c1",
+    "meaning": "（一）撮（头发、草）",
+    "example": "a tuft of jet-black hair 一撮乌黑的头发",
+    "memory": "量词，专用于\"丛生的毛发/草\"。同类：a lock of hair（一缕）、a strand（一根）、a wisp（一丝）。",
+    "audio": "audio/words/202.mp3"
+   },
+   {
+    "id": "203",
+    "word": "jet-black",
+    "ipa": "/ˌdʒet ˈblæk/",
+    "pos": "adj.",
+    "level": "c1",
+    "meaning": "乌黑的；黑玉般的",
+    "example": "a tuft of jet-black hair 一撮乌黑的头发",
+    "memory": "jet＝黑玉（一种黑色宝石）。颜色 + 名词构成的形容词：jet-black、snow-white、blood-red、sky-blue。",
+    "audio": "audio/words/203.mp3"
+   },
+   {
+    "id": "204",
+    "word": "curiously",
+    "ipa": "/ˈkjʊəriəsli/",
+    "pos": "adv.",
+    "level": "b2",
+    "meaning": "奇怪地；好奇地",
+    "example": "a curiously shaped cut 一道形状古怪的伤口",
+    "memory": "curious 双义：好奇的 / 奇怪的。这里修饰 shaped，取\"古怪\"。同族：curiosity（好奇心）。",
+    "audio": "audio/words/204.mp3"
+   },
+   {
+    "id": "205",
+    "word": "a bolt of lightning",
+    "ipa": "",
+    "pos": "短语",
+    "level": "b1",
+    "meaning": "一道闪电",
+    "example": "like a bolt of lightning 像一道闪电",
+    "memory": "闪电的固定量词是 bolt（一道）。同类：a flash of lightning（一闪）、a clap of thunder（一声雷）。",
+    "audio": "audio/words/205.mp3"
+   },
+   {
+    "id": "206",
+    "word": "scar",
+    "ipa": "/skɑː/",
+    "pos": "n.",
+    "level": "b1",
+    "meaning": "伤疤；疤痕",
+    "example": "He'll have that scar forever. 这道疤他会带一辈子。",
+    "memory": "全书的\"关键道具\"在此登场。搭配：leave a scar（留下疤痕）、a scar on one's face。",
+    "audio": "audio/words/206.mp3"
+   },
+   {
+    "id": "207",
+    "word": "come in handy",
+    "ipa": "",
+    "pos": "短语",
+    "level": "b2",
+    "meaning": "派得上用场",
+    "example": "Scars can come in handy . 伤疤有时能派上用场。",
+    "memory": "handy＝方便的、顺手的。同义：be useful、prove useful。不可数，不能说 a handy。",
+    "audio": "audio/words/207.mp3"
+   },
+   {
+    "id": "208",
+    "word": "get sth over with",
+    "ipa": "",
+    "pos": "短语",
+    "level": "b2",
+    "meaning": "把（不愉快的）事赶紧了结",
+    "example": "we'd better get this over with 我们还是把这事了结了吧",
+    "memory": "over＝结束。暗含\"这事不情愿，但必须做，快点做完\"。同义：get it done、finish it off。",
+    "audio": "audio/words/208.mp3"
+   }
+  ]
+ },
+ {
+  "n": 13,
+  "title": "Left on the Doorstep",
+  "title_zh": "放在门阶上的婴儿",
+  "audio": "audio/13.mp3",
+  "paragraphs": [
+   {
+    "id": "096",
+    "section": 13,
+    "en_html": "Dumbledore took Harry in his arms and turned toward the Dursleys' house.",
+    "en": "Dumbledore took Harry in his arms and turned toward the Dursleys' house.",
+    "zh": "邓布利多把哈利抱进怀里，转身朝德思礼家走去。",
+    "audio": "audio/para/096.mp3"
+   },
+   {
+    "id": "097",
+    "section": 13,
+    "en_html": "\"Could I — could I say good-bye to him, sir?\" asked Hagrid. He bent his great, <b>shaggy</b> head over Harry and gave him what must have been a very <b>scratchy</b>, <b>whiskery</b> kiss. Then, suddenly, Hagrid let out a <b>howl</b> like a wounded dog.",
+    "en": "\"Could I — could I say good-bye to him, sir?\" asked Hagrid. He bent his great, shaggy head over Harry and gave him what must have been a very scratchy, whiskery kiss. Then, suddenly, Hagrid let out a howl like a wounded dog.",
+    "zh": "\"我能——我能跟他道个别吗，先生？\"海格问。他低下那颗蓬乱的大脑袋凑近哈利，给了他一个想必又扎人、又满是胡茬的吻。紧接着，海格突然像条受伤的狗一样，发出一声长嚎。",
+    "audio": "audio/para/097.mp3"
+   },
+   {
+    "id": "098",
+    "section": 13,
+    "en_html": "\"Shhh!\" <b>hissed</b> Professor McGonagall, \"you'll wake the Muggles!\"",
+    "en": "\"Shhh!\" hissed Professor McGonagall, \"you'll wake the Muggles!\"",
+    "zh": "\"嘘！\"麦格教授嘶声道，\"你会把麻瓜吵醒的！\"",
+    "audio": "audio/para/098.mp3"
+   },
+   {
+    "id": "099",
+    "section": 13,
+    "en_html": "\"S-s-sorry,\" <b>sobbed</b> Hagrid, taking out a large, <b>spotted</b> handkerchief and <b>burying his face</b> in it. \"But I c-c-can't stand it — Lily an' James dead — an' poor little Harry off <b>ter</b> live with Muggles —\"",
+    "en": "\"S-s-sorry,\" sobbed Hagrid, taking out a large, spotted handkerchief and burying his face in it. \"But I c-c-can't stand it — Lily an' James dead — an' poor little Harry off ter live with Muggles —\"",
+    "zh": "\"对、对、对不起，\"海格抽泣着，掏出一块带圆点的大手帕，把脸埋了进去。\"可我受、受不了——莉莉和詹姆斯死了——可怜的小哈利还要去跟麻瓜住——\"",
+    "audio": "audio/para/099.mp3"
+   },
+   {
+    "id": "100",
+    "section": 13,
+    "en_html": "\"Yes, yes, it's all very sad, but <b>get a grip on yourself</b>, Hagrid, or we'll be found,\" Professor McGonagall whispered, patting Hagrid <b>gingerly</b> on the arm as Dumbledore stepped over the low garden wall and walked to the front door. He laid Harry gently on the <b>doorstep</b>, took a letter out of his cloak, <b>tucked</b> it inside Harry's blankets, and then came back to the other two. For a full minute the three of them stood and looked at the little bundle; Hagrid's shoulders shook, Professor McGonagall blinked furiously, and the <b>twinkling</b> light that usually shone from Dumbledore's eyes seemed to have gone out.",
+    "en": "\"Yes, yes, it's all very sad, but get a grip on yourself, Hagrid, or we'll be found,\" Professor McGonagall whispered, patting Hagrid gingerly on the arm as Dumbledore stepped over the low garden wall and walked to the front door. He laid Harry gently on the doorstep, took a letter out of his cloak, tucked it inside Harry's blankets, and then came back to the other two. For a full minute the three of them stood and looked at the little bundle; Hagrid's shoulders shook, Professor McGonagall blinked furiously, and the twinkling light that usually shone from Dumbledore's eyes seemed to have gone out.",
+    "zh": "\"好了好了，这确实很伤心，可你得控制住自己，海格，不然我们会被发现的，\"麦格教授低声说，一边小心翼翼地拍拍他的手臂。邓布利多跨过矮矮的花园围墙，走向前门。他把哈利轻轻放在门阶上，从斗篷里取出一封信，塞进哈利的毯子里，然后回到另外两人身边。整整一分钟，三个人站在那里，看着那小小的襁褓；海格的肩膀在发抖，麦格教授拼命眨着眼，而邓布利多眼里惯有的那种闪烁的光，似乎熄灭了。",
+    "audio": "audio/para/100.mp3"
+   },
+   {
+    "id": "101",
+    "section": 13,
+    "en_html": "\"Well,\" said Dumbledore finally, \"that's that. We've no business staying here. We may as well go and join the celebrations.\"",
+    "en": "\"Well,\" said Dumbledore finally, \"that's that. We've no business staying here. We may as well go and join the celebrations.\"",
+    "zh": "\"好了，\"邓布利多终于说，\"就这样吧。我们没理由再待在这儿了。不如去参加庆祝吧。\"",
+    "audio": "audio/para/101.mp3"
+   },
+   {
+    "id": "102",
+    "section": 13,
+    "en_html": "\"Yeah,\" said Hagrid in a very <b>muffled</b> voice, \"I'd best get this bike away. G'night, Professor McGonagall — Professor Dumbledore, sir.\"",
+    "en": "\"Yeah,\" said Hagrid in a very muffled voice, \"I'd best get this bike away. G'night, Professor McGonagall — Professor Dumbledore, sir.\"",
+    "zh": "\"嗯，\"海格用闷闷的声音说，\"我最好把这车弄走。晚安，麦格教授——邓布利多教授，先生。\"",
+    "audio": "audio/para/102.mp3"
+   },
+   {
+    "id": "103",
+    "section": 13,
+    "en_html": "Wiping his <b>streaming</b> eyes on his jacket sleeve, Hagrid <b>swung</b> himself onto the motorcycle and kicked the engine into life; with a roar it rose into the air and off into the night.",
+    "en": "Wiping his streaming eyes on his jacket sleeve, Hagrid swung himself onto the motorcycle and kicked the engine into life; with a roar it rose into the air and off into the night.",
+    "zh": "海格用夹克袖子擦着止不住的眼泪，翻身跨上摩托车，一脚把引擎踹着了；随着一声轰鸣，车子升上空中，飞进了夜色。",
+    "audio": "audio/para/103.mp3"
+   },
+   {
+    "id": "104",
+    "section": 13,
+    "en_html": "\"I shall see you soon, I expect, Professor McGonagall,\" said Dumbledore, nodding to her. Professor McGonagall <b>blew her nose</b> in reply.",
+    "en": "\"I shall see you soon, I expect, Professor McGonagall,\" said Dumbledore, nodding to her. Professor McGonagall blew her nose in reply.",
+    "zh": "\"我想我们很快会再见的，麦格教授，\"邓布利多说，朝她点了点头。麦格教授擤了擤鼻子，算是回答。",
+    "audio": "audio/para/104.mp3"
+   },
+   {
+    "id": "105",
+    "section": 13,
+    "en_html": "Dumbledore turned and walked back down the street. On the corner he stopped and took out the silver Put-Outer. He clicked it once, and twelve balls of light sped back to their street lamps so that Privet Drive glowed suddenly orange and he could make out a tabby cat <b>slinking</b> around the corner at the other end of the street. He could just see the bundle of blankets on the step of number four.",
+    "en": "Dumbledore turned and walked back down the street. On the corner he stopped and took out the silver Put-Outer. He clicked it once, and twelve balls of light sped back to their street lamps so that Privet Drive glowed suddenly orange and he could make out a tabby cat slinking around the corner at the other end of the street. He could just see the bundle of blankets on the step of number four.",
+    "zh": "邓布利多转身沿街往回走。到了街角，他停下，掏出那只银色的熄灯器。他按了一下，十二个光球飞回各自的街灯，女贞路顿时亮起一片橘色的光，他能辨认出街那头一只虎斑猫正悄悄绕过街角。他也勉强看得见四号门阶上那捆毯子。",
+    "audio": "audio/para/105.mp3"
+   },
+   {
+    "id": "106",
+    "section": 13,
+    "en_html": "\"Good luck, Harry,\" he <b>murmured</b>. He turned <b>on his heel</b> and with a <b>swish</b> of his cloak, he was gone.",
+    "en": "\"Good luck, Harry,\" he murmured. He turned on his heel and with a swish of his cloak, he was gone.",
+    "zh": "\"祝你好运，哈利，\"他低声说。他脚跟一转，斗篷\"唰\"地一响，人就不见了。",
+    "audio": "audio/para/106.mp3"
+   },
+   {
+    "id": "107",
+    "section": 13,
+    "en_html": "A <b>breeze</b> <b>ruffled</b> the neat <b>hedges</b> of Privet Drive, which lay silent and tidy under the <b>inky</b> sky, the very last place you would expect <b>astonishing</b> things to happen. Harry Potter rolled over inside his blankets without waking up. One small hand closed on the letter beside him and he slept on, not knowing he was special, not knowing he was famous, not knowing he would be woken in a few hours' time by Mrs. Dursley's scream as she opened the front door to put out the milk bottles, nor that he would spend the next few weeks being <b>prodded</b> and <b>pinched</b> by his cousin Dudley… He couldn't know that at this very moment, people meeting in secret all over the country were holding up their glasses and saying in <b>hushed</b> voices: \"To Harry Potter — the boy who lived!\"",
+    "en": "A breeze ruffled the neat hedges of Privet Drive, which lay silent and tidy under the inky sky, the very last place you would expect astonishing things to happen. Harry Potter rolled over inside his blankets without waking up. One small hand closed on the letter beside him and he slept on, not knowing he was special, not knowing he was famous, not knowing he would be woken in a few hours' time by Mrs. Dursley's scream as she opened the front door to put out the milk bottles, nor that he would spend the next few weeks being prodded and pinched by his cousin Dudley… He couldn't know that at this very moment, people meeting in secret all over the country were holding up their glasses and saying in hushed voices: \"To Harry Potter — the boy who lived!\"",
+    "zh": "一阵微风吹皱了女贞路两旁修剪整齐的树篱。这条街在墨黑的天空下沉静而整洁，是全天下你最想不到会发生惊人之事的地方。哈利·波特在毯子里翻了个身，没有醒。一只小手握住了身旁的信，他继续睡着：不知道自己有多么特别，不知道自己已经出名，也不知道再过几个小时，德思礼太太打开前门放牛奶瓶时会尖叫着把他吵醒；更不知道接下来的几个星期里，他会被表哥达力又戳又掐……他不可能知道，就在此刻，全国各地秘密聚会的人们正举起酒杯，压低声音说：\"为哈利·波特——那个大难不死的男孩——干杯！\"",
+    "audio": "audio/para/107.mp3"
+   }
+  ],
+  "vocabulary": [
+   {
+    "id": "209",
+    "word": "shaggy",
+    "ipa": "/ˈʃæɡi/",
+    "pos": "adj.",
+    "level": "c1",
+    "meaning": "（毛发）蓬乱浓密的",
+    "example": "his great, shaggy head 他那颗蓬乱的大脑袋",
+    "memory": "和 12 节的 bushy 近义，但 shaggy 更强调\"长而乱糟糟\"。常见搭配：a shaggy dog（毛茸茸的狗）。",
+    "audio": "audio/words/209.mp3"
+   },
+   {
+    "id": "210",
+    "word": "scratchy",
+    "ipa": "/ˈskrætʃi/",
+    "pos": "adj.",
+    "level": "c1",
+    "meaning": "扎人的；粗糙刺痒的",
+    "example": "a very scratchy kiss 一个很扎人的吻",
+    "memory": "scratch（抓、挠）+ -y。毛衣扎人、胡子扎脸都用它。同族：itchy（发痒的）。",
+    "audio": "audio/words/210.mp3"
+   },
+   {
+    "id": "211",
+    "word": "whiskery",
+    "ipa": "/ˈwɪskəri/",
+    "pos": "adj.",
+    "level": "c1",
+    "meaning": "长满胡须的；胡茬扎人的",
+    "example": "a scratchy, whiskery kiss 又扎人又带胡茬的吻",
+    "memory": "whisker＝胡须（猫的胡须也叫 whisker）。猫的胡须、老人的络腮胡都可用。以 -er 结尾加 -y 变成形容词。",
+    "audio": "audio/words/211.mp3"
+   },
+   {
+    "id": "212",
+    "word": "howl",
+    "ipa": "/haʊl/",
+    "pos": "v./n.",
+    "level": "c1",
+    "meaning": "（狗）长嚎；号哭",
+    "example": "Hagrid let out a howl . 海格发出一声长嚎。",
+    "memory": "狼、狗、风都可以 howl。搭配：howl with laughter（笑得前仰后合）、howl in pain。",
+    "audio": "audio/words/212.mp3"
+   },
+   {
+    "id": "213",
+    "word": "hiss",
+    "ipa": "/hɪs/",
+    "pos": "v.",
+    "level": "c1",
+    "meaning": "嘶嘶地说；发嘘声",
+    "example": "\"Shhh!\" hissed Professor McGonagall. \"嘘！\"麦格教授嘶声道。",
+    "memory": "蛇的\"嘶嘶\"、蒸汽的\"嘶\"、人压低嗓子催促都是 hiss。和 whisper 的区别：hiss 带\"嘘\"的齿音。",
+    "audio": "audio/words/213.mp3"
+   },
+   {
+    "id": "214",
+    "word": "sob",
+    "ipa": "/sɒb/",
+    "pos": "v./n.",
+    "level": "b1",
+    "meaning": "抽泣；呜咽",
+    "example": "\"S-s-sorry,\" sobbed Hagrid. \"对、对、对不起，\"海格抽泣着说。",
+    "memory": "哭的层次：cry（哭，最泛）< weep（书面，流泪）< sob（出声抽泣）< wail（号啕）。原文用 S-s-sorry 的断音写出抽泣。",
+    "audio": "audio/words/214.mp3"
+   },
+   {
+    "id": "215",
+    "word": "spotted",
+    "ipa": "/ˈspɒtɪd/",
+    "pos": "adj.",
+    "level": "b1",
+    "meaning": "有圆点花纹的；有斑点的",
+    "example": "a large, spotted handkerchief 一块带圆点的大手帕",
+    "memory": "图案词一组记：spotted 圆点、striped 条纹、checked 格子、floral 碎花、plain 纯色。",
+    "audio": "audio/words/215.mp3"
+   },
+   {
+    "id": "216",
+    "word": "bury one's face in sth",
+    "ipa": "",
+    "pos": "短语",
+    "level": "b2",
+    "meaning": "把脸埋进……",
+    "example": "burying his face in it 把脸埋进手帕里",
+    "memory": "bury 本义\"埋葬\"→ 引申\"深深埋进\"。搭配：bury one's head in one's hands（双手抱头）、be buried in work（埋头工作）。",
+    "audio": "audio/words/216.mp3"
+   },
+   {
+    "id": "217",
+    "word": "get a grip on oneself",
+    "ipa": "",
+    "pos": "短语",
+    "level": "c1",
+    "meaning": "控制住自己的情绪；镇定下来",
+    "example": "get a grip on yourself 控制住你自己",
+    "memory": "grip＝抓紧。和 06 节的 pull oneself together 同义，口语更短更冲。",
+    "audio": "audio/words/217.mp3"
+   },
+   {
+    "id": "218",
+    "word": "gingerly",
+    "ipa": "/ˈdʒɪndʒəli/",
+    "pos": "adv.",
+    "level": "c1",
+    "meaning": "小心翼翼地；轻手轻脚地",
+    "example": "patting Hagrid gingerly on the arm 小心翼翼地拍他的手臂",
+    "memory": "形容动作\"怕弄疼对方或怕出错\"。同义：cautiously、delicately。麦格教授对海格\"小心地拍\"——写出她的克制与关心。",
+    "audio": "audio/words/218.mp3"
+   },
+   {
+    "id": "219",
+    "word": "doorstep",
+    "ipa": "/ˈdɔːstep/",
+    "pos": "n.",
+    "level": "b1",
+    "meaning": "门前台阶",
+    "example": "laid Harry gently on the doorstep 把哈利轻轻放在门阶上",
+    "memory": "door + step。全章最著名的画面就是\"门阶上的婴儿\"。相关：doorway（门口）、doormat（门垫）、doorbell（门铃）。",
+    "audio": "audio/words/219.mp3"
+   },
+   {
+    "id": "220",
+    "word": "muffled",
+    "ipa": "/ˈmʌfld/",
+    "pos": "adj.",
+    "level": "c1",
+    "meaning": "（声音）闷住的、压低的",
+    "example": "in a very muffled voice 用闷闷的声音",
+    "memory": "muff 本指\"暖手筒/捂住\"，muffle 是\"捂住使声音变闷\"。例句：muffled footsteps（闷闷的脚步声）。",
+    "audio": "audio/words/220.mp3"
+   },
+   {
+    "id": "221",
+    "word": "streaming",
+    "ipa": "/ˈstriːmɪŋ/",
+    "pos": "adj.",
+    "level": "c1",
+    "meaning": "（泪、水）流淌不止的",
+    "example": "Wiping his streaming eyes 擦着止不住的眼泪",
+    "memory": "stream 本义\"小溪\"，作动词\"流成河\"。搭配：streaming eyes（泪流满面）、tears streaming down one's face。",
+    "audio": "audio/words/221.mp3"
+   },
+   {
+    "id": "222",
+    "word": "swing",
+    "ipa": "/swɪŋ/",
+    "pos": "v.",
+    "level": "b1",
+    "meaning": "（猛地）转身跨上；摆动 （swung 是过去式）",
+    "example": "swung himself onto the motorcycle 翻身跨上摩托车",
+    "memory": "不规则：swing - swung - swung。搭配：swing one's legs（晃腿）、swing round（猛转身）。",
+    "audio": "audio/words/222.mp3"
+   },
+   {
+    "id": "223",
+    "word": "blow one's nose",
+    "ipa": "",
+    "pos": "短语",
+    "level": "b2",
+    "meaning": "擤鼻子",
+    "example": "Professor McGonagall blew her nose 麦格教授擤了擤鼻子",
+    "memory": "哭完之后擤鼻子——作者用这个动作代替\"她也哭了\"，含蓄。写作技巧：用动作代替情绪陈述。",
+    "audio": "audio/words/223.mp3"
+   },
+   {
+    "id": "224",
+    "word": "slink",
+    "ipa": "/slɪŋk/",
+    "pos": "v.",
+    "level": "c1",
+    "meaning": "（悄悄地、鬼祟地）溜走",
+    "example": "a tabby cat slinking around the corner 一只虎斑猫悄悄绕过街角",
+    "memory": "带\"偷偷摸摸、不好意思\"的色彩。同义：sneak、creep。猫的招牌动作。",
+    "audio": "audio/words/224.mp3"
+   },
+   {
+    "id": "225",
+    "word": "murmur",
+    "ipa": "/ˈmɜːmə/",
+    "pos": "v.",
+    "level": "b2",
+    "meaning": "低声说；喃喃",
+    "example": "\"Good luck, Harry,\" he murmured . \"祝你好运，哈利，\"他低声说。",
+    "memory": "音色柔和，常带温柔或隐秘感。三个\"低语\"的差别：whisper（气声说）、murmur（柔和低语）、mutter（含抱怨的咕哝）。",
+    "audio": "audio/words/225.mp3"
+   },
+   {
+    "id": "226",
+    "word": "turn on one's heel",
+    "ipa": "",
+    "pos": "短语",
+    "level": "c1",
+    "meaning": "脚跟一转（利落地转身）",
+    "example": "He turned on his heel and was gone. 他脚跟一转，就不见了。",
+    "memory": "heel＝脚后跟。这个短语写\"干脆利落地转身离开\"，比 turned around 有画面感。",
+    "audio": "audio/words/226.mp3"
+   },
+   {
+    "id": "227",
+    "word": "swish",
+    "ipa": "/swɪʃ/",
+    "pos": "n./v.",
+    "level": "c1",
+    "meaning": "\"唰\"的一声（挥动、掠过）",
+    "example": "with a swish of his cloak 斗篷\"唰\"地一响",
+    "memory": "sw- 家族拟声词：swish（唰）、swoosh（嗖）、swish-swish（裙摆摩擦声）。巫师长袍的标准音效。",
+    "audio": "audio/words/227.mp3"
+   },
+   {
+    "id": "228",
+    "word": "breeze",
+    "ipa": "/briːz/",
+    "pos": "n.",
+    "level": "b1",
+    "meaning": "微风",
+    "example": "A breeze ruffled the hedges. 一阵微风吹皱了树篱。",
+    "memory": "风的强度：breeze（微风）< wind（风）< gale（大风）< storm（暴风雨）。口语：It's a breeze.（小菜一碟。）",
+    "audio": "audio/words/228.mp3"
+   },
+   {
+    "id": "229",
+    "word": "ruffle",
+    "ipa": "/ˈrʌfl/",
+    "pos": "v.",
+    "level": "c1",
+    "meaning": "弄皱；吹乱",
+    "example": "A breeze ruffled the neat hedges. 微风吹皱了整齐的树篱。",
+    "memory": "和 09 节的 ruffled（慌乱的）同源：先\"弄乱\"，再\"搅乱心情\"。一词语义延伸的典型例子。",
+    "audio": "audio/words/229.mp3"
+   },
+   {
+    "id": "230",
+    "word": "hedge",
+    "ipa": "/hedʒ/",
+    "pos": "n.",
+    "level": "b1",
+    "meaning": "树篱；篱笆",
+    "example": "the neat hedges of Privet Drive 女贞路修剪整齐的树篱",
+    "memory": "英式住宅区标配。习语：hedge one's bets（两面下注）、sit on the hedge（骑墙）。",
+    "audio": "audio/words/230.mp3"
+   },
+   {
+    "id": "231",
+    "word": "inky",
+    "ipa": "/ˈɪŋki/",
+    "pos": "adj.",
+    "level": "c1",
+    "meaning": "墨黑的；漆黑的",
+    "example": "under the inky sky 在墨黑的天空下",
+    "memory": "ink（墨水）+ -y → 像墨一样的黑。同义高级表达：pitch-black、jet-black。写作夜景必备。",
+    "audio": "audio/words/231.mp3"
+   },
+   {
+    "id": "232",
+    "word": "astonishing",
+    "ipa": "/əˈstɒnɪʃɪŋ/",
+    "pos": "adj.",
+    "level": "b2",
+    "meaning": "惊人的；令人震惊的",
+    "example": "expect astonishing things to happen 期待惊人之事发生",
+    "memory": "和 11 节的 astounding 是同义词，本章前后呼应。astonishing 修饰事物，astonished 修饰人。",
+    "audio": "audio/words/232.mp3"
+   },
+   {
+    "id": "233",
+    "word": "prod",
+    "ipa": "/prɒd/",
+    "pos": "v.",
+    "level": "c1",
+    "meaning": "（用手指、棍子）戳、捅",
+    "example": "being prodded and pinched 被又戳又捏",
+    "memory": "搭配：prod sb into doing sth（催促某人做某事）。和 poke 近义，prod 更用力、更持续。",
+    "audio": "audio/words/233.mp3"
+   },
+   {
+    "id": "234",
+    "word": "pinch",
+    "ipa": "/pɪntʃ/",
+    "pos": "v.",
+    "level": "b1",
+    "meaning": "捏；掐",
+    "example": "prodded and pinched by his cousin 被表哥又戳又捏",
+    "memory": "习语：at a pinch（必要时）、feel the pinch（手头紧）。形容词 pinched 还指\"憔悴的\"。",
+    "audio": "audio/words/234.mp3"
+   },
+   {
+    "id": "235",
+    "word": "hushed",
+    "ipa": "/hʌʃt/",
+    "pos": "adj.",
+    "level": "c1",
+    "meaning": "（声音）压低的、寂静的",
+    "example": "saying in hushed voices 压低声音说",
+    "memory": "hush＝\"嘘\"，作名词是\"寂静\"，作动词是\"使安静\"。a hushed voice 特指\"因为敬畏或秘密而压低的声音\"——正好收束全章的秘密气氛。",
+    "audio": "audio/words/235.mp3"
+   }
+  ]
+ }
+]

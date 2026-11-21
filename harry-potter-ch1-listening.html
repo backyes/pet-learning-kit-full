@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0d474e">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>哈利·波特第一章 · 听力练习册（PET 版）</title>
+<style>
+:root{--paper:#f7f9fa;--ink:#1f2a2e;--card:#fff;--line:#dde5e8;--teal:#12626b;--deep:#0d474e;
+ --accent:#b8860b;--gold:#c9a227;--muted:#6b7b80}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);line-height:1.8;
+ font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;
+ -webkit-font-smoothing:antialiased;overflow-wrap:break-word}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px 80px}
+.hero{background:linear-gradient(135deg,#0d474e 0%,#12626b 55%,#1b7f6a 100%);color:#fff;
+ padding:52px 20px 44px;border-bottom:4px solid var(--gold);margin-bottom:30px}
+.hero .inner{max-width:860px;margin:0 auto}
+.kicker{letter-spacing:.26em;font-size:.7rem;text-transform:uppercase;opacity:.72}
+.hero h1{font-family:Georgia,"Songti SC",serif;font-size:clamp(1.6rem,4.4vw,2.5rem);margin:.3em 0 .15em;line-height:1.25}
+.hero h1 em{color:#f2cf6b;font-style:normal}
+.hero .sub{opacity:.9;font-size:.96rem;max-width:640px}
+.hero .meta{margin-top:18px;display:flex;flex-wrap:wrap;gap:9px}
+.hero .meta span{background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.24);
+ padding:4px 12px;border-radius:999px;font-size:.76rem}
+.box{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 24px;margin:22px 0;
+ box-shadow:0 6px 20px rgba(10,40,45,.05)}
+.box h3{margin:.1em 0 .6em;font-size:1rem;color:var(--teal)}
+.box p,.box li{font-size:.92rem}
+.box ol,.box ul{padding-left:1.3em;margin:.4em 0}
+.box li{margin:.3em 0}
+.note{background:#fdf9ec;border-left:4px solid var(--gold)}
+.tip{background:#eef7f5;border-left:4px solid var(--teal)}
+.unit{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px 26px 26px;
+ margin:28px 0;box-shadow:0 8px 24px rgba(10,40,45,.05)}
+.unit h2{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;font-family:Georgia,"Songti SC",serif;
+ font-size:1.22rem;margin:0;color:#17353a;line-height:1.4}
+.unit h2 .num{background:var(--teal);color:#fff;font-size:.7rem;padding:3px 9px;border-radius:6px;
+ position:relative;top:-2px;font-family:inherit;letter-spacing:.05em}
+.unit h2 .zh{font-size:.86rem;color:#84959a;font-weight:400}
+.rule{height:3px;width:52px;background:var(--gold);border-radius:2px;margin:10px 0 16px}
+.player{display:flex;flex-wrap:wrap;align-items:center;gap:12px;background:#f2f7f7;border:1px solid #dbe8e8;
+ border-radius:12px;padding:12px 14px;margin:14px 0}
+.player audio{flex:1 1 280px;min-width:220px;height:38px}
+.player.mini audio{flex:0 1 320px}
+.rates{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.rates .lab{font-size:.72rem;color:var(--muted);letter-spacing:.08em}
+.rt{border:1px solid #cfe0e0;background:#fff;color:#25565c;border-radius:7px;padding:3px 9px;
+ font-size:.76rem;cursor:pointer;transition:.15s}
+.rt:hover{background:#e8f2f2}
+.rt.on{background:var(--teal);border-color:var(--teal);color:#fff}
+.dur{font-size:.74rem;color:var(--muted);margin-left:4px;font-variant-numeric:tabular-nums}
+.hint{font-size:.78rem;color:var(--muted)}
+.unit h3{font-size:.93rem;color:#2a5b62;margin:20px 0 8px;display:flex;align-items:center;gap:8px}
+.unit h3 i{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;
+ background:#e3eef0;color:#1a6b74;border-radius:5px;font-size:.72rem;font-style:normal;font-weight:700}
+ol.task{margin:6px 0 0;padding-left:1.35em;font-size:.94rem;font-family:Georgia,"Songti SC",serif;line-height:2}
+ol.task li{margin:.25em 0}
+.blk{color:var(--teal);border-bottom:1.5px solid #9dc4c8;padding:0 4px;font-weight:600;
+ display:inline-block;min-width:56px;text-align:center;margin:0 2px}
+.jmp{display:inline-block;margin:3px 4px 0 0;padding:2px 9px;background:#e8f2f2;border:1px solid #cfe0e0;
+ border-radius:6px;font-size:.76rem;text-decoration:none;color:#25565c;font-variant-numeric:tabular-nums}
+.jmp:hover{background:var(--teal);color:#fff;border-color:var(--teal)}
+.tfbox{color:#9aa9ad;font-size:.85rem}
+details{background:#f4f8f8;border:1px solid #dbe8e8;border-radius:10px;padding:12px 16px;margin:16px 0 0}
+summary{cursor:pointer;font-weight:700;color:var(--teal);font-size:.88rem}
+.script{font-family:Georgia,serif;font-size:.9rem;line-height:1.85;color:#2c3a3d;margin:10px 0;
+ max-height:340px;overflow:auto;padding-right:6px}
+.script p{margin:.5em 0}
+.ans{font-size:.86rem;color:#2f4a4f;margin:6px 0;padding-left:2px}
+.ans b{color:var(--teal)}
+footer{margin:46px auto 0;padding:20px;border-top:1px solid var(--line);max-width:860px;
+ font-size:.78rem;color:#93a2a6;text-align:center;line-height:1.9}
+footer a{color:#4f7a80}
+a{color:var(--teal)}
+@media(max-width:560px){.hero{padding:36px 16px}.wrap{padding:0 14px 60px}.unit{padding:18px 16px}}
+@media print{.hero{background:#fff !important;color:#000 !important}.hero h1 em{color:#000}.player{display:none}}
+
+/* ================= 手机端适配 ================= */
+html{-webkit-text-size-adjust:100%}
+*{-webkit-tap-highlight-color:transparent}
+.scrollhint{display:none}
+@media(min-width:601px){.scrollhint{display:none !important}}
+@media(max-width:600px){
+  .hero{padding:34px 16px 26px}
+  .hero h1{font-size:1.4rem;line-height:1.3}
+  .hero .sub{font-size:.87rem;line-height:1.7}
+  .hero .meta{margin-top:14px;gap:7px}
+  .hero .meta span{font-size:.71rem;padding:4px 10px}
+  .wrap{padding:0 13px 74px}
+  section.ch,.unit{padding:18px 15px 20px;border-radius:13px}
+  .box{padding:15px 16px;border-radius:12px}
+  .box h3{font-size:.94rem}
+  .box p,.box li,.cn p{font-size:.89rem}
+  .en{font-size:.97rem;line-height:1.85}
+  .cn{padding:12px 14px}
+  .ch h2,.unit h2{font-size:1.06rem;gap:8px}
+  .ch h2 .zh,.unit h2 .zh{font-size:.8rem}
+  .vocab{gap:10px}
+  .w{padding:11px 13px}
+  .wt{font-size:.79rem;padding:6px 9px}
+  .we{font-size:.82rem}
+  .toc{grid-template-columns:1fr 1fr;gap:6px}
+  .toc a{font-size:.76rem;padding:8px 9px}
+  /* 表格：4 列以内自适应宽度，5 列以上横向滑动并给提示 */
+  th,td{padding:7px 8px;font-size:.78rem}
+  th{white-space:normal}
+  .tablewrap[data-cols="1"] table,.tablewrap[data-cols="2"] table,
+  .tablewrap[data-cols="3"] table,.tablewrap[data-cols="4"] table{min-width:0}
+  .tablewrap[data-cols="5"] table,.tablewrap[data-cols="6"] table{min-width:520px}
+  .scrollhint{display:block;font-size:.7rem;color:#a08a5f;text-align:right;margin:6px 0 -6px}
+  .tablewrap[data-cols="6"] table th:first-child,
+  .tablewrap[data-cols="6"] table td:first-child{display:none}
+
+  /* 听力页：播放器整行、按钮变大 */
+  .player{flex-direction:column;align-items:stretch;gap:10px;padding:12px}
+  .player audio,.player.mini audio{width:100%;flex:none;min-width:0}
+  .rates{justify-content:flex-start}
+  .rt{padding:7px 14px;font-size:.8rem}
+  .blk{min-width:44px}
+  ol.task{font-size:.89rem;line-height:1.95;padding-left:1.2em}
+  .script{max-height:260px;font-size:.85rem}
+  .unit h3{font-size:.88rem;margin:16px 0 6px}
+  details{padding:11px 13px}
+  .jmp{padding:4px 10px}
+  .petbox{padding:12px 14px}
+  .pb-row{font-size:.8rem}
+}
+/* 回顶部按钮 */
+#toTop{position:fixed;right:14px;bottom:18px;width:44px;height:44px;border-radius:50%;
+  border:0;color:#fff;font-size:19px;line-height:1;display:none;z-index:999;cursor:pointer;
+  box-shadow:0 6px 18px rgba(0,0,0,.28);opacity:.94}
+#toTop.show{display:flex;align-items:center;justify-content:center}
+#toTop:active{transform:scale(.94)}
+</style>
+</head>
+<body>
+<div class="hero"><div class="inner">
+  <div class="kicker">Harry Potter and the Philosopher's Stone · Chapter One · Listening</div>
+  <h1>The Boy Who <em>Lived</em><br><span style="font-size:.5em;opacity:.92">听力练习册 · 英音朗读 · PET 听力训练</span></h1>
+  <p class="sub">全章朗读（约 25 分钟，英音）＋ 13 段分节音频 ＋ 78 道听力任务 ＋ 13 句听写</p>
+  <div class="meta">
+    <span>🎧 英音朗读 Daniel</span>
+    <span>⏱ 全章约 24 分钟</span>
+    <span>📝 78 道听力任务</span>
+    <span>✍️ 13 句听写</span>
+    <span>🔗 <a href="harry-potter-ch1-reader.html" style="color:#f2cf6b">中英对照朗读版</a> · <a href="harry-potter-ch1-study.html" style="color:#f2cf6b">精读讲义</a></span>
+  </div>
+</div></div>
+
+<div class="wrap">
+
+<div class="box note">
+  <h3>📌 三遍听法（照着做，效果最好）</h3>
+  <ol>
+    <li><b>第 1 遍 · 盲听</b>：不看文本、不做题，只听情节。听完能用 3 句话说出"这一节讲了什么"，就算过关。</li>
+    <li><b>第 2 遍 · 带题听</b>：边听边做 A 填空、B 判断。卡住的地方按 <b>0.75×</b> 重听那一句，不要整段重来。</li>
+    <li><b>第 3 遍 · 跟读</b>：打开原文，<b>滞后 2 秒</b>跟着读（shadowing）。这一遍练的是语流、连读和弱读，对 PET 听力和口语都有用。</li>
+  </ol>
+  <p style="margin-top:.6em">⚠️ 不要一开始就看文本。看了文本再听，耳朵永远练不出来。</p>
+</div>
+
+<div class="box tip">
+  <h3>🎯 为什么用英音 + 怎么对接 PET 听力</h3>
+  <p>PET 听力以<b>英式发音</b>为主，语速接近本音频的 1×（约 185 词/分钟）。所以：<b>先 0.75× 听懂，再用 1× 做题，最后 1.25× 提速</b>——三步都在为考场服务。</p>
+  <p>PET 听力四部分的对应关系：Part 1 图片选择（本页不含图）｜<b>Part 2 选择题</b> → 用 B 判断热身｜<b>Part 3 填空</b> → 本页 A 填空就是同款题型｜Part 4 判断 → 本页 B。做完这 13 段，Part 2/3/4 的题型你就都熟了。</p>
+</div>
+
+<div class="box">
+  <h3>🎧 全章连播</h3>
+  <div class="player" style="margin-top:10px">
+    <audio id="afull" controls preload="metadata" src="audio/full.mp3"></audio>
+    <div class="rates">
+      <span class="lab">语速</span>
+      <button class="rt" data-a="afull" data-r="0.75">0.75×</button>
+      <button class="rt on" data-a="afull" data-r="1">1×</button>
+      <button class="rt" data-a="afull" data-r="1.25">1.25×</button>
+    </div>
+  </div>
+  <p style="font-size:.85rem;color:#6b7b80;margin:.6em 0 0">建议用法：通勤/睡前盲听，不求全懂，只求"耳朵习惯"。每天一遍，一周后你会发现 1× 突然变清楚了。</p>
+  <p style="font-size:.85rem;margin:.7em 0 0"><b>跳到某一段：</b><br><a class="jmp" href="#u1">01</a><a class="jmp" href="#u2">02</a><a class="jmp" href="#u3">03</a><a class="jmp" href="#u4">04</a><a class="jmp" href="#u5">05</a><a class="jmp" href="#u6">06</a><a class="jmp" href="#u7">07</a><a class="jmp" href="#u8">08</a><a class="jmp" href="#u9">09</a><a class="jmp" href="#u10">10</a><a class="jmp" href="#u11">11</a><a class="jmp" href="#u12">12</a><a class="jmp" href="#u13">13</a></p>
+</div>
+
+
+<section class="unit" id="u1">
+  <h2><span class="num">01</span>The Dursleys of Privet Drive <span class="zh">女贞路的德思礼一家</span></h2>
+  <div class="rule"></div>
+
+  <div class="player">
+    <audio id="a1" controls preload="metadata" src="audio/01.mp3"></audio>
+    <div class="rates">
+      <span class="lab">语速</span>
+      <button class="rt" data-a="a1" data-r="0.75">0.75×</button>
+      <button class="rt on" data-a="a1" data-r="1">1×</button>
+      <button class="rt" data-a="a1" data-r="1.25">1.25×</button>
+      <span class="dur">1:23</span>
+    </div>
+  </div>
+
+  <h3><i>A</i> 听录音，填出缺少的词（每空 1 词）</h3>
+  <ol class="task"><li>They were proud to say that they were <b class=blk>①</b> normal.</li><li>Mr. Dursley was the <b class=blk>②</b> of a firm called Grunnings.</li><li>The firm made <b class=blk>③</b>.</li><li>The Dursleys had a small son called <b class=blk>④</b>.</li></ol>
+
+  <h3><i>B</i> 判断对错（T / F）</h3>
+  <ol class="task tf"><li><span class='tfbox'>(　)</span> The Dursleys were proud of being perfectly normal.</li><li><span class='tfbox'>(　)</span> Mrs. Dursley often talked about her sister.</li></ol>
+
+  <h3><i>C</i> 听写：先听 3 遍，再写下来</h3>
+  <div class="player mini">
+    <audio id="d1" controls preload="metadata" src="audio/dict/01.mp3"></audio>
+    <span class="hint">写不出来可以放慢到 0.75×</span>
+  </div>
+
+  <details>
+    <summary>原文 + 答案（听完再看）</summary>
+    <div class="script"><p>Mr. and Mrs. Dursley, of number four, Privet Drive, were proud to say that they were <b>perfectly</b> normal, thank you very much. They were the <b>last people you'd expect</b> to be involved in anything strange or <b>mysterious</b>, because they just didn't <b>hold with</b> such <b>nonsense</b>.</p><p>Mr. Dursley was the <b>director</b> of a <b>firm</b> called Grunnings, which made <b>drills</b>. He was a big, <b>beefy</b> man with hardly any neck, although he did have a very large <b>mustache</b>. Mrs. Dursley was thin and blonde and had nearly twice the usual amount of neck, which came in very useful as she spent so much of her time <b>craning</b> over garden fences, <b>spying on</b> the neighbors. The Dursleys had a small son called Dudley and in their opinion there was no finer boy anywhere.</p><p>The Dursleys had everything they wanted, but they also had a secret, and their greatest fear was that somebody would discover it. They didn't think they could bear it if anyone found out about the Potters. Mrs. Potter was Mrs. Dursley's sister, but they hadn't met for several years; in fact, Mrs. Dursley pretended she didn't have a sister, because her sister and her <b>good-for-nothing</b> husband were as <b>unDursleyish</b> as it was possible to be. The Dursleys <b>shuddered</b> to think what the neighbors would say if the Potters arrived in the street. The Dursleys knew that the Potters had a small son, too, but they had never even seen him. This boy was another good reason for keeping the Potters away; they didn't want Dudley mixing with a child like that.</p></div>
+    <div class="ans"><b>A 填空</b>　① perfectly　② director　③ drills　④ Dudley</div>
+    <div class="ans"><b>B 判断</b>　1. T　2. F</div>
+    <div class="ans"><b>C 听写</b>　They were the last people you'd expect to be involved in anything strange or mysterious.</div>
+  </details>
+</section>
+<section class="unit" id="u2">
+  <h2><span class="num">02</span>The Dull, Gray Tuesday <span class="zh">那个阴沉的星期二</span></h2>
+  <div class="rule"></div>
+
+  <div class="player">
+    <audio id="a2" controls preload="metadata" src="audio/02.mp3"></audio>
+    <div class="rates">
+      <span class="lab">语速</span>
+      <button class="rt" data-a="a2" data-r="0.75">0.75×</button>
+      <button class="rt on" data-a="a2" data-r="1">1×</button>
+      <button class="rt" data-a="a2" data-r="1.25">1.25×</button>
+      <span class="dur">0:44</span>
+    </div>
+  </div>
+
+  <h3><i>A</i> 听录音，填出缺少的词（每空 1 词）</h3>
+  <ol class="task"><li>The story starts on a dull, <b class=blk>①</b> Tuesday.</li><li>Mr. Dursley picked out his most <b class=blk>②</b> tie.</li><li>Dudley was throwing his <b class=blk>③</b> at the walls.</li><li>He backed out of number four's <b class=blk>④</b>.</li></ol>
+
+  <h3><i>B</i> 判断对错（T / F）</h3>
+  <ol class="task tf"><li><span class='tfbox'>(　)</span> Mr. Dursley noticed the owl outside the window.</li><li><span class='tfbox'>(　)</span> Dudley was having a tantrum that morning.</li></ol>
+
+  <h3><i>C</i> 听写：先听 3 遍，再写下来</h3>
+  <div class="player mini">
+    <audio id="d2" controls preload="metadata" src="audio/dict/02.mp3"></audio>
+    <span class="hint">写不出来可以放慢到 0.75×</span>
+  </div>
+
+  <details>
+    <summary>原文 + 答案（听完再看）</summary>
+    <div class="script"><p>When Mr. and Mrs. Dursley woke up on the <b>dull</b>, gray Tuesday our story starts, there was nothing about the cloudy sky outside to <b>suggest</b> that strange and mysterious things would soon be happening all over the country. Mr. Dursley <b>hummed</b> as he picked out his most boring tie for work, and Mrs. Dursley <b>gossiped</b> away happily as she <b>wrestled</b> a screaming Dudley into his high chair.</p><p>None of them noticed a large, <b>tawny</b> owl <b>flutter</b> past the window.</p><p>At half past eight, Mr. Dursley picked up his <b>briefcase</b>, <b>pecked</b> Mrs. Dursley on the cheek, and tried to kiss Dudley good-bye but missed, because Dudley was now having a <b>tantrum</b> and throwing his <b>cereal</b> at the walls. "Little <b>tyke</b>," <b>chortled</b> Mr. Dursley as he left the house. He got into his car and <b>backed out</b> of number four's <b>drive</b>.</p></div>
+    <div class="ans"><b>A 填空</b>　① gray　② boring　③ cereal　④ drive</div>
+    <div class="ans"><b>B 判断</b>　1. F　2. T</div>
+    <div class="ans"><b>C 听写</b>　None of them noticed a large, tawny owl flutter past the window.</div>
+  </details>
+</section>
+<section class="unit" id="u3">
+  <h2><span class="num">03</span>A Cat Reading a Map <span class="zh">看地图的猫</span></h2>
+  <div class="rule"></div>
+
+  <div class="player">
+    <audio id="a3" controls preload="metadata" src="audio/03.mp3"></audio>
+    <div class="rates">
+      <span class="lab">语速</span>
+      <button class="rt" data-a="a3" data-r="0.75">0.75×</button>
+      <button class="rt on" data-a="a3" data-r="1">1×</button>
+      <button class="rt" data-a="a3" data-r="1.25">1.25×</button>
+      <span class="dur">1:17</span>
+    </div>
+  </div>
+
+  <h3><i>A</i> 听录音，填出缺少的词（每空 1 词）</h3>
+  <ol class="task"><li>He saw a cat reading a <b class=blk>①</b>.</li><li>A <b class=blk>②</b> cat was standing on the corner.</li><li>The people in the street were wearing <b class=blk>③</b>.</li><li>He was sitting in the usual morning <b class=blk>④</b> jam.</li></ol>
+
+  <h3><i>B</i> 判断对错（T / F）</h3>
+  <ol class="task tf"><li><span class='tfbox'>(　)</span> There really was a map in the street.</li><li><span class='tfbox'>(　)</span> Some of the cloaked people were older than Mr. Dursley.</li></ol>
+
+  <h3><i>C</i> 听写：先听 3 遍，再写下来</h3>
+  <div class="player mini">
+    <audio id="d3" controls preload="metadata" src="audio/dict/03.mp3"></audio>
+    <span class="hint">写不出来可以放慢到 0.75×</span>
+  </div>
+
+  <details>
+    <summary>原文 + 答案（听完再看）</summary>
+    <div class="script"><p>It was on the corner of the street that he noticed the first sign of something <b>peculiar</b> — a cat reading a map. For a second, Mr. Dursley didn't realize what he had seen — then he <b>jerked</b> his head around to look again. There was a <b>tabby</b> cat standing on the corner of Privet Drive, but there wasn't a map in sight. What could he have been thinking of? It must have been a <b>trick of the light</b>. Mr. Dursley blinked and stared at the cat. It stared back.</p><p>As he drove toward town he thought of nothing except a large order of drills he was hoping to get that day. But on the edge of town, drills were driven out of his mind by something else. As he sat in the usual morning <b>traffic jam</b>, he couldn't help noticing that there seemed to be a lot of strangely dressed people about. People in <b>cloaks</b>. Mr. Dursley couldn't bear people who dressed in funny clothes — the <b>getups</b> you saw on young people! He supposed this was some stupid new fashion.</p><p>He <b>drummed</b> his fingers on the <b>steering wheel</b> and his eyes fell on a <b>huddle</b> of these <b>weirdos</b> standing quite close by. They were whispering excitedly together. Mr. Dursley was <b>enraged</b> to see that a couple of them weren't young at all; why, that man had to be older than he was, and wearing an <b>emerald</b>-green cloak! The <b>nerve</b> of him! But then it struck Mr. Dursley that this was probably some silly <b>stunt</b> — these people were obviously <b>collecting</b> for something…</p></div>
+    <div class="ans"><b>A 填空</b>　① map　② tabby　③ cloaks　④ traffic</div>
+    <div class="ans"><b>B 判断</b>　1. F　2. T</div>
+    <div class="ans"><b>C 听写</b>　It must have been a trick of the light.</div>
+  </details>
+</section>
+<section class="unit" id="u4">
+  <h2><span class="num">04</span>Owls in Broad Daylight <span class="zh">大白天飞过的猫头鹰</span></h2>
+  <div class="rule"></div>
+
+  <div class="player">
+    <audio id="a4" controls preload="metadata" src="audio/04.mp3"></audio>
+    <div class="rates">
+      <span class="lab">语速</span>
+      <button class="rt" data-a="a4" data-r="0.75">0.75×</button>
+      <button class="rt on" data-a="a4" data-r="1">1×</button>
+      <button class="rt" data-a="a4" data-r="1.25">1.25×</button>
+      <span class="dur">1:07</span>
+    </div>
+  </div>
+
+  <h3><i>A</i> 听录音，填出缺少的词（每空 1 词）</h3>
+  <ol class="task"><li>He yelled at <b class=blk>①</b> different people.</li><li>He walked across the road to buy a bun from the <b class=blk>②</b>.</li><li>He heard the words: 'their son, <b class=blk>③</b>'.</li><li>He was clutching a large <b class=blk>④</b>.</li></ol>
+
+  <h3><i>B</i> 判断对错（T / F）</h3>
+  <ol class="task tf"><li><span class='tfbox'>(　)</span> Mr. Dursley saw the owls himself.</li><li><span class='tfbox'>(　)</span> The people in cloaks made him feel uneasy.</li></ol>
+
+  <h3><i>C</i> 听写：先听 3 遍，再写下来</h3>
+  <div class="player mini">
+    <audio id="d4" controls preload="metadata" src="audio/dict/04.mp3"></audio>
+    <span class="hint">写不出来可以放慢到 0.75×</span>
+  </div>
+
+  <details>
+    <summary>原文 + 答案（听完再看）</summary>
+    <div class="script"><p>Mr. Dursley always sat with his back to the window in his office on the ninth floor. If he hadn't, he might have found it harder to concentrate on drills that morning. He didn't see the owls <b>swooping</b> past in <b>broad daylight</b>, though people down in the street did; they pointed and gazed <b>open-mouthed</b> as owl after owl <b>sped</b> overhead. Most of them had never seen an owl even at nighttime.</p><p>Mr. Dursley, however, had a perfectly normal, owl-free morning. He <b>yelled</b> at five different people. He made several important telephone calls and shouted a bit more. He was in a very good mood until lunchtime, when he thought he'd <b>stretch his legs</b> and walk across the road to buy himself a <b>bun</b> from the <b>bakery</b>.</p><p>He'd forgotten all about the people in cloaks until he passed a group of them next to the baker's. He eyed them angrily as he passed. He didn't know why, but they made him <b>uneasy</b>. This <b>bunch</b> were whispering excitedly, too, and he couldn't see a single <b>collecting tin</b>. It was on his way back past them, <b>clutching</b> a large <b>doughnut</b> in a bag, that he caught a few words of what they were saying.</p><p>"The Potters, that's right, that's what I heard —"<br>"— yes, their son, Harry —"</p></div>
+    <div class="ans"><b>A 填空</b>　① five　② bakery　③ Harry　④ doughnut</div>
+    <div class="ans"><b>B 判断</b>　1. F　2. T</div>
+    <div class="ans"><b>C 听写</b>　He didn't know why, but they made him uneasy.</div>
+  </details>
+</section>
+<section class="unit" id="u5">
+  <h2><span class="num">05</span>The Old Man in the Violet Cloak <span class="zh">紫斗篷老人与“麻瓜”</span></h2>
+  <div class="rule"></div>
+
+  <div class="player">
+    <audio id="a5" controls preload="metadata" src="audio/05.mp3"></audio>
+    <div class="rates">
+      <span class="lab">语速</span>
+      <button class="rt" data-a="a5" data-r="0.75">0.75×</button>
+      <button class="rt on" data-a="a5" data-r="1">1×</button>
+      <button class="rt" data-a="a5" data-r="1.25">1.25×</button>
+      <span class="dur">1:41</span>
+    </div>
+  </div>
+
+  <h3><i>A</i> 听录音，填出缺少的词（每空 1 词）</h3>
+  <ol class="task"><li>Fear <b class=blk>①</b> him.</li><li>The old man was wearing a <b class=blk>②</b> cloak.</li><li>The old man said that <b class=blk>③</b> had gone at last.</li><li>He called Mr. Dursley a <b class=blk>④</b>.</li></ol>
+
+  <h3><i>B</i> 判断对错（T / F）</h3>
+  <ol class="task tf"><li><span class='tfbox'>(　)</span> The old man was angry because he was knocked over.</li><li><span class='tfbox'>(　)</span> Mr. Dursley approved of imagination.</li></ol>
+
+  <h3><i>C</i> 听写：先听 3 遍，再写下来</h3>
+  <div class="player mini">
+    <audio id="d5" controls preload="metadata" src="audio/dict/05.mp3"></audio>
+    <span class="hint">写不出来可以放慢到 0.75×</span>
+  </div>
+
+  <details>
+    <summary>原文 + 答案（听完再看）</summary>
+    <div class="script"><p>Mr. Dursley stopped <b>dead</b>. Fear <b>flooded</b> him. He looked back at the whisperers as if he wanted to say something to them, but <b>thought better of it</b>.</p><p>He <b>dashed</b> back across the road, hurried up to his office, <b>snapped at</b> his secretary not to disturb him, <b>seized</b> his telephone, and had almost finished dialing his home number when he changed his mind. He put the <b>receiver</b> back down and <b>stroked</b> his mustache, thinking… no, he was being stupid. Potter wasn't such an unusual name. <b>Come to think of it</b>, he wasn't even sure his nephew was called Harry. He'd never even seen the boy. It might have been Harvey. Or Harold.</p><p>He found it a lot harder to concentrate on drills that afternoon and when he left the building at five o'clock, he was still so worried that he walked straight into someone just outside the door.</p><p>"Sorry," he <b>grunted</b>, as the tiny old man <b>stumbled</b> and almost fell. It was a few seconds before Mr. Dursley realized that the man was wearing a <b>violet</b> cloak. He didn't seem at all upset at being almost knocked to the ground. <b>On the contrary</b>, his face <b>split into a wide smile</b> and he said in a <b>squeaky</b> voice that made <b>passersby</b> stare, "Don't be sorry, my dear sir, for nothing could upset me today! <b>Rejoice</b>, for You-Know-Who has gone at last! Even <b>Muggles</b> like yourself should be celebrating, this happy, happy day!"</p><p>And the old man hugged Mr. Dursley around the middle and walked off.</p><p>Mr. Dursley stood <b>rooted to the spot</b>. He had been hugged by a complete stranger. He also thought he had been called a Muggle, whatever that was. He was <b>rattled</b>. He hurried to his car and <b>set off</b> for home, hoping he was imagining things, which he had never hoped before, because he didn't <b>approve of</b> imagination.</p></div>
+    <div class="ans"><b>A 填空</b>　① flooded　② violet　③ You-Know-Who　④ Muggle</div>
+    <div class="ans"><b>B 判断</b>　1. F　2. F</div>
+    <div class="ans"><b>C 听写</b>　He was rattled.</div>
+  </details>
+</section>
+<section class="unit" id="u6">
+  <h2><span class="num">06</span>The Evening News: A Downpour of Shooting Stars <span class="zh">晚间新闻：一场流星雨</span></h2>
+  <div class="rule"></div>
+
+  <div class="player">
+    <audio id="a6" controls preload="metadata" src="audio/06.mp3"></audio>
+    <div class="rates">
+      <span class="lab">语速</span>
+      <button class="rt" data-a="a6" data-r="0.75">0.75×</button>
+      <button class="rt on" data-a="a6" data-r="1">1×</button>
+      <button class="rt" data-a="a6" data-r="1.25">1.25×</button>
+      <span class="dur">1:55</span>
+    </div>
+  </div>
+
+  <h3><i>A</i> 听录音，填出缺少的词（每空 1 词）</h3>
+  <ol class="task"><li>The cat had the same <b class=blk>①</b> around its eyes.</li><li>Owls normally hunt at <b class=blk>②</b>.</li><li>There had been hundreds of <b class=blk>③</b> since sunrise.</li><li>Viewers reported a downpour of <b class=blk>④</b> stars.</li></ol>
+
+  <h3><i>B</i> 判断对错（T / F）</h3>
+  <ol class="task tf"><li><span class='tfbox'>(　)</span> The owls had been behaving unusually.</li><li><span class='tfbox'>(　)</span> Bonfire Night was that evening.</li></ol>
+
+  <h3><i>C</i> 听写：先听 3 遍，再写下来</h3>
+  <div class="player mini">
+    <audio id="d6" controls preload="metadata" src="audio/dict/06.mp3"></audio>
+    <span class="hint">写不出来可以放慢到 0.75×</span>
+  </div>
+
+  <details>
+    <summary>原文 + 答案（听完再看）</summary>
+    <div class="script"><p>As he pulled into the <b>driveway</b> of number four, the first thing he saw — and it didn't <b>improve</b> his mood — was the tabby cat he'd spotted that morning. It was now sitting on his garden wall. He was sure it was the same one; it had the same <b>markings</b> around its eyes.</p><p>"Shoo!" said Mr. Dursley loudly. The cat didn't move. It just gave him a <b>stern</b> look. Was this normal cat behavior? Mr. Dursley wondered. Trying to <b>pull himself together</b>, he let himself into the house. He was still <b>determined</b> not to mention anything to his wife.</p><p>Mrs. Dursley had had a nice, normal day. She told him <b>over dinner</b> all about Mrs. Next Door's problems with her daughter and how Dudley had learned a new word ("Won't!"). When Dudley had been put to bed, he went into the living room in time to catch the last report on the evening news:</p><p>"And finally, <b>bird-watchers</b> everywhere have reported that the nation's owls have been behaving very unusually today. Although owls normally hunt at night and are hardly ever seen in daylight, there have been hundreds of <b>sightings</b> of these birds flying in every direction since sunrise. Experts are unable to explain why the owls have suddenly changed their sleeping pattern." The <b>newscaster</b> allowed himself a <b>grin</b>. "Most mysterious. And now, over to Jim McGuffin with the weather. Going to be any more <b>showers</b> of owls tonight, Jim?"</p><p>"Well, Ted," said the weatherman, "I don't know about that, but it's not only the owls that have been acting oddly today. Viewers as far apart as Kent, Yorkshire, and Dundee have been phoning in to tell me that instead of the rain I promised yesterday, they've had a <b>downpour</b> of <b>shooting stars</b>! Perhaps people have been celebrating <b>Bonfire Night</b> early — it's not until next week, folks! But I can promise a wet night tonight."</p><p>Mr. Dursley sat frozen in his <b>armchair</b>. Shooting stars all over Britain? Owls flying by daylight? Mysterious people in cloaks all over the place? And a whisper, a whisper about the Potters…</p></div>
+    <div class="ans"><b>A 填空</b>　① markings　② night　③ sightings　④ shooting</div>
+    <div class="ans"><b>B 判断</b>　1. T　2. F</div>
+    <div class="ans"><b>C 听写</b>　Mr. Dursley sat frozen in his armchair.</div>
+  </details>
+</section>
+<section class="unit" id="u7">
+  <h2><span class="num">07</span>Testing Petunia <span class="zh">试探佩妮</span></h2>
+  <div class="rule"></div>
+
+  <div class="player">
+    <audio id="a7" controls preload="metadata" src="audio/07.mp3"></audio>
+    <div class="rates">
+      <span class="lab">语速</span>
+      <button class="rt" data-a="a7" data-r="0.75">0.75×</button>
+      <button class="rt on" data-a="a7" data-r="1">1×</button>
+      <button class="rt" data-a="a7" data-r="1.25">1.25×</button>
+      <span class="dur">1:24</span>
+    </div>
+  </div>
+
+  <h3><i>A</i> 听录音，填出缺少的词（每空 1 词）</h3>
+  <ol class="task"><li>He cleared his <b class=blk>①</b> nervously.</li><li>He asked whether she had heard from her <b class=blk>②</b>.</li><li>She called Harry a 'nasty, <b class=blk>③</b>' name.</li><li>The cat was staring as though it were <b class=blk>④</b> for something.</li></ol>
+
+  <h3><i>B</i> 判断对错（T / F）</h3>
+  <ol class="task tf"><li><span class='tfbox'>(　)</span> Mrs. Dursley was pleased to talk about her sister.</li><li><span class='tfbox'>(　)</span> The boy's name was Howard.</li></ol>
+
+  <h3><i>C</i> 听写：先听 3 遍，再写下来</h3>
+  <div class="player mini">
+    <audio id="d7" controls preload="metadata" src="audio/dict/07.mp3"></audio>
+    <span class="hint">写不出来可以放慢到 0.75×</span>
+  </div>
+
+  <details>
+    <summary>原文 + 答案（听完再看）</summary>
+    <div class="script"><p>Mrs. Dursley came into the living room carrying two cups of tea. It was no good. He'd have to say something to her. He <b>cleared his throat</b> nervously. "Er — Petunia, dear — you haven't heard from your sister lately, have you?"</p><p>As he had expected, Mrs. Dursley looked shocked and angry. After all, they normally pretended she didn't have a sister.</p><p>"No," she said <b>sharply</b>. "Why?"</p><p>"Funny stuff on the news," Mr. Dursley <b>mumbled</b>. "Owls… shooting stars… and there were a lot of funny-looking people in town today…"</p><p>"So?" <b>snapped</b> Mrs. Dursley.</p><p>"Well, I just thought… maybe… it was something to do with… you know… her crowd."</p><p>Mrs. Dursley <b>sipped</b> her tea through <b>pursed lips</b>. Mr. Dursley wondered whether he dared tell her he'd heard the name "Potter." He decided he didn't dare. Instead he said, as <b>casually</b> as he could, "Their son — he'd be about Dudley's age now, wouldn't he?"</p><p>"I suppose so," said Mrs. Dursley <b>stiffly</b>.</p><p>"What's his name again? Howard, isn't it?"</p><p>"Harry. Nasty, <b>common</b> name, if you ask me."</p><p>"Oh, yes," said Mr. Dursley, his heart <b>sinking</b> horribly. "Yes, I quite agree."</p><p>He didn't say another word on the subject as they went upstairs to bed. While Mrs. Dursley was in the bathroom, Mr. Dursley <b>crept</b> to the bedroom window and <b>peered</b> down into the front garden. The cat was still there. It was staring down Privet Drive <b>as though</b> it were waiting for something.</p></div>
+    <div class="ans"><b>A 填空</b>　① throat　② sister　③ common　④ waiting</div>
+    <div class="ans"><b>B 判断</b>　1. F　2. F</div>
+    <div class="ans"><b>C 听写</b>　His heart sank horribly.</div>
+  </details>
+</section>
+<section class="unit" id="u8">
+  <h2><span class="num">08</span>The Cat on the Wall at Midnight <span class="zh">午夜街角的守望</span></h2>
+  <div class="rule"></div>
+
+  <div class="player">
+    <audio id="a8" controls preload="metadata" src="audio/08.mp3"></audio>
+    <div class="rates">
+      <span class="lab">语速</span>
+      <button class="rt" data-a="a8" data-r="0.75">0.75×</button>
+      <button class="rt on" data-a="a8" data-r="1">1×</button>
+      <button class="rt" data-a="a8" data-r="1.25">1.25×</button>
+      <span class="dur">1:31</span>
+    </div>
+  </div>
+
+  <h3><i>A</i> 听录音，填出缺少的词（每空 1 词）</h3>
+  <ol class="task"><li>The cat sat as still as a <b class=blk>①</b>.</li><li>The man seemed to pop out of the <b class=blk>②</b>.</li><li>His nose was long and <b class=blk>③</b>.</li><li>It was nearly <b class=blk>④</b> before the cat moved.</li></ol>
+
+  <h3><i>B</i> 判断对错（T / F）</h3>
+  <ol class="task tf"><li><span class='tfbox'>(　)</span> The cat moved when a car door slammed.</li><li><span class='tfbox'>(　)</span> The man had silver hair and a long beard.</li></ol>
+
+  <h3><i>C</i> 听写：先听 3 遍，再写下来</h3>
+  <div class="player mini">
+    <audio id="d8" controls preload="metadata" src="audio/dict/08.mp3"></audio>
+    <span class="hint">写不出来可以放慢到 0.75×</span>
+  </div>
+
+  <details>
+    <summary>原文 + 答案（听完再看）</summary>
+    <div class="script"><p>The Dursleys got into bed. Mrs. Dursley fell asleep quickly but Mr. Dursley lay awake, <b>turning it all over in his mind</b>. His last, <b>comforting</b> thought before he fell asleep was that even if the Potters were involved, there was no reason for them to come near him and Mrs. Dursley. The Potters knew very well what he and Petunia thought about them and their kind… He couldn't see how he and Petunia could get <b>mixed up</b> in anything that might be going on — he yawned and turned over — it couldn't <b>affect</b> them…</p><p>How very wrong he was.</p><p>Mr. Dursley might have been <b>drifting into</b> an uneasy sleep, but the cat on the wall outside was showing no sign of sleepiness. It was sitting as still as a <b>statue</b>, its eyes <b>fixed unblinkingly</b> on the far corner of Privet Drive. It didn't so much as <b>quiver</b> when a car door <b>slammed</b> on the next street, nor when two owls swooped overhead. In fact, it was nearly midnight before the cat moved at all.</p><p>A man appeared on the corner the cat had been watching, appeared so suddenly and silently you'd have thought he'd just <b>popped out of the ground</b>. The cat's tail <b>twitched</b> and its eyes <b>narrowed</b>.</p><p>Nothing like this man had ever been seen on Privet Drive. He was tall, thin, and very old, judging by the silver of his hair and beard, which were both long enough to <b>tuck into</b> his belt. He was wearing long <b>robes</b>, a purple cloak that swept the ground, and high-heeled, <b>buckled</b> boots. His blue eyes were light, bright, and sparkling behind half-moon <b>spectacles</b> and his nose was very long and <b>crooked</b>, as though it had been broken at least twice. This man's name was Albus Dumbledore.</p></div>
+    <div class="ans"><b>A 填空</b>　① statue　② ground　③ crooked　④ midnight</div>
+    <div class="ans"><b>B 判断</b>　1. F　2. T</div>
+    <div class="ans"><b>C 听写</b>　How very wrong he was.</div>
+  </details>
+</section>
+<section class="unit" id="u9">
+  <h2><span class="num">09</span>The Put-Outer <span class="zh">邓布利多登场 · 熄灯器</span></h2>
+  <div class="rule"></div>
+
+  <div class="player">
+    <audio id="a9" controls preload="metadata" src="audio/09.mp3"></audio>
+    <div class="rates">
+      <span class="lab">语速</span>
+      <button class="rt" data-a="a9" data-r="0.75">0.75×</button>
+      <button class="rt on" data-a="a9" data-r="1">1×</button>
+      <button class="rt" data-a="a9" data-r="1.25">1.25×</button>
+      <span class="dur">1:32</span>
+    </div>
+  </div>
+
+  <h3><i>A</i> 听录音，填出缺少的词（每空 1 词）</h3>
+  <ol class="task"><li>He was rummaging in his cloak, looking for <b class=blk>①</b>.</li><li>He took out a silver <b class=blk>②</b> lighter.</li><li>He clicked the Put-Outer <b class=blk>③</b> times.</li><li>The cat turned into a woman with her hair in a tight <b class=blk>④</b>.</li></ol>
+
+  <h3><i>B</i> 判断对错（T / F）</h3>
+  <ol class="task tf"><li><span class='tfbox'>(　)</span> Dumbledore seemed amused when he saw the cat.</li><li><span class='tfbox'>(　)</span> The woman was wearing round glasses.</li></ol>
+
+  <h3><i>C</i> 听写：先听 3 遍，再写下来</h3>
+  <div class="player mini">
+    <audio id="d9" controls preload="metadata" src="audio/dict/09.mp3"></audio>
+    <span class="hint">写不出来可以放慢到 0.75×</span>
+  </div>
+
+  <details>
+    <summary>原文 + 答案（听完再看）</summary>
+    <div class="script"><p>Albus Dumbledore didn't seem to realize that he had just arrived in a street where everything from his name to his boots was unwelcome. He was busy <b>rummaging</b> in his cloak, looking for something. But he did seem to realize he was being watched, because he looked up suddenly at the cat, which was still staring at him from the other end of the street. For some reason, the sight of the cat seemed to <b>amuse</b> him. He <b>chuckled</b> and <b>muttered</b>, "I should have known."</p><p>He found what he was looking for in his inside pocket. It seemed to be a silver <b>cigarette lighter</b>. He <b>flicked</b> it open, held it up in the air, and <b>clicked</b> it. The nearest street lamp went out with a little <b>pop</b>. He clicked it again — the next lamp <b>flickered</b> into darkness. Twelve times he clicked the <b>Put-Outer</b>, until the only lights left on the whole street were two tiny <b>pinpricks</b> in the distance, which were the eyes of the cat watching him. If anyone looked out of their window now, even <b>beady-eyed</b> Mrs. Dursley, they wouldn't be able to see anything that was happening down on the <b>pavement</b>.</p><p>Dumbledore <b>slipped</b> the Put-Outer back inside his cloak and set off down the street toward number four, where he sat down on the wall next to the cat. He didn't look at it, but after a moment he spoke to it.</p><p>"Fancy seeing you here, Professor McGonagall."</p><p>He turned to smile at the tabby, but it had gone. Instead he was smiling at a rather <b>severe-looking</b> woman who was wearing square glasses exactly the shape of the markings the cat had had around its eyes. She, too, was wearing a cloak, an emerald one. Her black hair was drawn into a tight <b>bun</b>. She looked distinctly <b>ruffled</b>.</p></div>
+    <div class="ans"><b>A 填空</b>　① something　② cigarette　③ twelve　④ bun</div>
+    <div class="ans"><b>B 判断</b>　1. T　2. F</div>
+    <div class="ans"><b>C 听写</b>　He slipped the Put-Outer back inside his cloak.</div>
+  </details>
+</section>
+<section class="unit" id="u10">
+  <h2><span class="num">10</span>Lemon Drops and a Name <span class="zh">柠檬糖，以及那个名字</span></h2>
+  <div class="rule"></div>
+
+  <div class="player">
+    <audio id="a10" controls preload="metadata" src="audio/10.mp3"></audio>
+    <div class="rates">
+      <span class="lab">语速</span>
+      <button class="rt" data-a="a10" data-r="0.75">0.75×</button>
+      <button class="rt on" data-a="a10" data-r="1">1×</button>
+      <button class="rt" data-a="a10" data-r="1.25">1.25×</button>
+      <span class="dur">2:12</span>
+    </div>
+  </div>
+
+  <h3><i>A</i> 听录音，填出缺少的词（每空 1 词）</h3>
+  <ol class="task"><li>'You'd be stiff if you'd been sitting on a brick <b class=blk>①</b> all day.'</li><li>Dumbledore offered her a <b class=blk>②</b> drop.</li><li>He called him by his proper name: <b class=blk>③</b>.</li><li>She said he was too <b class=blk>④</b> to use those powers.</li></ol>
+
+  <h3><i>B</i> 判断对错（T / F）</h3>
+  <ol class="task tf"><li><span class='tfbox'>(　)</span> Professor McGonagall said Voldemort's name easily.</li><li><span class='tfbox'>(　)</span> Dumbledore said Voldemort had powers he would never have.</li></ol>
+
+  <h3><i>C</i> 听写：先听 3 遍，再写下来</h3>
+  <div class="player mini">
+    <audio id="d10" controls preload="metadata" src="audio/dict/10.mp3"></audio>
+    <span class="hint">写不出来可以放慢到 0.75×</span>
+  </div>
+
+  <details>
+    <summary>原文 + 答案（听完再看）</summary>
+    <div class="script"><p>"How did you know it was me?" she asked.</p><p>"My dear Professor, I've never seen a cat sit so stiffly."</p><p>"You'd be stiff if you'd been sitting on a brick wall all day," said Professor McGonagall.</p><p>"All day? When you could have been celebrating? I must have passed a dozen <b>feasts</b> and parties on my way here."</p><p>Professor McGonagall <b>sniffed</b> angrily.</p><p>"Oh yes, everyone's celebrating, all right," she said <b>impatiently</b>. "You'd think they'd be a bit more careful, but no — even the Muggles have noticed something's going on. It was on their news." She <b>jerked</b> her head back at the Dursleys' dark living-room window. "I heard it. <b>Flocks</b> of owls… shooting stars… Well, they're not completely stupid. They were <b>bound to</b> notice something. Shooting stars down in Kent — I'll <b>bet</b> that was Dedalus Diggle. He never had much sense."</p><p>"You can't blame them," said Dumbledore gently. "We've had <b>precious little</b> to celebrate for eleven years."</p><p>"I know that," said Professor McGonagall <b>irritably</b>. "But that's no reason to <b>lose our heads</b>. People are being <b>downright</b> careless, out on the streets in broad daylight, not even dressed in Muggle clothes, <b>swapping rumors</b>."</p><p>"It certainly seems so," said Dumbledore. "We have much to be thankful for. Would you care for a <b>lemon drop</b>?"</p><p>"No, thank you," said Professor McGonagall coldly, as though she didn't think this was the moment for lemon drops. "As I say, even if You-Know-Who has gone —"</p><p>"My dear Professor, surely a <b>sensible</b> person like yourself can call him by his name? All this 'You-Know-Who' nonsense — for eleven years I have been trying to persuade people to call him by his proper name: Voldemort." Professor McGonagall <b>flinched</b>, but Dumbledore, who was unsticking two lemon drops, seemed not to notice.</p><p>"I know you haven't," said Professor McGonagall, sounding half <b>exasperated</b>, half <b>admiring</b>. "But you're different. Everyone knows you're the only one You-Know- oh, all right, Voldemort, was frightened of."</p><p>"You <b>flatter</b> me," said Dumbledore calmly. "Voldemort had powers I will never have."</p><p>"Only because you're too — well — <b>noble</b> to use them."</p><p>"It's lucky it's dark. I haven't <b>blushed</b> so much since Madam Pomfrey told me she liked my new <b>earmuffs</b>."</p></div>
+    <div class="ans"><b>A 填空</b>　① wall　② lemon　③ Voldemort　④ noble</div>
+    <div class="ans"><b>B 判断</b>　1. F　2. T</div>
+    <div class="ans"><b>C 听写</b>　We've had precious little to celebrate for eleven years.</div>
+  </details>
+</section>
+<section class="unit" id="u11">
+  <h2><span class="num">11</span>The Rumor of That Night <span class="zh">那晚的传言</span></h2>
+  <div class="rule"></div>
+
+  <div class="player">
+    <audio id="a11" controls preload="metadata" src="audio/11.mp3"></audio>
+    <div class="rates">
+      <span class="lab">语速</span>
+      <button class="rt" data-a="a11" data-r="0.75">0.75×</button>
+      <button class="rt on" data-a="a11" data-r="1">1×</button>
+      <button class="rt" data-a="a11" data-r="1.25">1.25×</button>
+      <span class="dur">2:09</span>
+    </div>
+  </div>
+
+  <h3><i>A</i> 听录音，填出缺少的词（每空 1 词）</h3>
+  <ol class="task"><li>Voldemort turned up in <b class=blk>①</b> Hollow.</li><li>The rumour was that Lily and James Potter were <b class=blk>②</b>.</li><li>He tried to kill the Potters' <b class=blk>③</b>.</li><li>Dumbledore looked at a golden <b class=blk>④</b>.</li></ol>
+
+  <h3><i>B</i> 判断对错（T / F）</h3>
+  <ol class="task tf"><li><span class='tfbox'>(　)</span> Professor McGonagall believed the rumour at once.</li><li><span class='tfbox'>(　)</span> The watch had twelve hands and no numbers.</li></ol>
+
+  <h3><i>C</i> 听写：先听 3 遍，再写下来</h3>
+  <div class="player mini">
+    <audio id="d11" controls preload="metadata" src="audio/dict/11.mp3"></audio>
+    <span class="hint">写不出来可以放慢到 0.75×</span>
+  </div>
+
+  <details>
+    <summary>原文 + 答案（听完再看）</summary>
+    <div class="script"><p>Professor McGonagall shot a sharp look at Dumbledore and said, "The owls are nothing next to the rumors that are flying around. You know what everyone's saying? About why he's disappeared? About what finally stopped him?"</p><p>It seemed that Professor McGonagall had reached the point she was most <b>anxious</b> to discuss, the real reason she had been waiting on a cold, hard wall all day, for neither as a cat nor as a woman had she fixed Dumbledore with such a <b>piercing</b> stare as she did now. It was plain that whatever "everyone" was saying, she was not going to believe it until Dumbledore told her it was true. Dumbledore, however, was choosing another lemon drop and did not answer.</p><p>"What they're saying," she <b>pressed on</b>, "is that last night Voldemort turned up in Godric's Hollow. He went to find the Potters. The rumor is that Lily and James Potter are — are — that they're — dead."</p><p>Dumbledore <b>bowed</b> his head. Professor McGonagall <b>gasped</b>.</p><p>"Lily and James… I can't believe it… I didn't want to believe it… Oh, Albus…"</p><p>Dumbledore reached out and <b>patted</b> her on the shoulder. "I know… I know…" he said heavily.</p><p>Professor McGonagall's voice <b>trembled</b> as she went on. "That's not all. They're saying he tried to kill the Potters' son, Harry. But — he couldn't. He couldn't kill that little boy. No one knows why, or how, but they're saying that when he couldn't kill Harry Potter, Voldemort's power somehow broke — and that's why he's gone."</p><p>Dumbledore nodded <b>glumly</b>.</p><p>"It's — it's true?" <b>faltered</b> Professor McGonagall. "After all he's done… all the people he's killed… he couldn't kill a little boy? It's just <b>astounding</b>… of all the things to stop him… but how in the name of heaven did Harry survive?"</p><p>"We can only guess," said Dumbledore. "We may never know."</p><p>Professor McGonagall pulled out a <b>lace</b> handkerchief and <b>dabbed</b> at her eyes beneath her spectacles. Dumbledore gave a great sniff as he took a golden watch from his pocket and examined it. It was a very <b>odd</b> watch. It had twelve hands but no numbers; instead, little planets were moving around the edge. It must have made sense to Dumbledore, though, because he put it back in his pocket and said, "Hagrid's late. I suppose it was he who told you I'd be here, by the way?"</p></div>
+    <div class="ans"><b>A 填空</b>　① Godric's　② dead　③ son　④ watch</div>
+    <div class="ans"><b>B 判断</b>　1. F　2. T</div>
+    <div class="ans"><b>C 听写</b>　We can only guess. We may never know.</div>
+  </details>
+</section>
+<section class="unit" id="u12">
+  <h2><span class="num">12</span>Hagrid, the Motorcycle and the Scar <span class="zh">海格、摩托车与那道伤疤</span></h2>
+  <div class="rule"></div>
+
+  <div class="player">
+    <audio id="a12" controls preload="metadata" src="audio/12.mp3"></audio>
+    <div class="rates">
+      <span class="lab">语速</span>
+      <button class="rt" data-a="a12" data-r="0.75">0.75×</button>
+      <button class="rt on" data-a="a12" data-r="1">1×</button>
+      <button class="rt" data-a="a12" data-r="1.25">1.25×</button>
+      <span class="dur">3:40</span>
+    </div>
+  </div>
+
+  <h3><i>A</i> 听录音，填出缺少的词（每空 1 词）</h3>
+  <ol class="task"><li>Hagrid borrowed the motorcycle from <b class=blk>①</b> Black.</li><li>He was almost twice as <b class=blk>②</b> as a normal man.</li><li>Harry had a cut like a bolt of <b class=blk>③</b>.</li><li>Dumbledore said scars can come in <b class=blk>④</b>.</li></ol>
+
+  <h3><i>B</i> 判断对错（T / F）</h3>
+  <ol class="task tf"><li><span class='tfbox'>(　)</span> Hagrid had a huge beard and long black hair.</li><li><span class='tfbox'>(　)</span> Harry was awake in Hagrid's arms.</li></ol>
+
+  <h3><i>C</i> 听写：先听 3 遍，再写下来</h3>
+  <div class="player mini">
+    <audio id="d12" controls preload="metadata" src="audio/dict/12.mp3"></audio>
+    <span class="hint">写不出来可以放慢到 0.75×</span>
+  </div>
+
+  <details>
+    <summary>原文 + 答案（听完再看）</summary>
+    <div class="script"><p>"Yes," said Professor McGonagall. "And I don't suppose you're going to tell me why you're here, of all places?"</p><p>"I've come to bring Harry to his aunt and uncle. They're the only family he has left now."</p><p>"You don't mean — you can't mean the people who live here?" cried Professor McGonagall, jumping to her feet and pointing at number four. "Dumbledore — you can't. I've been watching them all day. You couldn't find two people who are less like us. And they've got this son — I saw him kicking his mother all the way up the street, screaming for sweets. Harry Potter come and live here!"</p><p>"It's the best place for him," said Dumbledore <b>firmly</b>. "His aunt and uncle will be able to explain everything to him when he's older. I've written them a letter."</p><p>"A letter?" repeated Professor McGonagall <b>faintly</b>, sitting back down on the wall. "Really, Dumbledore, you think you can explain all this in a letter? These people will never understand him! He'll be famous — a <b>legend</b> — I wouldn't be surprised if today was known as Harry Potter Day in the future — there will be books written about Harry — every child in our world will know his name!"</p><p>"Exactly," said Dumbledore, looking very seriously over the top of his half-moon glasses. "It would be enough to <b>turn any boy's head</b>. Famous before he can walk and talk! Famous for something he won't even remember! Can't you see how much better off he'll be, growing up away from all that until he's ready to take it?"</p><p>Professor McGonagall opened her mouth, changed her mind, <b>swallowed</b>, and then said, "Yes — yes, you're right, of course. But how is the boy getting here, Dumbledore?" She eyed his cloak suddenly as though she thought he might be hiding Harry underneath it.</p><p>"Hagrid's bringing him."</p><p>"You think it — wise — to trust Hagrid with something as important as this?"</p><p>"I would trust Hagrid with my life," said Dumbledore.</p><p>"I'm not saying his heart isn't in the right place," said Professor McGonagall <b>grudgingly</b>, "but you can't pretend he's not <b>careless</b>. He does <b>tend to</b> — what was that?"</p><p>A low <b>rumbling</b> sound had broken the silence around them. It grew steadily louder as they looked up and down the street for some sign of a <b>headlight</b>; it <b>swelled</b> to a <b>roar</b> as they both looked up at the sky — and a huge motorcycle fell out of the air and landed on the road in front of them.</p><p>If the motorcycle was huge, it was nothing to the man sitting <b>astride</b> it. He was almost twice as tall as a normal man and at least five times as wide. He looked simply too big to be allowed, and so wild — long <b>tangles</b> of <b>bushy</b> black hair and beard hid most of his face, he had hands the size of <b>trash can lids</b>, and his feet in their leather boots were like baby <b>dolphins</b>. In his vast, <b>muscular</b> arms he was holding a <b>bundle</b> of blankets.</p><p>"Hagrid," said Dumbledore, sounding <b>relieved</b>. "At last. And where did you get that motorcycle?"</p><p>"Borrowed it, Professor Dumbledore, sir," said the giant, climbing carefully off the motorcycle as he spoke. "Young Sirius Black lent it to me. I've got him, sir."</p><p>"No problems, were there?"</p><p>"No, sir — house was almost destroyed, but I got him out all right before the Muggles started <b>swarmin'</b> around. He fell asleep as we was <b>flyin'</b> over Bristol."</p><p>Dumbledore and Professor McGonagall <b>bent</b> forward over the bundle of blankets. Inside, just visible, was a baby boy, fast asleep. Under a <b>tuft</b> of <b>jet-black</b> hair over his forehead they could see a <b>curiously</b> shaped cut, like a <b>bolt of lightning</b>.</p><p>"Is that where — ?" whispered Professor McGonagall.</p><p>"Yes," said Dumbledore. "He'll have that <b>scar</b> forever."</p><p>"Couldn't you do something about it, Dumbledore?"</p><p>"Even if I could, I wouldn't. Scars can <b>come in handy</b>. I have one myself above my left knee that is a perfect map of the London Underground. Well — give him here, Hagrid — we'd better <b>get this over with</b>."</p></div>
+    <div class="ans"><b>A 填空</b>　① Sirius　② tall　③ lightning　④ handy</div>
+    <div class="ans"><b>B 判断</b>　1. T　2. F</div>
+    <div class="ans"><b>C 听写</b>　He'll have that scar forever.</div>
+  </details>
+</section>
+<section class="unit" id="u13">
+  <h2><span class="num">13</span>Left on the Doorstep <span class="zh">放在门阶上的婴儿</span></h2>
+  <div class="rule"></div>
+
+  <div class="player">
+    <audio id="a13" controls preload="metadata" src="audio/13.mp3"></audio>
+    <div class="rates">
+      <span class="lab">语速</span>
+      <button class="rt" data-a="a13" data-r="0.75">0.75×</button>
+      <button class="rt on" data-a="a13" data-r="1">1×</button>
+      <button class="rt" data-a="a13" data-r="1.25">1.25×</button>
+      <span class="dur">2:51</span>
+    </div>
+  </div>
+
+  <h3><i>A</i> 听录音，填出缺少的词（每空 1 词）</h3>
+  <ol class="task"><li>Hagrid gave Harry a scratchy, <b class=blk>①</b> kiss.</li><li>He wiped his eyes on his <b class=blk>②</b> sleeve.</li><li>Dumbledore laid Harry on the <b class=blk>③</b>.</li><li>People said: 'To Harry Potter, the boy who <b class=blk>④</b>!'</li></ol>
+
+  <h3><i>B</i> 判断对错（T / F）</h3>
+  <ol class="task tf"><li><span class='tfbox'>(　)</span> Hagrid laughed as he said goodbye.</li><li><span class='tfbox'>(　)</span> Dumbledore left a letter with Harry.</li></ol>
+
+  <h3><i>C</i> 听写：先听 3 遍，再写下来</h3>
+  <div class="player mini">
+    <audio id="d13" controls preload="metadata" src="audio/dict/13.mp3"></audio>
+    <span class="hint">写不出来可以放慢到 0.75×</span>
+  </div>
+
+  <details>
+    <summary>原文 + 答案（听完再看）</summary>
+    <div class="script"><p>Dumbledore took Harry in his arms and turned toward the Dursleys' house.</p><p>"Could I — could I say good-bye to him, sir?" asked Hagrid. He bent his great, <b>shaggy</b> head over Harry and gave him what must have been a very <b>scratchy</b>, <b>whiskery</b> kiss. Then, suddenly, Hagrid let out a <b>howl</b> like a wounded dog.</p><p>"Shhh!" <b>hissed</b> Professor McGonagall, "you'll wake the Muggles!"</p><p>"S-s-sorry," <b>sobbed</b> Hagrid, taking out a large, <b>spotted</b> handkerchief and <b>burying his face</b> in it. "But I c-c-can't stand it — Lily an' James dead — an' poor little Harry off <b>ter</b> live with Muggles —"</p><p>"Yes, yes, it's all very sad, but <b>get a grip on yourself</b>, Hagrid, or we'll be found," Professor McGonagall whispered, patting Hagrid <b>gingerly</b> on the arm as Dumbledore stepped over the low garden wall and walked to the front door. He laid Harry gently on the <b>doorstep</b>, took a letter out of his cloak, <b>tucked</b> it inside Harry's blankets, and then came back to the other two. For a full minute the three of them stood and looked at the little bundle; Hagrid's shoulders shook, Professor McGonagall blinked furiously, and the <b>twinkling</b> light that usually shone from Dumbledore's eyes seemed to have gone out.</p><p>"Well," said Dumbledore finally, "that's that. We've no business staying here. We may as well go and join the celebrations."</p><p>"Yeah," said Hagrid in a very <b>muffled</b> voice, "I'd best get this bike away. G'night, Professor McGonagall — Professor Dumbledore, sir."</p><p>Wiping his <b>streaming</b> eyes on his jacket sleeve, Hagrid <b>swung</b> himself onto the motorcycle and kicked the engine into life; with a roar it rose into the air and off into the night.</p><p>"I shall see you soon, I expect, Professor McGonagall," said Dumbledore, nodding to her. Professor McGonagall <b>blew her nose</b> in reply.</p><p>Dumbledore turned and walked back down the street. On the corner he stopped and took out the silver Put-Outer. He clicked it once, and twelve balls of light sped back to their street lamps so that Privet Drive glowed suddenly orange and he could make out a tabby cat <b>slinking</b> around the corner at the other end of the street. He could just see the bundle of blankets on the step of number four.</p><p>"Good luck, Harry," he <b>murmured</b>. He turned <b>on his heel</b> and with a <b>swish</b> of his cloak, he was gone.</p><p>A <b>breeze</b> <b>ruffled</b> the neat <b>hedges</b> of Privet Drive, which lay silent and tidy under the <b>inky</b> sky, the very last place you would expect <b>astonishing</b> things to happen. Harry Potter rolled over inside his blankets without waking up. One small hand closed on the letter beside him and he slept on, not knowing he was special, not knowing he was famous, not knowing he would be woken in a few hours' time by Mrs. Dursley's scream as she opened the front door to put out the milk bottles, nor that he would spend the next few weeks being <b>prodded</b> and <b>pinched</b> by his cousin Dudley… He couldn't know that at this very moment, people meeting in secret all over the country were holding up their glasses and saying in <b>hushed</b> voices: "To Harry Potter — the boy who lived!"</p></div>
+    <div class="ans"><b>A 填空</b>　① whiskery　② jacket　③ doorstep　④ lived</div>
+    <div class="ans"><b>B 判断</b>　1. F　2. T</div>
+    <div class="ans"><b>C 听写</b>　Good luck, Harry.</div>
+  </details>
+</section>
+
+<div class="box note">
+  <h3>🔤 人名读音表（TTS 读得未必准，以这张表为准）</h3>
+  <div class="tablewrap" style="overflow-x:auto">
+  <table style="border-collapse:collapse;width:100%;font-size:.85rem;min-width:460px">
+    <tr><th style="text-align:left;padding:8px;border-bottom:1px solid #dde5e8;background:#f3ede1">Name</th>
+        <th style="text-align:left;padding:8px;border-bottom:1px solid #dde5e8;background:#f3ede1">IPA</th>
+        <th style="text-align:left;padding:8px;border-bottom:1px solid #dde5e8;background:#f3ede1">提示</th></tr>
+    <tr><td style="padding:7px 8px;border-bottom:1px solid #eef2f3"><b>Privet</b> Drive</td><td>/ˈprɪvɪt/</td><td>重音在前，"普里维特"</td></tr>
+    <tr><td style="padding:7px 8px;border-bottom:1px solid #eef2f3"><b>Dursley</b></td><td>/ˈdɜːzli/</td><td>dɜː 像"德"拖长</td></tr>
+    <tr><td style="padding:7px 8px;border-bottom:1px solid #eef2f3"><b>Grunnings</b></td><td>/ˈɡrʌnɪŋz/</td><td>ʌ 是短促的"啊"</td></tr>
+    <tr><td style="padding:7px 8px;border-bottom:1px solid #eef2f3"><b>McGonagall</b></td><td>/məˈɡɒnəɡəl/</td><td>mə-重音在 GO</td></tr>
+    <tr><td style="padding:7px 8px;border-bottom:1px solid #eef2f3"><b>Hagrid</b></td><td>/ˈhæɡrɪd/</td><td>æ 张大嘴</td></tr>
+    <tr><td style="padding:7px 8px;border-bottom:1px solid #eef2f3"><b>Voldemort</b></td><td>/ˈvəʊldəmɔː/</td><td>尾音 -mort 不是 -mört</td></tr>
+    <tr><td style="padding:7px 8px;border-bottom:1px solid #eef2f3"><b>Godric's Hollow</b></td><td>/ˈɡɒdrɪks ˈhɒləʊ/</td><td>Hollow 的 ow 读 /əʊ/</td></tr>
+    <tr><td style="padding:7px 8px;border-bottom:1px solid #eef2f3"><b>Dedalus Diggle</b></td><td>/ˈdedələs ˈdɪɡl/</td><td>Diggle 结尾是"狗"的音</td></tr>
+    <tr><td style="padding:7px 8px;border-bottom:1px solid #eef2f3"><b>Petunia</b></td><td>/pəˈtjuːniə/</td><td>重音在 TU</td></tr>
+    <tr><td style="padding:7px 8px"><b>Muggle</b></td><td>/ˈmʌɡl/</td><td>和 mug（大杯子）同音</td></tr>
+  </table>
+  </div>
+</div>
+
+<div class="box tip">
+  <h3>🎯 PET 听力五个提分习惯</h3>
+  <ol>
+    <li><b>先读题</b>：录音播放前有 10–20 秒，用来看题干关键词，圈出 <i>who / where / how much / why</i>。</li>
+    <li><b>数字、时间、拼写边听边写</b>：这类信息只报一次，犹豫就丢。</li>
+    <li><b>漏了就跳</b>：不要为一个空纠结，后面的题还会给你信息。</li>
+    <li><b>第二遍只抓漏掉的</b>：已经确定的空不要再听，把注意力放在空的题上。</li>
+    <li><b>跟读 5 分钟</b>：听完选一段跟着读，连读（an' James）、弱读（was / had / of）会变得可识别——这是听力提分最快的一招。</li>
+  </ol>
+</div>
+
+</div>
+<footer>
+  音频由 macOS 语音合成（Daniel, en-GB）生成，仅用于英语学习；原文版权归 J.K. Rowling 及出版方所有。<br>
+  中英对照朗读版：<a href="harry-potter-ch1-reader.html">harry-potter-ch1-reader.html</a> ｜ 精读讲义：<a href="harry-potter-ch1-study.html">harry-potter-ch1-study.html</a> ｜ 原文来源：startingharrypotter.com
+</footer>
+<script>
+document.querySelectorAll('.rt').forEach(function(b){
+  b.addEventListener('click',function(){
+    var a=document.getElementById(b.dataset.a);
+    var r=parseFloat(b.dataset.r);
+    a.playbackRate=r;
+    b.parentNode.querySelectorAll('.rt').forEach(function(x){x.classList.remove('on')});
+    b.classList.add('on');
+    if(a.paused){ a.play(); }
+  });
+});
+document.querySelectorAll('audio').forEach(function(a){
+  a.addEventListener('play',function(){
+    document.querySelectorAll('audio').forEach(function(o){ if(o!==a) o.pause(); });
+  });
+});
+</script>
+<script>window.__TOP_COLOR__='rgba(18,98,107,.92)';
+(function(){
+  document.querySelectorAll('.tablewrap').forEach(function(w){
+    var tr=w.querySelector('tr'); if(!tr) return;
+    var n=tr.children.length;
+    w.dataset.cols=n;
+    if(n>=5){
+      var h=document.createElement('div');
+      h.className='scrollhint';
+      h.textContent='← 左右滑动查看完整表格 →';
+      w.parentNode.insertBefore(h,w);
+    }
+  });
+  var b=document.createElement('button');
+  b.id='toTop'; b.type='button'; b.innerHTML='&uarr;'; b.setAttribute('aria-label','回到顶部');
+  b.style.background=window.__TOP_COLOR__||'rgba(91,58,142,.92)';
+  document.body.appendChild(b);
+  b.addEventListener('click',function(){ window.scrollTo({top:0,behavior:'smooth'}); });
+  var onScroll=function(){ b.classList.toggle('show', window.scrollY>700); };
+  window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
+})();
+</script>
+</body>
+</html>

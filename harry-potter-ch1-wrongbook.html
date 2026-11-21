@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#8a3b5e">
+<meta name="format-detection" content="telephone=no">
+<title>错题本 · The Boy Who Lived</title>
+<style>
+:root{--paper:#fbf8f1;--ink:#26211b;--line:#e8dfcd;--rose:#8a3b5e;--rose-l:#fdf4f8;
+ --green:#1f6b53;--gold:#b8860b;--muted:#8a7f6d}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+*{-webkit-tap-highlight-color:transparent}
+body{margin:0;background:var(--paper);color:var(--ink);line-height:1.8;
+ font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;
+ overflow-wrap:break-word}
+.wrap{max-width:680px;margin:0 auto;padding:0 16px 90px}
+
+.hero{background:linear-gradient(135deg,#3a1626,#6d2145 55%,#8a3b5e);color:#fff;
+ padding:40px 18px 32px;border-bottom:4px solid var(--gold)}
+.hero .inner{max-width:680px;margin:0 auto}
+.kicker{letter-spacing:.24em;font-size:.66rem;text-transform:uppercase;opacity:.7}
+.hero h1{font-family:Georgia,"Songti SC",serif;font-size:1.7rem;margin:.3em 0 .15em;line-height:1.25}
+.hero .sub{opacity:.9;font-size:.88rem}
+.hero .links{margin-top:14px;font-size:.76rem;display:flex;gap:12px;flex-wrap:wrap}
+.hero .links a{color:#f6c9d9;text-decoration:none}
+.hero .links a:hover{text-decoration:underline}
+
+.statbar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:18px 0 14px;font-size:.8rem}
+.stat{background:#fff;border:1px solid var(--line);border-radius:10px;padding:6px 12px;color:var(--muted)}
+.stat b{color:var(--rose);font-size:.95rem}
+.sp{flex:1}
+.mini{border:1px solid #e6d9c6;background:#fff;color:#6b5a3f;border-radius:8px;padding:6px 11px;
+ font-size:.76rem;cursor:pointer}
+.mini:hover{background:#f7f1e7}
+
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px 20px;
+ box-shadow:0 10px 30px rgba(60,20,40,.07);margin-bottom:16px}
+.crow{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-bottom:10px}
+.lvtag{font-size:.68rem;color:#fff;background:#9c8a7a;padding:2px 8px;border-radius:999px}
+.lvtag.b1{background:#2f6fb5}.lvtag.b2{background:#c9781f}.lvtag.c1{background:#a63a3a}.lvtag.sy{background:#555}
+.need{font-size:.72rem;color:var(--rose);background:var(--rose-l);border:1px solid #f0d9e4;
+ border-radius:999px;padding:2px 9px;margin-left:auto}
+.pat{font-family:ui-monospace,Menlo,Consolas,"Courier New",monospace;font-size:1.5rem;letter-spacing:.2em;
+ color:#241f3a;line-height:1.7;margin:6px 0 2px;min-height:2.2em;word-break:break-word}
+.pat b{color:var(--rose);font-weight:700}
+.pat i{color:#d3c8b6;font-style:normal}
+.pat.hidden{color:#c9beb0;font-size:.9rem;letter-spacing:.04em;font-family:inherit}
+.mean{font-size:.86rem;color:#8a7f6d;margin-bottom:14px}
+.srow{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.sinput{flex:1 1 190px;min-width:140px;border:1px solid #ddd3bf;border-radius:10px;padding:11px 14px;
+ font-size:1.02rem;font-family:Georgia,serif;background:#fffdf9;color:#241f1a}
+.sinput:focus{outline:2px solid #edd9e3;border-color:#c58aa4}
+.sinput.ok{border-color:#4c9a6a;background:#f2fbf5;color:#2f6f4c}
+.sinput.bad{border-color:#c2554f;background:#fdf3f2}
+.btn{border:1px solid #ddd3bf;background:#fff;color:#5f5240;border-radius:9px;padding:10px 15px;
+ font-size:.85rem;cursor:pointer;transition:.15s;white-space:nowrap}
+.btn:hover{background:#f7f1e7}
+.btn.primary{background:var(--rose);border-color:var(--rose);color:#fff}
+.btn.primary:hover{background:#73304e}
+.btn.mic{color:var(--green);border-color:#cfe3da;background:#f2f9f4}
+.fb{font-size:.83rem;margin-top:12px;line-height:1.8;display:none}
+.fb.show{display:block}
+.fb.bad{color:#b23b35}
+.fb.ok{color:#2f7a52;font-weight:600}
+.fb code{background:#f4efe4;padding:1px 6px;border-radius:4px;font-family:ui-monospace,Menlo,monospace;color:#8a3b5e}
+.under{display:flex;align-items:center;gap:10px;margin-top:14px;font-size:.78rem;color:var(--muted)}
+.under .sp{flex:1}
+
+.empty{background:#fff;border:1px dashed #ddd2bb;border-radius:16px;padding:34px 22px;text-align:center}
+.empty .big{font-size:2rem;margin-bottom:6px}
+.empty p{color:var(--muted);font-size:.9rem;margin:.4em 0}
+.empty a{color:var(--rose);font-weight:600}
+
+.donebox{background:#f3faf6;border:1px solid #cfe8da;border-radius:16px;padding:26px 22px;text-align:center}
+.donebox .big{font-size:1.8rem}
+.donebox h3{margin:.4em 0;color:var(--green)}
+.donebox p{font-size:.88rem;color:#5d7a6b}
+
+details.list{margin-top:18px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+details.list summary{cursor:pointer;font-weight:700;color:#6b5a3f;font-size:.88rem}
+.tbl{width:100%;border-collapse:collapse;font-size:.82rem;margin-top:10px}
+.tbl th,.tbl td{border-bottom:1px solid #efe6d4;padding:8px 6px;text-align:left;vertical-align:top}
+.tbl th{background:#f6f1e7;font-size:.74rem;color:#6b5a3f}
+.tbl td.wd{font-family:Georgia,serif;font-weight:600;color:var(--rose)}
+.tbl .del{border:0;background:none;color:#b23b35;cursor:pointer;font-size:.78rem;padding:2px 4px}
+
+.box{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:16px 0;font-size:.85rem}
+.box h3{margin:0 0 8px;font-size:.92rem;color:var(--rose)}
+textarea{width:100%;min-height:90px;border:1px solid #ddd3bf;border-radius:9px;padding:9px 11px;
+ font-family:ui-monospace,Menlo,monospace;font-size:.74rem;background:#fffdf9;color:#3f372c}
+.warn{background:#fdf6e3;border-left:4px solid var(--gold);padding:12px 14px;border-radius:0 10px 10px 0;
+ font-size:.84rem;color:#6b5a3f;margin:14px 0;display:none}
+.warn.show{display:block}
+
+.toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(20px);background:#2f2a25;color:#fff;
+ font-size:.82rem;padding:10px 16px;border-radius:10px;opacity:0;pointer-events:none;transition:.25s;z-index:99;
+ display:flex;gap:12px;align-items:center;max-width:90vw}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.toast button{background:none;border:1px solid rgba(255,255,255,.4);color:#ffd9a0;border-radius:6px;
+ padding:3px 9px;font-size:.76rem;cursor:pointer}
+footer{margin:36px auto 0;padding:20px;border-top:1px solid var(--line);max-width:680px;
+ font-size:.76rem;color:#9a9182;text-align:center;line-height:1.9}
+footer a{color:#8a7f6d}
+@media(max-width:600px){
+  .hero{padding:32px 15px 26px}
+  .wrap{padding:0 12px 80px}
+  .card{padding:18px 15px}
+  .pat{font-size:1.22rem;letter-spacing:.16em}
+  .sinput{flex:1 1 100%}
+  .btn{padding:11px 13px}
+  .stat{padding:5px 10px;font-size:.75rem}
+}
+</style>
+</head>
+<body>
+
+<div class="hero"><div class="inner">
+  <div class="kicker">Error Notebook · Harry Potter Chapter One</div>
+  <h1>📕 错题本</h1>
+  <p class="sub">默写时答错的词会自动收到这里；答对一次就清掉一格，清空即掌握。</p>
+  <div class="links">
+    <a href="harry-potter-ch1-reader.html#spell">← 回朗读版默写</a>
+    <a href="harry-potter-ch1-study.html">精读讲义</a>
+    <a href="harry-potter-ch1-listening.html">听力练习</a>
+  </div>
+</div></div>
+
+<div class="wrap">
+
+  <div class="warn" id="warn">⚠️ 当前页面无法使用本地存储（常见于用 <code>file://</code> 直接打开）。本页仍可练习，但关掉后不会保存——建议用本地服务器打开，或点下面「导出 / 导入」手动带走记录。</div>
+
+  <div class="statbar">
+    <span class="stat">错题 <b id="cnt">0</b></span>
+    <span class="stat">还差次数 <b id="need">0</b></span>
+    <span class="sp"></span>
+    <button class="mini" id="modeBtn">模式：拼写</button>
+    <button class="mini" id="shuffleBtn">🔀 重排</button>
+    <button class="mini" id="exportBtn">导出</button>
+  </div>
+
+  <div id="app"></div>
+
+  <details class="list" id="listBox">
+    <summary>全部错题（点开可手动删）</summary>
+    <div id="listWrap"></div>
+  </details>
+
+  <details class="list" id="ioBox">
+    <summary>导出 / 导入（换设备时用）</summary>
+    <p style="font-size:.8rem;color:#8a7f6d">把这段文本复制到另一台设备的同位置粘贴导入，错题记录就能带过去。</p>
+    <textarea id="ioText" spellcheck="false"></textarea>
+    <div style="display:flex;gap:8px;margin-top:10px;flex-wrap:wrap">
+      <button class="mini" id="copyBtn">复制</button>
+      <button class="mini" id="importBtn">导入这段</button>
+    </div>
+    <p id="ioMsg" style="font-size:.78rem;color:#2f7a52;margin:.6em 0 0"></p>
+  </details>
+
+</div>
+
+<footer>
+  错题记录只存在你自己的浏览器里（localStorage），不上传任何服务器。<br>
+  配套：<a href="harry-potter-ch1-reader.html">朗读版</a> ｜ <a href="harry-potter-ch1-study.html">精读讲义</a> ｜ <a href="harry-potter-ch1-listening.html">听力练习册</a>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script>
+(function(){
+  var KEY='hp1.wrong.v1';
+  var LS_OK=(function(){ try{ localStorage.setItem('__t','1'); localStorage.removeItem('__t'); return true; }catch(e){ return false; } })();
+  if(!LS_OK) document.getElementById('warn').classList.add('show');
+
+  function load(){ if(!LS_OK) return {}; try{ return JSON.parse(localStorage.getItem(KEY)||'{}'); }catch(e){ return {}; } }
+  function save(o){ if(!LS_OK) return; try{ localStorage.setItem(KEY,JSON.stringify(o)); }catch(e){} }
+
+  var memory={};                 // localStorage 不可用时的临时存储
+  if(location.search.indexOf('demo')>=0 && !Object.keys(load()).length){
+    var demo={
+      'mysterious':{w:'mysterious',m:'神秘的；难以解释的',lv:'b2',a:'audio/words/002.mp3',n:2,t:Date.now()},
+      'exasperated':{w:'exasperated',m:'恼火的；被气得没脾气的',lv:'c1',a:'audio/words/150.mp3',n:1,t:Date.now()},
+      'nephew':{w:'nephew',m:'侄子；外甥',lv:'b1',a:'audio/words/121.mp3',n:1,t:Date.now()},
+      'peculiar':{w:'peculiar',m:'古怪的；不寻常的',lv:'b2',a:'audio/words/013.mp3',n:1,t:Date.now()}
+    };
+    if(LS_OK) save(demo); else memory=demo;
+  }
+  function data(){ return LS_OK? load() : memory; }
+  function commit(o){ if(LS_OK) save(o); else memory=o; }
+
+  var mode='spell';              // spell | listen
+  var queue=[];                  // 当前练习顺序
+  var total=0, done=0;
+
+  var app=document.getElementById('app');
+  var toastEl=document.getElementById('toast');
+  var toastTimer=null, undoFn=null;
+
+  function toast(msg, undo){
+    toastEl.innerHTML=msg+(undo?'<button id="undoBtn">撤销</button>':'');
+    toastEl.classList.add('show');
+    if(undo){ document.getElementById('undoBtn').onclick=function(){ undo(); hideToast(); }; }
+    clearTimeout(toastTimer); toastTimer=setTimeout(hideToast,4000);
+  }
+  function hideToast(){ toastEl.classList.remove('show'); }
+
+  function letters(s){ return s.replace(/[^A-Za-z]/g,''); }
+  function shuffle(a){ for(var i=a.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=a[i];a[i]=a[j];a[j]=t; } return a; }
+
+  function pattern(w){
+    var pos=[]; for(var i=0;i<w.length;i++) if(/[A-Za-z]/.test(w[i])) pos.push(i);
+    var n=pos.length;
+    var vis=Math.max(2, Math.round(n*0.4)); if(vis>n-1) vis=Math.max(1,n-1);
+    var show={}; show[pos[0]]=1; if(n>1) show[pos[n-1]]=1;
+    var rem=vis-Object.keys(show).length;
+    for(var k=1;k<=rem;k++){ show[pos[Math.min(n-1,Math.round(k*n/(rem+1)))]]=1; }
+    var out='';
+    for(var j=0;j<w.length;j++){
+      var c=w[j];
+      if(/[A-Za-z]/.test(c)) out += show[j]? '<b>'+c+'</b>' : '<i>_</i>';
+      else if(c===' ') out += '&nbsp;&nbsp;';
+      else out += '<b>'+c+'</b>';
+    }
+    return out;
+  }
+
+  function refreshStats(){
+    var o=data(), keys=Object.keys(o);
+    document.getElementById('cnt').textContent=keys.length;
+    var sum=0; keys.forEach(function(k){ sum+=o[k].n||1; });
+    document.getElementById('need').textContent=sum;
+    renderList(o);
+  }
+
+  function renderList(o){
+    var keys=Object.keys(o);
+    var wrap=document.getElementById('listWrap');
+    if(!keys.length){ wrap.innerHTML='<p style="font-size:.84rem;color:#9a9182">还没有错题。</p>'; return; }
+    var h='<table class="tbl"><tr><th>单词</th><th>释义</th><th>还差</th><th></th></tr>';
+    keys.sort().forEach(function(k){
+      var r=o[k];
+      h+='<tr><td class="wd">'+r.w+'</td><td>'+r.m+'</td><td>'+(r.n||1)+' 次</td>'
+        +'<td><button class="del" data-del="'+k+'">删</button></td></tr>';
+    });
+    wrap.innerHTML=h+'</table>';
+  }
+
+  function play(src){
+    if(!src) return;
+    var a=new Audio(src); a.playbackRate=1;
+    var pr=a.play(); if(pr&&pr.catch) pr.catch(function(){});
+  }
+
+  function startRound(){
+    var o=data();
+    queue=shuffle(Object.keys(o));
+    total=queue.length; done=0;
+    render();
+  }
+
+  function render(){
+    var o=data();
+    if(!Object.keys(o).length){ renderEmpty(); return; }
+    if(!queue.length){ renderDone(); return; }
+
+    var key=queue[0], r=o[key];
+    var patHTML = mode==='spell' ? pattern(r.w) : '<span class="pat hidden">🎧 听写模式：先听，再拼</span>';
+
+    app.innerHTML=
+      '<div class="card">'
+      + '<div class="crow">'
+      +   '<button class="btn mic" id="playBtn">🔊 听发音</button>'
+      +   '<span class="lvtag '+(r.lv||'')+'">'+(r.lv==='sy'?'熟词僻义':(r.lv==='b1'?'PET 核心':(r.lv==='b2'?'B2':'C1')))+'</span>'
+      +   '<span class="need">还差 '+(r.n||1)+' 次</span>'
+      + '</div>'
+      + '<div class="pat" id="patBox">'+patHTML+'</div>'
+      + '<div class="mean">'+r.m+'</div>'
+      + '<div class="srow">'
+      +   '<input class="sinput" id="ans" placeholder="输入完整单词" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">'
+      +   '<button class="btn primary" id="checkBtn">检查</button>'
+      + '</div>'
+      + '<div class="fb" id="fb"></div>'
+      + '<div class="under"><span id="progTxt">本轮 '+done+' / '+total+'</span><span class="sp"></span>'
+      +   '<button class="btn" id="revealBtn" style="padding:6px 11px;font-size:.78rem">看答案</button>'
+      +   '<button class="btn" id="skipBtn" style="padding:6px 11px;font-size:.78rem">跳过</button></div>'
+      + '</div>';
+
+    var inp=document.getElementById('ans');
+    document.getElementById('playBtn').onclick=function(){ play(r.a); };
+    document.getElementById('checkBtn').onclick=check;
+    document.getElementById('skipBtn').onclick=function(){ queue.push(queue.shift()); render(); };
+    document.getElementById('revealBtn').onclick=function(){
+      inp.value=r.w; inp.classList.remove('ok'); inp.classList.add('bad');
+      fb('bad','答案：<code>'+r.w+'</code>　（按错处理，稍后会再出现）');
+      markWrong(key,true);
+    };
+    inp.addEventListener('keydown',function(e){ if(e.key==='Enter') check(); });
+    inp.focus();
+    if(mode==='listen') play(r.a);
+
+    function check(){
+      var v=inp.value.trim().toLowerCase(), t=r.w.toLowerCase();
+      if(!v){ fb('bad','先输入再检查'); return; }
+      if(v===t){
+        inp.classList.remove('bad'); inp.classList.add('ok');
+        fb('ok','✓ 正确！'+r.m);
+        markRight(key);
+      }else{
+        inp.classList.add('bad');
+        var a=letters(v), b=letters(t), msg=[];
+        if(a===b){ msg.push('字母都对，但顺序或连字符不对。正确：<code>'+r.w+'</code>'); }
+        else{
+          if(a.length!==b.length) msg.push('长度不对：正确答案 <b>'+b.length+'</b> 个字母，你写了 <b>'+a.length+'</b> 个');
+          var lim=Math.min(a.length,b.length), c=0;
+          for(var k=0;k<lim&&c<3;k++){ if(a[k]!==b[k]){ msg.push('第 '+(k+1)+' 个字母应为 <code>'+b[k]+'</code>，你写的是 <code>'+a[k]+'</code>'); c++; } }
+          if(!msg.length) msg.push('再试一次');
+        }
+        fb('bad',msg.join('<br>'));
+        markWrong(key,false);
+      }
+    }
+    function fb(cls,html){
+      var el=document.getElementById('fb'); el.className='fb show '+cls; el.innerHTML=html;
+    }
+  }
+
+  function markRight(key){
+    var o=data(), r=o[key];
+    if(!r) return;
+    var before=JSON.parse(JSON.stringify(o));
+    r.n=(r.n||1)-1;
+    if(r.n<=0) delete o[key]; else o[key]=r;
+    commit(o); done++;
+    queue.shift();
+    if(o[key]) queue.push(key);          // 还没消完，本轮后面再考一次
+    refreshStats();
+    var left=(o[key]&&o[key].n)||0;
+    toast('✓ 答对 '+key+(left? '，还差 '+left+' 次' : '，已从错题本移除'),
+      function(){ commit(before); queue.unshift(key); done--; refreshStats(); render(); });
+    setTimeout(render,220);
+  }
+
+  function markWrong(key, revealed){
+    var o=data(), r=o[key];
+    if(!r) return;
+    r.n=Math.min(5,(r.n||0)+1); r.t=Date.now();
+    commit(o); refreshStats();
+    if(revealed){ setTimeout(function(){ queue.push(queue.shift()); render(); },1200); }
+  }
+
+  function renderEmpty(){
+    app.innerHTML='<div class="empty"><div class="big">🎉</div>'
+      +'<h3 style="margin:.3em 0;color:#6b5a3f">错题本是空的</h3>'
+      +'<p>去朗读版文末的「PET 生词默写」练一轮，答错的词会自动出现在这里。</p>'
+      +'<p style="margin-top:14px"><a href="harry-potter-ch1-reader.html#spell">→ 去做默写</a></p></div>';
+  }
+
+  function renderDone(){
+    var left=Object.keys(data()).length;
+    app.innerHTML='<div class="donebox"><div class="big">'+(left?'🔄':'✅')+'</div>'
+      +'<h3>'+(left? '本轮过完了' : '错题本清空了')+'</h3>'
+      +'<p>本轮答对 '+done+' 个；'+(left? '还有 <b>'+left+'</b> 个词没消掉，再刷一轮。' : '所有错词都消除了，厉害。')+'</p>'
+      +'<p style="margin-top:14px"><button class="btn primary" id="againBtn">'+(left?'再来一轮':'回默写页')+'</button></p></div>';
+    var b=document.getElementById('againBtn');
+    if(b) b.onclick=function(){ if(left) startRound(); else location.href='harry-potter-ch1-reader.html#spell'; };
+  }
+
+  document.getElementById('modeBtn').onclick=function(){
+    mode = mode==='spell'?'listen':'spell';
+    this.textContent='模式：'+(mode==='spell'?'拼写':'听写');
+    render();
+  };
+  document.getElementById('shuffleBtn').onclick=startRound;
+  document.getElementById('exportBtn').onclick=function(){
+    document.getElementById('ioText').value=JSON.stringify(data(),null,1);
+    document.getElementById('ioBox').open=true;
+    document.getElementById('ioBox').scrollIntoView({behavior:'smooth',block:'center'});
+  };
+  document.getElementById('copyBtn').onclick=function(){
+    var t=document.getElementById('ioText');
+    t.select(); t.setSelectionRange(0,99999);
+    try{ document.execCommand('copy'); document.getElementById('ioMsg').textContent='已复制'; }catch(e){ document.getElementById('ioMsg').textContent='复制失败，请手动选中'; }
+  };
+  document.getElementById('importBtn').onclick=function(){
+    var msg=document.getElementById('ioMsg');
+    try{
+      var obj=JSON.parse(document.getElementById('ioText').value);
+      if(typeof obj!=='object'||!obj) throw 0;
+      var cur=data();
+      Object.keys(obj).forEach(function(k){ cur[k]=obj[k]; });
+      commit(cur); refreshStats(); startRound(); msg.textContent='导入成功，共 '+Object.keys(cur).length+' 个错词';
+    }catch(e){ msg.textContent='格式不对，请粘贴完整内容'; }
+  };
+  document.getElementById('listWrap').addEventListener('click',function(e){
+    var b=e.target.closest('[data-del]'); if(!b) return;
+    var key=b.dataset.del, o=data(), before=JSON.parse(JSON.stringify(o));
+    delete o[key]; commit(o);
+    queue=queue.filter(function(k){return k!==key;});
+    refreshStats(); render();
+    toast('已删除 '+key,function(){ commit(before); refreshStats(); startRound(); });
+  });
+
+  window.addEventListener('storage',function(e){ if(e.key===KEY){ refreshStats(); startRound(); } });
+
+  refreshStats();
+  startRound();
+})();
+</script>
+</body>
+</html>
